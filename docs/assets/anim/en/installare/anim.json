@@ -1,0 +1,89 @@
+{
+ "w": 1280,
+ "h": 800,
+ "steps": [
+  {
+   "img": "01.webp",
+   "hold": 800,
+   "cursor": {
+    "x": 29.27,
+    "y": 66.39
+   },
+   "action": "click",
+   "label": "Ctrl + click"
+  },
+  {
+   "img": "02.webp",
+   "hold": 800,
+   "cursor": {
+    "x": 75.04,
+    "y": 57.26
+   },
+   "action": "click",
+   "label": "Ctrl + click"
+  },
+  {
+   "img": "03.webp",
+   "hold": 800,
+   "cursor": {
+    "x": 90.29,
+    "y": 57.26
+   },
+   "action": "click",
+   "label": "Ctrl + click"
+  },
+  {
+   "img": "04.webp",
+   "hold": 1300,
+   "cursor": {
+    "x": 75.04,
+    "y": 57.26
+   },
+   "action": "right"
+  },
+  {
+   "img": "05.webp",
+   "hold": 1300,
+   "cursor": {
+    "x": 84.37,
+    "y": 18.04
+   },
+   "action": "click"
+  },
+  {
+   "img": "06.webp",
+   "hold": 1600,
+   "cursor": {
+    "x": 48.35,
+    "y": 45.69
+   },
+   "action": "click"
+  },
+  {
+   "img": "07.webp",
+   "hold": 2000,
+   "cursor": {
+    "x": 64.04,
+    "y": 84.02
+   },
+   "action": "click"
+  },
+  {
+   "img": "08.webp",
+   "hold": 2200
+  },
+  {
+   "img": "09.webp",
+   "hold": 1200,
+   "cursor": {
+    "x": 67.47,
+    "y": 58.47
+   },
+   "action": "click"
+  },
+  {
+   "img": "10.webp",
+   "hold": 2800
+  }
+ ]
+}

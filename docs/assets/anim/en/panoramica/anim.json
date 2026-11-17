@@ -1,0 +1,45 @@
+{
+ "w": 1280,
+ "h": 800,
+ "steps": [
+  {
+   "img": "01.webp",
+   "hold": 1600,
+   "cursor": {
+    "x": 9.75,
+    "y": 87.92
+   },
+   "action": "click"
+  },
+  {
+   "img": "02.webp",
+   "hold": 1400,
+   "cursor": {
+    "x": 44.52,
+    "y": 66.39
+   },
+   "action": "click"
+  },
+  {
+   "img": "03.webp",
+   "hold": 2400
+  },
+  {
+   "img": "04.webp",
+   "hold": 2400
+  },
+  {
+   "img": "05.webp",
+   "hold": 1300,
+   "cursor": {
+    "x": 25.36,
+    "y": 9.95
+   },
+   "action": "click"
+  },
+  {
+   "img": "06.webp",
+   "hold": 2200
+  }
+ ]
+}

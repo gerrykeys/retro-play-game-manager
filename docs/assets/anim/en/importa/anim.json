@@ -1,0 +1,46 @@
+{
+ "w": 1280,
+ "h": 800,
+ "steps": [
+  {
+   "img": "01.webp",
+   "hold": 1600,
+   "cursor": {
+    "x": 92.23,
+    "y": 87.56
+   },
+   "to": {
+    "x": 59.41,
+    "y": 55.06
+   },
+   "action": "drag",
+   "label": "PC Engine collection.zip"
+  },
+  {
+   "img": "02.webp",
+   "hold": 2600,
+   "cursor": {
+    "x": 67.69,
+    "y": 92.4
+   },
+   "action": "click"
+  },
+  {
+   "img": "03.webp",
+   "hold": 1800
+  },
+  {
+   "img": "04.webp",
+   "hold": 1300,
+   "cursor": {
+    "x": 9.75,
+    "y": 90.22
+   },
+   "action": "click"
+  },
+  {
+   "img": "05.webp",
+   "hold": 2800
+  }
+ ]
+}

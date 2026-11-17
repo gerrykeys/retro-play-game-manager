@@ -1,0 +1,31 @@
+<!-- The app's icon: a little handheld console smiling on its screen. build/icon.png is rendered
+     from it by `node scripts/icon.mjs`; the in-app Logo shows this file, and the loading page
+     draws it inline to animate it by its classes (rp-*): the ids are unique for that. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="32 32 960 960">
+  <defs>
+    <linearGradient id="rp-logo-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a99bff"/><stop offset="1" stop-color="#5fe3cb"/></linearGradient>
+    <filter id="rp-logo-shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="26" stdDeviation="22" flood-color="#3b2a8f" flood-opacity=".28"/></filter>
+  </defs>
+  <rect x="48" y="48" width="928" height="928" rx="232" fill="url(#rp-logo-bg)"/>
+  <g transform="rotate(-8 512 512)">
+    <rect x="322" y="190" width="380" height="644" rx="70" fill="#fff" filter="url(#rp-logo-shadow)"/>
+    <!-- The screen and its face -->
+    <rect x="372" y="244" width="280" height="252" rx="40" fill="#2a2556"/>
+    <g class="rp-eyes">
+      <ellipse class="rp-eye" cx="470" cy="350" rx="22" ry="32" fill="#fff"/>
+      <ellipse class="rp-eye" cx="554" cy="350" rx="22" ry="32" fill="#fff"/>
+    </g>
+    <path d="M492 414Q512 438 532 414" fill="none" stroke="#fff" stroke-width="15" stroke-linecap="round"/>
+    <ellipse cx="430" cy="418" rx="22" ry="13" fill="#ff8fb8" opacity=".85"/>
+    <ellipse cx="594" cy="418" rx="22" ry="13" fill="#ff8fb8" opacity=".85"/>
+    <!-- The D-pad, the two buttons, start and select -->
+    <path fill="#2a2556" d="M406 588h36a6 6 0 0 1 6 6v34h34a6 6 0 0 1 6 6v36a6 6 0 0 1-6 6h-34v34a6 6 0 0 1-6 6h-36a6 6 0 0 1-6-6v-34h-34a6 6 0 0 1-6-6v-36a6 6 0 0 1 6-6h34v-34a6 6 0 0 1 6-6z"/>
+    <circle cx="622" cy="624" r="34" fill="#ff8fb8"/>
+    <circle cx="560" cy="690" r="34" fill="#ff8fb8"/>
+    <rect x="452" y="760" width="40" height="14" rx="7" fill="#d9dcef"/>
+    <rect x="532" y="760" width="40" height="14" rx="7" fill="#d9dcef"/>
+  </g>
+  <!-- Two sparkles -->
+  <path class="rp-sparkle" fill="#fff" d="M812 216.4Q819.3 254.7 857.6 262Q819.3 269.3 812 307.6Q804.7 269.3 766.4 262Q804.7 254.7 812 216.4Z"/>
+  <path class="rp-sparkle" fill="#fff" opacity=".85" d="M228 735.8Q233.5 764.5 262.2 770Q233.5 775.5 228 804.2Q222.5 775.5 193.8 770Q222.5 764.5 228 735.8Z"/>
+</svg>

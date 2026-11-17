@@ -1,0 +1,46 @@
+{
+ "w": 1280,
+ "h": 800,
+ "steps": [
+  {
+   "img": "01.webp",
+   "hold": 1400,
+   "cursor": {
+    "x": 78.79,
+    "y": 16.72
+   },
+   "action": "click"
+  },
+  {
+   "img": "02.webp",
+   "hold": 1800,
+   "cursor": {
+    "x": 50.04,
+    "y": 70.06
+   },
+   "to": {
+    "x": 73.52,
+    "y": 37.35
+   },
+   "action": "drag",
+   "label": "Yoshis Island - copertina.png"
+  },
+  {
+   "img": "03.webp",
+   "hold": 2200
+  },
+  {
+   "img": "04.webp",
+   "hold": 1300,
+   "cursor": {
+    "x": 40.31,
+    "y": 74.84
+   },
+   "action": "click"
+  },
+  {
+   "img": "05.webp",
+   "hold": 2600
+  }
+ ]
+}

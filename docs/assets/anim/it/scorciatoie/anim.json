@@ -1,0 +1,45 @@
+{
+ "w": 1280,
+ "h": 800,
+ "steps": [
+  {
+   "img": "01.webp",
+   "hold": 1100,
+   "key": "→"
+  },
+  {
+   "img": "02.webp",
+   "hold": 1100,
+   "key": "↓"
+  },
+  {
+   "img": "03.webp",
+   "hold": 1100,
+   "key": "←"
+  },
+  {
+   "img": "04.webp",
+   "hold": 1100,
+   "key": "Invio"
+  },
+  {
+   "img": "05.webp",
+   "hold": 1100,
+   "key": "→"
+  },
+  {
+   "img": "06.webp",
+   "hold": 1100,
+   "key": "Esc"
+  },
+  {
+   "img": "07.webp",
+   "hold": 1100,
+   "key": "Ctrl F"
+  },
+  {
+   "img": "08.webp",
+   "hold": 2600
+  }
+ ]
+}

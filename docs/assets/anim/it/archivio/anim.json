@@ -1,0 +1,37 @@
+{
+ "w": 1280,
+ "h": 800,
+ "steps": [
+  {
+   "img": "01.webp",
+   "hold": 1600,
+   "cursor": {
+    "x": 57.56,
+    "y": 49.14
+   },
+   "action": "hover"
+  },
+  {
+   "img": "02.webp",
+   "hold": 1000,
+   "cursor": {
+    "x": 42.3,
+    "y": 49.14
+   },
+   "action": "click"
+  },
+  {
+   "img": "03.webp",
+   "hold": 1800,
+   "cursor": {
+    "x": 10.12,
+    "y": 11.63
+   },
+   "action": "click"
+  },
+  {
+   "img": "04.webp",
+   "hold": 3200
+  }
+ ]
+}
