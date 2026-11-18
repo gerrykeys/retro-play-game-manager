@@ -22,6 +22,7 @@
     <span><b>Retro Play</b><small>Guida all’app</small></span>
   </a>
   <button class="search-btn" id="search" aria-label="Cerca nella guida" data-icon-svg="search"><span>Cerca nella guida…</span><kbd>Ctrl K</kbd></button>
+  <a class="dl-btn" href="https://github.com/gerrykeys/retro-play-game-manager/releases" target="_blank" rel="noopener" title="Scarica l’app (GitHub Releases)" data-icon-svg="download"><span>Scarica</span></a>
   <a class="lang-btn" id="lang" href="../index.html" hreflang="en" lang="en"></a>
   <button class="icon-btn" id="theme" aria-label="Cambia tema"></button>
 </header>
@@ -37,9 +38,10 @@
         <div>
           <span class="eyebrow"><b>GUIDA</b> Tutto quello che puoi fare, in breve</span>
           <h1>I tuoi giochi retro, <span class="grad-text">in ordine e pronti da giocare</span></h1>
-          <p class="lead">Retro Play Game Manager tiene in ordine i tuoi giochi: li aggiungi, sistemi titoli e copertine e li installi con un clic su ES-DE o MiSTer FPGA. Ogni pagina spiega un’operazione e la mostra in un’animazione.</p>
+          <p class="lead">Retro Play Game Manager tiene in ordine i tuoi giochi: li aggiungi, sistemi titoli e copertine e li installi con un clic su ES-DE, MiSTer FPGA, RetroArch, RetroPie o Batocera. Ogni pagina spiega un’operazione e la mostra in un’animazione.</p>
           <div class="cta">
-            <a class="btn primary" href="#/archivio" data-icon-svg="rocket">Comincia da qui</a>
+            <a class="btn primary" href="https://github.com/gerrykeys/retro-play-game-manager/releases" target="_blank" rel="noopener" data-icon-svg="download">Scarica l’app</a>
+            <a class="btn" href="#/archivio" data-icon-svg="rocket">Comincia da qui</a>
             <button class="btn" data-open-search data-icon-svg="search">Cerca un argomento</button>
           </div>
         </div>
@@ -66,7 +68,7 @@
           <div class="ico" data-icon-svg="gamepad-2"></div>
           <span class="n">03</span>
           <h3>Il frontend</h3>
-          <p>Dove giochi: ES-DE sul PC o MiSTer FPGA. L’app ci installa i giochi e li fa partire.</p>
+          <p>Dove giochi: ES-DE o RetroArch sul PC, MiSTer FPGA, RetroPie o Batocera. L’app ci installa i giochi e li fa partire.</p>
         </div>
       </div>
 
@@ -74,7 +76,7 @@
       <div id="groups"></div>
 
       <footer class="foot">
-        <span>Retro Play Game Manager · Guida in italiano</span>
+        <span>Retro Play Game Manager · Guida in italiano · <a href="https://github.com/gerrykeys/retro-play-game-manager/releases" target="_blank" rel="noopener">Scarica</a></span>
         <span>Le animazioni mostrano l’app vera, su un archivio dimostrativo.</span>
       </footer>
     </section>
@@ -199,6 +201,29 @@
       </div>
     </article>
 
+    <article data-topic="linea-del-tempo" data-group="libreria" data-icon="chart-gantt"
+      data-title="Linea del tempo"
+      data-desc="I sistemi e i loro giochi, anno per anno."
+      data-lead="La Linea del tempo mette in fila i tuoi sistemi nell’ordine in cui sono usciti, ognuno con i suoi giochi nell’anno di uscita.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="linea-del-tempo" data-thumb="02.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Il pulsante Linea del tempo">Clicca l’ultimo pulsante delle viste, <b>Linea del tempo</b>.</li>
+            <li data-at="1" data-short="I sistemi e i loro anni">Ogni sistema parte dall’anno in cui è uscito, con i suoi giochi anno per anno.</li>
+            <li data-at="2" data-short="Tutti gli anni">Clicca <b>Adatta</b> per vedere tutti gli anni; il cursore li allarga di nuovo.</li>
+            <li data-at="4" data-short="I giochi di un anno">Clicca un anno: sotto si aprono i suoi giochi. Clicca una copertina per aprire il gioco.</li>
+            <li data-at="6" data-short="Un sistema da solo">Clicca il nome di un sistema per vederlo da solo, con tutte le copertine.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
+            <li>Trascina col mouse per spostarti; <kbd>Ctrl</kbd> + rotellina ingrandisce.</li>
+            <li>I giochi senza anno di uscita non sono sulla linea: il pulsante in alto li mostra nella libreria.</li>
+            <li>Ricerca e filtri valgono anche qui.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
     <article data-topic="anteprima" data-group="libreria" data-icon="eye"
       data-title="Anteprima al passaggio del mouse"
       data-desc="Video e schermate senza aprire il gioco."
@@ -235,7 +260,7 @@
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">I filtri</h3><ul>
             <li><b>Sistema</b>, <b>Genere</b>, <b>Sviluppatore</b>, <b>Editore</b>, <b>Anno</b>, <b>Giocatori</b>, <b>Voto</b>.</li>
-            <li><b>Da completare</b>, <b>Preferiti</b>, <b>Salvataggi</b>, <b>Verifica DAT</b>, <b>RetroAchievements</b>.</li>
+            <li><b>Da completare</b>, <b>RetroAchievements</b>, <b>Verifica DAT</b>; in fondo, da spuntare con un clic, <b>Preferiti</b>, <b>Installabili</b> (i giochi che il frontend può installare) e <b>Salvataggi</b>.</li>
             <li>Usi spesso gli stessi filtri? <a href="#/filtri-salvati">Salvali con un nome</a>.</li>
           </ul></div>
         </div>
@@ -280,7 +305,31 @@
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
             <li>La stella c’è anche nella pagina del gioco e nella barra della selezione.</li>
-            <li>Con ES-DE collegato i preferiti sono gli stessi nell’app e in ES-DE. MiSTer FPGA non ha preferiti.</li>
+            <li>Con ES-DE, RetroArch, RetroPie o Batocera collegato i preferiti sono gli stessi nell’app e lì. MiSTer FPGA non ha preferiti.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
+    <article data-topic="collezioni" data-group="libreria" data-icon="gallery-vertical-end"
+      data-title="Collezioni"
+      data-desc="Elenchi di giochi fatti da te."
+      data-lead="Una collezione è un elenco di giochi fatto a mano: per una serata con gli amici, quelli da finire… Resta nell’archivio, per tutti i computer che lo usano.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="collezioni" data-thumb="08.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Collezioni…">Seleziona qualche gioco e clicca <b>Collezioni…</b> nella barra della selezione.</li>
+            <li data-at="1" data-short="Nuova collezione">Scegli <b>Nuova collezione…</b>.</li>
+            <li data-at="2" data-short="Dagli un nome">Dagli un <b>nome</b> e premi <b>Crea</b>.</li>
+            <li data-at="3" data-short="Dal menu del gioco">Oppure clic destro su un gioco e <b>Collezioni…</b>…</li>
+            <li data-at="5" data-short="Spuntala">…e spunta la collezione. Un secondo clic toglie il gioco.</li>
+            <li data-at="6" data-short="Nella barra laterale">Clicca la collezione nella barra laterale per vedere solo i suoi giochi.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
+            <li>Clic destro su una collezione nella barra laterale per <b>Rinominarla</b> o <b>Eliminarla</b>: i suoi giochi restano nell’archivio.</li>
+            <li>Il <b>+</b> accanto a <i>Collezioni</i> ne crea una vuota; la pagina del gioco mostra in quali collezioni è.</li>
+            <li>Se il tema Atelier di ES-DE usa lo stesso archivio, le mostra anche in ES-DE.</li>
           </ul></div>
         </div>
       </div>
@@ -485,6 +534,7 @@
           <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
             <li>Ciò che è installato nel frontend non viene toccato.</li>
             <li>Puoi eliminare anche i <a href="#/salvataggi">salvataggi</a> del gioco.</li>
+            <li>Si elimina quando non c’è altro in corso (aggiunta, scraping, export, installazioni).</li>
           </ul></div>
           <div class="box warn"><h3 data-icon-svg="info">Attenzione</h3><p>L’eliminazione non si può annullare.</p></div>
         </div>
@@ -599,17 +649,17 @@
           <ol class="steps">
             <li data-at="0" data-short="Collega…">Clicca <b>Collega…</b> nella barra laterale.</li>
             <li data-at="1" data-short="Scegli ES-DE">Scegli <b>ES-DE</b> e indica la sua cartella (quella di <code>ES-DE.exe</code>).</li>
-            <li data-at="2" data-short="Collegato">Collegato: nella barra laterale compaiono <b>Installati</b>, <b>Da archiviare</b> e gli altri elenchi del frontend.</li>
+            <li data-at="2" data-short="Collegato">Collegato: nella barra laterale compaiono <b>Installati</b> e <b>Da archiviare</b>.</li>
             <li data-at="4" data-short="I giochi installati">Un clic e vedi, ad esempio, i giochi installati.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">I segni sulle copertine</h3><ul>
             <li><span class="pill ok">verde</span> il frontend ha il gioco, uguale all’archivio.</li>
-            <li><span class="pill warn">arancione</span> il frontend lo ha con file diversi: è <b>da aggiornare</b>.</li>
+            <li><span class="pill warn">arancione</span> il frontend lo ha con file diversi: <b>Installa di nuovo</b> lo aggiorna.</li>
             <li><span class="pill warn">Da archiviare</span> ce l’ha solo il frontend.</li>
           </ul></div>
           <div class="box"><h3 data-icon-svg="info">Da sapere</h3><ul>
             <li>Si collega <b>un frontend alla volta</b>. <b>Scollega</b> non tocca né l’archivio né il frontend.</li>
-            <li>Si collegano ES-DE e <a href="#/mister">MiSTer FPGA</a>. Batocera, RetroPie e RetroArch sono <i>in arrivo</i>.</li>
+            <li>Si collegano ES-DE, <a href="#/mister">MiSTer FPGA</a>, <a href="#/retroarch">RetroArch</a>, <a href="#/retropie">RetroPie</a> e <a href="#/batocera">Batocera</a>.</li>
             <li>ES-DE vede i giochi nuovi solo dopo un riavvio.</li>
           </ul></div>
         </div>
@@ -632,11 +682,81 @@
             <li data-at="8" data-short="I giochi sul MiSTer">Qui i giochi installati sul MiSTer.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
-            <li>Sul MiSTer vanno solo i giochi che un suo core carica. Gli altri sono <b>Non installabili</b>, e il suggerimento dice perché.</li>
+            <li>Sul MiSTer vanno solo i giochi che un suo core carica. Gli altri sono <b>Non installabili</b>, e il suggerimento dice perché: <b>Installa comunque</b> li copia lo stesso.</li>
             <li><b>Gioca</b> fa partire il gioco direttamente sul MiSTer.</li>
             <li>Utente e password si salvano solo se il collegamento riesce.</li>
           </ul></div>
           <div class="box"><h3 data-icon-svg="info">I file del MiSTer</h3><p>In <b>Impostazioni → Frontend</b>, <b>Sfoglia…</b> apre la scheda SD del MiSTer: puoi inviare, ricevere, rinominare ed eliminare file.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <article data-topic="retroarch" data-group="frontend" data-icon="joystick"
+      data-title="Collegare RetroArch"
+      data-desc="RetroArch sul tuo PC, con le sue playlist."
+      data-lead="RetroArch fa girare i giochi con i suoi core. L’app li mette nelle sue playlist, con nome e immagini, e li fa partire.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="retroarch" data-thumb="05.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Collega…">Clicca <b>Collega…</b> nella barra laterale.</li>
+            <li data-at="1" data-short="Scegli RetroArch">Scegli <b>RetroArch</b> e indica la sua cartella (quella con <code>retroarch.exe</code>).</li>
+            <li data-at="2" data-short="Collegato">Collegato: la barra laterale mostra <b>Installati</b> e <b>Da archiviare</b>.</li>
+            <li data-at="4" data-short="I giochi installati">Qui i giochi installati in RetroArch.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
+            <li>I giochi vanno nella cartella <b>roms</b> dentro quella di RetroArch, una cartella per sistema.</li>
+            <li>RetroArch mostra solo il nome e le immagini: gli altri dettagli restano nell’archivio.</li>
+            <li>Ogni sistema vuole il suo core: scaricalo in RetroArch (<b>Aggiornamento online</b>) e <b>Gioca</b> lo avvia.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
+    <article data-topic="retropie" data-group="frontend" data-icon="cpu"
+      data-title="Collegare RetroPie"
+      data-desc="Il Raspberry Pi con RetroPie nella tua rete."
+      data-lead="RetroPie è EmulationStation con RetroArch su un Raspberry Pi. L’app ci copia i giochi con dettagli e media, e li fa partire.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="retropie" data-thumb="09.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Collega…">Clicca <b>Collega…</b> nella barra laterale.</li>
+            <li data-at="1" data-short="RetroPie">Scegli <b>RetroPie</b>.</li>
+            <li data-at="2" data-short="Indirizzo, utente, password">Scrivi <b>indirizzo IP</b>, <b>utente</b> e <b>password</b> del Raspberry. L’app prova a trovarlo da sola in rete.</li>
+            <li data-at="5" data-short="Collega">Premi <b>Collega</b>. Oppure clicca <b>Scegli una cartella…</b> e scegli la sua cartella <b>roms</b>.</li>
+            <li data-at="6" data-short="Collegato">Collegato: la libreria mostra cosa c’è su RetroPie.</li>
+            <li data-at="8" data-short="I giochi su RetroPie">Qui i giochi installati su RetroPie.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
+            <li>Su RetroPie devono essere attive le <b>condivisioni Samba</b> (RetroPie Setup → Configuration / tools → samba).</li>
+            <li><b>Gioca</b> fa partire il gioco direttamente sul Raspberry, al posto di EmulationStation.</li>
+            <li>Utente e password si salvano solo se il collegamento riesce.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
+    <article data-topic="batocera" data-group="frontend" data-icon="tv"
+      data-title="Collegare Batocera"
+      data-desc="Batocera nella tua rete: PC, Raspberry Pi o portatile."
+      data-lead="Batocera è un sistema operativo per il retrogaming. L’app ci copia i giochi con dettagli e media, e li fa partire.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="batocera" data-thumb="09.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Collega…">Clicca <b>Collega…</b> nella barra laterale.</li>
+            <li data-at="1" data-short="Batocera">Scegli <b>Batocera</b>.</li>
+            <li data-at="2" data-short="Indirizzo, utente, password">Scrivi <b>indirizzo IP</b>, <b>utente</b> e <b>password</b> di Batocera. L’app prova a trovarlo da sola in rete.</li>
+            <li data-at="5" data-short="Collega">Premi <b>Collega</b>. Oppure clicca <b>Scegli una cartella…</b> e scegli la sua cartella dei dati (quella con <b>roms</b>).</li>
+            <li data-at="6" data-short="Collegato">Collegato: la libreria mostra cosa c’è su Batocera.</li>
+            <li data-at="8" data-short="I giochi su Batocera">Qui i giochi installati su Batocera.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
+            <li><b>Gioca</b> fa partire il gioco direttamente su Batocera. Dopo un’installazione Batocera aggiorna da solo gli elenchi dei giochi.</li>
+            <li>Alcuni sistemi su Batocera hanno un altro nome (l’Amiga è <code>amiga500</code>, Genesis va con Mega Drive): l’app mette ogni gioco nella cartella giusta.</li>
+            <li>Utente e password si salvano solo se il collegamento riesce.</li>
+          </ul></div>
         </div>
       </div>
     </article>
@@ -656,10 +776,10 @@
             <li data-at="7" data-short="Installazione completata">Fatto: i giochi sono nel frontend.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
-            <li>Per installare tutti i giochi mostrati: menu <b>…</b> in alto.</li>
-            <li><b>Installa di nuovo</b> sistema i giochi <b>Da aggiornare</b>.</li>
-            <li>Il MiSTer riceve solo i file dei giochi, senza media.</li>
-            <li>Si installano solo i giochi in un <a href="#/formati-frontend">formato compatibile</a>.</li>
+            <li>Per vedere solo i giochi che può installare: <b>Filtri</b> → <b>Installabili</b>. Per installare tutti quelli mostrati: menu <b>…</b> in alto.</li>
+            <li><b>Installa di nuovo</b> rimette i file dell’archivio in un gioco col segno arancione.</li>
+            <li>Il MiSTer riceve solo i file dei giochi; RetroArch anche il nome e le immagini.</li>
+            <li>Un gioco in un formato che il frontend non <a href="#/formati-frontend">carica</a> resta fuori: <b>Installa comunque</b> nella sua pagina (nel menu, passa sopra <b>Installa</b> → <b>Forza installazione</b>) lo copia lo stesso, ma il funzionamento non è garantito.</li>
           </ul></div>
         </div>
       </div>
@@ -697,7 +817,6 @@
             <li data-at="0" data-short="Da archiviare">Clicca <b>Da archiviare</b> nella barra laterale.</li>
             <li data-at="1" data-short="Importa tutti">Il pulsante in alto li importa tutti (o scegli tu quali).</li>
             <li data-at="2" data-short="Conferma">Controlla e conferma.</li>
-            <li data-at="4" data-short="Da aggiornare">In <b>Da aggiornare</b> trovi invece i giochi con file diversi: il pulsante in alto li reinstalla dall’archivio.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
             <li>Da ES-DE arrivano anche dettagli e media, dal MiSTer solo i file.</li>
@@ -758,6 +877,29 @@
       </div>
     </article>
 
+    <article data-topic="dip-switch" data-group="giocare" data-icon="circuit-board"
+      data-title="DIP switch"
+      data-desc="Vite, monete e difficoltà dei giochi arcade."
+      data-lead="Le schede arcade hanno piccole leve che decidono come si gioca. Dai a un ROM Set il suo XML di MAME e ogni suo gioco mostra la sua scheda: cambi gli switch, e valgono dalla prossima partita.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="dip-switch" data-thumb="09.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="1" data-short="Impostazioni">Nelle <b>Impostazioni</b>, apri <b>Altre impostazioni</b>: i DIP switch sono nell’area <b>Arcade</b>.</li>
+            <li data-at="2" data-short="Carica XML">Sul <a href="#/romset">ROM Set</a>, clicca <b>Carica XML…</b> e scegli l’XML di MAME della sua versione.</li>
+            <li data-at="7" data-short="La scheda">Apri un gioco arcade di quel ROM Set: la sua pagina mostra la scheda e cosa fa ogni switch.</li>
+            <li data-at="8" data-short="Una leva">Clicca una leva, o scegli un’impostazione dal menu dello switch.</li>
+            <li data-at="11" data-short="Predefiniti"><b>Ripristina predefiniti</b> li rimette come esce la scheda.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
+            <li>Ogni ROM Set vuole l’XML completo della sua versione di MAME (<code>-listxml</code>). Senza, i suoi giochi non hanno switch, tranne che su MiSTer FPGA: li legge dai suoi <code>.mra</code>.</li>
+            <li>Valgono con i core MAME di RetroArch (in ES-DE o da solo) e con MiSTer FPGA. Con un altro emulatore, la pagina te lo dice.</li>
+            <li>MAME 2003-Plus, 2003 e 2000 vogliono il gioco avviato una volta: gli switch valgono dalla partita dopo.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
     <article data-topic="continua" data-group="giocare" data-icon="rotate-ccw"
       data-title="Continua a giocare"
       data-desc="Gli ultimi giochi giocati, pronti a ripartire."
@@ -767,13 +909,57 @@
         <div class="text-col">
           <ol class="steps">
             <li data-at="0" data-short="La fila Continua a giocare">Ogni scheda dice quando hai giocato o salvato, e dove.</li>
-            <li data-at="1" data-short="Riprendi">Il pulsante cambia: <b>Riprendi</b> se l’archivio ha un salvataggio più recente, altrimenti <b>Gioca</b> o <b>Installa</b>.</li>
-            <li data-at="2" data-short="Si riparte da dove eri">Il salvataggio torna nel frontend e il gioco parte.</li>
-            <li data-at="3" data-short="Un clic apre la pagina">Un clic sulla scheda apre la <a href="#/pagina-gioco">pagina del gioco</a>.</li>
+            <li data-at="1" data-short="Le frecce">Le frecce ai lati mostrano gli altri giochi; puoi anche trascinare la fila con il mouse.</li>
+            <li data-at="2" data-short="Riprendi">Il pulsante cambia: <b>Riprendi</b> se l’archivio ha un salvataggio più recente, altrimenti <b>Gioca</b> o <b>Installa</b>.</li>
+            <li data-at="4" data-short="Si riparte da dove eri">Il salvataggio torna nel frontend e il gioco parte.</li>
+            <li data-at="5" data-short="Un clic apre la pagina">Un clic sulla scheda apre la <a href="#/pagina-gioco">pagina del gioco</a>.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
             <li>La fila usa le partite annotate da ES-DE, i giochi avviati dall’app e le date dei <a href="#/salvataggi">salvataggi</a>.</li>
             <li>Compare nella vista a copertine, quando non stai cercando né filtrando.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
+    <article data-topic="accadde-oggi" data-group="giocare" data-icon="calendar-heart"
+      data-title="Accadde oggi"
+      data-desc="I giochi usciti in questo giorno, anni fa."
+      data-lead="In cima alle copertine una fila mostra i giochi usciti nella data di oggi negli anni passati, con quanto tempo fa.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="accadde-oggi" data-thumb="01.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="La fila Accadde oggi">Ogni scheda dice l’anno e quanti anni sono passati. Gli anniversari tondi risaltano.</li>
+            <li data-at="1" data-short="Gioca">Il pulsante sulla scheda avvia il gioco, o lo installa.</li>
+            <li data-at="2" data-short="Un clic apre la pagina">Un clic sulla scheda apre la <a href="#/pagina-gioco">pagina del gioco</a>.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
+            <li>La stessa fila c’è nella Home di <a href="#/desktop-mode">Desktop Mode</a>.</li>
+            <li>I giochi con la sola data dell’anno restano fuori.</li>
+            <li>Si spegne in <a href="#/impostazioni">Impostazioni</a> → Libreria.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
+    <article data-topic="cosa-gioco" data-group="giocare" data-icon="dices"
+      data-title="Cosa gioco oggi?"
+      data-desc="Una ruota sceglie un gioco per te."
+      data-lead="Non sai cosa scegliere? Il dado nella barra della libreria fa girare una ruota di copertine che si ferma su un gioco a caso.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="cosa-gioco" data-thumb="03.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Il dado">Clicca il <b>dado</b> nella barra della libreria.</li>
+            <li data-at="1" data-short="La ruota gira">La ruota gira e rallenta…</li>
+            <li data-at="2" data-short="Il gioco">…e si ferma su un gioco: <b>Gioca</b> (o <b>Installa</b>) o apri la sua pagina.</li>
+            <li data-at="3" data-short="Gira ancora">Non ti convince? <b>Gira ancora</b>.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
+            <li>Sopra la ruota scegli tra cosa pesca: i giochi mostrati, i preferiti, i mai giocati, gli installati.</li>
+            <li>In <a href="#/desktop-mode">Desktop Mode</a>: la scheda <b>Gira la ruota</b> nella Home, o il menu.</li>
+            <li>Si spegne in <a href="#/impostazioni">Impostazioni</a> → Libreria.</li>
           </ul></div>
         </div>
       </div>
@@ -818,26 +1004,54 @@
       </div>
     </article>
 
+    <article data-topic="telefono" data-group="giocare" data-icon="smartphone"
+      data-title="Il telefono come telecomando"
+      data-desc="Sfoglia e avvia i giochi dal divano."
+      data-lead="Il telefono apre una pagina della tua libreria: da lì sfogli, cerchi, avvii e installi i giochi sul computer.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="telefono" data-thumb="06.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Impostazioni → Telefono">Apri le <b>Impostazioni</b> e scegli <b>Telefono</b>.</li>
+            <li data-at="2" data-short="Accendilo">Accendi <b>Apri la libreria ai telefoni di casa</b>.</li>
+            <li data-at="3" data-short="Inquadra il codice">Inquadra il <b>codice QR</b> con la fotocamera del telefono e tocca il link.</li>
+            <li data-at="4" data-short="Sul telefono">Sul telefono, la barra in basso porta a <b>Giochi</b>, <b>Preferiti</b>, <b>Piattaforme</b> e <b>Collezioni</b>.</li>
+            <li data-at="5" data-short="Una piattaforma">Tocca una piattaforma o una collezione per vederne i giochi. <b>Solo installati</b> lascia quelli già nel frontend.</li>
+            <li data-at="7" data-short="Un gioco">Tocca un gioco: <b>Gioca</b> lo avvia sul computer, <b>Installa</b> lo mette nel frontend, la stella lo fa preferito.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
+            <li>Il telefono deve essere sulla stessa rete Wi-Fi del computer, e l’app aperta.</li>
+            <li>La prima volta Windows può chiedere il permesso di rete: consenti sulle reti private.</li>
+            <li>Aggiungi la pagina alla schermata Home del telefono per averla a portata di mano.</li>
+          </ul></div>
+          <div class="box"><h3 data-icon-svg="info">Sicurezza</h3><ul>
+            <li>Solo i telefoni della tua rete che hanno inquadrato il codice possono aprirla. <b>Nuovo codice</b> li scollega tutti.</li>
+            <li>Dal telefono non si elimina niente.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
     <article data-topic="salvataggi" data-group="giocare" data-icon="save"
       data-title="Salvataggi"
       data-desc="I progressi al sicuro nell’archivio."
       data-lead="L’archivio conserva copie datate dei tuoi salvataggi e te le riporta quando servono. Così giochi sul MiSTer e continui sul PC.">
       <div class="topic-grid">
-        <div class="player-col"><div class="player" data-anim="salvataggi" data-thumb="03.webp"></div><div class="player-caption"></div></div>
+        <div class="player-col"><div class="player" data-anim="salvataggi" data-thumb="02.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="Salvataggi nuovi"><b>Salvataggi nuovi</b>, nella barra laterale, mostra i giochi con salvataggi non ancora archiviati.</li>
-            <li data-at="1" data-short="Apri il gioco">Apri il gioco.</li>
-            <li data-at="2" data-short="La sezione Salvataggi">La sezione <b>Salvataggi</b> mostra i file del frontend e le copie dell’archivio. Clicca <b>Archivia</b>.</li>
-            <li data-at="3" data-short="Una copia nuova">Ecco una copia nuova, in cima.</li>
+            <li data-at="0" data-short="Aggiorna salvataggi"><b>Aggiorna salvataggi</b> compare nella barra laterale quando qualche salvataggio va sistemato. Cliccalo.</li>
+            <li data-at="1" data-short="Da mettere al sicuro"><b>Da mettere al sicuro</b>: salvataggi nuovi, non ancora nell’archivio. Clicca <b>Archivia</b>.</li>
+            <li data-at="2" data-short="Da riportare"><b>Da riportare</b>: l’archivio ne ha di più recenti. Clicca <b>Riprendi</b>.</li>
+            <li data-at="3" data-short="Tutto aggiornato">Tutto aggiornato.</li>
           </ol>
-          <div class="box tip"><h3 data-icon-svg="lightbulb">Riprendere da un salvataggio</h3><ul>
-            <li>Se l’archivio ha un salvataggio più recente, premi <b>Riprendi</b>.</li>
-            <li><b>Da riprendere</b>, nella barra laterale, li elenca tutti.</li>
-            <li>Prima di riportare una copia, l’app archivia ciò che ha il frontend: <b>non si perde niente</b>.</li>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Consigli</h3><ul>
+            <li><b>Aggiorna tutto</b> fa entrambe le cose in un clic.</li>
+            <li>Prima di riportare un salvataggio, l’app archivia quello che ha il frontend: <b>non si perde niente</b>.</li>
+            <li>La sezione <b>Salvataggi</b> nella pagina di un gioco mostra tutte le copie dell’archivio.</li>
           </ul></div>
           <div class="box"><h3 data-icon-svg="info">Da sapere</h3><ul>
-            <li>Funziona con <b>RetroArch</b> (per ES-DE) e con <b>MiSTer FPGA</b>.</li>
+            <li>Funziona con <b>RetroArch</b> (in ES-DE, in RetroPie, in Batocera o da solo) e con <b>MiSTer FPGA</b>.</li>
             <li>Tra RetroArch e MiSTer passa solo il salvataggio di gioco di NES, Super Nintendo, Game Boy e Game Boy Color.</li>
             <li>Con RetroArch aperto i salvataggi non vengono riportati.</li>
           </ul></div>
@@ -975,7 +1189,7 @@
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Cosa può fare l’AI</h3><ul>
             <li>Cercare giochi e fare statistiche.</li>
-            <li>Correggere dettagli e media, fare lo scraping, gestire versioni e formati.</li>
+            <li>Correggere dettagli e media, fare lo scraping, gestire versioni, formati e collezioni.</li>
             <li>Aggiungere, esportare, installare e avviare giochi; gestire salvataggi e DAT.</li>
           </ul></div>
           <div class="box"><h3 data-icon-svg="info">Sicurezza</h3><ul>
@@ -998,8 +1212,8 @@
         <div class="text-col">
           <ol class="steps">
             <li data-at="0" data-short="L’ingranaggio">Clicca l’<b>ingranaggio</b> in alto a destra.</li>
-            <li data-at="1" data-short="Generali"><b>Generali</b>: lingua, riapertura dell’ultimo archivio, avvio in <a href="#/desktop-mode">Desktop Mode</a>.</li>
-            <li data-at="2" data-short="Libreria"><b>Libreria</b>: anteprima al passaggio del mouse, miniature.</li>
+            <li data-at="1" data-short="Generali"><b>Generali</b>: lingua, riapertura dell’ultimo archivio, avvio in <a href="#/desktop-mode">Desktop Mode</a>, <a href="#/aggiornamenti">aggiornamento all’avvio</a>.</li>
+            <li data-at="2" data-short="Libreria"><b>Libreria</b>: anteprima al passaggio del mouse, <a href="#/accadde-oggi">Accadde oggi</a>, <a href="#/cosa-gioco">Cosa gioco oggi?</a>, miniature.</li>
             <li data-at="3" data-short="Aspetto"><b>Aspetto</b>: tema e modalità scura, chiara o come Windows.</li>
             <li data-at="5" data-short="Il tema chiaro">Ecco l’app nel tema chiaro.</li>
           </ol>
@@ -1009,9 +1223,35 @@
           </ul></div>
           <div class="box"><h3 data-icon-svg="info">Le altre pagine</h3><ul>
             <li><b>Scraping</b>: account ScreenScraper e IGDB, regione e lingua preferite.</li>
+            <li><b>Altre impostazioni</b>: un’area per ogni parte dell’app. Per ora <b>Arcade</b>, con l’XML di MAME di ogni ROM Set per i suoi <a href="#/dip-switch">DIP switch</a>.</li>
             <li><b>Frontend</b>: il frontend collegato, il <a href="#/romset">ROM Set</a> arcade e i <a href="#/formati-frontend">formati compatibili</a>.</li>
-            <li><b><a href="#/retroachievements">RetroAchievements</a></b> e <b><a href="#/mcp">Server MCP</a></b>: hanno una pagina loro.</li>
+            <li><b><a href="#/retroachievements">RetroAchievements</a></b>, <b><a href="#/mcp">Server MCP</a></b> e <b><a href="#/telefono">Telefono</a></b>: hanno una pagina loro.</li>
+            <li><b>Informazioni</b>: la versione dell’app, i suoi <a href="#/aggiornamenti">aggiornamenti</a> e il pulsante per sostenerla con un caffè su <a href="https://ko-fi.com/gerrykeys" target="_blank" rel="noopener">Ko-fi</a>.</li>
             <li>Password e chiavi restano cifrate su questo PC.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
+    <article data-topic="aggiornamenti" data-group="riferimento" data-icon="circle-arrow-down"
+      data-title="Aggiornamenti"
+      data-desc="L’app si tiene aggiornata da sola."
+      data-lead="Quando esce una nuova versione, l’app la scarica e la installa da sola, all’avvio.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="aggiornamenti" data-thumb="02.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Il controllo all’avvio">All’avvio, una piccola finestra cerca una nuova versione.</li>
+            <li data-at="1" data-short="Il download">Se c’è, la scarica e mostra a che punto è.</li>
+            <li data-at="2" data-short="Apri senza aspettare"><b>Apri senza aspettare</b> apre subito l’app: l’aggiornamento si installa quando la chiudi.</li>
+            <li data-at="3" data-short="L’installazione">Poi la installa, e l’app si riapre aggiornata.</li>
+            <li data-at="4" data-short="La freccia verde">Un aggiornamento pronto da installare appare come una <b>freccia verde</b> in alto: cliccala per riavviare.</li>
+            <li data-at="5" data-short="Informazioni">In <b>Impostazioni → Informazioni</b> vedi la versione e puoi cercare a mano.</li>
+            <li data-at="6" data-short="Aggiorna all’avvio"><b>Impostazioni → Generali → Aggiorna all’avvio</b> attiva o spegne il controllo.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
+            <li>Senza internet l’app si apre e basta, come sempre.</li>
+            <li>La versione portatile non si aggiorna da sola: la sua freccia apre la pagina di download.</li>
           </ul></div>
         </div>
       </div>
@@ -1035,7 +1275,7 @@
             <tr><th>Tasti</th><th>Cosa fanno</th></tr>
             <tr><td><kbd>Ctrl O</kbd></td><td>Apri un archivio</td></tr>
             <tr><td><kbd>Ctrl F</kbd></td><td>Cerca</td></tr>
-            <tr><td><kbd>F5</kbd> · <kbd>Ctrl R</kbd></td><td>Rileggi l’archivio</td></tr>
+            <tr><td><kbd>F5</kbd> · <kbd>Ctrl R</kbd></td><td>Rileggi l’archivio (quando non c’è altro in corso)</td></tr>
             <tr><td><kbd>←</kbd> <kbd>→</kbd> <kbd>↑</kbd> <kbd>↓</kbd></td><td>Muoviti tra i giochi</td></tr>
             <tr><td><kbd>Invio</kbd></td><td>Apri il gioco evidenziato</td></tr>
             <tr><td><kbd>←</kbd> <kbd>→</kbd></td><td>Nella pagina del gioco: gioco prima o dopo</td></tr>
@@ -1056,7 +1296,7 @@
       data-lead="Le parole dell’app e di questa guida, in breve.">
       <div class="gloss">
         <div><b>Archivio</b><p>La cartella con i tuoi giochi e tutto ciò che li descrive. <a href="#/com-e-fatto">Com’è fatto</a>.</p></div>
-        <div><b>Frontend</b><p>Il programma o l’hardware con cui giochi: ES-DE, MiSTer FPGA.</p></div>
+        <div><b>Frontend</b><p>Il programma o l’hardware con cui giochi: ES-DE, MiSTer FPGA, RetroArch, RetroPie, Batocera.</p></div>
         <div><b>ES-DE</b><p>EmulationStation Desktop Edition: il frontend per PC che avvia gli emulatori.</p></div>
         <div><b>MiSTer FPGA</b><p>Un hardware che ricrea le console invece di emularle.</p></div>
         <div><b>ROM</b><p>Il file di un gioco: una cartuccia, un disco, un dischetto.</p></div>
@@ -1067,14 +1307,14 @@
         <div><b>Marquee</b><p>Il logo del gioco, su sfondo trasparente.</p></div>
         <div><b>Fanart</b><p>Un’immagine grande del gioco, usata come sfondo della sua pagina.</p></div>
         <div><b>Scraping</b><p>Prendere in automatico dettagli e media da un servizio in rete.</p></div>
+        <div><b>Collezione</b><p>Un elenco di giochi fatto a mano, che resta nell’archivio. <a href="#/collezioni">Collezioni</a>.</p></div>
         <div><b>Versione</b><p>Una variante dello stesso gioco: USA, Europe, Rev 1, v1.2…</p></div>
-        <div><b>Formato</b><p>Un tipo di file dello stesso gioco: LHA o ADF, CUE o CHD, ZIP…</p></div>
+        <div><b>Formato</b><p>Un tipo di file dello stesso gioco: LHA o ADF, CUE o CHD, ZIP… Due versioni entrambe in ZIP sono un formato solo.</p></div>
         <div><b>ROM Set</b><p>I giochi arcade di una versione di MAME (ad es. 0.289).</p></div>
         <div><b>DAT</b><p>L’elenco dei dump buoni di un sistema, per verificare i tuoi file.</p></div>
         <div><b>CRC</b><p>L’impronta di un file: due file con lo stesso CRC sono uguali.</p></div>
         <div><b>Export</b><p>Un file <code>.zip</code> con dei giochi, da importare altrove.</p></div>
         <div><b>Da archiviare</b><p>Un gioco che ha solo il frontend, non l’archivio.</p></div>
-        <div><b>Da aggiornare</b><p>Un gioco che il frontend ha con file diversi dall’archivio.</p></div>
         <div><b>Salvataggio</b><p>I progressi di una partita.</p></div>
         <div><b>MCP</b><p>Il protocollo con cui un assistente AI usa gli strumenti dell’app.</p></div>
       </div>
@@ -1087,10 +1327,11 @@
       <details class="faq"><summary>Se modifico un gioco nell’app, cambia anche in ES-DE?</summary><p>Non subito: la modifica va nell’archivio. ES-DE la riceve quando reinstalli il gioco.</p></details>
       <details class="faq"><summary>Posso usare l’archivio da più computer?</summary><p>Sì, ad esempio da un NAS. Se due PC cambiano lo stesso gioco, l’app chiede cosa fare. <kbd>F5</kbd> rilegge l’archivio.</p></details>
       <details class="faq"><summary>Disinstallare un gioco lo cancella?</summary><p>No, lo toglie solo dal frontend: nell’archivio resta. Per cancellarlo usa <a href="#/eliminare">Elimina dall’archivio</a>.</p></details>
-      <details class="faq"><summary>Perché un gioco è «Non installabile»?</summary><p>Il frontend non può caricarlo: non ha quel sistema, o non accetta nessun formato del gioco (vedi <a href="#/formati-frontend">Formati compatibili</a>), o è un gioco arcade di un altro ROM Set. Il suggerimento dice il motivo.</p></details>
+      <details class="faq"><summary>Perché un gioco è «Non installabile»?</summary><p>Il frontend non può caricarlo: non ha quel sistema, o non accetta nessun formato del gioco (vedi <a href="#/formati-frontend">Formati compatibili</a>), o è un gioco arcade di un altro ROM Set. Il suggerimento dice il motivo. Se è solo il formato, <b>Installa comunque</b> lo installa lo stesso.</p></details>
       <details class="faq"><summary>Serve un account per lo scraping?</summary><p>Per lo scraping automatico sì, un account ScreenScraper. Per cercare a mano dal web no.</p></details>
       <details class="faq"><summary>Posso perdere i salvataggi?</summary><p>No: le copie nell’archivio non vengono mai sovrascritte, e prima di riportarne una l’app archivia quella del frontend.</p></details>
       <details class="faq"><summary>In che lingue è l’app?</summary><p>Italiano e inglese: si sceglie in <a href="#/impostazioni">Impostazioni</a> → Generali.</p></details>
+      <details class="faq"><summary>Come aggiorno l’app?</summary><p>Fa da sola: all’avvio scarica e installa la nuova versione. Vedi <a href="#/aggiornamenti">Aggiornamenti</a>.</p></details>
       <details class="faq"><summary>Windows mi avvisa al primo avvio, è normale?</summary><p>Sì: l’app non è firmata, quindi la prima volta SmartScreen chiede conferma.</p></details>
     </article>
 

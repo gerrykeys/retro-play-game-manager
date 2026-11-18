@@ -7,48 +7,12 @@
    "hold": 1500,
    "cursor": {
     "x": 9.75,
-    "y": 67.73
+    "y": 67.74
    },
    "action": "click"
   },
   {
    "img": "02.webp",
-   "hold": 1500,
-   "cursor": {
-    "x": 86.19,
-    "y": 10.45
-   },
-   "action": "click"
-  },
-  {
-   "img": "03.webp",
-   "hold": 1800,
-   "cursor": {
-    "x": 89.31,
-    "y": 10.45
-   },
-   "action": "click"
-  },
-  {
-   "img": "04.webp",
-   "hold": 1800,
-   "cursor": {
-    "x": 78.02,
-    "y": 10.45
-   },
-   "action": "click"
-  },
-  {
-   "img": "05.webp",
-   "hold": 1200,
-   "cursor": {
-    "x": 69.22,
-    "y": 36.32
-   },
-   "action": "click"
-  },
-  {
-   "img": "06.webp",
    "hold": 1500,
    "cursor": {
     "x": 83.06,
@@ -57,14 +21,50 @@
    "action": "click"
   },
   {
+   "img": "03.webp",
+   "hold": 1800,
+   "cursor": {
+    "x": 86.19,
+    "y": 10.45
+   },
+   "action": "click"
+  },
+  {
+   "img": "04.webp",
+   "hold": 1800,
+   "cursor": {
+    "x": 74.89,
+    "y": 10.45
+   },
+   "action": "click"
+  },
+  {
+   "img": "05.webp",
+   "hold": 1200,
+   "cursor": {
+    "x": 66.09,
+    "y": 36.32
+   },
+   "action": "click"
+  },
+  {
+   "img": "06.webp",
+   "hold": 1500,
+   "cursor": {
+    "x": 79.94,
+    "y": 10.45
+   },
+   "action": "click"
+  },
+  {
    "img": "07.webp",
    "hold": 1200,
    "cursor": {
-    "x": 74.16,
+    "x": 71.04,
     "y": 10.45
    },
    "to": {
-    "x": 76.41,
+    "x": 73.29,
     "y": 10.45
    },
    "action": "drag"

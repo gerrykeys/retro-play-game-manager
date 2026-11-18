@@ -7,25 +7,25 @@
    "hold": 1400,
    "cursor": {
     "x": 9.75,
-    "y": 64.78
+    "y": 72.49
    },
    "action": "click"
   },
   {
    "img": "02.webp",
-   "hold": 1300,
+   "hold": 3200,
    "cursor": {
-    "x": 29.27,
-    "y": 37.06
+    "x": 68.3,
+    "y": 41.75
    },
    "action": "click"
   },
   {
    "img": "03.webp",
-   "hold": 2600,
+   "hold": 2400,
    "cursor": {
-    "x": 91.66,
-    "y": 61.02
+    "x": 67.77,
+    "y": 40.2
    },
    "action": "click"
   },

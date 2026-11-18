@@ -7,7 +7,7 @@
    "hold": 1300,
    "cursor": {
     "x": 9.75,
-    "y": 59.96
+    "y": 67.68
    },
    "action": "click"
   },
@@ -15,7 +15,7 @@
    "img": "02.webp",
    "hold": 2000,
    "cursor": {
-    "x": 54.26,
+    "x": 50.51,
     "y": 10.45
    },
    "action": "click"
@@ -40,15 +40,6 @@
   },
   {
    "img": "05.webp",
-   "hold": 1500,
-   "cursor": {
-    "x": 10.13,
-    "y": 55.15
-   },
-   "action": "click"
-  },
-  {
-   "img": "06.webp",
    "hold": 3000
   }
  ]

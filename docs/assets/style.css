@@ -218,6 +218,7 @@ code {
 .search-btn {
   margin: 0 auto;
   width: min(460px, 100%);
+  min-width: 0; /* its text may shrink, so the buttons beside it stay on screen */
   display: flex;
   align-items: center;
   gap: 10px;
@@ -290,6 +291,30 @@ code {
   text-decoration: none;
 }
 .lang-btn svg {
+  width: 17px;
+  height: 17px;
+}
+
+/* the download link: GitHub Releases */
+.dl-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 12px;
+  background: var(--grad);
+  color: #fff;
+  font: 700 13.5px var(--f-sans);
+  flex-shrink: 0;
+  box-shadow: var(--glow);
+  transition: transform 0.15s;
+}
+.dl-btn:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+.dl-btn svg {
   width: 17px;
   height: 17px;
 }
@@ -1578,6 +1603,14 @@ details.faq p {
   .search-btn kbd {
     display: none;
   }
+  .dl-btn {
+    width: 40px;
+    padding: 0;
+    justify-content: center;
+  }
+  .dl-btn span {
+    display: none;
+  }
 }
 @media (max-width: 560px) {
   .topbar {
@@ -1592,6 +1625,9 @@ details.faq p {
   }
   .search-btn span {
     display: none;
+  }
+  .dl-btn {
+    display: none; /* no room on a phone: the home's button and the footer keep it */
   }
   .search-btn {
     width: 40px;

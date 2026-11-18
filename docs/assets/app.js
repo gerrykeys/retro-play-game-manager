@@ -47,7 +47,7 @@
       { id: 'libreria', title: 'The library', desc: 'Browse, search and open your games', color: '#3ee0c5', icon: 'layout-grid' },
       { id: 'modifica', title: 'Editing games', desc: 'Details, media, scraping, deleting', color: '#ff9f5a', icon: 'pencil' },
       { id: 'versioni', title: 'Versions and ROM Sets', desc: 'One game in several files or MAME versions', color: '#ff6fb5', icon: 'layers' },
-      { id: 'frontend', title: 'Frontends', desc: 'Connect ES-DE or MiSTer, install and archive', color: '#4cc2ff', icon: 'plug' },
+      { id: 'frontend', title: 'Frontends', desc: 'Connect ES-DE, MiSTer, RetroArch, RetroPie or Batocera, install and archive', color: '#4cc2ff', icon: 'plug' },
       { id: 'giocare', title: 'Playing', desc: 'Start games, Desktop Mode and saves', color: '#3ddc97', icon: 'gamepad-2' },
       { id: 'strumenti', title: 'Tools', desc: 'Exports, DATs, reports, achievements, AI', color: '#ffbf47', icon: 'wrench' },
       { id: 'riferimento', title: 'Settings and help', desc: 'Settings, keys, glossary, questions', color: '#a5abbd', icon: 'life-buoy' }
@@ -57,7 +57,7 @@
       { id: 'libreria', title: 'La libreria', desc: 'Sfogliare, cercare e aprire i giochi', color: '#3ee0c5', icon: 'layout-grid' },
       { id: 'modifica', title: 'Modificare i giochi', desc: 'Dettagli, media, scraping, eliminazione', color: '#ff9f5a', icon: 'pencil' },
       { id: 'versioni', title: 'Versioni e ROM Set', desc: 'Lo stesso gioco in più file o versioni di MAME', color: '#ff6fb5', icon: 'layers' },
-      { id: 'frontend', title: 'Frontend', desc: 'Collegare ES-DE o MiSTer, installare, archiviare', color: '#4cc2ff', icon: 'plug' },
+      { id: 'frontend', title: 'Frontend', desc: 'Collegare ES-DE, MiSTer, RetroArch, RetroPie o Batocera, installare, archiviare', color: '#4cc2ff', icon: 'plug' },
       { id: 'giocare', title: 'Giocare', desc: 'Avviare i giochi, Desktop Mode e salvataggi', color: '#3ddc97', icon: 'gamepad-2' },
       { id: 'strumenti', title: 'Strumenti', desc: 'Export, DAT, report, obiettivi, AI', color: '#ffbf47', icon: 'wrench' },
       { id: 'riferimento', title: 'Impostazioni e aiuto', desc: 'Impostazioni, tasti, glossario, domande', color: '#a5abbd', icon: 'life-buoy' }
