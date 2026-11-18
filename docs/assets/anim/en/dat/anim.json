@@ -35,15 +35,46 @@
   },
   {
    "img": "05.webp",
-   "hold": 1600,
+   "hold": 2600,
    "cursor": {
-    "x": 30.3,
-    "y": 32.98
+    "x": 35.43,
+    "y": 24.48
    },
    "action": "click"
   },
   {
    "img": "06.webp",
+   "hold": 1600,
+   "cursor": {
+    "x": 45.42,
+    "y": 45.11
+   },
+   "action": "click"
+  },
+  {
+   "img": "07.webp",
+   "hold": 3000
+  },
+  {
+   "img": "08.webp",
+   "hold": 1200,
+   "cursor": {
+    "x": 26.78,
+    "y": 84.35
+   },
+   "action": "click"
+  },
+  {
+   "img": "09.webp",
+   "hold": 1600,
+   "cursor": {
+    "x": 30.3,
+    "y": 45.11
+   },
+   "action": "click"
+  },
+  {
+   "img": "10.webp",
    "hold": 3000
   }
  ]

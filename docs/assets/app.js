@@ -21,7 +21,9 @@
       dark: 'Dark theme',
       other: 'Italiano',
       otherShort: 'IT',
-      otherTitle: 'Leggi la guida in italiano'
+      otherTitle: 'Leggi la guida in italiano',
+      foldAll: 'Collapse all groups',
+      openAll: 'Expand all groups'
     },
     it: {
       title: 'Retro Play Game Manager · Guida',
@@ -33,28 +35,32 @@
       dark: 'Tema scuro',
       other: 'English',
       otherShort: 'EN',
-      otherTitle: 'Read the guide in English'
+      otherTitle: 'Read the guide in English',
+      foldAll: 'Chiudi tutti i gruppi',
+      openAll: 'Apri tutti i gruppi'
     }
   }[LANG]
 
   const GROUPS = {
     en: [
-      { id: 'inizia', title: 'Getting started', desc: 'What the app is, the archive and how to fill it', color: '#8b7bff', icon: 'rocket' },
+      { id: 'inizia', title: 'Getting started', desc: 'The archive and how to fill it', color: '#8b7bff', icon: 'rocket' },
       { id: 'libreria', title: 'The library', desc: 'Browse, search and open your games', color: '#3ee0c5', icon: 'layout-grid' },
-      { id: 'modifica', title: 'Editing games', desc: 'Details, covers, scraping and deleting', color: '#ff9f5a', icon: 'pencil' },
-      { id: 'versioni', title: 'Versions, formats and ROM Sets', desc: 'One game in several files, regions or MAME versions', color: '#ff6fb5', icon: 'layers' },
-      { id: 'frontend', title: 'Frontends: where you play', desc: 'ES-DE, MiSTer FPGA, installing, playing, saves', color: '#4cc2ff', icon: 'gamepad-2' },
-      { id: 'strumenti', title: 'Tools', desc: 'Exports, DATs, reports, settings, AI and keyboard', color: '#ffbf47', icon: 'settings' },
-      { id: 'riferimento', title: 'Reference', desc: 'Words to know and common questions', color: '#a5abbd', icon: 'book-open' }
+      { id: 'modifica', title: 'Editing games', desc: 'Details, media, scraping, deleting', color: '#ff9f5a', icon: 'pencil' },
+      { id: 'versioni', title: 'Versions and ROM Sets', desc: 'One game in several files or MAME versions', color: '#ff6fb5', icon: 'layers' },
+      { id: 'frontend', title: 'Frontends', desc: 'Connect ES-DE or MiSTer, install and archive', color: '#4cc2ff', icon: 'plug' },
+      { id: 'giocare', title: 'Playing', desc: 'Start games, Desktop Mode and saves', color: '#3ddc97', icon: 'gamepad-2' },
+      { id: 'strumenti', title: 'Tools', desc: 'Exports, DATs, reports, achievements, AI', color: '#ffbf47', icon: 'wrench' },
+      { id: 'riferimento', title: 'Settings and help', desc: 'Settings, keys, glossary, questions', color: '#a5abbd', icon: 'life-buoy' }
     ],
     it: [
-      { id: 'inizia', title: 'Per iniziare', desc: 'Cos’è l’app, l’archivio e come riempirlo', color: '#8b7bff', icon: 'rocket' },
+      { id: 'inizia', title: 'Per iniziare', desc: 'L’archivio e come riempirlo', color: '#8b7bff', icon: 'rocket' },
       { id: 'libreria', title: 'La libreria', desc: 'Sfogliare, cercare e aprire i giochi', color: '#3ee0c5', icon: 'layout-grid' },
-      { id: 'modifica', title: 'Modificare i giochi', desc: 'Dettagli, copertine, scraping ed eliminazione', color: '#ff9f5a', icon: 'pencil' },
-      { id: 'versioni', title: 'Versioni, formati e ROM Set', desc: 'Lo stesso gioco in più file, regioni o versioni di MAME', color: '#ff6fb5', icon: 'layers' },
-      { id: 'frontend', title: 'Frontend: dove si gioca', desc: 'ES-DE, MiSTer FPGA, installare, giocare, salvataggi', color: '#4cc2ff', icon: 'gamepad-2' },
-      { id: 'strumenti', title: 'Strumenti', desc: 'Export, DAT, report, impostazioni, AI e tastiera', color: '#ffbf47', icon: 'settings' },
-      { id: 'riferimento', title: 'Riferimento', desc: 'Parole da conoscere e domande frequenti', color: '#a5abbd', icon: 'book-open' }
+      { id: 'modifica', title: 'Modificare i giochi', desc: 'Dettagli, media, scraping, eliminazione', color: '#ff9f5a', icon: 'pencil' },
+      { id: 'versioni', title: 'Versioni e ROM Set', desc: 'Lo stesso gioco in più file o versioni di MAME', color: '#ff6fb5', icon: 'layers' },
+      { id: 'frontend', title: 'Frontend', desc: 'Collegare ES-DE o MiSTer, installare, archiviare', color: '#4cc2ff', icon: 'plug' },
+      { id: 'giocare', title: 'Giocare', desc: 'Avviare i giochi, Desktop Mode e salvataggi', color: '#3ddc97', icon: 'gamepad-2' },
+      { id: 'strumenti', title: 'Strumenti', desc: 'Export, DAT, report, obiettivi, AI', color: '#ffbf47', icon: 'wrench' },
+      { id: 'riferimento', title: 'Impostazioni e aiuto', desc: 'Impostazioni, tasti, glossario, domande', color: '#a5abbd', icon: 'life-buoy' }
     ]
   }[LANG]
   const group = (id) => GROUPS.find((g) => g.id === id) || GROUPS[0]
@@ -94,15 +100,71 @@
     if (p) p.dataset.label = t.title
   })
 
-  // ---------------- sidebar ----------------
+  // ---------------- sidebar: one folding group per part of the guide ----------------
+  // The group of the topic shown opens by itself; the others stay as the reader left them
+  // (kept in rp-nav). The button at the top folds them all, or opens them all.
 
-  $('#nav').innerHTML =
-    `<div class="nav-group"><a href="#/" data-id="home">${icon('house')}Home</a></div>` +
+  const nav = $('#nav')
+  const NAV_KEY = 'rp-nav'
+  let open = (() => {
+    try {
+      const v = JSON.parse(localStorage.getItem(NAV_KEY))
+      if (Array.isArray(v)) return new Set(v)
+    } catch (e) {
+      /* nothing kept */
+    }
+    return new Set([GROUPS[0].id])
+  })()
+  const keepOpen = () => {
+    try {
+      localStorage.setItem(NAV_KEY, JSON.stringify(Array.from(open)))
+    } catch (e) {
+      /* private window or a file: nothing kept */
+    }
+  }
+
+  nav.innerHTML =
+    `<div class="nav-top"><a href="#/" data-id="home">${icon('house')}<span>Home</span></a><button type="button" class="icon-btn nav-fold"></button></div>` +
     GROUPS.map((g) => {
       const items = topics.filter((t) => t.group === g.id)
       if (!items.length) return ''
-      return `<div class="nav-group" style="--c:${g.color}"><div><i></i>${g.title}</div>${items.map((t) => `<a href="#/${t.id}" data-id="${t.id}">${icon(t.icon)}${t.title}</a>`).join('')}</div>`
+      return `<section class="nav-group" data-group="${g.id}" style="--c:${g.color}">
+        <button type="button" class="nav-head" aria-expanded="false" aria-controls="nav-${g.id}"><span class="gi">${icon(g.icon)}</span><span class="t">${g.title}</span><span class="n">${items.length}</span>${icon('chevron-right')}</button>
+        <div class="nav-items" id="nav-${g.id}"><div><div class="nav-list">${items.map((t) => `<a href="#/${t.id}" data-id="${t.id}">${t.title}</a>`).join('')}</div></div></div>
+      </section>`
     }).join('')
+
+  const navGroups = $$('.nav-group', nav)
+  const foldBtn = $('.nav-fold', nav)
+  function paintNav() {
+    navGroups.forEach((s) => {
+      const on = open.has(s.dataset.group)
+      s.classList.toggle('open', on)
+      s.querySelector('.nav-head').setAttribute('aria-expanded', String(on))
+    })
+    const any = navGroups.some((s) => open.has(s.dataset.group))
+    foldBtn.innerHTML = icon(any ? 'list-chevrons-down-up' : 'list-chevrons-up-down')
+    foldBtn.title = any ? WORDS.foldAll : WORDS.openAll
+    foldBtn.setAttribute('aria-label', foldBtn.title)
+  }
+  navGroups.forEach((s) =>
+    s.querySelector('.nav-head').addEventListener('click', () => {
+      const id = s.dataset.group
+      if (open.has(id)) open.delete(id)
+      else open.add(id)
+      keepOpen()
+      paintNav()
+    })
+  )
+  foldBtn.addEventListener('click', () => {
+    open = navGroups.some((s) => open.has(s.dataset.group)) ? new Set() : new Set(navGroups.map((s) => s.dataset.group))
+    keepOpen()
+    paintNav()
+  })
+  paintNav()
+  // No folding animation while the page is first drawn
+  nav.classList.add('still')
+  requestAnimationFrame(() => requestAnimationFrame(() => nav.classList.remove('still')))
 
   // ---------------- home: the cards of every topic ----------------
 
@@ -140,8 +202,16 @@
     current = page
     document.title = t ? `${t.title} · Retro Play Game Manager` : WORDS.title
     $$('#nav a').forEach((a) => a.classList.toggle('on', a.dataset.id === (t ? t.id : 'home')))
+    navGroups.forEach((s) => s.classList.toggle('here', !!t && s.dataset.group === t.group))
+    const opening = !!t && !open.has(t.group)
+    if (opening) {
+      open.add(t.group)
+      keepOpen()
+      paintNav()
+    }
     const on = $('#nav a.on')
-    if (on && on.scrollIntoView) on.scrollIntoView({ block: 'nearest' })
+    // An opening group is still folding out: scroll to the topic once it is there
+    if (on && on.scrollIntoView) setTimeout(() => on.scrollIntoView({ block: 'nearest' }), opening && !nav.classList.contains('still') ? 280 : 0)
     if (Player) {
       $$('.player', page).forEach((p) => {
         const article = p.closest('article, section')
@@ -330,7 +400,10 @@
     } else if (e.key === '/' && !palette.classList.contains('on') && !/input|textarea/i.test((document.activeElement || {}).tagName || '')) {
       e.preventDefault()
       openSearch()
-    } else if (e.key === 'Escape') closeSearch()
+    } else if (e.key === 'Escape') {
+      closeSearch()
+      document.body.classList.remove('nav-open')
+    }
   })
 
   // ---------------- icons written in the page ----------------

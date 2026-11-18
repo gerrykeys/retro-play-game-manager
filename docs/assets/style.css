@@ -54,7 +54,7 @@
   --topbar: rgb(10 11 16 / 0.72);
   --dots: rgb(255 255 255 / 0.045);
   --radius: 18px;
-  --sidebar: 272px;
+  --sidebar: 292px;
   color-scheme: dark;
 }
 
@@ -310,60 +310,172 @@ code {
   border-right: 1px solid var(--line);
   scrollbar-width: thin;
 }
-.nav-group {
-  margin-bottom: 18px;
-}
-.nav-group > div {
+/* Home and the fold-all button */
+.nav-top {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 0 10px 6px;
-  font: 700 11px/1 var(--f-sans);
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--ink-3);
+  gap: 6px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
 }
-.nav-group > div i {
-  width: 8px;
-  height: 8px;
-  border-radius: 3px;
-  background: var(--c, var(--accent));
-}
-.nav-group a {
+.nav-top a {
+  flex: 1;
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 7px 10px;
+  padding: 7px 8px;
   border-radius: 10px;
   color: var(--ink-2);
-  font: 500 14px/1.35 var(--f-sans);
-  position: relative;
+  font: 650 14px/1.3 var(--f-sans);
 }
-.nav-group a:hover {
+.nav-top a svg {
+  width: 26px;
+  height: 18px;
+  flex-shrink: 0;
+}
+.nav-top a:hover {
   background: var(--hover);
   color: var(--ink);
   text-decoration: none;
 }
-.nav-group a.on {
+.nav-top a.on {
   background: color-mix(in oklab, var(--accent) 14%, transparent);
+  color: var(--ink);
+}
+.nav-fold {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+}
+.nav-fold svg {
+  width: 17px;
+  height: 17px;
+}
+
+/* A group: its heading folds and opens the list of its topics */
+.nav-group + .nav-group {
+  margin-top: 2px;
+}
+.nav-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 6px;
+  border: 0;
+  border-radius: 10px;
+  background: none;
+  color: var(--ink-2);
+  font: 650 14px/1.3 var(--f-sans);
+  text-align: left;
+  cursor: pointer;
+}
+.nav-head:hover {
+  background: var(--hover);
+  color: var(--ink);
+}
+.nav-head .gi {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  background: color-mix(in oklab, var(--c) 18%, transparent);
+  color: color-mix(in oklab, var(--c) 72%, var(--ink));
+}
+.nav-head .gi svg {
+  width: 15px;
+  height: 15px;
+}
+.nav-head .t {
+  flex: 1;
+  min-width: 0;
+}
+.nav-head .n {
+  min-width: 22px;
+  padding: 3px 5px;
+  border-radius: 6px;
+  background: var(--card-2);
+  color: var(--ink-3);
+  font: 600 11px/1 var(--f-mono);
+  text-align: center;
+}
+.nav-head > svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  color: var(--ink-3);
+  transition: transform 0.2s;
+}
+.nav-group.open .nav-head > svg {
+  transform: rotate(90deg);
+}
+/* The group of the topic shown, also when folded */
+.nav-group.here .nav-head {
+  color: var(--ink);
+}
+.nav-group.here .nav-head .n {
+  background: color-mix(in oklab, var(--c) 24%, transparent);
+  color: var(--ink);
+}
+
+.nav-items {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.26s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.nav-group.open .nav-items {
+  grid-template-rows: 1fr;
+}
+.nav-items > div {
+  min-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: visibility 0s 0.26s;
+}
+.nav-group.open .nav-items > div {
+  visibility: visible;
+  transition-delay: 0s;
+}
+#nav.still .nav-items,
+#nav.still .nav-items > div,
+#nav.still .nav-head > svg {
+  transition: none;
+}
+.nav-list {
+  margin: 2px 0 8px 20px;
+  padding-left: 9px;
+  border-left: 1px solid var(--line-strong);
+}
+.nav-list a {
+  display: block;
+  position: relative;
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: var(--ink-2);
+  font: 500 14px/1.35 var(--f-sans);
+}
+.nav-list a:hover {
+  background: var(--hover);
+  color: var(--ink);
+  text-decoration: none;
+}
+.nav-list a.on {
+  background: color-mix(in oklab, var(--c) 14%, transparent);
   color: var(--ink);
   font-weight: 650;
 }
-.nav-group a.on::before {
+.nav-list a.on::before {
   content: '';
   position: absolute;
-  left: -14px;
-  top: 8px;
-  bottom: 8px;
+  left: -11px;
+  top: 6px;
+  bottom: 6px;
   width: 3px;
-  border-radius: 0 3px 3px 0;
-  background: var(--grad);
-}
-.nav-group a svg {
-  width: 17px;
-  height: 17px;
-  flex-shrink: 0;
-  opacity: 0.85;
+  border-radius: 3px;
+  background: var(--c);
 }
 .main {
   min-width: 0;

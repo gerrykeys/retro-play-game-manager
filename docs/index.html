@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Retro Play Game Manager · Guide</title>
-<meta name="description" content="The guide to Retro Play Game Manager: everything you can do with the app, explained simply, with an animation for each task.">
+<meta name="description" content="The guide to Retro Play Game Manager: every task explained briefly, with an animation of the real app.">
 <meta name="theme-color" content="#0a0b10">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="alternate" hreflang="it" href="it/index.html">
@@ -39,9 +39,9 @@
     <section class="page" id="home">
       <div class="hero">
         <div>
-          <span class="eyebrow"><b>GUIDE</b> Everything you can do, explained simply</span>
+          <span class="eyebrow"><b>GUIDE</b> Everything you can do, in short</span>
           <h1>Your retro games, <span class="grad-text">tidy and ready to play</span></h1>
-          <p class="lead">Retro Play Game Manager keeps your game archive in order: you add games, fix titles and covers, and with one click you install them where you play, on ES-DE or on a MiSTer FPGA. Every page of this guide explains one task and shows it to you in an animation.</p>
+          <p class="lead">Retro Play Game Manager keeps your games in order: you add them, fix titles and covers, and install them with one click on ES-DE or MiSTer FPGA. Each page explains one task and shows it in an animation.</p>
           <div class="cta">
             <a class="btn primary" href="#/archivio" data-icon-svg="rocket">Start here</a>
             <button class="btn" data-open-search data-icon-svg="search">Find a topic</button>
@@ -52,34 +52,34 @@
         </div>
       </div>
 
-      <div class="section-title"><h2>How it works, in three words</h2></div>
+      <div class="section-title"><h2>How it works</h2></div>
       <div class="how">
         <div class="how-card" style="--c:#ffbf47">
           <div class="ico" data-icon-svg="hard-drive"></div>
           <span class="n">01</span>
           <h3>The archive</h3>
-          <p>A folder (on your PC, on a USB drive or on a NAS) that keeps your games and everything that describes them: titles, dates, covers, videos, saves.</p>
+          <p>The folder with your games and everything that describes them: titles, covers, videos, saves. On your PC, a drive or a NAS.</p>
         </div>
         <div class="how-card" style="--c:#8b7bff">
           <div class="ico" data-icon-svg="layout-grid"></div>
           <span class="n">02</span>
           <h3>The app</h3>
-          <p>Retro Play Game Manager opens the archive and shows it like a game store: you search, fix, complete and delete. Every change ends up in the archive.</p>
+          <p>Shows the archive like a game store. Here you search, fix and complete: every change goes into the archive.</p>
         </div>
         <div class="how-card" style="--c:#3ee0c5">
           <div class="ico" data-icon-svg="gamepad-2"></div>
           <span class="n">03</span>
           <h3>The frontend</h3>
-          <p>The program you play on: ES-DE on your PC or a MiSTer FPGA in the living room. The app installs games there, removes them and starts a game for you.</p>
+          <p>Where you play: ES-DE on your PC or a MiSTer FPGA. The app installs games there and starts them.</p>
         </div>
       </div>
 
-      <div class="section-title"><h2>All topics</h2><p>Click a topic: you get the explanation and the animation.</p></div>
+      <div class="section-title"><h2>All topics</h2><p>Each topic has a short explanation and an animation.</p></div>
       <div id="groups"></div>
 
       <footer class="foot">
         <span>Retro Play Game Manager · Guide in English · <a href="it/index.html" hreflang="it">Guida in italiano</a></span>
-        <span>The animations show the real app, at work on a demo archive.</span>
+        <span>The animations show the real app, on a demo archive.</span>
       </footer>
     </section>
 
@@ -87,60 +87,58 @@
 
     <article data-topic="archivio" data-group="inizia" data-icon="folder-open"
       data-title="Open or create an archive"
-      data-desc="The first thing to do: choose the folder of your games."
-      data-lead="Everything starts from the archive, the folder that holds your games. The first time, the app asks which one to use: you can open one you already have or create a new one.">
+      data-desc="The first step: choose the folder of your games."
+      data-lead="Everything starts from the archive, the folder of your games. The first time, you can open one you already have or create a new one.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="archivio" data-thumb="01.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="New archive: to start from scratch">To start from scratch, click <b>New archive</b> and choose an <b>empty folder</b> (or one that doesn’t exist yet).</li>
-            <li data-at="1" data-short="Open archive: choose its folder">Already have an archive? Click <b>Open archive</b> and choose its folder (the one holding <code>@metadata</code>).</li>
-            <li data-at="2" data-short="The library opens">The app reads the archive and shows you the <b>library</b> with all its games.</li>
-            <li data-at="3" data-short="The archive’s menu">The archive’s name, top left, opens its <b>menu</b>: space used, report, DATs, export, open another archive or close it.</li>
+            <li data-at="0" data-short="New archive: start from scratch">To start from scratch, click <b>New archive</b> and choose an empty folder.</li>
+            <li data-at="1" data-short="Open archive: choose its folder">Already have an archive? Click <b>Open archive</b> and choose its folder.</li>
+            <li data-at="2" data-short="The library opens">The <b>library</b> opens with all your games.</li>
+            <li data-at="3" data-short="The archive’s menu">The archive’s name, top left, opens its <b>menu</b>: space used, report, DATs, export.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>You can also <b>drag</b> the archive’s folder onto the window, or press <kbd>Ctrl O</kbd>.</li>
-            <li>The archives you opened recently are on the start page: one click and you are back.</li>
-            <li>The archive can be anywhere: on your PC, on a USB drive or on a NAS.</li>
-            <li>When you open it again, the app goes back to the system and the sorting you had.</li>
+            <li>You can also drag the folder onto the window, or press <kbd>Ctrl O</kbd>.</li>
+            <li>Recent archives are on the start page.</li>
+            <li>The archive can live on your PC, a USB drive or a NAS.</li>
           </ul></div>
-          <div class="box warn"><h3 data-icon-svg="info">Watch out</h3><p>The app only opens archives in the current Retro Play format. An archive made by a very old version is refused and has to be made again.</p></div>
+          <div class="box warn"><h3 data-icon-svg="info">Watch out</h3><p>An archive made by a very old version of the app doesn’t open: it has to be made again.</p></div>
         </div>
       </div>
     </article>
 
     <article data-topic="aggiungere" data-group="inizia" data-icon="folder-input"
       data-title="Add games"
-      data-desc="Copy the games of a ROM folder into the archive."
-      data-lead="Got a folder full of ROMs? The app copies them into the archive, in the right place, and first shows you exactly what it will do.">
+      data-desc="Copy the ROMs of a folder into the archive."
+      data-lead="Got a folder of ROMs? The app copies them into the archive, and first shows you what it will do.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="aggiungere" data-thumb="05.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
             <li data-at="0" data-short="Add games">Click <b>Add games</b>, at the top of the sidebar.</li>
-            <li data-at="1" data-short="Choose the platform">Choose the <b>platform</b>: type a few letters to find it (the ones the archive already has come first).</li>
-            <li data-at="3" data-short="Choose the ROM folder">Click <b>Choose the folder</b> and pick where the ROMs are. If the folder is named like the system (e.g. <code>snes</code>), the platform is picked for you.</li>
-            <li data-at="4" data-short="Check and copy">Check the summary: how many games, how much space, the ones already there and the files left out. Then press <b>Copy</b>.</li>
-            <li data-at="5" data-short="Copying, even in the background">The copy shows speed and time left. You can <b>continue in the background</b> or <b>stop</b> it: the games copied in full stay.</li>
-            <li data-at="6" data-short="Done! Now scraping">Done. From here you can start <b>scraping</b> right away, to get titles, descriptions and covers.</li>
-            <li data-at="7" data-short="The games under their system">You find the games in the sidebar, under their system.</li>
+            <li data-at="1" data-short="Choose the platform">Choose the <b>platform</b>: type a few letters to find it.</li>
+            <li data-at="3" data-short="Choose the ROM folder">Click <b>Choose the folder</b> and pick where the ROMs are. If the folder is named after the system (e.g. <code>snes</code>), the platform is picked for you.</li>
+            <li data-at="4" data-short="Check and copy">Check the summary (games, space, files left out) and press <b>Copy</b>.</li>
+            <li data-at="5" data-short="Copying, even in the background">You can leave the copy <b>in the background</b> or <b>stop</b> it: the games already copied stay.</li>
+            <li data-at="6" data-short="Done! Now scraping">Done. From here you can start <b>scraping</b> to get titles and covers.</li>
+            <li data-at="7" data-short="The games under their system">The games are in the sidebar, under their system.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>The app adds only the files ES-DE recognises for that platform: the others (a <code>readme.txt</code>…) are left out, and it tells you.</li>
-            <li>Games on several discs (<code>.cue</code>, <code>.m3u</code>, floppies <i>Disk 1 of 3</i>…) become <b>one game</b>.</li>
-            <li>Games with the same title become the <b>versions</b> or <b>formats</b> of one game (e.g. <i>USA</i> and <i>Europe</i>): in the window you can separate them or join them by hand. See <a href="#/versioni">Versions and formats</a>.</li>
-            <li>A game already in the archive is not touched.</li>
+            <li>Only the files ES-DE recognises for that platform are copied.</li>
+            <li>A game on several discs becomes <b>one game</b>. Games with the same title become <a href="#/versioni">versions</a> of one game.</li>
+            <li>Games already in the archive are not touched.</li>
             <li>The arrow next to <b>Add games</b> also imports a <code>.zip</code> export, or the games only the frontend has.</li>
           </ul></div>
-          <div class="box"><h3 data-icon-svg="info">Arcade games</h3><p>For the MAME platforms (<code>arcade</code> and <code>mame</code>) you choose each time which <a href="#/romset">ROM Set</a> the games go into: an existing one or a new one, with its name.</p></div>
+          <div class="box"><h3 data-icon-svg="info">Arcade games</h3><p>For <code>arcade</code> and <code>mame</code> you choose which <a href="#/romset">ROM Set</a> the games go into.</p></div>
         </div>
       </div>
     </article>
 
     <article data-topic="com-e-fatto" data-group="inizia" data-icon="folder-tree"
       data-title="What an archive looks like"
-      data-desc="What is inside the archive’s folder, explained simply."
-      data-lead="You don’t need to know this to use the app, but it helps: the archive is a normal folder, with the games just as they are and, next to them, everything that describes them.">
+      data-desc="What is inside the archive’s folder."
+      data-lead="You don’t need this to use the app, but it helps: the archive is a normal folder, with the games on one side and their information on the other.">
       <div class="topic-grid">
         <div class="player-col">
           <div class="diagram" data-cycle>
@@ -160,19 +158,19 @@
         </div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="A normal folder">The archive is a <b>normal folder</b>: on your PC, on a drive or on a NAS.</li>
-            <li data-at="1" data-short="The games, as they are">The <b>games</b> stay as they are, split by system and by kind of file (<code>snes/sfc/</code>, <code>amiga/lha/</code>…).</li>
-            <li data-at="2" data-short="@metadata: the description">In <b>@metadata</b> there is everything that describes them.</li>
-            <li data-at="3" data-short="The games’ details">The <b>details</b> (title, description, dates, developer, rating…) in small files, plus a <code>gamelist.xml</code> that ES-DE reads too.</li>
-            <li data-at="4" data-short="The media">The <b>media</b>: covers, back covers, 3D boxes, screenshots, logos, fan art, videos and PDF manuals.</li>
-            <li data-at="5" data-short="@saves: the saves">In <b>@saves</b> the copies of your <a href="#/salvataggi">saves</a>, one for each time you archived them.</li>
-            <li data-at="6" data-short="@dats: the DATs">In <b>@dats</b> the <a href="#/dat">DATs</a> you gave each system.</li>
-            <li data-at="7" data-short="@collections: the collections">In <b>@collections</b> the collections (the app reads them and tells you which ones a game is in).</li>
+            <li data-at="0" data-short="A normal folder">It is a <b>normal folder</b>, on your PC, a drive or a NAS.</li>
+            <li data-at="1" data-short="The games, as they are">The <b>games</b> stay as they are, split by system and by kind of file.</li>
+            <li data-at="2" data-short="@metadata: the description"><b>@metadata</b> holds everything that describes the games:</li>
+            <li data-at="3" data-short="The games’ details">the <b>details</b> (title, description, date…), also in a <code>gamelist.xml</code> for ES-DE;</li>
+            <li data-at="4" data-short="The media">the <b>media</b>: covers, screenshots, videos, manuals.</li>
+            <li data-at="5" data-short="@saves: the saves"><b>@saves</b> holds the copies of your <a href="#/salvataggi">saves</a>.</li>
+            <li data-at="6" data-short="@dats: the DATs"><b>@dats</b> holds the systems’ <a href="#/dat">DATs</a>.</li>
+            <li data-at="7" data-short="@collections: the collections"><b>@collections</b> holds the collections.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Why it is made like this</h3><ul>
-            <li>The games stay normal files: you copy them, move them and use them even without the app.</li>
-            <li>Each change rewrites a small file, so even a huge archive on a NAS stays fast.</li>
-            <li>The app always writes safely: a new file takes the place of the old one only once it is complete. If another PC changed the same game meanwhile, the app asks before overwriting.</li>
+            <li>The games stay normal files: you can use them without the app.</li>
+            <li>Each change rewrites only a small file, so even a huge archive on a NAS stays fast.</li>
+            <li>If another PC changed the same game, the app asks before overwriting.</li>
           </ul></div>
         </div>
       </div>
@@ -182,26 +180,24 @@
 
     <article data-topic="libreria" data-group="libreria" data-icon="layout-grid"
       data-title="Browse the library"
-      data-desc="Systems, covers, list or details view, sorting."
-      data-lead="The library shows your games like a store: as covers, as a list or with all their details. On the left you choose the system, at the top how to view and sort them.">
+      data-desc="Systems, views and sorting."
+      data-lead="The library shows your games as covers, as a list or with their details. On the left you choose the system, at the top the view and the order.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="libreria" data-thumb="03.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="Choose a system">In the sidebar, under <b>Systems</b>, click a console to see only its games (or <b>All games</b>). Each system has a drawing of its console and its number of games.</li>
-            <li data-at="1" data-short="List view">The <b>List</b> button shows the games in a compact table, with system, year, rating, media and size.</li>
-            <li data-at="2" data-short="Details view">The <b>Details</b> button also shows each game’s description and main data.</li>
-            <li data-at="3" data-short="Sort">With <b>Sort</b> you choose the order: title, system, release date, genre, rating, media, completeness, size…</li>
-            <li data-at="5" data-short="Back to covers">The first button takes you back to the <b>Covers</b>.</li>
-            <li data-at="6" data-short="Bigger or smaller covers">The slider next to it makes the covers bigger or smaller.</li>
+            <li data-at="0" data-short="Choose a system">In the sidebar, click a system, or <b>All games</b>.</li>
+            <li data-at="1" data-short="List view"><b>List</b> shows the games in a compact table.</li>
+            <li data-at="2" data-short="Details view"><b>Details</b> adds the description and the main data.</li>
+            <li data-at="3" data-short="Sort"><b>Sort</b> changes the order: title, date, rating, size…</li>
+            <li data-at="5" data-short="Back to covers">The first button goes back to the <b>Covers</b>.</li>
+            <li data-at="6" data-short="Bigger or smaller covers">The slider next to it changes the size of the covers.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>A game without a cover shows the console of its system, in its colours.</li>
             <li>The marks on the covers tell how the game is in the frontend: <span class="pill ok">installed</span>, <span class="pill warn">different files</span> or <span class="pill warn">to archive</span>.</li>
-            <li>The <b>completeness</b> ring tells how many details and media a game has.</li>
-            <li>In the list you can widen, narrow or hide columns (right click on the header).</li>
-            <li>The <b>…</b> menu at the end of the top bar acts on <b>all the games shown</b>: select them, scrape them, export them, install those the frontend doesn’t have.</li>
-            <li>The library copes with hundreds of thousands of games: covers are prepared ahead, even from a slow NAS.</li>
+            <li>The ring with the percentage (<b>details and media</b>) tells how much information a game has. Point at it to see what is missing.</li>
+            <li>In the list, right-click the header to show or hide columns.</li>
+            <li>The <b>…</b> menu at the top acts on all the games shown.</li>
           </ul></div>
         </div>
       </div>
@@ -209,19 +205,19 @@
 
     <article data-topic="anteprima" data-group="libreria" data-icon="eye"
       data-title="Preview on hover"
-      data-desc="Rest on a game and watch its video and screenshots."
-      data-lead="Resting the pointer on a game opens a preview beside it, with video and screenshots, without opening its page.">
+      data-desc="Video and screenshots without opening the game."
+      data-lead="Rest the pointer on a game: a preview with video and screenshots opens beside it.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="anteprima" data-thumb="03.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
             <li data-at="0" data-short="Go to the games">Go to the games you are interested in.</li>
             <li data-at="1" data-short="Rest on a game">Rest the pointer on a cover.</li>
-            <li data-at="2" data-short="Here is the preview">The <b>preview</b> opens: video (it starts muted), screenshots, system, year, genre, players, rating and versions.</li>
+            <li data-at="2" data-short="Here is the preview">The <b>preview</b> opens: muted video, screenshots and the main data.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>The preview opens only for games that have at least a screenshot, a video or a similar picture.</li>
-            <li>You can turn it on or off in the <a href="#/impostazioni">Settings</a>, <b>Library</b> page.</li>
+            <li>It shows only for games with at least a screenshot or a video.</li>
+            <li>Turn it on or off in <a href="#/impostazioni">Settings</a> → <b>Library</b>.</li>
           </ul></div>
         </div>
       </div>
@@ -229,24 +225,22 @@
 
     <article data-topic="cercare" data-group="libreria" data-icon="search"
       data-title="Search and filter"
-      data-desc="Instant search, filters and the games to complete."
-      data-lead="Type in the top bar and the library narrows at once. With the filters you choose by system, genre, year, players, rating… or you find the games that are missing something.">
+      data-desc="Instant search and filters."
+      data-lead="Type in the top bar and the library narrows at once. With the filters you choose by system, genre, year, rating, or by what is missing.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="cercare" data-thumb="02.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
             <li data-at="0" data-short="The search bar">Click the <b>search bar</b> at the top (or press <kbd>Ctrl F</kbd>).</li>
-            <li data-at="1" data-short="Results, right away">Type: it searches the <b>title</b>, the <b>file</b> name, the <b>developer</b>, the <b>publisher</b> and the <b>genre</b>. Here «mario» finds every Mario game, even <i>Yoshi’s Island</i>.</li>
-            <li data-at="2" data-short="The Filters panel">Open <b>Filters</b>: the categories on the left, the values on the right with how many games have each.</li>
-            <li data-at="3" data-short="To complete">In <b>To complete</b> you find the games with no cover, screenshot, description, date, genre, video…</li>
-            <li data-at="4" data-short="The filter labels">Each filter you pick becomes a <b>label</b> under the top bar: click to change it, × to remove it, <b>Clear filters</b> to remove them all.</li>
+            <li data-at="1" data-short="Results, right away">Type: it searches title, file name, developer, publisher and genre.</li>
+            <li data-at="2" data-short="The Filters panel">Open <b>Filters</b>: the categories on the left, the values on the right with their number of games.</li>
+            <li data-at="3" data-short="To complete"><b>To complete</b> finds the games with no cover, description, video…</li>
+            <li data-at="4" data-short="The filter labels">Each filter becomes a <b>label</b> at the top: × removes it, <b>Clear filters</b> removes them all.</li>
           </ol>
-          <div class="box tip"><h3 data-icon-svg="lightbulb">All the filters</h3><ul>
-            <li><b>System, Genre, Developer, Publisher</b>: one or more values.</li>
-            <li><b>Year</b>: a range or a decade. <b>Players</b>: 1 only or at least N. <b>Rating</b>: N stars or more.</li>
-            <li><b>To complete</b>: the games missing at least one of the things you picked.</li>
-            <li><b>Saves</b>: the games with saves in the archive. <b>DAT check</b>: how they stand against the <a href="#/dat">DAT</a>.</li>
-            <li>A search or filters you use often? <a href="#/filtri-salvati">Save them with a name</a>.</li>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">The filters</h3><ul>
+            <li><b>System</b>, <b>Genre</b>, <b>Developer</b>, <b>Publisher</b>, <b>Year</b>, <b>Players</b>, <b>Rating</b>.</li>
+            <li><b>To complete</b>, <b>Favorites</b>, <b>Saves</b>, <b>DAT check</b>, <b>RetroAchievements</b>.</li>
+            <li>Use the same filters often? <a href="#/filtri-salvati">Save them with a name</a>.</li>
           </ul></div>
         </div>
       </div>
@@ -254,43 +248,43 @@
 
     <article data-topic="filtri-salvati" data-group="libreria" data-icon="bookmark"
       data-title="Saved filters"
-      data-desc="Give a search a name and get it back with one click."
-      data-lead="A search, filters and the chosen system can be saved with a name. They appear in the sidebar, and one click takes you back to those games, always up to date.">
+      data-desc="Get a search back with one click."
+      data-lead="A search, filters and the system can be saved with a name, and appear in the sidebar.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="filtri-salvati" data-thumb="05.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="Choose the filters">Search, filter or choose a system: here the filter <b>Genre: Platform</b>.</li>
-            <li data-at="2" data-short="Save filters">Click <b>Save filters</b> (at the bottom of the panel, next to the labels or in the <b>…</b> menu).</li>
+            <li data-at="0" data-short="Choose the filters">Search, filter or choose a system: here <b>Genre: Platform</b>.</li>
+            <li data-at="2" data-short="Save filters">Click <b>Save filters</b>.</li>
             <li data-at="3" data-short="Give it a name">Give it a <b>name</b> and press <b>Save</b>.</li>
-            <li data-at="4" data-short="In the sidebar">The filter appears in the sidebar, under <b>Saved filters</b>, with how many games it shows.</li>
-            <li data-at="5" data-short="One click to get it back">Whenever you want, one click brings the library back to that search.</li>
+            <li data-at="4" data-short="In the sidebar">The filter appears under <b>Saved filters</b>, with its number of games.</li>
+            <li data-at="5" data-short="One click to get it back">One click and the library goes back to that search, always up to date.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>Right click (or <b>…</b>) on a saved filter: <b>Edit</b> or <b>Delete</b>. While editing you can change its name, search, filters and system, then <b>Save changes</b> (or cancel).</li>
-            <li>A name already used replaces that filter, after telling you.</li>
-            <li>Saved filters are the same for every archive. The section’s title folds it and opens it again.</li>
+            <li>Right-click a saved filter to <b>Edit</b> or <b>Delete</b> it.</li>
+            <li>Saved filters are the same for every archive.</li>
           </ul></div>
         </div>
       </div>
     </article>
 
-    <article data-topic="continua" data-group="libreria" data-icon="rotate-ccw"
-      data-title="Continue playing"
-      data-desc="The games played last, at the top of the library."
-      data-lead="At the top of the covers there is a row with the last twelve games played, the most recent first, each with the right button to get going again.">
+    <article data-topic="preferiti" data-group="libreria" data-icon="star"
+      data-title="Favorites"
+      data-desc="Star the games you care about."
+      data-lead="The star marks a game as a favorite. You find them all in Favorites, in the sidebar.">
       <div class="topic-grid">
-        <div class="player-col"><div class="player" data-anim="continua" data-thumb="01.webp"></div><div class="player-caption"></div></div>
+        <div class="player-col"><div class="player" data-anim="preferiti" data-thumb="06.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="The Continue playing row">Each card says <b>played</b> or <b>saved</b>, when and with what (ES-DE, RetroArch, MiSTer FPGA).</li>
-            <li data-at="1" data-short="Resume">The button changes from game to game: <b>Resume</b> when the archive has a save newer than the frontend’s (it brings it back and starts the game), otherwise <b>Play</b>, or <b>Install</b> when the frontend doesn’t have the game.</li>
-            <li data-at="2" data-short="Back where you left">There you go: the save is back in the frontend and the game has started.</li>
-            <li data-at="3" data-short="One click opens the page">One click on the card opens the <a href="#/pagina-gioco">game’s page</a>.</li>
+            <li data-at="0" data-short="The star on the cover">Hover over a cover and click the <b>star</b>.</li>
+            <li data-at="2" data-short="From the game’s menu">Or right-click the game…</li>
+            <li data-at="3" data-short="Add to favorites">…and <b>Add to favorites</b>.</li>
+            <li data-at="4" data-short="Favorites">Click <b>Favorites</b> in the sidebar…</li>
+            <li data-at="5" data-short="Only the favorites">…to see only the favorites, of every system.</li>
           </ol>
-          <div class="box tip"><h3 data-icon-svg="lightbulb">How does it know?</h3><ul>
-            <li>From three sources: the plays ES-DE notes in its gamelists, the games started with <b>Play</b> from the app, and the dates of the <a href="#/salvataggi">saves</a>.</li>
-            <li>The row appears in the covers view when you are neither searching nor filtering. Its title folds it and opens it again.</li>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+            <li>The star is also on the game page and in the selection bar.</li>
+            <li>With ES-DE connected, the favorites are the same in the app and in ES-DE. MiSTer FPGA has no favorites.</li>
           </ul></div>
         </div>
       </div>
@@ -298,22 +292,21 @@
 
     <article data-topic="pagina-gioco" data-group="libreria" data-icon="gamepad-2"
       data-title="The game page"
-      data-desc="Everything about a game: screenshots, video, details, files."
-      data-lead="One click on a game opens its page, like in a game store: at the top the screenshot and the button to play, below it the gallery, the description, the box and all the details.">
+      data-desc="A game’s screenshots, videos, details and files."
+      data-lead="One click on a game opens its page: at the top the screenshot and the Play button, below the gallery, the description and the details.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="pagina-gioco" data-thumb="05.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="Click a game">Click a game (or press <kbd>Enter</kbd> on the highlighted one).</li>
-            <li data-at="1" data-short="The top">At the top: screenshot, logo, system, year and developer. Below, <b>Play</b> (or <b>Install</b>), release date, completeness, size, format and status in the frontend, and the actions: <b>Edit</b>, scraping, web and YouTube search, <b>Show in folder</b>, the <b>…</b> menu. The ⤢ button enlarges the screenshot.</li>
-            <li data-at="2" data-short="Enlarge and browse">Full window, <kbd>←</kbd> <kbd>→</kbd> move from picture to picture; <kbd>Esc</kbd> closes. Every picture of the page enlarges like this.</li>
-            <li data-at="4" data-short="Gallery, description, box">Scrolling down: the <b>gallery</b> (videos and screenshots), the <b>description</b>, the <b>box and artwork</b> (cover, back, 3D box, cartridge or disc, logo, manual) and, at the side, details, media, versions, files and archive information.</li>
-            <li data-at="5" data-short="The next game">The arrows at the top (or <kbd>←</kbd> <kbd>→</kbd>) go to the <b>previous</b> and <b>next</b> game of the library.</li>
+            <li data-at="0" data-short="Click a game">Click a game (or press <kbd>Enter</kbd>).</li>
+            <li data-at="1" data-short="The top">At the top: screenshot, main data, <b>Play</b> (or <b>Install</b>) and the actions, like <b>Edit</b> and the <b>…</b> menu.</li>
+            <li data-at="2" data-short="Enlarge and browse">Every picture opens full window: <kbd>←</kbd> <kbd>→</kbd> to browse, <kbd>Esc</kbd> to close.</li>
+            <li data-at="4" data-short="Gallery, description, box">Scrolling down: gallery, description, box and, at the side, details, versions and files.</li>
+            <li data-at="5" data-short="The next game">The arrows at the top go to the <b>previous</b> and <b>next</b> game.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li><b>Library</b>, <kbd>Esc</kbd>, <kbd>Alt ←</kbd> or the mouse’s back button take you back to the library, where you left it.</li>
-            <li>In the game’s <b>files</b> you find each one’s size, CRC and date; in the archive information when it was archived, its last change and from which computer, its collections, its path and the game’s JSON entry, to copy.</li>
-            <li>A game only the frontend has shows what the frontend knows about it, with <b>Play</b> and <b>Import into the archive</b>.</li>
+            <li><kbd>Esc</kbd> or the mouse’s back button take you back to the library.</li>
+            <li>A game only the frontend has shows <b>Play</b> and <b>Import into the archive</b>.</li>
           </ul></div>
         </div>
       </div>
@@ -321,21 +314,20 @@
 
     <article data-topic="menu-selezione" data-group="libreria" data-icon="mouse-pointer-2"
       data-title="Game menu and selection"
-      data-desc="Right click, multiple selection and actions on many games."
-      data-lead="A right click on a game opens its menu with every action. By selecting several games you act on all of them at once.">
+      data-desc="Right click and actions on many games."
+      data-lead="A right click on a game opens its menu. Select several games and you act on all of them at once.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="menu-selezione" data-thumb="02.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="Right click: the game menu">Right click on a game: <b>Play</b>, <b>Open</b>, <b>Edit</b>, <b>Install</b>/<b>Uninstall</b>, <b>Select</b>, versions and formats, scraping, web and YouTube search, <b>Show in folder</b>, <b>Export</b>, <b>Delete from the archive</b>.</li>
-            <li data-at="2" data-short="Ctrl+click to select">To select several games: <kbd>Ctrl</kbd>+click each one (<kbd>Shift</kbd>+click for a range, <kbd>Ctrl A</kbd> for all).</li>
-            <li data-at="5" data-short="The selection bar">The <b>selection bar</b> appears at the bottom: bulk edit, scraping, export, compare, install, delete…</li>
-            <li data-at="6" data-short="The selection’s menu">A right click on a selected game acts on <b>the whole selection</b>, and says how many games each action applies to.</li>
+            <li data-at="0" data-short="Right click: the game menu">Right-click a game: every action is there, from <b>Play</b> to <b>Delete from the archive</b>.</li>
+            <li data-at="2" data-short="Ctrl+click to select">To select several games: <kbd>Ctrl</kbd>+click (<kbd>Shift</kbd>+click for a range, <kbd>Ctrl A</kbd> for all).</li>
+            <li data-at="5" data-short="The selection bar">The <b>selection bar</b> appears at the bottom: edit, scrape, export, install, delete…</li>
+            <li data-at="6" data-short="The selection’s menu">A right click on a selected game acts on the whole selection.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>Items that can’t be used for that game stay visible but greyed out: their tooltip says why (e.g. it isn’t installed).</li>
-            <li>The <kbd>Menu</kbd> key or <kbd>Shift F10</kbd> opens the highlighted game’s menu. <kbd>Esc</kbd> clears the selection.</li>
-            <li>On the game page, the menu is the <b>…</b> button.</li>
+            <li>Items you can’t use are greyed out: their tooltip says why.</li>
+            <li><kbd>Esc</kbd> clears the selection.</li>
           </ul></div>
         </div>
       </div>
@@ -344,18 +336,17 @@
     <article data-topic="confronto" data-group="libreria" data-icon="columns-3"
       data-title="Compare games"
       data-desc="From 2 to 6 games side by side."
-      data-lead="Want to know which version to keep, or just to look at several games together? Compare puts them side by side, full window.">
+      data-lead="Compare puts several games side by side, full window: handy to choose which version to keep.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="confronto" data-thumb="02.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="Select and Compare">Select <b>2 to 6 games</b> (even of different systems) and click <b>Compare</b> in the selection bar or in the game menu.</li>
-            <li data-at="1" data-short="Side by side">One column per game, in the order you selected them: the videos start together, then screenshots and title screens.</li>
-            <li data-at="2" data-short="Artwork, box, details">Scrolling down: artwork, box and details. What a game doesn’t have leaves its place empty.</li>
+            <li data-at="0" data-short="Select and Compare">Select <b>2 to 6 games</b> and click <b>Compare</b>.</li>
+            <li data-at="1" data-short="Side by side">One column per game, with videos and screenshots.</li>
+            <li data-at="2" data-short="Artwork, box, details">Scrolling down: artwork, box and details.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>Every picture enlarges, and the arrows move from game to game on the same picture.</li>
-            <li>Games only the frontend has can be compared too.</li>
+            <li>Every picture enlarges, and the arrows move from game to game.</li>
           </ul></div>
         </div>
       </div>
@@ -365,48 +356,45 @@
 
     <article data-topic="modificare" data-group="modifica" data-icon="pencil"
       data-title="Edit the details"
-      data-desc="Title, description, date, genre, rating and more."
-      data-lead="Every game has its details: title, description, release date, developer, publisher, genre, players and rating. You fix them in the editor beside the game page.">
+      data-desc="Title, description, date, genre, rating."
+      data-lead="Title, description, date, genre, rating and the other details are fixed in the editor, beside the game page.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="modificare" data-thumb="06.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
             <li data-at="0" data-short="Open the game">Open the game.</li>
-            <li data-at="1" data-short="Edit">Click <b>Edit</b>: the editor opens beside the page, on the <b>Details</b> tab.</li>
+            <li data-at="1" data-short="Edit">Click <b>Edit</b>: the editor opens on the <b>Details</b> tab.</li>
             <li data-at="2" data-short="Write the description">Type in the fields: here the <b>description</b>.</li>
-            <li data-at="3" data-short="The genre, with suggestions">As you type, the app suggests the values already used in the archive (genres, developers, publishers…).</li>
-            <li data-at="4" data-short="The rating, in half stars">Give the <b>rating</b> by clicking the stars (half stars too).</li>
-            <li data-at="5" data-short="Save">Press <b>Save</b> (or <kbd>Ctrl S</kbd>). Done.</li>
+            <li data-at="3" data-short="The genre, with suggestions">For genre, developer and publisher the app suggests the values already used.</li>
+            <li data-at="4" data-short="The rating, in half stars">Give the <b>rating</b> with the stars, half stars too.</li>
+            <li data-at="5" data-short="Save">Press <b>Save</b> (or <kbd>Ctrl S</kbd>).</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>The release date has its calendar; <b>Clear</b> empties it.</li>
-            <li>The <b>sort title</b> is used to sort the list differently (e.g. «Legend of Zelda, The»).</li>
-            <li>Next to each field there is <b>Web</b>: it looks that detail up online. See <a href="#/web">Media and details from the web</a>.</li>
-            <li>If you close with unsaved changes the app asks you. If another PC changed the same game meanwhile, you can reload or overwrite.</li>
+            <li><b>Web</b>, next to each field, looks that detail up online: see <a href="#/web">Media and details from the web</a>.</li>
+            <li>The <b>sort title</b> only changes the order of the list (e.g. «Legend of Zelda, The»).</li>
           </ul></div>
-          <div class="box warn"><h3 data-icon-svg="info">Watch out</h3><p>A field you empty here is not emptied in ES-DE’s gamelist when you install the game again: installing writes only the fields that have a value.</p></div>
+          <div class="box warn"><h3 data-icon-svg="info">Watch out</h3><p>A field you empty here stays filled in ES-DE, even when you install the game again.</p></div>
         </div>
       </div>
     </article>
 
     <article data-topic="media" data-group="modifica" data-icon="image"
       data-title="Covers, screenshots and other media"
-      data-desc="Drag a picture in, paste it or choose it."
-      data-lead="Covers, back covers, 3D boxes, physical media, screenshots, logos, fan art, videos and manuals: you change them in the Media tab of the editor. Just drag the file in.">
+      data-desc="Drag, paste or choose a picture."
+      data-lead="Covers, screenshots, videos, manuals and the other media are changed in the editor’s Media tab: just drag the file in.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="media" data-thumb="03.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="The Media tab">In the editor open the <b>Media</b> tab: one box for each kind of media.</li>
-            <li data-at="1" data-short="Drag the file in">Drag a file onto the right box (from File Explorer, from a browser…). Or click the box to choose it, or paste a picture with <kbd>Ctrl V</kbd>.</li>
-            <li data-at="2" data-short="Applied at once">The media goes into the archive at once: nothing to save.</li>
+            <li data-at="0" data-short="The Media tab">In the editor open the <b>Media</b> tab: there is a box for each kind.</li>
+            <li data-at="1" data-short="Drag the file in">Drag a file onto the right box. Or click it to choose one, or paste with <kbd>Ctrl V</kbd>.</li>
+            <li data-at="2" data-short="Applied at once">The media goes into the archive at once: no need to save.</li>
             <li data-at="4" data-short="Here is the cover">The game page and the library show it right away.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>The kinds of media are ES-DE’s: <b>cover, back cover, 3D box, physical media, screenshot, title screen, marquee (logo), fan art, mix image, custom image, manual</b> (PDF) and <b>video</b>.</li>
-            <li>WebP, GIF, BMP and AVIF pictures are converted to PNG, because ES-DE reads only PNG and JPG.</li>
-            <li>Videos preview on hover; PDF manuals open in your system’s viewer.</li>
-            <li>The globe button looks that media up on the web: see <a href="#/web">Media and details from the web</a>.</li>
+            <li>The kinds are ES-DE’s: cover, back cover, 3D box, physical media, screenshot, logo, fan art, video, PDF manual…</li>
+            <li>WebP, GIF, BMP and AVIF become PNG, because ES-DE reads only PNG and JPG.</li>
+            <li>The globe looks the media up online: see <a href="#/web">Media and details from the web</a>.</li>
           </ul></div>
         </div>
       </div>
@@ -414,31 +402,30 @@
 
     <article data-topic="web" data-group="modifica" data-icon="globe"
       data-title="Media and details from the web"
-      data-desc="Find covers and descriptions online and apply them with one click."
-      data-lead="Every media and every detail has its Web button (the globe): it opens a window with what can be found online for that game, from every region. One click and it is applied.">
+      data-desc="Covers and descriptions from the web, in one click."
+      data-lead="The Web button (the globe) looks a game’s media or detail up online. Click a result and it is applied.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="web" data-thumb="03.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
             <li data-at="0" data-short="Media tab">In the editor, <b>Media</b> tab.</li>
-            <li data-at="1" data-short="The globe">Click the <b>globe</b> next to the media you want (here the cover).</li>
-            <li data-at="2" data-short="Pick a result">Results arrive from each source, with region, format and size: click the one you like.</li>
-            <li data-at="3" data-short="Applied">The media is downloaded and applied to the archive.</li>
-            <li data-at="5" data-short="For details too">The same for details: <b>Web</b> next to a field (here the description).</li>
-            <li data-at="6" data-short="Pick a value">Pick a value (double click to use it at once)…</li>
-            <li data-at="7" data-short="Use this">…and press <b>Use this</b>: it goes into the field.</li>
-            <li data-at="8" data-short="Save">Then <b>Save</b>, like any change of the details.</li>
+            <li data-at="1" data-short="The globe">Click the <b>globe</b> next to the media (here the cover).</li>
+            <li data-at="2" data-short="Pick a result">Results arrive from each source: click the one you want.</li>
+            <li data-at="3" data-short="Applied">The media is downloaded and applied.</li>
+            <li data-at="5" data-short="For details too">Details work the same: <b>Web</b> next to the field (here the description).</li>
+            <li data-at="6" data-short="Pick a value">Pick a value…</li>
+            <li data-at="7" data-short="Use this">…and press <b>Use this</b>.</li>
+            <li data-at="8" data-short="Save">Then <b>Save</b>.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">The sources</h3><ul>
-            <li><b>ScreenScraper</b> (with the account in the Settings): media of every region, titles, descriptions, dates, developers, publishers, genres, players and rating in every language.</li>
-            <li><b>libretro thumbnails</b> (no account): covers, screenshots, title screens and logos.</li>
-            <li><b>Wikipedia and Wikidata</b> (no account): cover, title, description, release dates per country, developers, publishers, genres and players.</li>
-            <li><b>IGDB</b> (with a Twitch client in the Settings): covers of each region’s editions, screenshots and artwork.</li>
+            <li><b>ScreenScraper</b>: media and details in every language. Needs an account.</li>
+            <li><b>libretro thumbnails</b>: covers, screenshots and logos. No account.</li>
+            <li><b>Wikipedia and Wikidata</b>: details and cover. No account.</li>
+            <li><b>IGDB</b>: covers of every region and artwork. Needs a Twitch client.</li>
           </ul></div>
           <div class="box"><h3 data-icon-svg="info">Good to know</h3><ul>
-            <li>The game is recognised by its file; you can also search another title and go back to the file with <b>By file</b>.</li>
-            <li><b>Search in the browser</b> opens Google’s image or video search for that kind.</li>
-            <li>From the game page or its menu there are also <b>Search the web</b> and <b>Search YouTube</b>: they open Google or YouTube with the title and the platform.</li>
+            <li>The game is recognised by its file, but you can search another title too.</li>
+            <li>On the game page, <b>Search the web</b> and <b>Search YouTube</b> open Google and YouTube.</li>
           </ul></div>
         </div>
       </div>
@@ -447,23 +434,22 @@
     <article data-topic="scraping" data-group="modifica" data-icon="wand-sparkles"
       data-title="Automatic scraping"
       data-desc="Details and media for many games at once."
-      data-lead="Scraping fills in the details and media of many games by itself, taking them from ScreenScraper. Handy after adding new games, or to complete the ones that are missing something.">
+      data-lead="Scraping takes the details and media of many games from ScreenScraper in one go. Handy after adding games, or to complete those missing something.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="scraping" data-thumb="04.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="Show the games, then …">Show the games to complete (here the filter <b>To complete → No cover</b>) and open the <b>…</b> menu of the top bar.</li>
-            <li data-at="1" data-short="Scrape the games shown">Choose <b>Scrape the games shown</b>. You can also do it on the selected games or on the open one.</li>
-            <li data-at="2" data-short="Choose what to look for">Choose <b>what</b>: the details and which media. Leave <b>Replace what is there</b> off to get only what is missing. Then <b>Start scraping</b>.</li>
-            <li data-at="3" data-short="Scraping in progress">You see the games found, today’s API calls against your account’s allowance, and each game with what it received.</li>
+            <li data-at="0" data-short="Show the games, then …">Show the games to complete (here <b>To complete → No cover</b>) and open the <b>…</b> menu at the top.</li>
+            <li data-at="1" data-short="Scrape the games shown">Choose <b>Scrape the games shown</b>. It also works on the selection or on one game.</li>
+            <li data-at="2" data-short="Choose what to look for">Choose what to get. With <b>Replace what is there</b> off it gets only what is missing. Then <b>Start scraping</b>.</li>
+            <li data-at="3" data-short="Scraping in progress">You see each game with what it received, and the calls your account has left.</li>
             <li data-at="4" data-short="Finished">Finished: here is the summary.</li>
             <li data-at="5" data-short="The covers in the library">Covers and details are already in the library.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>You need a <b>ScreenScraper</b> account: set it in the <a href="#/impostazioni">Settings</a>, <b>Scraping</b> page, where you also choose your preferred region and language.</li>
-            <li>Each game is recognised by its file (CRC, size and name); if it isn’t, it can be searched by title.</li>
-            <li>Scraping also goes on in the background: the indicator at the bottom left shows how it goes and the calls left. It can be stopped.</li>
-            <li>A game that already has everything is skipped without any call.</li>
+            <li>You need a <b>ScreenScraper</b> account, set in <a href="#/impostazioni">Settings</a> → <b>Scraping</b>.</li>
+            <li>Scraping goes on in the background and can be stopped.</li>
+            <li>Games that already have everything are skipped.</li>
           </ul></div>
         </div>
       </div>
@@ -471,16 +457,16 @@
 
     <article data-topic="blocco" data-group="modifica" data-icon="layers"
       data-title="Bulk edit"
-      data-desc="The same value on many games at once."
-      data-lead="Need the same publisher, genre or date on many games? Select them and change them all together.">
+      data-desc="The same value on many games."
+      data-lead="The same publisher, genre or date on many games? Select them and change them all together.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="blocco" data-thumb="06.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
             <li data-at="0" data-short="Select the games">Select the games (<kbd>Ctrl</kbd>+click).</li>
-            <li data-at="3" data-short="Bulk edit">In the selection bar click <b>Bulk edit</b> (or in the game menu).</li>
-            <li data-at="4" data-short="Turn the fields on">Turn on the fields to change (they turn on by themselves when you type): developer, publisher, genre, players, release date, rating.</li>
-            <li data-at="5" data-short="Apply">Press <b>Apply</b>: every selected game gets those values.</li>
+            <li data-at="3" data-short="Bulk edit">Click <b>Bulk edit</b> in the selection bar.</li>
+            <li data-at="4" data-short="Turn the fields on">Type in the fields to change: they turn on by themselves.</li>
+            <li data-at="5" data-short="Apply">Press <b>Apply</b>.</li>
           </ol>
           <div class="box warn"><h3 data-icon-svg="info">Watch out</h3><p>A field turned on and left empty is <b>cleared</b> in every selected game.</p></div>
         </div>
@@ -489,55 +475,51 @@
 
     <article data-topic="eliminare" data-group="modifica" data-icon="trash"
       data-title="Delete games"
-      data-desc="Remove from the archive the games you don’t need."
-      data-lead="Deleting a game removes its files, its media and its entry from the archive. First the app shows you a summary of what will be removed.">
+      data-desc="Remove the games you don’t need from the archive."
+      data-lead="Deleting a game removes its files and media from the archive. You see a summary first.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="eliminare" data-thumb="03.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="Right click">Right click on the game (or select several games).</li>
+            <li data-at="0" data-short="Right click">Right-click the game (or a selection).</li>
             <li data-at="1" data-short="Delete from the archive">Choose <b>Delete from the archive…</b> (or press <kbd>Del</kbd>).</li>
-            <li data-at="2" data-short="The summary">Read the summary: files, space freed, media, files shared with other games that stay. Then <b>Delete permanently</b>.</li>
+            <li data-at="2" data-short="The summary">Check the summary and press <b>Delete permanently</b>.</li>
             <li data-at="3" data-short="Deleted">Done.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>What is installed in a frontend is not touched.</li>
-            <li>You can choose to delete the game’s <a href="#/salvataggi">saves</a> in <code>@saves</code> too.</li>
-            <li>A file another game of the archive also uses stays where it is.</li>
-            <li>On games only the frontend has, <kbd>Del</kbd> uninstalls them.</li>
+            <li>What is installed in the frontend is not touched.</li>
+            <li>You can delete the game’s <a href="#/salvataggi">saves</a> too.</li>
           </ul></div>
           <div class="box warn"><h3 data-icon-svg="info">Watch out</h3><p>Deleting can’t be undone.</p></div>
         </div>
       </div>
     </article>
 
-    <!-- ======================= VERSIONS AND FORMATS ======================= -->
+    <!-- ======================= VERSIONS AND ROM SETS ======================= -->
 
     <article data-topic="versioni" data-group="versioni" data-icon="layers"
       data-title="Versions and formats"
-      data-desc="One game in several regions, versions or kinds of file."
-      data-lead="The same game can exist in several versions (USA, Europe, Rev 1, v1.2…) and in several formats (a WHDLoad LHA and the ADFs of its floppies). For the archive it is always one game, with all its files.">
+      data-desc="One game in several regions or kinds of file."
+      data-lead="A game can have several versions (USA, Europe, Rev 1…) and several formats (e.g. LHA and ADF). For the archive it is always one game.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="versioni" data-thumb="06.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="Open a game with several versions">Open a game with several versions: here <i>Super Mario Bros. 3</i> in <b>USA</b>, <b>Europe</b> and <b>Japan</b>.</li>
+            <li data-at="0" data-short="Open a game with several versions">Open a game with several versions: here <i>Super Mario Bros. 3</i> in USA, Europe and Japan.</li>
             <li data-at="1" data-short="Versions on the page">The page says how many versions and formats it has, and which one the frontend has.</li>
-            <li data-at="3" data-short="The Versions and formats view">The fourth view button opens the <b>Versions and formats</b> view.</li>
-            <li data-at="4" data-short="Multiple files">The <b>Multiple files</b> tab shows the games in several versions or formats…</li>
-            <li data-at="5" data-short="Each version with its formats">…each one open on its versions, each version with its formats, size and status in the frontend (the installed one in green).</li>
+            <li data-at="3" data-short="The Versions and formats view">The fourth view button opens <b>Versions and formats</b>.</li>
+            <li data-at="4" data-short="Multiple files"><b>Multiple files</b> lists the games with several versions or formats…</li>
+            <li data-at="5" data-short="Each version with its formats">…each with its versions and their formats. The installed one is green.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">What you can do in the view</h3><ul>
-            <li><b>Rename</b> a version (a name another version already has joins them).</li>
-            <li><b>Install</b> a version, or <b>separate</b> it into a game of its own.</li>
-            <li><b>Move</b> a file to another version, to a new one or to another game, also by <b>dragging</b> it; separate it or delete it.</li>
-            <li><b>Join</b> a game to another by dragging it onto it, or with <b>Join to another game…</b>. See <a href="#/unire">Join duplicates</a>.</li>
+            <li><b>Rename</b>, <b>install</b> or <b>separate</b> a version.</li>
+            <li><b>Move</b> a file to another version or another game, also by dragging it.</li>
+            <li><b>Join</b> two games: see <a href="#/unire">Join duplicates</a>.</li>
           </ul></div>
           <div class="box"><h3 data-icon-svg="info">How a version is recognised</h3><ul>
-            <li>From the tags in brackets of the name: <i>Zelda (USA).nes</i> and <i>Zelda (Europe).nes</i> are two versions.</li>
-            <li>Different kinds of file with the same tags are formats of the same version: <i>Game (USA).cue</i> and <i>Game (USA).chd</i>.</li>
-            <li>A name that tells a version (<i>v1.2</i>, <i>Rev 1</i>…) never goes with one telling another.</li>
-            <li>When installing you choose version and format; MiSTer FPGA, which doesn’t load LHAs, gets the first format it can load.</li>
+            <li>By the tags in brackets: <i>Zelda (USA)</i> and <i>Zelda (Europe)</i> are two versions.</li>
+            <li>Same tags but a different kind of file (<i>.cue</i> and <i>.chd</i>) are two formats of the same version.</li>
+            <li>When installing you choose version and format.</li>
           </ul></div>
         </div>
       </div>
@@ -545,21 +527,20 @@
 
     <article data-topic="unire" data-group="versioni" data-icon="git-merge"
       data-title="Join duplicates"
-      data-desc="Two games that are the same game? Join them into one."
-      data-lead="When the archive has games with the same title kept apart (e.g. the USA and the European version), the app suggests joining them, and first shows you the result.">
+      data-desc="Two games that are the same? Join them."
+      data-lead="Games with the same title kept apart, like the USA and the European version? The app suggests joining them and shows you the result first.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="unire" data-thumb="02.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="The orange badge">When there are games to join, the <b>Versions and formats</b> button has an <b>orange badge</b>: click it.</li>
-            <li data-at="1" data-short="To join: the comparison">The <b>To join</b> tab puts the games side by side in columns; the last, <b>After joining</b>, shows the game they become. Choose the column of the game that <b>stays</b>, then <b>Join</b>.</li>
-            <li data-at="2" data-short="Joined">Done: it is now one game, with two versions.</li>
-            <li data-at="3" data-short="Find it in Multiple files">You find it among the games with <b>Multiple files</b>.</li>
+            <li data-at="0" data-short="The orange badge">An <b>orange badge</b> on the <b>Versions and formats</b> button means there are games to join: click it.</li>
+            <li data-at="1" data-short="To join: the comparison"><b>To join</b> puts the games in columns; the last, <b>After joining</b>, shows the result. Choose the game that stays and press <b>Join</b>.</li>
+            <li data-at="2" data-short="Joined">It is now one game, with two versions.</li>
+            <li data-at="3" data-short="Find it in Multiple files">You find it in <b>Multiple files</b>.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>The game that stays keeps its details and media and takes from the others those it lacks. What it takes is in green, the media to be deleted are struck through in red.</li>
-            <li><b>Not the same game</b> takes them out of the suggestions for good (for that archive).</li>
-            <li>With three games or more you can <b>leave one out</b> of the join; the bin deletes a game from the archive.</li>
+            <li>The game that stays keeps its data and takes from the others what it lacks (in green).</li>
+            <li><b>Not the same game</b> removes the suggestion for good.</li>
             <li><b>Join all</b> joins every group at once. Nothing is joined without your confirmation.</li>
           </ul></div>
         </div>
@@ -568,8 +549,8 @@
 
     <article data-topic="formati" data-group="versioni" data-icon="files"
       data-title="Delete a format"
-      data-desc="Remove a kind of file from every game of a system."
-      data-lead="Want to keep only the ADFs of your Amiga games, or only the zips? You can remove a format from every game of a system in one go.">
+      data-desc="Remove a kind of file from a whole system."
+      data-lead="Want to keep only the ADFs of your Amiga games? You can remove a format from every game of a system in one go.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="formati" data-thumb="04.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
@@ -577,11 +558,10 @@
             <li data-at="0" data-short="The Versions and formats view">Open the <b>Versions and formats</b> view.</li>
             <li data-at="1" data-short="Choose the system">Choose the system in the sidebar.</li>
             <li data-at="2" data-short="Formats">Click <b>Formats</b>, top right.</li>
-            <li data-at="3" data-short="Each format with its numbers">For each format: how many games have it, how many have only that one, and its space. <b>Delete</b> removes it.</li>
-            <li data-at="4" data-short="What happens, before doing it">First, the app tells you what happens: games with only that format are deleted, the others lose only that format and keep everything else.</li>
+            <li data-at="3" data-short="Each format with its numbers">For each format you see how many games have it and the space it takes. <b>Delete</b> removes it.</li>
+            <li data-at="4" data-short="What happens, before doing it">First the app tells you what happens: games with only that format are deleted, the others just lose that format.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>A game whose path was of the deleted format moves to the first format it has left, with media and saves moved along.</li>
             <li>What is installed in the frontend is not touched.</li>
           </ul></div>
         </div>
@@ -590,23 +570,22 @@
 
     <article data-topic="romset" data-group="versioni" data-icon="cpu"
       data-title="Arcade ROM Sets"
-      data-desc="MAME games split by MAME version."
-      data-lead="MAME arcade games depend on the MAME version. That’s why the app keeps them in ROM Sets: each holds the romsets of one version (e.g. 0.289 and 0.264), and the library shows one at a time.">
+      data-desc="MAME games, split by MAME version."
+      data-lead="MAME arcade games depend on the MAME version. The app splits them into ROM Sets, one per version (e.g. 0.289), and shows one at a time.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="romset" data-thumb="05.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
             <li data-at="0" data-short="The Arcade system">Click <b>Arcade</b> in the sidebar.</li>
-            <li data-at="1" data-short="The ROM Set shown">Next to the name there is the <b>ROM Set</b> shown. The padlock says the connected frontend chooses it.</li>
+            <li data-at="1" data-short="The ROM Set shown">Next to the name is the <b>ROM Set</b> shown. The padlock means the frontend chooses it.</li>
             <li data-at="2" data-short="Frontend settings">Open the <b>frontend settings</b> (the icon next to its name).</li>
-            <li data-at="3" data-short="Choose the ROM Set">In <b>Arcade ROM Sets</b> choose the one the frontend uses: only its games are installed, uninstalled and imported. At the bottom there is also <b>New ROM Set…</b>.</li>
-            <li data-at="6" data-short="The library follows">The library now shows the games of the chosen ROM Set.</li>
+            <li data-at="3" data-short="Choose the ROM Set">In <b>Arcade ROM Sets</b> choose the one the frontend uses. <b>New ROM Set…</b> is here too.</li>
+            <li data-at="6" data-short="The library follows">The library shows the games of the chosen ROM Set.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>With no frontend connected, you change the ROM Set from the button next to the platform’s name, which also renames it or adds games to a new ROM Set.</li>
-            <li>The same game in several ROM Sets (the same <code>pacman.zip</code> in 0.289 and 0.264) has <b>the same details and media</b> everywhere: what you change in one applies to all.</li>
-            <li>Only the MAME platforms (<code>arcade</code> and <code>mame</code>) have ROM Sets; FinalBurn Neo, Neo Geo, CPS… don’t.</li>
-            <li>With no ROM Set chosen, the frontend’s arcade games show as <b>Cannot be installed</b>.</li>
+            <li>Only <code>arcade</code> and <code>mame</code> have ROM Sets.</li>
+            <li>The same game in several ROM Sets has the same details and media.</li>
+            <li>With no frontend connected, change the ROM Set from the button next to the platform’s name.</li>
           </ul></div>
         </div>
       </div>
@@ -616,27 +595,26 @@
 
     <article data-topic="frontend" data-group="frontend" data-icon="plug"
       data-title="Connect ES-DE"
-      data-desc="Connect the app to the program you play on with your PC."
-      data-lead="A frontend is the program you play on. Once ES-DE is connected, the library also shows its games, and you install, remove and import games with one click.">
+      data-desc="Connect the program you play on with your PC."
+      data-lead="The frontend is the program you play on. With ES-DE connected you see its games too, and install, remove or import them with one click.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="frontend" data-thumb="02.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="Connect…">At first no frontend is connected: click <b>Connect…</b> in the sidebar.</li>
-            <li data-at="1" data-short="Choose ES-DE">Choose <b>ES-DE</b> and pick the folder it is installed in (the one with <code>ES-DE.exe</code>, or its data folder).</li>
-            <li data-at="2" data-short="Connected">Connected: the sidebar shows the games <b>Installed</b>, <b>To update</b>, <b>To archive</b>, <b>New saves</b> and <b>To resume</b>.</li>
-            <li data-at="4" data-short="The installed games">One click and you see, for example, the games installed in ES-DE.</li>
+            <li data-at="0" data-short="Connect…">Click <b>Connect…</b> in the sidebar.</li>
+            <li data-at="1" data-short="Choose ES-DE">Choose <b>ES-DE</b> and pick its folder (the one with <code>ES-DE.exe</code>).</li>
+            <li data-at="2" data-short="Connected">Connected: the sidebar shows <b>Installed</b>, <b>To archive</b> and the frontend’s other lists.</li>
+            <li data-at="4" data-short="The installed games">One click and you see, for example, the installed games.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">The marks on the covers</h3><ul>
-            <li><span class="pill ok">green</span> the frontend has the game, with the same files as the archive.</li>
-            <li><span class="pill warn">orange</span> the frontend has it, but with different files: it is <b>to update</b>.</li>
-            <li><span class="pill warn">To archive</span> only the frontend has it: import it into the archive to keep it.</li>
+            <li><span class="pill ok">green</span> the frontend has the game, the same as the archive.</li>
+            <li><span class="pill warn">orange</span> the frontend has it with different files: it is <b>to update</b>.</li>
+            <li><span class="pill warn">To archive</span> only the frontend has it.</li>
           </ul></div>
           <div class="box"><h3 data-icon-svg="info">Good to know</h3><ul>
-            <li>The app uses <b>one frontend at a time</b>: choosing another takes the place of the connected one. <b>Disconnect</b> removes it without touching the archive or the frontend’s games.</li>
-            <li><b>ES-DE</b> and <a href="#/mister">MiSTer FPGA</a> can be connected; Batocera, RetroPie and RetroArch are <i>coming soon</i>.</li>
-            <li>You can also choose the frontend in the <a href="#/impostazioni">Settings</a> (Frontend page), where you see the folders it uses.</li>
-            <li>If ES-DE is open during an install the app tells you: ES-DE sees new games only when it restarts.</li>
+            <li>You connect <b>one frontend at a time</b>. <b>Disconnect</b> touches neither the archive nor the frontend.</li>
+            <li>ES-DE and <a href="#/mister">MiSTer FPGA</a> can be connected. Batocera, RetroPie and RetroArch are <i>coming soon</i>.</li>
+            <li>ES-DE sees new games only after a restart.</li>
           </ul></div>
         </div>
       </div>
@@ -645,81 +623,47 @@
     <article data-topic="mister" data-group="frontend" data-icon="cpu"
       data-title="Connect MiSTer FPGA"
       data-desc="The MiSTer on your network, or its SD card."
-      data-lead="With a MiSTer FPGA the consoles are recreated in hardware. The app copies onto it the games its cores can load, and starts them on the MiSTer.">
+      data-lead="MiSTer FPGA recreates the consoles in hardware. The app copies onto it the games its cores can load, and starts them.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="mister" data-thumb="03.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="Connect…">Click <b>Connect…</b> in the sidebar (or <b>Change…</b> in the frontend settings).</li>
+            <li data-at="0" data-short="Connect…">Click <b>Connect…</b> in the sidebar.</li>
             <li data-at="1" data-short="MiSTer FPGA">Choose <b>MiSTer FPGA</b>.</li>
-            <li data-at="2" data-short="Address, user, password">For a MiSTer on your network type its <b>IP address</b>, the <b>user</b> and the <b>password</b>, then <b>Connect</b>. The app looks for the MiSTer on the network by itself and suggests its address.</li>
-            <li data-at="5" data-short="Or the SD card">Or click <b>Choose a folder…</b>: the SD card plugged into the PC, or a drive with the <code>games</code> folder.</li>
+            <li data-at="2" data-short="Address, user, password">Type the MiSTer’s <b>IP address</b>, <b>user</b> and <b>password</b> and press <b>Connect</b>. The app tries to find it on the network by itself.</li>
+            <li data-at="5" data-short="Or the SD card">Or click <b>Choose a folder…</b> and pick the SD card plugged into the PC.</li>
             <li data-at="6" data-short="Connected">Connected: the library shows what is on the MiSTer.</li>
             <li data-at="8" data-short="The games on the MiSTer">Here are the games installed on the MiSTer.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>Only the files of games one of its cores can load go onto the MiSTer; the others show as <b>Cannot be installed</b>, with the reason (e.g. a <code>.7z</code>, or a system with no core). You can change the formats it takes in <a href="#/formati-frontend">Compatible formats</a>.</li>
-            <li><b>Play</b> starts the game <b>on the MiSTer</b>, over the network.</li>
-            <li>User and password are saved only once the connection works (the password encrypted for your Windows user).</li>
-            <li>The card of a MiSTer on your network is read in a few seconds over SSH; files are copied through its Samba share.</li>
+            <li>Only games one of its cores loads go onto the MiSTer. The others are <b>Cannot be installed</b>, and the tooltip says why.</li>
+            <li><b>Play</b> starts the game right on the MiSTer.</li>
+            <li>User and password are saved only once the connection works.</li>
           </ul></div>
-          <div class="box"><h3 data-icon-svg="info">The MiSTer’s files</h3><p>With the MiSTer connected over the network, <b>Browse…</b> in Settings → Frontend opens its SD card: browse the folders, search, sort, <b>send</b> files and folders (dragging them from File Explorer too), <b>receive</b> them on the PC, create folders, rename (<kbd>F2</kbd>) and delete (<kbd>Del</kbd>). Transfers go on even with the window closed.</p></div>
+          <div class="box"><h3 data-icon-svg="info">The MiSTer’s files</h3><p>In <b>Settings → Frontend</b>, <b>Browse…</b> opens the MiSTer’s SD card: you can send, receive, rename and delete files.</p></div>
         </div>
       </div>
     </article>
 
     <article data-topic="installare" data-group="frontend" data-icon="monitor-down"
       data-title="Install games"
-      data-desc="Copy the archive’s games to the frontend, with media and details."
-      data-lead="Installing a game means copying it into the frontend, together with its media and details, ready to play. You can install one or a hundred at once.">
+      data-desc="Copy games to the frontend, ready to play."
+      data-lead="Installing copies a game into the frontend, with its media and details, ready to play. One or a hundred at a time.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="installare" data-thumb="06.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="Select the games">Select the games (<kbd>Ctrl</kbd>+click), or open a game’s page.</li>
-            <li data-at="3" data-short="Install in ES-DE">Right click → <b>Install in ES-DE…</b> (on the game page it is the <b>Install</b> button).</li>
-            <li data-at="5" data-short="Version and format">For games in several versions or formats, choose which one to install (here <i>Europe</i>).</li>
-            <li data-at="6" data-short="Install">Check the summary (files to copy, media, space) and press <b>Install</b>.</li>
+            <li data-at="0" data-short="Select the games">Select the games, or open a game’s page.</li>
+            <li data-at="3" data-short="Install in ES-DE">Right click → <b>Install in ES-DE…</b> (on the game page: <b>Install</b>).</li>
+            <li data-at="5" data-short="Version and format">If a game has several versions or formats, choose which one to install.</li>
+            <li data-at="6" data-short="Install">Check the summary and press <b>Install</b>.</li>
             <li data-at="7" data-short="Install complete">Done: the games are in the frontend.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>To install every game shown that the frontend doesn’t have: the <b>…</b> menu of the top bar.</li>
-            <li>Into ES-DE go files, media and details (in its gamelist); favourites, play counts and ES-DE’s other data stay as they are.</li>
-            <li><b>Install again</b> updates details and media (and files, when different): that is how you fix games <b>To update</b>.</li>
-            <li>If the frontend has no saves of the game, installing brings back the archive’s latest one.</li>
-            <li>The same goes for MiSTer FPGA, which gets only the games’ files.</li>
-            <li>Only games in one of the frontend’s <a href="#/formati-frontend">compatible formats</a> are installed.</li>
-          </ul></div>
-        </div>
-      </div>
-    </article>
-
-    <article data-topic="formati-frontend" data-group="frontend" data-icon="file-cog"
-      data-title="Compatible formats"
-      data-desc="Choose which formats the frontend takes, platform by platform."
-      data-lead="Each frontend takes certain formats for each platform. You can see them, take some out, add others and go back to the defaults: from the app, games are installed only in the formats of the list.">
-      <div class="topic-grid">
-        <div class="player-col"><div class="player" data-anim="formati-frontend" data-thumb="05.webp"></div><div class="player-caption"></div></div>
-        <div class="text-col">
-          <ol class="steps">
-            <li data-at="0" data-short="Frontend settings">Open the frontend settings: the button next to the frontend in the sidebar, or <b>Settings → Frontend</b>.</li>
-            <li data-at="1" data-short="View and edit…">In <b>Compatible formats</b>, click <b>View and edit…</b>.</li>
-            <li data-at="2" data-short="Choose the platform">On the left are the platforms, those of your archive first: choose one, or search it by name.</li>
-            <li data-at="3" data-short="Take a format out">On the right are the formats the frontend takes: <b>×</b> takes one out (here ADF, from the Amiga).</li>
-            <li data-at="4" data-short="What changes">Below, the formats of the archive’s games: ADF is now <b>Not taken</b>, and the game that has only that format can’t be installed.</li>
-            <li data-at="5" data-short="Restore defaults"><b>Restore defaults</b> puts back the formats the frontend takes by itself.</li>
-            <li data-at="7" data-short="Close">Close: the settings say how many platforms you changed.</li>
-          </ol>
-          <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>To <b>add</b> a format, type its extension (<code>LHA</code>, <code>.lha</code> or <code>.p8.png</code>) and press <b>Add</b>; next to a format of the archive’s games that isn’t taken there is an <b>Add</b> button too. A format you added is marked with a <b>+</b>.</li>
-            <li>The defaults that you took out are listed under <b>Defaults removed</b>: one click puts them back.</li>
-            <li>Every change is saved at once. A platform you changed is marked <b>Customized</b>, with a dot in the list.</li>
-            <li>A game in several formats is installed in one of those taken, and you choose which one as you install it.</li>
-            <li>Taking a format out doesn’t touch what is already in the frontend: games installed in that format stay installed.</li>
-          </ul></div>
-          <div class="box warn"><h3 data-icon-svg="info">Watch out</h3><ul>
-            <li><b>ES-DE</b> shows only the files with the extensions of its <code>es_systems.xml</code>. If you add a format here, add it there too (in <code>custom_systems</code>), or ES-DE won’t see the games installed in that format.</li>
-            <li><b>MiSTer FPGA</b>: an added format that no core loads goes in the folder of the platform’s first core and is opened from the core’s menu, because <b>Play</b> can’t start it from the app. Arcade platforms aren’t listed: their games are the romsets the card’s <code>.mra</code> files use.</li>
+            <li>To install every game shown: the <b>…</b> menu at the top.</li>
+            <li><b>Install again</b> fixes the games <b>To update</b>.</li>
+            <li>The MiSTer gets only the games’ files, no media.</li>
+            <li>Only games in a <a href="#/formati-frontend">compatible format</a> are installed.</li>
           </ul></div>
         </div>
       </div>
@@ -727,21 +671,20 @@
 
     <article data-topic="disinstallare" data-group="frontend" data-icon="monitor-x"
       data-title="Uninstall games"
-      data-desc="Remove a game from the frontend: the archive stays as it is."
-      data-lead="Uninstalling removes a game from the frontend (files, media and details). In the archive the game stays, ready to be installed again whenever you want.">
+      data-desc="Remove a game from the frontend, not from the archive."
+      data-lead="Uninstalling removes a game from the frontend. It stays in the archive, ready to be installed again.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="disinstallare" data-thumb="03.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="Right click">Right click on an installed game (or on a selection).</li>
+            <li data-at="0" data-short="Right click">Right-click an installed game (or a selection).</li>
             <li data-at="1" data-short="Uninstall">Choose <b>Uninstall from ES-DE…</b></li>
-            <li data-at="2" data-short="Confirm">Read what will be removed and confirm.</li>
+            <li data-at="2" data-short="Confirm">Check what will be removed and confirm.</li>
             <li data-at="4" data-short="Out of the frontend">The game is no longer in the frontend, but it is still in the archive.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>Before uninstalling, the app <b>archives the saves</b> the archive doesn’t have yet. The saves stay in the frontend.</li>
-            <li>A game <b>only</b> the frontend has is pointed out: uninstalling it would lose it. <a href="#/archiviare">Archive it</a> first.</li>
-            <li>A file another game of the frontend uses stays.</li>
+            <li>Before uninstalling, the app archives any new saves.</li>
+            <li>If a game is <b>only</b> in the frontend the app warns you: <a href="#/archiviare">archive it</a> first.</li>
           </ul></div>
         </div>
       </div>
@@ -749,70 +692,158 @@
 
     <article data-topic="archiviare" data-group="frontend" data-icon="monitor-up"
       data-title="Archive the frontend’s games"
-      data-desc="Import into the archive the games only the frontend has."
-      data-lead="Does the frontend have games the archive doesn’t? You find them in «To archive» and import them with one click, together with the details and media the frontend had.">
+      data-desc="Bring into the archive the games only the frontend has."
+      data-lead="Does the frontend have games the archive doesn’t? You find them in «To archive» and import them with one click, with details and media.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="archiviare" data-thumb="03.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="To archive">In the sidebar click <b>To archive</b>.</li>
-            <li data-at="1" data-short="Import them all">The button at the top imports them all (or choose the games and use the menu).</li>
+            <li data-at="0" data-short="To archive">Click <b>To archive</b> in the sidebar.</li>
+            <li data-at="1" data-short="Import them all">The button at the top imports them all (or choose which ones).</li>
             <li data-at="2" data-short="Confirm">Check and confirm.</li>
-            <li data-at="4" data-short="To update">In <b>To update</b> instead you find the games the frontend has with different files: the button at the top installs them again from the archive.</li>
+            <li data-at="4" data-short="To update">In <b>To update</b> you find instead the games with different files: the button at the top installs them again from the archive.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>From ES-DE the app also imports the details of its gamelist and its media; from the MiSTer only the files.</li>
-            <li>The frontend is not touched (except <code>.m3u</code> games, put back in the right shape).</li>
-            <li>You can do the same from the arrow next to <b>Add games</b>, or from a game’s page with <b>Import into the archive</b>.</li>
+            <li>From ES-DE come details and media too, from the MiSTer only the files.</li>
+            <li>A single game is imported from its page, with <b>Import into the archive</b>.</li>
           </ul></div>
         </div>
       </div>
     </article>
 
-    <article data-topic="giocare" data-group="frontend" data-icon="play"
+    <article data-topic="formati-frontend" data-group="frontend" data-icon="file-cog"
+      data-title="Compatible formats"
+      data-desc="Which formats the frontend takes, per platform."
+      data-lead="Each frontend takes certain formats for each platform. You can take some out, add others and go back to the defaults.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="formati-frontend" data-thumb="05.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Frontend settings">Open the frontend settings: the button next to its name, or <b>Settings → Frontend</b>.</li>
+            <li data-at="1" data-short="View and edit…">In <b>Compatible formats</b>, click <b>View and edit…</b>.</li>
+            <li data-at="2" data-short="Choose the platform">Choose a platform on the left.</li>
+            <li data-at="3" data-short="Take a format out">On the right are the formats taken: <b>×</b> takes one out (here ADF).</li>
+            <li data-at="4" data-short="What changes">Below you see the effect: ADF is now <b>Not taken</b>.</li>
+            <li data-at="5" data-short="Restore defaults"><b>Restore defaults</b> puts the original formats back.</li>
+            <li data-at="7" data-short="Close">Close: the changes are already saved.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+            <li>To add a format, type its extension (e.g. <code>lha</code>) and press <b>Add</b>.</li>
+            <li>Taking a format out doesn’t uninstall the games already in the frontend.</li>
+          </ul></div>
+          <div class="box warn"><h3 data-icon-svg="info">Watch out</h3><ul>
+            <li><b>ES-DE</b> sees only the extensions of its <code>es_systems.xml</code>: a format added here must be added there too.</li>
+            <li><b>MiSTer FPGA</b>: a format no core loads is opened from the core’s menu, not with <b>Play</b>.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ======================= PLAYING ======================= -->
+
+    <article data-topic="giocare" data-group="giocare" data-icon="play"
       data-title="Play"
-      data-desc="Start a game straight from the app."
-      data-lead="A game installed in the frontend starts with Play, with the same emulator the frontend would use. No need to open ES-DE.">
+      data-desc="Start a game from the app."
+      data-lead="An installed game starts with Play, with the same emulator as the frontend. No need to open ES-DE.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="giocare" data-thumb="03.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
             <li data-at="0" data-short="Open the game">Open the game.</li>
             <li data-at="1" data-short="Play">Click <b>Play</b>.</li>
-            <li data-at="2" data-short="Started!">The game starts, and the app tells you with which emulator and core.</li>
+            <li data-at="2" data-short="Started!">The game starts, and the app tells you with which emulator.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>With ES-DE the game starts the way ES-DE would start it: the same command, the same emulator (including the alternative one chosen for that game or system).</li>
-            <li>With MiSTer FPGA the game starts <b>on the MiSTer</b>, which must be connected over the network.</li>
-            <li><b>Play</b> is also in the game menu and in <a href="#/continua">Continue playing</a>. If the emulator or the core is missing, the app tells you.</li>
+            <li>With ES-DE the game starts the way ES-DE would start it.</li>
+            <li>With MiSTer FPGA it starts on the MiSTer, which must be connected over the network.</li>
+            <li>If the emulator or the core is missing, the app tells you.</li>
           </ul></div>
         </div>
       </div>
     </article>
 
-    <article data-topic="salvataggi" data-group="frontend" data-icon="save"
+    <article data-topic="continua" data-group="giocare" data-icon="rotate-ccw"
+      data-title="Continue playing"
+      data-desc="The games played last, ready to go again."
+      data-lead="At the top of the covers you find the last twelve games played, each with the button to get going again.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="continua" data-thumb="01.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="The Continue playing row">Each card says when you played or saved, and where.</li>
+            <li data-at="1" data-short="Resume">The button changes: <b>Resume</b> when the archive has a newer save, otherwise <b>Play</b> or <b>Install</b>.</li>
+            <li data-at="2" data-short="Back where you left">The save goes back to the frontend and the game starts.</li>
+            <li data-at="3" data-short="One click opens the page">One click on the card opens the <a href="#/pagina-gioco">game page</a>.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+            <li>The row uses the plays ES-DE notes, the games started from the app and the dates of the <a href="#/salvataggi">saves</a>.</li>
+            <li>It shows in the covers view, when you are neither searching nor filtering.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
+    <article data-topic="desktop-mode" data-group="giocare" data-icon="tv"
+      data-title="Desktop Mode"
+      data-desc="The app full screen, like a console."
+      data-lead="Desktop Mode turns the app into a living-room console: full screen, big covers, and everything works with a joypad.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="desktop-mode" data-thumb="03.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Open it">Click the <b>joypad</b> at the top right, press <kbd>F10</kbd> or the joypad’s <b>Menu</b> button.</li>
+            <li data-at="2" data-short="Home"><b>Home</b>: at the top the game you are on, with its video. Below, the rows: Continue playing, favorites, systems, added last…</li>
+            <li data-at="3" data-short="Systems"><b>LB</b> and <b>RB</b> change section: Home, Systems, Favorites, Search.</li>
+            <li data-at="4" data-short="A system’s games"><b>A</b> opens a system’s games. <b>LT</b> and <b>RT</b> jump from letter to letter.</li>
+            <li data-at="5" data-short="The game">On the game page: <b>Play</b>, <b>Favorite</b> and the pictures, large.</li>
+            <li data-at="6" data-short="Play">The game starts. When you close it, you are back in Desktop Mode.</li>
+            <li data-at="7" data-short="The menu"><b>Menu</b> opens the menu: sounds, videos’ sound, <b>Exit Desktop Mode</b>, <b>Close Retro Play</b>.</li>
+            <li data-at="8" data-short="Back to the library">When you exit, the library is as you left it.</li>
+          </ol>
+          <table class="table">
+            <tr><th>Joypad</th><th>Keyboard</th><th>What it does</th></tr>
+            <tr><td>D-pad · left stick</td><td><kbd>←</kbd> <kbd>→</kbd> <kbd>↑</kbd> <kbd>↓</kbd></td><td>Move</td></tr>
+            <tr><td><b>A</b> · ✕</td><td><kbd>Enter</kbd></td><td>Open, confirm</td></tr>
+            <tr><td><b>B</b> · ○</td><td><kbd>Esc</kbd> · <kbd>Backspace</kbd></td><td>Back</td></tr>
+            <tr><td><b>X</b> · □</td><td><kbd>F</kbd></td><td>Favorite</td></tr>
+            <tr><td><b>Y</b> · △</td><td><kbd>/</kbd> · <kbd>Ctrl F</kbd></td><td>Search</td></tr>
+            <tr><td><b>LB</b> <b>RB</b> · L1 R1</td><td><kbd>Q</kbd> <kbd>E</kbd></td><td>Section; on a game, previous and next game</td></tr>
+            <tr><td><b>LT</b> <b>RT</b> · L2 R2</td><td><kbd>PgUp</kbd> <kbd>PgDn</kbd></td><td>Previous and next letter</td></tr>
+            <tr><td><b>View</b> · Create</td><td><kbd>Tab</kbd></td><td>Installed games only; on a game, the whole description</td></tr>
+            <tr><td><b>Menu</b> · Options</td><td><kbd>M</kbd></td><td>The menu</td></tr>
+            <tr><td></td><td><kbd>F10</kbd></td><td>Exit Desktop Mode</td></tr>
+          </table>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+            <li>The bottom always shows the buttons of your joypad (Xbox, PlayStation, Nintendo) or the keyboard’s keys.</li>
+            <li>A game not installed yet is installed right there, then <b>Play now</b>.</li>
+            <li>For a living-room PC: <a href="#/impostazioni">Settings</a> → General → <b>Open in Desktop Mode</b>.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
+    <article data-topic="salvataggi" data-group="giocare" data-icon="save"
       data-title="Saves"
-      data-desc="Your progress safe in the archive, from one frontend to the other."
-      data-lead="The archive keeps your progress too: it archives the frontend’s saves as dated copies and brings them back when needed. So you play on the MiSTer in the living room and go on with ES-DE on your PC.">
+      data-desc="Your progress safe in the archive."
+      data-lead="The archive keeps dated copies of your saves and brings them back when needed. So you play on the MiSTer and go on with your PC.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="salvataggi" data-thumb="03.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="New saves">In the sidebar, <b>New saves</b> shows the games whose saves in the frontend the archive doesn’t have yet.</li>
+            <li data-at="0" data-short="New saves"><b>New saves</b>, in the sidebar, shows the games with saves not archived yet.</li>
             <li data-at="1" data-short="Open the game">Open the game.</li>
-            <li data-at="2" data-short="The Saves section">The <b>Saves</b> section shows how they stand: the frontend’s files and the archive’s copies on a timeline. Click <b>Archive</b>.</li>
-            <li data-at="3" data-short="A new copy">A new copy appears, at the top of the timeline.</li>
+            <li data-at="2" data-short="The Saves section">The <b>Saves</b> section shows the frontend’s files and the archive’s copies. Click <b>Archive</b>.</li>
+            <li data-at="3" data-short="A new copy">Here is a new copy, at the top.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Resuming from a save</h3><ul>
-            <li>When the archive has a newer save, the section says <b>The archive has a newer one</b>, with <b>Resume</b>. Each copy also has <b>Bring to the frontend</b>, <b>Show in folder</b> and <b>Delete</b>.</li>
-            <li>Before bringing a copy back, what the frontend has and the archive doesn’t is archived: <b>nothing is lost</b>.</li>
-            <li><b>To resume</b> (sidebar) lists the games with newer saves in the archive; the button at the top resumes them all.</li>
+            <li>When the archive has a newer save, press <b>Resume</b>.</li>
+            <li><b>To resume</b>, in the sidebar, lists them all.</li>
+            <li>Before bringing a copy back, the app archives what the frontend has: <b>nothing is lost</b>.</li>
           </ul></div>
           <div class="box"><h3 data-icon-svg="info">Good to know</h3><ul>
-            <li>It works with <b>RetroArch</b> (for ES-DE) and with the cores of <b>MiSTer FPGA</b>.</li>
-            <li>A copy goes back whole to the same emulator. Between RetroArch and MiSTer only the game save goes over, and only for NES, Super Nintendo, Game Boy and Game Boy Color.</li>
-            <li>If RetroArch is open, saves aren’t brought back (closing, it would write its own over them).</li>
-            <li>Uninstalling a game archives its saves first; installing it, when the frontend has none, brings back the latest.</li>
+            <li>It works with <b>RetroArch</b> (for ES-DE) and with <b>MiSTer FPGA</b>.</li>
+            <li>Between RetroArch and MiSTer only the game save goes over, for NES, Super Nintendo, Game Boy and Game Boy Color.</li>
+            <li>While RetroArch is open, saves aren’t brought back.</li>
           </ul></div>
         </div>
       </div>
@@ -822,20 +853,20 @@
 
     <article data-topic="esporta" data-group="strumenti" data-icon="file-archive"
       data-title="Export games"
-      data-desc="Put games in a .zip file to take wherever you want."
-      data-lead="An export puts the games you choose in a .zip file, with or without details and media. It is the way to pass them to another archive, to a friend or to another PC.">
+      data-desc="Games in a .zip file to take anywhere."
+      data-lead="An export puts the games you choose in a .zip file, with or without details and media: for another archive, a friend or another PC.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="esporta" data-thumb="02.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="Export">Select the games and click <b>Export</b> (or from the archive’s menu, or from the <b>…</b> menu for all those shown).</li>
-            <li data-at="1" data-short="What and how">Choose <b>what</b> to export (all the games or the chosen ones, by name or system) and the <b>content</b>: <b>Games and metadata</b> or <b>Games only</b>. Then <b>Export</b> and choose where to save.</li>
+            <li data-at="0" data-short="Export">Select the games and click <b>Export</b>.</li>
+            <li data-at="1" data-short="What and how">Choose what to export and the content: <b>Games and metadata</b> or <b>Games only</b>. Then <b>Export</b>.</li>
             <li data-at="2" data-short="Export saved">Done: <b>Show in folder</b> takes you to the file.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li><b>Games and metadata</b>: unzipped, the zip is an archive of those games. It is imported with <a href="#/importa">Import</a>.</li>
-            <li><b>Games only</b>: just the files, in the systems’ folders, to copy where you play.</li>
-            <li>The export shows speed and time left, can go on in the background and can be stopped (a stopped export leaves no half file).</li>
+            <li><b>Games and metadata</b> can be brought back in with <a href="#/importa">Import</a>.</li>
+            <li><b>Games only</b>: just the files, to copy where you play.</li>
+            <li>The export goes on in the background and can be stopped.</li>
           </ul></div>
         </div>
       </div>
@@ -843,21 +874,21 @@
 
     <article data-topic="importa" data-group="strumenti" data-icon="package-open"
       data-title="Import an export"
-      data-desc="Bring the games of a .zip file into the archive."
-      data-lead="Received an export? Drag it onto the window: the app shows you what it holds and imports it into the archive, or installs it straight into the frontend.">
+      data-desc="Bring the games of an export into the archive."
+      data-lead="Received an export? Drag it onto the window: the app shows you what it holds and imports it into the archive or the frontend.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="importa" data-thumb="02.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
             <li data-at="0" data-short="Drag the zip in">Drag the <code>.zip</code> file onto the window (or use the arrow next to <b>Add games</b> → <b>From an export</b>).</li>
-            <li data-at="1" data-short="What it holds">You see what it holds: new games, games already there, games that can’t be imported. Choose the <b>destination</b>: <b>Into the archive</b> or straight <b>into the frontend</b>. Then <b>Import</b>.</li>
+            <li data-at="1" data-short="What it holds">See what it holds and choose where it goes: <b>Into the archive</b> or <b>into the frontend</b>. Then <b>Import</b>.</li>
             <li data-at="2" data-short="Import finished">Import finished.</li>
             <li data-at="4" data-short="The games in the archive">The games are in the archive, with details and covers.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>If the archive already has some of the export’s games, choose whether to <b>update</b> them (they take the export’s details and media) or <b>replace</b> them (they become as in the export).</li>
-            <li>An import <b>never deletes</b> games of the archive.</li>
-            <li>From the start page you can install an export into the frontend even <b>without opening an archive</b>: <b>Install from an export</b>.</li>
+            <li>For games already there, choose whether to <b>update</b> or <b>replace</b> them.</li>
+            <li>An import never deletes games.</li>
+            <li>From the start page you can install an export into the frontend even without opening an archive.</li>
           </ul></div>
         </div>
       </div>
@@ -865,28 +896,29 @@
 
     <article data-topic="dat" data-group="strumenti" data-icon="shield-check"
       data-title="Verify with DATs"
-      data-desc="Check that your dumps are the good ones."
-      data-lead="A DAT (No-Intro, Redump, MAME’s XML…) lists the good dumps of a system’s games. The app compares your files with the DAT, without touching them, and tells you how they stand.">
+      data-desc="Check that your files are good dumps."
+      data-lead="A DAT (No-Intro, Redump, MAME…) lists the good dumps of a system. The app compares your files with the DAT, without touching them.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="dat" data-thumb="04.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
             <li data-at="0" data-short="The archive’s menu">Open the archive’s menu (its name, top left).</li>
             <li data-at="1" data-short="Verify with DATs">Choose <b>Verify with DATs…</b></li>
-            <li data-at="2" data-short="Give the systems a DAT">For each system: <b>Choose DAT…</b> (a <code>.dat</code>, an <code>.xml</code>, even inside a zip). Then <b>Verify all</b>.</li>
-            <li data-at="3" data-short="The results">For each system, how many games are in each state. <b>Missing…</b> lists the DAT’s games you don’t have.</li>
-            <li data-at="4" data-short="One click shows them">One click on a state shows those games in the library.</li>
+            <li data-at="2" data-short="Give the systems a DAT">For each system click <b>Choose DAT…</b>, then <b>Verify all</b>.</li>
+            <li data-at="3" data-short="The results">For each system you see how <b>complete</b> it is and the state of its games.</li>
+            <li data-at="4" data-short="One version per game">At the top choose how to count: <b>Every dump</b> or <b>One version per game</b>.</li>
+            <li data-at="6" data-short="Those missing"><b>Missing…</b> lists the DAT’s games you don’t have.</li>
+            <li data-at="8" data-short="One click shows them">One click on a state shows those games in the library.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">The states</h3><ul>
-            <li><span class="pill ok">Verified</span> all the game’s files are in the DAT (under any name).</li>
-            <li><span class="pill bad">Bad dump</span> the DAT says one of its files is.</li>
-            <li><span class="pill warn">Differs from the DAT</span> some files aren’t in the DAT, or something is missing (a track, a ROM).</li>
-            <li><span class="pill">Not in the DAT</span>, <span class="pill">Unverifiable</span> (a 7z, a CHD), <span class="pill">To verify</span> (changed or never verified).</li>
+            <li><span class="pill ok">Verified</span> the files match the DAT.</li>
+            <li><span class="pill bad">Bad dump</span> the DAT marks it as bad.</li>
+            <li><span class="pill warn">Differs from the DAT</span> there are files too many or missing.</li>
+            <li><span class="pill">Not in the DAT</span>, <span class="pill">Unverifiable</span> (7z, CHD), <span class="pill">To verify</span>.</li>
           </ul></div>
           <div class="box"><h3 data-icon-svg="info">Good to know</h3><ul>
-            <li>Verifying is fast even on a NAS: the CRCs are already in the archive, and of a zip only its index is read.</li>
-            <li>For the arcade games of a ROM Set, MAME’s whole chain counts (parent, BIOS, split or merged sets).</li>
-            <li>On the game page, above its files, you see how it stands and why. In the Filters there is <b>DAT check</b>.</li>
+            <li>Verifying is fast even on a NAS.</li>
+            <li>A game’s state is also on its page and in the <b>Filters</b>.</li>
           </ul></div>
         </div>
       </div>
@@ -894,93 +926,111 @@
 
     <article data-topic="report" data-group="strumenti" data-icon="chart-column"
       data-title="Archive report"
-      data-desc="One picture with all the systems, games and media."
-      data-lead="The report is a PNG picture that sums up the archive: every system, how many games each has, the space and how many games have each kind of media. Perfect for sharing.">
+      data-desc="One picture that sums up the archive."
+      data-lead="The report is a PNG picture with the archive’s systems, games and media. Perfect for sharing.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="report" data-thumb="04.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
             <li data-at="0" data-short="The archive’s menu">Open the archive’s menu.</li>
             <li data-at="1" data-short="Make a report">Choose <b>Make a report</b>.</li>
-            <li data-at="2" data-short="Preview and choices">The preview on the left, the choices on the right: <b>theme</b> (dark or light), <b>order of the systems</b> (by games or by name) and the <b>media shown</b>.</li>
-            <li data-at="3" data-short="Save or copy">Then <b>Save image…</b> or <b>Copy</b>, to paste in a chat or a document.</li>
+            <li data-at="2" data-short="Preview and choices">Choose the theme, the order of the systems and the media shown: the preview updates.</li>
+            <li data-at="3" data-short="Save or copy">Press <b>Save image…</b> or <b>Copy</b>.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
-            <li>The picture is double resolution and has the app’s look, whatever the window’s theme.</li>
-            <li>It counts only the archive’s games, not those only the frontend has.</li>
-            <li>Kinds of media no game has don’t appear.</li>
+            <li>It counts only the archive’s games.</li>
+            <li>If you verified systems against a <a href="#/dat">DAT</a>, it also shows how complete they are.</li>
           </ul></div>
         </div>
       </div>
     </article>
 
-    <article data-topic="impostazioni" data-group="strumenti" data-icon="settings"
-      data-title="Settings and themes"
-      data-desc="Language, library, Default and Mica themes, scraping, frontend."
-      data-lead="In the Settings (the gear at the top) you choose the language, the look and how the library behaves, and you set up accounts and the frontend.">
-      <div class="topic-grid">
-        <div class="player-col"><div class="player" data-anim="impostazioni" data-thumb="04.webp"></div><div class="player-caption"></div></div>
-        <div class="text-col">
-          <ol class="steps">
-            <li data-at="0" data-short="The gear">Click the <b>gear</b>, top right.</li>
-            <li data-at="1" data-short="General">In <b>General</b>: the language (English or Italian) and reopening the last archive.</li>
-            <li data-at="2" data-short="Library">In <b>Library</b>: preview on hover, screenshot in the place of a missing cover, the thumbnail cache.</li>
-            <li data-at="3" data-short="Appearance">In <b>Appearance</b>: the theme and dark, light or system mode.</li>
-            <li data-at="5" data-short="The light theme">Here is the app in the light theme.</li>
-          </ol>
-          <div class="box tip"><h3 data-icon-svg="lightbulb">The themes</h3><ul>
-            <li><b>Default</b>: the app’s own style.</li>
-            <li><b>Mica</b>: the look of Windows 11 apps, with the Mica background behind the title bar and the sidebar, menus in Acrylic and the accent colour chosen in Windows.</li>
-            <li>Each one in <b>dark</b>, <b>light</b> or <b>system</b> mode.</li>
-          </ul></div>
-          <div class="box"><h3 data-icon-svg="info">The other pages</h3><ul>
-            <li><b>Scraping</b>: the ScreenScraper account (user, password and developer credentials), preferred region and language; and the Twitch client for IGDB.</li>
-            <li><b>Frontend</b>: the connected frontend, its folders, the arcade <a href="#/romset">ROM Set</a> it uses, the <a href="#/formati-frontend">compatible formats</a> of each platform, and for MiSTer the card’s files.</li>
-            <li><b>MCP server</b>: see <a href="#/mcp">MCP server for AI</a>.</li>
-            <li>Passwords and token are encrypted for your Windows user and never go back to the window.</li>
-          </ul></div>
-        </div>
+    <article data-topic="retroachievements" data-group="strumenti" data-icon="trophy"
+      data-title="RetroAchievements"
+      data-desc="Which games have achievements, and how many you unlocked."
+      data-lead="Connect your RetroAchievements account: see which games have achievements and how many you unlocked.">
+      <div class="text-col">
+        <ol class="steps">
+          <li>On <b>retroachievements.org</b> copy your <b>Web API key</b>. The button in <b>Settings → RetroAchievements</b> opens the right page.</li>
+          <li>In <b>Settings → RetroAchievements</b> type your user name and the key, and press <b>Save</b>.</li>
+          <li>The app looks the games up by itself. For a large archive: archive menu → <b>RetroAchievements…</b> → <b>Look up all</b>.</li>
+          <li>Under each cover a <b>trophy</b> shows the achievements; it turns gold when you master the game.</li>
+          <li>On the game page you find every achievement and your progress.</li>
+        </ol>
+        <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+          <li>Games on disc (PlayStation, Saturn…) and games in 7z aren’t recognised yet.</li>
+          <li>In the <b>Filters</b> there is <b>RetroAchievements</b>: games with achievements, started, mastered…</li>
+        </ul></div>
       </div>
     </article>
 
     <article data-topic="mcp" data-group="strumenti" data-icon="bot"
       data-title="MCP server for AI"
-      data-desc="Let an AI assistant work on your archive."
-      data-lead="The app can act as an MCP server: an assistant like Claude Code can search the archive, fix details, scrape, install games and much more, while you see every change in the window.">
+      data-desc="An AI assistant that works on your archive."
+      data-lead="The app can act as an MCP server: an assistant like Claude Code searches, fixes and installs games, and you see every change in the window.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="mcp" data-thumb="04.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
             <li data-at="0" data-short="Settings">Open the <b>Settings</b>.</li>
             <li data-at="1" data-short="MCP server">Go to <b>MCP server</b>.</li>
-            <li data-at="2" data-short="Turn it on">Turn the server on: it stays off until you do.</li>
-            <li data-at="3" data-short="Copy for Claude Code">On: <b>Copy for Claude Code</b> puts on the clipboard the command to paste in a terminal; <b>Copy JSON</b> the setup for other clients.</li>
+            <li data-at="2" data-short="Turn it on">Turn the server on: it starts off.</li>
+            <li data-at="3" data-short="Copy for Claude Code"><b>Copy for Claude Code</b> copies the command to paste in a terminal. <b>Copy JSON</b> is for other clients.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">What the AI can do</h3><ul>
-            <li>Search and count games, read all their details, statistics by system, genre, year…</li>
-            <li>Fix details and media, manage versions and formats, delete games.</li>
-            <li>Add games from a folder, scrape, search the web, export and import.</li>
-            <li>Install, uninstall and start games, manage saves, ROM Sets and DATs.</li>
+            <li>Search games and make statistics.</li>
+            <li>Fix details and media, scrape, manage versions and formats.</li>
+            <li>Add, export, install and start games; manage saves and DATs.</li>
           </ul></div>
           <div class="box"><h3 data-icon-svg="info">Safety</h3><ul>
-            <li>The server listens only on this computer and wants a secret <b>token</b>. <b>New token</b> changes it.</li>
-            <li>Things that can’t be undone (deleting, installing, joining…) take two steps: first the AI shows you the plan, then it carries it out.</li>
-            <li>It works only while the app is open; after reopening it, <code>/mcp</code> in Claude Code connects again.</li>
+            <li>The server answers only from this PC and needs a secret <b>token</b>.</li>
+            <li>Before anything that can’t be undone, the AI shows you what it will do.</li>
+            <li>It works only while the app is open.</li>
           </ul></div>
         </div>
       </div>
     </article>
 
-    <article data-topic="scorciatoie" data-group="strumenti" data-icon="keyboard"
+    <!-- ======================= SETTINGS AND HELP ======================= -->
+
+    <article data-topic="impostazioni" data-group="riferimento" data-icon="settings"
+      data-title="Settings and themes"
+      data-desc="Language, look, accounts and frontend."
+      data-lead="In the Settings (the gear at the top) you choose language and look, and set up accounts and the frontend.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="impostazioni" data-thumb="04.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="The gear">Click the <b>gear</b>, top right.</li>
+            <li data-at="1" data-short="General"><b>General</b>: language, reopening the last archive, starting in <a href="#/desktop-mode">Desktop Mode</a>.</li>
+            <li data-at="2" data-short="Library"><b>Library</b>: preview on hover, thumbnails.</li>
+            <li data-at="3" data-short="Appearance"><b>Appearance</b>: theme and dark, light or system mode.</li>
+            <li data-at="5" data-short="The light theme">Here is the app in the light theme.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">The themes</h3><ul>
+            <li><b>Default</b>: the app’s own style.</li>
+            <li><b>Mica</b>: the look of Windows 11, with Windows’ accent colour.</li>
+          </ul></div>
+          <div class="box"><h3 data-icon-svg="info">The other pages</h3><ul>
+            <li><b>Scraping</b>: ScreenScraper and IGDB accounts, preferred region and language.</li>
+            <li><b>Frontend</b>: the connected frontend, the arcade <a href="#/romset">ROM Set</a> and the <a href="#/formati-frontend">compatible formats</a>.</li>
+            <li><b><a href="#/retroachievements">RetroAchievements</a></b> and <b><a href="#/mcp">MCP server</a></b>: they have their own page.</li>
+            <li>Passwords and keys stay encrypted on this PC.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
+    <article data-topic="scorciatoie" data-group="riferimento" data-icon="keyboard"
       data-title="Keyboard shortcuts"
-      data-desc="Move around the library without a mouse."
-      data-lead="Almost everything can be done from the keyboard too: moving between games, opening them, going to the next one, searching.">
+      data-desc="The library without a mouse."
+      data-lead="Almost everything can be done from the keyboard too.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="scorciatoie" data-thumb="05.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="The arrows">With <kbd>←</kbd> <kbd>→</kbd> <kbd>↑</kbd> <kbd>↓</kbd> you move between games.</li>
-            <li data-at="3" data-short="Enter opens the game"><kbd>Enter</kbd> opens the highlighted game’s page.</li>
+            <li data-at="0" data-short="The arrows">The arrows move you between games.</li>
+            <li data-at="3" data-short="Enter opens the game"><kbd>Enter</kbd> opens the highlighted game.</li>
             <li data-at="4" data-short="← → on the page">On the page, <kbd>←</kbd> <kbd>→</kbd> go to the previous and next game.</li>
             <li data-at="5" data-short="Esc goes back"><kbd>Esc</kbd> goes back to the library.</li>
             <li data-at="6" data-short="Ctrl F searches"><kbd>Ctrl F</kbd> goes to the search.</li>
@@ -989,65 +1039,63 @@
             <tr><th>Keys</th><th>What they do</th></tr>
             <tr><td><kbd>Ctrl O</kbd></td><td>Open an archive</td></tr>
             <tr><td><kbd>Ctrl F</kbd></td><td>Search</td></tr>
-            <tr><td><kbd>F5</kbd> · <kbd>Ctrl R</kbd></td><td>Read the archive again (only the parts that changed)</td></tr>
-            <tr><td><kbd>←</kbd> <kbd>→</kbd> <kbd>↑</kbd> <kbd>↓</kbd></td><td>In the library, move from game to game</td></tr>
-            <tr><td><kbd>Enter</kbd></td><td>Open the highlighted game’s page</td></tr>
+            <tr><td><kbd>F5</kbd> · <kbd>Ctrl R</kbd></td><td>Read the archive again</td></tr>
+            <tr><td><kbd>←</kbd> <kbd>→</kbd> <kbd>↑</kbd> <kbd>↓</kbd></td><td>Move between games</td></tr>
+            <tr><td><kbd>Enter</kbd></td><td>Open the highlighted game</td></tr>
             <tr><td><kbd>←</kbd> <kbd>→</kbd></td><td>On a game page: previous or next game</td></tr>
-            <tr><td><kbd>Esc</kbd> · <kbd>Alt ←</kbd></td><td>From a game page, back to the library (the mouse’s back button too)</td></tr>
-            <tr><td><kbd>Ctrl</kbd>+click · <kbd>Shift</kbd>+click · <kbd>Ctrl A</kbd></td><td>Multiple selection</td></tr>
+            <tr><td><kbd>Esc</kbd> · <kbd>Alt ←</kbd></td><td>Back to the library</td></tr>
+            <tr><td><kbd>Ctrl</kbd>+click · <kbd>Shift</kbd>+click · <kbd>Ctrl A</kbd></td><td>Select several games</td></tr>
             <tr><td><kbd>Ctrl S</kbd></td><td>Save the details</td></tr>
-            <tr><td>Right click · <kbd>Menu</kbd> · <kbd>Shift F10</kbd></td><td>The game menu (or the selection’s)</td></tr>
-            <tr><td><kbd>Del</kbd></td><td>Delete the selected games (those only the frontend has are uninstalled)</td></tr>
-            <tr><td><kbd>Esc</kbd></td><td>Close the editor, then the game page; in the library, clear the selection</td></tr>
+            <tr><td>Right click · <kbd>Menu</kbd> · <kbd>Shift F10</kbd></td><td>The game menu</td></tr>
+            <tr><td><kbd>Del</kbd></td><td>Delete the selected games</td></tr>
+            <tr><td><kbd>F10</kbd></td><td>Into and out of <a href="#/desktop-mode">Desktop Mode</a></td></tr>
           </table>
         </div>
       </div>
     </article>
 
-    <!-- ======================= REFERENCE ======================= -->
-
     <article data-topic="glossario" data-group="riferimento" data-icon="book-open"
       data-title="Glossary"
-      data-desc="The words of this guide, explained in one line."
-      data-lead="The words you find in the app and in this guide, explained simply.">
+      data-desc="The words of this guide, in one line."
+      data-lead="The words of the app and of this guide, in short.">
       <div class="gloss">
-        <div><b>Archive</b><p>The folder that keeps your games and everything that describes them. <a href="#/com-e-fatto">What it looks like</a>.</p></div>
-        <div><b>Frontend</b><p>The program or system you play on: ES-DE, MiSTer FPGA.</p></div>
+        <div><b>Archive</b><p>The folder with your games and everything that describes them. <a href="#/com-e-fatto">What it looks like</a>.</p></div>
+        <div><b>Frontend</b><p>The program or hardware you play on: ES-DE, MiSTer FPGA.</p></div>
         <div><b>ES-DE</b><p>EmulationStation Desktop Edition: the PC frontend that starts the emulators.</p></div>
-        <div><b>MiSTer FPGA</b><p>Hardware that recreates consoles instead of emulating them. Its games live on its SD card.</p></div>
-        <div><b>ROM</b><p>The file of a game (a cartridge, a disc, a floppy).</p></div>
-        <div><b>Metadata</b><p>Everything that describes a game: details and media.</p></div>
+        <div><b>MiSTer FPGA</b><p>Hardware that recreates consoles instead of emulating them.</p></div>
+        <div><b>ROM</b><p>The file of a game: a cartridge, a disc, a floppy.</p></div>
         <div><b>Details</b><p>Title, description, release date, developer, publisher, genre, players, rating.</p></div>
-        <div><b>Media</b><p>Covers, back covers, 3D boxes, physical media, screenshots, logos, fan art, videos, manuals.</p></div>
+        <div><b>Media</b><p>Covers, screenshots, logos, fan art, videos, manuals.</p></div>
+        <div><b>Metadata</b><p>Details and media together.</p></div>
+        <div><b>Details and media</b><p>The percentage beside a game: how much information it has, not how far you played it.</p></div>
         <div><b>Marquee</b><p>The game’s logo, on a transparent background.</p></div>
-        <div><b>Fan art</b><p>A large picture of the game: on its page it is the background, heavily blurred.</p></div>
-        <div><b>Scraping</b><p>Getting details and media automatically from an online service (ScreenScraper).</p></div>
-        <div><b>Completeness</b><p>How many details and media a game has, as a percentage.</p></div>
+        <div><b>Fan art</b><p>A large picture of the game, used as the background of its page.</p></div>
+        <div><b>Scraping</b><p>Getting details and media automatically from an online service.</p></div>
         <div><b>Version</b><p>A variant of the same game: USA, Europe, Rev 1, v1.2…</p></div>
         <div><b>Format</b><p>A kind of file of the same game: LHA or ADF, CUE or CHD, ZIP…</p></div>
         <div><b>ROM Set</b><p>The arcade games of one MAME version (e.g. 0.289).</p></div>
-        <div><b>DAT</b><p>The list of a system’s good dumps (No-Intro, Redump, MAME), to check your files.</p></div>
-        <div><b>CRC</b><p>A fingerprint of the file: two files with the same CRC and size are the same.</p></div>
-        <div><b>Export</b><p>A <code>.zip</code> file with games, to import into another archive.</p></div>
+        <div><b>DAT</b><p>The list of a system’s good dumps, to check your files.</p></div>
+        <div><b>CRC</b><p>A file’s fingerprint: two files with the same CRC are the same.</p></div>
+        <div><b>Export</b><p>A <code>.zip</code> file with games, to import elsewhere.</p></div>
         <div><b>To archive</b><p>A game only the frontend has, not the archive.</p></div>
         <div><b>To update</b><p>A game the frontend has with files different from the archive’s.</p></div>
-        <div><b>Save</b><p>A game’s progress: the game save and the emulator’s save states.</p></div>
+        <div><b>Save</b><p>A game’s progress.</p></div>
         <div><b>MCP</b><p>The protocol an AI assistant uses to work with the app’s tools.</p></div>
       </div>
     </article>
 
     <article data-topic="faq" data-group="riferimento" data-icon="circle-question-mark"
       data-title="Common questions"
-      data-desc="Quick answers to the most common doubts."
-      data-lead="The questions people ask most often, with short answers.">
-      <details class="faq"><summary>If I edit a game in the app, does it change in ES-DE too?</summary><p>Not by itself: changes go into the archive. The game shows as different from the installed one and, when you install it again, ES-DE gets the updated details and media.</p></details>
-      <details class="faq"><summary>Can I use the archive from several computers?</summary><p>Yes, for example from a NAS. The app rewrites only the files it changes, and if another PC changed the same game meanwhile it asks whether to reload or overwrite. <kbd>F5</kbd> reads again the parts that changed.</p></details>
-      <details class="faq"><summary>Does uninstalling a game delete it?</summary><p>No: it only removes it from the frontend. It stays in the archive, and its saves are archived first. To delete it from the archive, use <a href="#/eliminare">Delete from the archive</a>.</p></details>
-      <details class="faq"><summary>Why does a game say «Cannot be installed»?</summary><p>The frontend can’t take it: it doesn’t have that system, none of the game’s formats is one of its <a href="#/formati-frontend">compatible formats</a> (e.g. MiSTer doesn’t load LHAs, unless you add them), or it is an arcade game of a ROM Set the frontend doesn’t use. The tooltip says why.</p></details>
-      <details class="faq"><summary>Do I need an account for scraping?</summary><p>For automatic scraping yes, a ScreenScraper account. To look media and details up on the web by hand, no: there are also libretro thumbnails and Wikipedia, with no account.</p></details>
-      <details class="faq"><summary>Can I lose my saves?</summary><p>The app is made not to lose them: a copy in the archive is never overwritten, and before bringing one back to the frontend it archives what the frontend has and the archive doesn’t.</p></details>
-      <details class="faq"><summary>What languages is the app in?</summary><p>English and Italian: you choose in the <a href="#/impostazioni">Settings</a>, General page.</p></details>
-      <details class="faq"><summary>Windows warns me the first time I start it, is that normal?</summary><p>Yes: the program isn’t signed, so SmartScreen may ask for confirmation the first time.</p></details>
+      data-desc="Quick answers to common doubts."
+      data-lead="The questions asked most often, with short answers.">
+      <details class="faq"><summary>If I edit a game in the app, does it change in ES-DE too?</summary><p>Not right away: the change goes into the archive. ES-DE gets it when you install the game again.</p></details>
+      <details class="faq"><summary>Can I use the archive from several computers?</summary><p>Yes, for example from a NAS. If two PCs change the same game, the app asks what to do. <kbd>F5</kbd> reads the archive again.</p></details>
+      <details class="faq"><summary>Does uninstalling a game delete it?</summary><p>No, it only removes it from the frontend: it stays in the archive. To delete it, use <a href="#/eliminare">Delete from the archive</a>.</p></details>
+      <details class="faq"><summary>Why does a game say «Cannot be installed»?</summary><p>The frontend can’t load it: it doesn’t have that system, it takes none of the game’s formats (see <a href="#/formati-frontend">Compatible formats</a>), or it is an arcade game of another ROM Set. The tooltip says why.</p></details>
+      <details class="faq"><summary>Do I need an account for scraping?</summary><p>For automatic scraping yes, a ScreenScraper account. To look things up on the web by hand, no.</p></details>
+      <details class="faq"><summary>Can I lose my saves?</summary><p>No: the copies in the archive are never overwritten, and before bringing one back the app archives the frontend’s.</p></details>
+      <details class="faq"><summary>What languages is the app in?</summary><p>English and Italian: choose in <a href="#/impostazioni">Settings</a> → General.</p></details>
+      <details class="faq"><summary>Windows warns me the first time I start it, is that normal?</summary><p>Yes: the app isn’t signed, so the first time SmartScreen asks for confirmation.</p></details>
     </article>
 
   </main>
