@@ -47,6 +47,16 @@
   },
   {
    "img": "09.webp",
+   "hold": 4200,
+   "key": "Esc  M"
+  },
+  {
+   "img": "10.webp",
+   "hold": 2400,
+   "key": "↓  Enter"
+  },
+  {
+   "img": "11.webp",
    "hold": 2400
   }
  ]

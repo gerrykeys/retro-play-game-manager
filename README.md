@@ -82,6 +82,8 @@ Get the latest version from the [**Releases**](https://github.com/gerrykeys/retr
 | `Retro-Play-Game-Manager-Setup-<version>.exe` | **Recommended.** Installs the app; it then updates itself. |
 | `Retro-Play-Game-Manager-<version>-portable.exe` | No installation, runs from any folder. It tells you when there is a new version. |
 
+What each version brought: the [**release notes**](https://gerrykeys.github.io/retro-play-game-manager/#/note-di-rilascio).
+
 > [!NOTE]
 > The app is not code-signed yet, so Windows SmartScreen may warn you the first time: click **More info → Run anyway**.
 
@@ -102,6 +104,8 @@ Get the latest version from the [**Releases**](https://github.com/gerrykeys/retr
 - A cover grid, a list or a **timeline** of your systems year by year, fast even with tens of thousands of games.
 - Instant search and filters, saved filters, **favorites** and **collections**.
 - Video and screenshots on hover, and games compared side by side.
+- A **command palette** (<kbd>Ctrl K</kbd>): games, systems, views, settings and actions in one box.
+- **More like this** on every game’s page: the same series, developer or genre.
 
 **Details and media**
 - Edit titles, descriptions, dates, genres and ratings, one game or many at once.
@@ -119,8 +123,11 @@ Get the latest version from the [**Releases**](https://github.com/gerrykeys/retr
 
 **Playing**
 - **Continue playing**, **On this day** and a wheel that answers *What should I play today?*
-- **Desktop Mode**: the app full screen, played with a joypad.
-- **Your phone as a remote**: browse and start games from the sofa.
+- **Desktop Mode**: the app full screen, played with a joypad, with the games’ videos when you leave it alone.
+- **Play time** for every game, and **your retro year** told as a story, down to a card to share.
+- **Cheats** for RetroArch, from the libretro database, on as the game starts.
+- **Your phone as a remote**: browse and start games from the sofa, then a second screen with your notes, the manual and the cheats while you play.
+- **Discord status**: your friends see what you’re playing.
 - **Saves** kept safe in the archive, so you play on the <img src="images/frontends/mister.png" width="20" height="20" align="top" alt=""> **MiSTer** and go on with your PC.
 - **DIP switches** for arcade games: lives, coins and difficulty.
 
@@ -128,6 +135,7 @@ Get the latest version from the [**Releases**](https://github.com/gerrykeys/retr
 - **Verify with DATs** (No-Intro, Redump, MAME…): check your dumps and see what is missing.
 - **Export** games to a .zip and **import** them into another archive.
 - An **archive report** in one picture, and your **RetroAchievements**.
+- **Check archive**: find and delete the media no game uses any more.
 - An **MCP server**: an AI assistant like Claude Code can search, fix and install games for you.
 
 The app is in **English** and **Italian**, with light and dark themes.

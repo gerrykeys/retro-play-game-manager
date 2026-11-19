@@ -271,6 +271,28 @@
       </div>
     </article>
 
+    <article data-topic="comandi" data-group="libreria" data-icon="command"
+      data-title="Command palette"
+      data-desc="Anything the app does, found by typing."
+      data-lead="Press Ctrl K and type a few letters: games, systems, collections, views, settings and actions, all in one box.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="comandi" data-thumb="02.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Ctrl K">Press <kbd>Ctrl K</kbd>, or the <b>⌘</b> button at the top.</li>
+            <li data-at="1" data-short="Everything in one list">The list holds the actions, the places of the library and the views.</li>
+            <li data-at="2" data-short="Type a few letters">Type a few letters: what matches comes first, games too.</li>
+            <li data-at="3" data-short="Enter opens it"><kbd>↑</kbd> <kbd>↓</kbd> to choose, <kbd>Enter</kbd> to open.</li>
+            <li data-at="5" data-short="Views and settings">Views, sort orders and the pages of the settings are there too.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+            <li>On a game page, the first commands are for that game: play, edit, favorite, scrape.</li>
+            <li><kbd>Esc</kbd> closes it.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
     <article data-topic="filtri-salvati" data-group="libreria" data-icon="bookmark"
       data-title="Saved filters"
       data-desc="Get a search back with one click."
@@ -350,12 +372,13 @@
             <li data-at="0" data-short="Click a game">Click a game (or press <kbd>Enter</kbd>).</li>
             <li data-at="1" data-short="The top">At the top: screenshot, main data, <b>Play</b> (or <b>Install</b>) and the actions, like <b>Edit</b> and the <b>…</b> menu.</li>
             <li data-at="2" data-short="Enlarge and browse">Every picture opens full window: <kbd>←</kbd> <kbd>→</kbd> to browse, <kbd>Esc</kbd> to close.</li>
-            <li data-at="4" data-short="Gallery, description, box">Scrolling down: gallery, description, box and, at the side, details, versions and files.</li>
+            <li data-at="4" data-short="Gallery, description, box">Scrolling down: gallery, description, <a href="#/trucchi">cheats</a>, box and, at the side, details, versions, notes and files.</li>
             <li data-at="5" data-short="The next game">The arrows at the top go to the <b>previous</b> and <b>next</b> game.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
             <li><kbd>Esc</kbd> or the mouse’s back button take you back to the library.</li>
             <li>A game only the frontend has shows <b>Play</b> and <b>Import into the archive</b>.</li>
+            <li><b>Play time</b> appears once you played it: see <a href="#/tempo-di-gioco">Play time</a>.</li>
           </ul></div>
         </div>
       </div>
@@ -875,7 +898,7 @@
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
             <li>With ES-DE the game starts the way ES-DE would start it.</li>
             <li>With MiSTer FPGA it starts on the MiSTer, which must be connected over the network.</li>
-            <li>If the emulator or the core is missing, the app tells you.</li>
+            <li>If the game doesn’t start, the app tells you why: the emulator or the core is missing, or the emulator closed right away, and then you also see its error message.</li>
           </ul></div>
         </div>
       </div>
@@ -904,6 +927,29 @@
       </div>
     </article>
 
+    <article data-topic="trucchi" data-group="giocare" data-icon="wand-sparkles"
+      data-title="Cheats"
+      data-desc="Infinite lives and more, for RetroArch."
+      data-lead="Find a game’s cheats in the libretro database, turn on the ones you want, and they start with the game when you play it from the app.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="trucchi" data-thumb="07.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="1" data-short="The game page">Open the <a href="#/pagina-gioco">game page</a>: the cheats are under the description.</li>
+            <li data-at="2" data-short="Find cheats">Click <b>Find cheats</b>.</li>
+            <li data-at="3" data-short="Use">Pick a file (the one named like the game has a tick) and click <b>Use</b>.</li>
+            <li data-at="4" data-short="Turn them on">Turn on the cheats you want.</li>
+            <li data-at="6" data-short="Play">Play the game from the app: they are already on.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+            <li>They work with RetroArch, inside ES-DE or on its own. With another emulator the page tells you.</li>
+            <li>Have a <code>.cht</code> file of your own? Use <b>From file…</b>.</li>
+            <li>With RetroAchievements in hardcore mode, a cheat on switches RetroArch to normal mode for that game.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
     <article data-topic="continua" data-group="giocare" data-icon="rotate-ccw"
       data-title="Continue playing"
       data-desc="The games played last, ready to go again."
@@ -912,7 +958,7 @@
         <div class="player-col"><div class="player" data-anim="continua" data-thumb="01.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="The Continue playing row">Each card says when you played or saved, and where.</li>
+            <li data-at="0" data-short="The Continue playing row">Each card says when you played or saved, where, and for how long.</li>
             <li data-at="1" data-short="The arrows">The arrows at the sides show the other games; you can also drag the row with the mouse.</li>
             <li data-at="2" data-short="Resume">The button changes: <b>Resume</b> when the archive has a newer save, otherwise <b>Play</b> or <b>Install</b>.</li>
             <li data-at="4" data-short="Back where you left">The save goes back to the frontend and the game starts.</li>
@@ -921,6 +967,47 @@
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
             <li>The row uses the plays ES-DE notes, the games started from the app and the dates of the <a href="#/salvataggi">saves</a>.</li>
             <li>It shows in the covers view, when you are neither searching nor filtering.</li>
+            <li>The time is the <a href="#/tempo-di-gioco">play time</a> the app counted.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
+    <article data-topic="tempo-di-gioco" data-group="giocare" data-icon="timer"
+      data-title="Play time"
+      data-desc="How long you played each game."
+      data-lead="The app times the games you start from it, until you close them, on every frontend.">
+      <div class="text-col">
+        <ol class="steps">
+          <li>Start a game with <b>Play</b>: from the app, from <a href="#/desktop-mode">Desktop Mode</a> or from the <a href="#/telefono">phone</a>.</li>
+          <li>Play. When you close the game, the app adds the time.</li>
+          <li>You see it on the <a href="#/pagina-gioco">game page</a> (<b>Play time</b>), in <a href="#/continua">Continue playing</a> and in Desktop Mode.</li>
+          <li>To see the games you played most, sort by <b>Play time</b>: the list view has its column.</li>
+        </ol>
+        <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+          <li>Games started from the frontend itself aren’t timed, but RetroArch and Batocera count their own time and the app adds it.</li>
+          <li>A game that closes at once, or with an error, doesn’t count.</li>
+          <li>The time stays on this computer.</li>
+        </ul></div>
+      </div>
+    </article>
+
+    <article data-topic="discord" data-group="giocare" data-icon="discord"
+      data-title="Discord status"
+      data-desc="Your friends see what you’re playing."
+      data-lead="While you play a game started from the app, your Discord profile shows it: title, system, cover and how long you’ve been playing.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="discord" data-thumb="05.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Discord">In the <b>Settings</b>, open <b>Discord</b>, the last of the integrations.</li>
+            <li data-at="2" data-short="Turn it on">Turn on <b>Show on Discord what you’re playing</b>.</li>
+            <li data-at="4" data-short="What your friends see">Start a game: the preview shows what your friends see.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+            <li>Discord must be open on this PC. The status is off until you turn it on.</li>
+            <li>Only games started from the app show: from the window, the <a href="#/telefono">phone</a> or <a href="#/desktop-mode">Desktop Mode</a>.</li>
+            <li>The cover comes from libretro’s public thumbnails; without one, the console’s picture shows.</li>
           </ul></div>
         </div>
       </div>
@@ -969,6 +1056,27 @@
       </div>
     </article>
 
+    <article data-topic="simili" data-group="giocare" data-icon="shapes"
+      data-title="More like this"
+      data-desc="Games like the one you’re looking at."
+      data-lead="At the foot of each game’s page, a row shows the games of your archive most like it: the same series, the same developer, the same genre.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="simili" data-thumb="02.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Open a game">Open a <a href="#/pagina-gioco">game’s page</a>.</li>
+            <li data-at="1" data-short="The row">Scroll to the bottom: <b>More like this</b>. Under each game, what it shares: <b>Same series</b>, the developer or the genre.</li>
+            <li data-at="2" data-short="Open one">Click one to open its page.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+            <li>The same game on another system isn’t listed.</li>
+            <li>In <a href="#/desktop-mode">Desktop Mode</a>: the <b>Similar</b> button on a game’s page.</li>
+            <li>You turn it off in <a href="#/impostazioni">Settings</a> → Library.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
     <article data-topic="desktop-mode" data-group="giocare" data-icon="tv"
       data-title="Desktop Mode"
       data-desc="The app full screen, like a console."
@@ -983,8 +1091,9 @@
             <li data-at="4" data-short="A system’s games"><b>A</b> opens a system’s games. <b>LT</b> and <b>RT</b> jump from letter to letter.</li>
             <li data-at="5" data-short="The game">On the game page: <b>Play</b>, <b>Favorite</b> and the pictures, large.</li>
             <li data-at="6" data-short="Play">The game starts. When you close it, you are back in Desktop Mode.</li>
-            <li data-at="7" data-short="The menu"><b>Menu</b> opens the menu: sounds, videos’ sound, <b>Exit Desktop Mode</b>, <b>Close Retro Play</b>.</li>
-            <li data-at="8" data-short="Back to the library">When you exit, the library is as you left it.</li>
+            <li data-at="7" data-short="The menu"><b>Menu</b> opens the menu: <b>Attract mode</b>, sounds, videos’ sound, <b>Exit Desktop Mode</b>, <b>Close Retro Play</b>.</li>
+            <li data-at="8" data-short="Attract mode">Leave the joypad alone for a few minutes: the games’ videos play one after the other, like an arcade cabinet. <b>A</b> plays the one shown, any other button goes back.</li>
+            <li data-at="10" data-short="Back to the library">When you exit, the library is as you left it.</li>
           </ol>
           <table class="table">
             <tr><th>Joypad</th><th>Keyboard</th><th>What it does</th></tr>
@@ -1002,7 +1111,7 @@
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
             <li>The bottom always shows the buttons of your joypad (Xbox, PlayStation, Nintendo) or the keyboard’s keys.</li>
             <li>A game not installed yet is installed right there, then <b>Play now</b>.</li>
-            <li>For a living-room PC: <a href="#/impostazioni">Settings</a> → General → <b>Open in Desktop Mode</b>.</li>
+            <li>For a living-room PC: <a href="#/impostazioni">Settings</a> → General → <b>Open in Desktop Mode</b>. There you also choose after how many minutes the attract mode starts, or never.</li>
           </ul></div>
         </div>
       </div>
@@ -1010,7 +1119,7 @@
 
     <article data-topic="telefono" data-group="giocare" data-icon="smartphone"
       data-title="The phone as a remote"
-      data-desc="Browse and start games from the sofa."
+      data-desc="Browse and start games from the sofa, then a second screen while you play."
       data-lead="The phone opens a page of your library: from there you browse, search, start and install games on the computer.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="telefono" data-thumb="06.webp"></div><div class="player-caption"></div></div>
@@ -1022,6 +1131,9 @@
             <li data-at="4" data-short="On the phone">On the phone, the bar at the bottom leads to <b>Games</b>, <b>Favorites</b>, <b>Platforms</b> and <b>Collections</b>.</li>
             <li data-at="5" data-short="A platform">Tap a platform or a collection to see its games. <b>Installed only</b> keeps those already in the frontend.</li>
             <li data-at="7" data-short="A game">Tap a game: <b>Play</b> starts it on the computer, <b>Install</b> puts it in the frontend, the star makes it a favorite.</li>
+            <li data-at="9" data-short="Now playing">While you play, the bar at the bottom shows the game and how long it’s been.</li>
+            <li data-at="10" data-short="Second screen">Tap it: the phone becomes the game’s second screen, with the clock, your notes, the manual, the cheats on and the RetroAchievements.</li>
+            <li data-at="11" data-short="Notes">Write passwords or where you got to: the notes save by themselves and show on the <a href="#/pagina-gioco">game page</a> too.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
             <li>The phone must be on the same Wi-Fi as the computer, and the app open.</li>
@@ -1138,6 +1250,31 @@
       </div>
     </article>
 
+    <article data-topic="controllo-archivio" data-group="strumenti" data-icon="image-minus"
+      data-title="Check archive"
+      data-desc="Find and delete the media no game uses."
+      data-lead="Over time the media folders can keep files no game uses any more: the check finds them, and deletes them all with one click.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="controllo-archivio" data-thumb="03.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="The archive menu">Open the archive menu, at the top of the sidebar.</li>
+            <li data-at="1" data-short="Check archive">Choose <b>Check archive…</b>: the check starts at once.</li>
+            <li data-at="2" data-short="What it found">You see the orphan media by system, and how much space they take.</li>
+            <li data-at="3" data-short="Their names">Click a system to see the files.</li>
+            <li data-at="4" data-short="Delete all"><b>Delete all</b>, then confirm.</li>
+            <li data-at="6" data-short="Space freed">It tells you how much space was freed.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+            <li>Orphans are left when a program replaces a cover without removing the old one, or when a game is taken out by hand.</li>
+            <li>Files written in the last minutes are left alone, and a file a game uses again before you confirm stays.</li>
+            <li>You also find it in the <a href="#/comandi">command palette</a>.</li>
+          </ul></div>
+          <div class="box warn"><h3 data-icon-svg="info">Watch out</h3><p>Deleted files can’t be brought back.</p></div>
+        </div>
+      </div>
+    </article>
+
     <article data-topic="report" data-group="strumenti" data-icon="chart-column"
       data-title="Archive report"
       data-desc="One picture that sums up the archive."
@@ -1154,6 +1291,29 @@
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
             <li>It counts only the archive’s games.</li>
             <li>If you verified systems against a <a href="#/dat">DAT</a>, it also shows how complete they are.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
+    <article data-topic="anno-retro" data-group="strumenti" data-icon="party-popper"
+      data-title="Your retro year"
+      data-desc="Your year of play, told as a story."
+      data-lead="Hours played, favorite games and consoles, the times you play: your year in retro, page after page, down to a card to share.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="anno-retro" data-thumb="11.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Open it">Open the archive’s menu (the card at the top left) and choose <b>Your retro year</b>.</li>
+            <li data-at="2" data-short="The story">The story goes on by itself. <kbd>←</kbd> <kbd>→</kbd> or a click move it, the space bar pauses it.</li>
+            <li data-at="3" data-short="Your numbers">The hours you played, the games, your most played, your console of the year…</li>
+            <li data-at="7" data-short="When and what">…when you play, your decade, the oldest game.</li>
+            <li data-at="10" data-short="The card">At the end, the card of your year and the kind of player you were: <b>Save image</b> or <b>Copy</b> to share it.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+            <li>It counts the games you start from the app, Desktop Mode or the phone: the more you play from here, the richer it gets.</li>
+            <li>In December and January a card above the covers reminds you. You turn it off in <a href="#/impostazioni">Settings</a> → Library.</li>
+            <li>At the top right you pick another year.</li>
           </ul></div>
         </div>
       </div>
@@ -1195,6 +1355,7 @@
             <li>Search games and make statistics.</li>
             <li>Fix details and media, scrape, manage versions, formats and collections.</li>
             <li>Add, export, install and start games; manage saves and DATs.</li>
+            <li>Tell how long you played, and find the media no game uses.</li>
           </ul></div>
           <div class="box"><h3 data-icon-svg="info">Safety</h3><ul>
             <li>The server answers only from this PC and needs a secret <b>token</b>.</li>
@@ -1216,8 +1377,8 @@
         <div class="text-col">
           <ol class="steps">
             <li data-at="0" data-short="The gear">Click the <b>gear</b>, top right.</li>
-            <li data-at="1" data-short="General"><b>General</b>: language, reopening the last archive, starting in <a href="#/desktop-mode">Desktop Mode</a>, <a href="#/aggiornamenti">updating at start</a>.</li>
-            <li data-at="2" data-short="Library"><b>Library</b>: preview on hover, <a href="#/accadde-oggi">On this day</a>, <a href="#/cosa-gioco">What should I play today?</a>, thumbnails.</li>
+            <li data-at="1" data-short="General"><b>General</b>: language, reopening the last archive, starting in <a href="#/desktop-mode">Desktop Mode</a> and its attract mode, <a href="#/aggiornamenti">updating at start</a>.</li>
+            <li data-at="2" data-short="Library"><b>Library</b>: preview on hover, <a href="#/accadde-oggi">On this day</a>, <a href="#/cosa-gioco">What should I play today?</a>, <a href="#/simili">More like this</a>, <a href="#/anno-retro">Your retro year</a>, thumbnails.</li>
             <li data-at="3" data-short="Appearance"><b>Appearance</b>: theme and dark, light or system mode.</li>
             <li data-at="5" data-short="The light theme">Here is the app in the light theme.</li>
           </ol>
@@ -1229,7 +1390,7 @@
             <li><b>Scraping</b>: ScreenScraper and IGDB accounts, preferred region and language.</li>
             <li><b>More settings</b>: one area per part of the app. For now <b>Arcade</b>, with the MAME XML of each ROM Set for its <a href="#/dip-switch">DIP switches</a>.</li>
             <li><b>Frontend</b>: the connected frontend, the arcade <a href="#/romset">ROM Set</a> and the <a href="#/formati-frontend">compatible formats</a>.</li>
-            <li><b><a href="#/retroachievements">RetroAchievements</a></b>, <b><a href="#/mcp">MCP server</a></b> and <b><a href="#/telefono">Phone</a></b>: they have their own page.</li>
+            <li><b><a href="#/retroachievements">RetroAchievements</a></b>, <b><a href="#/mcp">MCP server</a></b>, <b><a href="#/telefono">Phone</a></b> and <b><a href="#/discord">Discord</a></b>: they have their own page.</li>
             <li><b>About</b>: the app’s version, its <a href="#/aggiornamenti">updates</a> and a button to support it with a coffee on <a href="https://ko-fi.com/gerrykeys" target="_blank" rel="noopener">Ko-fi</a>.</li>
             <li>Passwords and keys stay encrypted on this PC.</li>
           </ul></div>
@@ -1249,9 +1410,10 @@
             <li data-at="1" data-short="The download">If there is one, it downloads it and shows how far along it is.</li>
             <li data-at="2" data-short="Open without waiting"><b>Open without waiting</b> opens the app right away: the update installs when you close it.</li>
             <li data-at="3" data-short="Installing">Then it installs it, and the app opens again updated.</li>
-            <li data-at="4" data-short="The green arrow">An update ready to install shows as a <b>green arrow</b> at the top: click it to restart.</li>
-            <li data-at="5" data-short="About">In <b>Settings → About</b> you see the version and can check by hand.</li>
-            <li data-at="6" data-short="Update at start"><b>Settings → General → Update at start</b> turns the check on or off.</li>
+            <li data-at="4" data-short="What’s new"><b>What’s new</b> shows what the version brings, each novelty with its animation. Tick <b>Don’t show again at start</b> once you’ve seen it.</li>
+            <li data-at="6" data-short="The green arrow">An update ready to install shows as a <b>green arrow</b> at the top: click it to restart.</li>
+            <li data-at="7" data-short="About">In <b>Settings → About</b> you see the version, check by hand and reopen <b>What’s new in this version</b>.</li>
+            <li data-at="9" data-short="Update at start"><b>Settings → General → Update at start</b> turns the check on or off.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
             <li>Without internet the app simply opens, as always.</li>
@@ -1259,6 +1421,57 @@
           </ul></div>
         </div>
       </div>
+    </article>
+
+    <article data-topic="note-di-rilascio" data-group="riferimento" data-icon="scroll-text"
+      data-title="Release notes"
+      data-desc="What each version of the app brought."
+      data-lead="Every version of the app, newest first. After an update, the app shows the same news in its What’s new window.">
+      <section class="rel">
+        <header class="rel-head">
+          <h2>0.0.2</h2>
+          <span class="rel-badge">Latest</span>
+          <span class="rel-date">19 November 2026</span>
+          <a class="rel-dl" href="https://github.com/gerrykeys/retro-play-game-manager/releases/tag/v0.0.2" target="_blank" rel="noopener" data-icon-svg="download"><span>Download</span></a>
+        </header>
+        <p class="rel-intro">Your retro year, cheats, the phone as a second screen and a palette to do it all from the keyboard.</p>
+        <ul class="rel-items">
+          <li><span class="ri" data-icon-svg="party-popper"></span><div><a href="#/anno-retro">Your retro year</a><p>Hours, favorite games and consoles, the times you play: your year told as a story, down to a card to share.</p></div></li>
+          <li><span class="ri" data-icon-svg="timer"></span><div><a href="#/tempo-di-gioco">Play time</a><p>The app times the games you start from it, on every frontend.</p></div></li>
+          <li><span class="ri" data-icon-svg="wand-sparkles"></span><div><a href="#/trucchi">Cheats</a><p>Find a game’s cheats in the libretro database, turn on the ones you want, and they start with the game. For RetroArch.</p></div></li>
+          <li><span class="ri" data-icon-svg="smartphone"></span><div><a href="#/telefono">The phone as a second screen</a><p>While you play: the clock, your notes, the manual, the cheats on and the RetroAchievements.</p></div></li>
+          <li><span class="ri" data-icon-svg="command"></span><div><a href="#/comandi">Command palette</a><p><kbd>Ctrl K</kbd> and a few letters: games, systems, views, settings and actions in one box.</p></div></li>
+          <li><span class="ri" data-icon-svg="shapes"></span><div><a href="#/simili">More like this</a><p>At the foot of each game’s page, the games of your archive most like it.</p></div></li>
+          <li><span class="ri" data-icon-svg="discord"></span><div><a href="#/discord">Discord status</a><p>Your friends see what you’re playing. Off until you turn it on.</p></div></li>
+          <li><span class="ri" data-icon-svg="image-minus"></span><div><a href="#/controllo-archivio">Check archive</a><p>Finds the media no game uses any more and deletes them in one click.</p></div></li>
+        </ul>
+        <div class="rel-more"><h3>And also</h3><ul>
+          <li><a href="#/desktop-mode">Desktop Mode</a>: leave the joypad alone and the games’ videos play.</li>
+          <li>If a game doesn’t start, the app <a href="#/giocare">tells you why</a>.</li>
+          <li>Notes for each game, on its page and on the phone.</li>
+          <li>The <b>What’s new</b> window after each <a href="#/aggiornamenti">update</a>.</li>
+          <li>New <a href="#/mcp">MCP</a> tools: cheats, notes, similar games, retro year, unused media.</li>
+        </ul></div>
+      </section>
+      <section class="rel">
+        <header class="rel-head">
+          <h2>0.0.1</h2>
+          <span class="rel-date">19 November 2026</span>
+          <a class="rel-dl" href="https://github.com/gerrykeys/retro-play-game-manager/releases/tag/v0.0.1" target="_blank" rel="noopener" data-icon-svg="download"><span>Download</span></a>
+        </header>
+        <p class="rel-intro">The first public version: your retro games, tidy and ready to play.</p>
+        <ul class="rel-items">
+          <li><span class="ri" data-icon-svg="layout-grid"></span><div><a href="#/libreria">The library</a><p>Covers, list and timeline, fast even with tens of thousands of games.</p></div></li>
+          <li><span class="ri" data-icon-svg="wand-sparkles"></span><div><a href="#/scraping">Scraping</a><p>Details, covers and videos from ScreenScraper, with IGDB as an extra source.</p></div></li>
+          <li><span class="ri" data-icon-svg="layers"></span><div><a href="#/unire">Versions and formats</a><p>One game in several regions or kinds of file, duplicates joined in a click.</p></div></li>
+          <li><span class="ri" data-icon-svg="plug"></span><div><a href="#/installare">Frontends</a><p>Install and play on ES-DE, MiSTer FPGA, RetroArch, RetroPie and Batocera.</p></div></li>
+          <li><span class="ri" data-icon-svg="gamepad-2"></span><div><a href="#/desktop-mode">Desktop Mode</a><p>The app full screen, played with a joypad.</p></div></li>
+          <li><span class="ri" data-icon-svg="smartphone"></span><div><a href="#/telefono">The phone as a remote</a><p>Browse and start games from the sofa.</p></div></li>
+        </ul>
+        <div class="rel-more"><h3>And also</h3><ul>
+          <li><a href="#/salvataggi">Saves</a>, <a href="#/dat">DATs</a>, <a href="#/esporta">export</a> and <a href="#/importa">import</a>, <a href="#/dip-switch">DIP switches</a>, <a href="#/retroachievements">RetroAchievements</a> and the <a href="#/mcp">MCP server</a>.</li>
+        </ul></div>
+      </section>
     </article>
 
     <article data-topic="scorciatoie" data-group="riferimento" data-icon="keyboard"
@@ -1279,6 +1492,7 @@
             <tr><th>Keys</th><th>What they do</th></tr>
             <tr><td><kbd>Ctrl O</kbd></td><td>Open an archive</td></tr>
             <tr><td><kbd>Ctrl F</kbd></td><td>Search</td></tr>
+            <tr><td><kbd>Ctrl K</kbd></td><td>The <a href="#/comandi">command palette</a></td></tr>
             <tr><td><kbd>F5</kbd> · <kbd>Ctrl R</kbd></td><td>Read the archive again (when nothing else is in progress)</td></tr>
             <tr><td><kbd>←</kbd> <kbd>→</kbd> <kbd>↑</kbd> <kbd>↓</kbd></td><td>Move between games</td></tr>
             <tr><td><kbd>Enter</kbd></td><td>Open the highlighted game</td></tr>

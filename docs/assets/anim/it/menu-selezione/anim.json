@@ -7,7 +7,7 @@
    "hold": 1500,
    "cursor": {
     "x": 44.52,
-    "y": 57.24
+    "y": 57.29
    },
    "action": "right"
   },
@@ -20,7 +20,7 @@
    "hold": 1000,
    "cursor": {
     "x": 44.52,
-    "y": 57.24
+    "y": 57.29
    },
    "action": "click",
    "label": "Ctrl + clic"
@@ -30,7 +30,7 @@
    "hold": 1000,
    "cursor": {
     "x": 59.78,
-    "y": 57.24
+    "y": 57.29
    },
    "action": "click",
    "label": "Ctrl + clic"
@@ -40,7 +40,7 @@
    "hold": 1000,
    "cursor": {
     "x": 29.27,
-    "y": 57.26
+    "y": 57.21
    },
    "action": "click",
    "label": "Ctrl + clic"
@@ -54,7 +54,7 @@
    "hold": 1500,
    "cursor": {
     "x": 59.78,
-    "y": 57.24
+    "y": 57.29
    },
    "action": "right"
   },

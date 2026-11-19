@@ -267,6 +267,28 @@
       </div>
     </article>
 
+    <article data-topic="comandi" data-group="libreria" data-icon="command"
+      data-title="Palette dei comandi"
+      data-desc="Tutto ciò che fa l’app, trovato scrivendo."
+      data-lead="Premi Ctrl K e scrivi qualche lettera: giochi, sistemi, collezioni, viste, impostazioni e azioni, in un’unica casella.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="comandi" data-thumb="02.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Ctrl K">Premi <kbd>Ctrl K</kbd>, oppure il pulsante <b>⌘</b> in alto.</li>
+            <li data-at="1" data-short="Tutto in un elenco">L’elenco ha le azioni, i posti della libreria e le viste.</li>
+            <li data-at="2" data-short="Scrivi qualche lettera">Scrivi qualche lettera: prima ciò che corrisponde meglio, anche i giochi.</li>
+            <li data-at="3" data-short="Invio lo apre"><kbd>↑</kbd> <kbd>↓</kbd> per scegliere, <kbd>Invio</kbd> per aprire.</li>
+            <li data-at="5" data-short="Viste e impostazioni">Ci sono anche le viste, gli ordinamenti e le pagine delle impostazioni.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
+            <li>Nella pagina di un gioco, i primi comandi sono per quel gioco: gioca, modifica, preferito, scraping.</li>
+            <li><kbd>Esc</kbd> la chiude.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
     <article data-topic="filtri-salvati" data-group="libreria" data-icon="bookmark"
       data-title="Filtri salvati"
       data-desc="Ritrova una ricerca con un clic."
@@ -346,12 +368,13 @@
             <li data-at="0" data-short="Clic su un gioco">Clicca un gioco (o premi <kbd>Invio</kbd>).</li>
             <li data-at="1" data-short="La parte alta">In alto: schermata, dati principali, <b>Gioca</b> (o <b>Installa</b>) e le azioni, come <b>Modifica</b> e il menu <b>…</b>.</li>
             <li data-at="2" data-short="Ingrandisci e scorri">Ogni immagine si apre a tutta finestra: <kbd>←</kbd> <kbd>→</kbd> per scorrere, <kbd>Esc</kbd> per chiudere.</li>
-            <li data-at="4" data-short="Galleria, descrizione, confezione">Scorrendo: galleria, descrizione, confezione e, a lato, dettagli, versioni e file.</li>
+            <li data-at="4" data-short="Galleria, descrizione, confezione">Scorrendo: galleria, descrizione, <a href="#/trucchi">trucchi</a>, confezione e, a lato, dettagli, versioni, appunti e file.</li>
             <li data-at="5" data-short="Il gioco dopo">Le frecce in alto passano al gioco <b>prima</b> e <b>dopo</b>.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
             <li><kbd>Esc</kbd> o il tasto indietro del mouse riportano alla libreria.</li>
             <li>Un gioco che ha solo il frontend mostra <b>Gioca</b> e <b>Importa nell’archivio</b>.</li>
+            <li><b>Tempo di gioco</b> compare dopo che ci hai giocato: vedi <a href="#/tempo-di-gioco">Tempo di gioco</a>.</li>
           </ul></div>
         </div>
       </div>
@@ -871,7 +894,7 @@
           <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
             <li>Con ES-DE il gioco parte come lo farebbe partire ES-DE.</li>
             <li>Con MiSTer FPGA parte sul MiSTer, che deve essere collegato in rete.</li>
-            <li>Se manca l’emulatore o il core, l’app te lo dice.</li>
+            <li>Se il gioco non parte, l’app ti dice perché: manca l’emulatore o il core, oppure l’emulatore si è chiuso subito, e allora vedi anche il suo messaggio d’errore.</li>
           </ul></div>
         </div>
       </div>
@@ -900,6 +923,29 @@
       </div>
     </article>
 
+    <article data-topic="trucchi" data-group="giocare" data-icon="wand-sparkles"
+      data-title="Trucchi"
+      data-desc="Vite infinite e altro, per RetroArch."
+      data-lead="Cerca i trucchi di un gioco nel database di libretro, accendi quelli che vuoi e partono con il gioco quando lo avvii dall’app.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="trucchi" data-thumb="07.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="1" data-short="La pagina del gioco">Apri la <a href="#/pagina-gioco">pagina del gioco</a>: i trucchi sono sotto la descrizione.</li>
+            <li data-at="2" data-short="Cerca trucchi">Clicca <b>Cerca trucchi</b>.</li>
+            <li data-at="3" data-short="Usa">Scegli un file (quello con lo stesso nome del gioco ha la spunta) e clicca <b>Usa</b>.</li>
+            <li data-at="4" data-short="Accendili">Accendi i trucchi che vuoi.</li>
+            <li data-at="6" data-short="Gioca">Avvia il gioco dall’app: sono già attivi.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
+            <li>Valgono con RetroArch, dentro ES-DE o da solo. Con un altro emulatore te lo dice la pagina.</li>
+            <li>Hai un tuo file <code>.cht</code>? Usa <b>Da file…</b>.</li>
+            <li>Con RetroAchievements in modalità hardcore, un trucco attivo porta RetroArch alla modalità normale per quel gioco.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
     <article data-topic="continua" data-group="giocare" data-icon="rotate-ccw"
       data-title="Continua a giocare"
       data-desc="Gli ultimi giochi giocati, pronti a ripartire."
@@ -908,7 +954,7 @@
         <div class="player-col"><div class="player" data-anim="continua" data-thumb="01.webp"></div><div class="player-caption"></div></div>
         <div class="text-col">
           <ol class="steps">
-            <li data-at="0" data-short="La fila Continua a giocare">Ogni scheda dice quando hai giocato o salvato, e dove.</li>
+            <li data-at="0" data-short="La fila Continua a giocare">Ogni scheda dice quando hai giocato o salvato, dove, e per quanto tempo.</li>
             <li data-at="1" data-short="Le frecce">Le frecce ai lati mostrano gli altri giochi; puoi anche trascinare la fila con il mouse.</li>
             <li data-at="2" data-short="Riprendi">Il pulsante cambia: <b>Riprendi</b> se l’archivio ha un salvataggio più recente, altrimenti <b>Gioca</b> o <b>Installa</b>.</li>
             <li data-at="4" data-short="Si riparte da dove eri">Il salvataggio torna nel frontend e il gioco parte.</li>
@@ -917,6 +963,47 @@
           <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
             <li>La fila usa le partite annotate da ES-DE, i giochi avviati dall’app e le date dei <a href="#/salvataggi">salvataggi</a>.</li>
             <li>Compare nella vista a copertine, quando non stai cercando né filtrando.</li>
+            <li>Il tempo è il <a href="#/tempo-di-gioco">tempo di gioco</a> contato dall’app.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
+    <article data-topic="tempo-di-gioco" data-group="giocare" data-icon="timer"
+      data-title="Tempo di gioco"
+      data-desc="Quanto hai giocato a ogni gioco."
+      data-lead="L’app misura i giochi che avvii da lei, fino a quando li chiudi, su tutti i frontend.">
+      <div class="text-col">
+        <ol class="steps">
+          <li>Avvia un gioco con <b>Gioca</b>: dall’app, da <a href="#/desktop-mode">Desktop Mode</a> o dal <a href="#/telefono">telefono</a>.</li>
+          <li>Gioca. Quando chiudi il gioco, l’app aggiunge il tempo.</li>
+          <li>Lo vedi nella <a href="#/pagina-gioco">pagina del gioco</a> (<b>Tempo di gioco</b>), in <a href="#/continua">Continua a giocare</a> e in Desktop Mode.</li>
+          <li>Per vedere i giochi più giocati, ordina per <b>Tempo di gioco</b>: la vista a elenco ha la sua colonna.</li>
+        </ol>
+        <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
+          <li>I giochi avviati dal frontend stesso non vengono misurati, ma RetroArch e Batocera contano il loro tempo e l’app lo aggiunge.</li>
+          <li>Un gioco che si chiude subito, o con un errore, non conta.</li>
+          <li>Il tempo resta su questo computer.</li>
+        </ul></div>
+      </div>
+    </article>
+
+    <article data-topic="discord" data-group="giocare" data-icon="discord"
+      data-title="Stato su Discord"
+      data-desc="I tuoi amici vedono a cosa giochi."
+      data-lead="Mentre giochi a un gioco avviato dall’app, il tuo profilo Discord lo mostra: titolo, sistema, copertina e da quanto stai giocando.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="discord" data-thumb="05.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Discord">Nelle <b>Impostazioni</b>, apri <b>Discord</b>, l’ultima delle integrazioni.</li>
+            <li data-at="2" data-short="Accendilo">Accendi <b>Mostra su Discord cosa stai giocando</b>.</li>
+            <li data-at="4" data-short="Cosa vedono gli amici">Avvia un gioco: l’anteprima mostra cosa vedono gli amici.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
+            <li>Discord deve essere aperto su questo PC. Lo stato è spento finché non lo accendi.</li>
+            <li>Compaiono solo i giochi avviati dall’app: dalla finestra, dal <a href="#/telefono">telefono</a> o dalla <a href="#/desktop-mode">Desktop Mode</a>.</li>
+            <li>La copertina arriva dalle miniature pubbliche di libretro; se non c’è, compare il disegno della console.</li>
           </ul></div>
         </div>
       </div>
@@ -965,6 +1052,27 @@
       </div>
     </article>
 
+    <article data-topic="simili" data-group="giocare" data-icon="shapes"
+      data-title="Simili a questo"
+      data-desc="I giochi simili a quello che stai guardando."
+      data-lead="In fondo alla pagina di ogni gioco, una fila mostra i giochi del tuo archivio più simili: della stessa serie, dello stesso sviluppatore, dello stesso genere.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="simili" data-thumb="02.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Apri un gioco">Apri la <a href="#/pagina-gioco">pagina di un gioco</a>.</li>
+            <li data-at="1" data-short="La fila">Scorri fino in fondo: <b>Simili a questo</b>. Sotto ogni gioco c’è cosa ha in comune: <b>Stessa serie</b>, lo sviluppatore o il genere.</li>
+            <li data-at="2" data-short="Aprine uno">Fai clic su uno per aprire la sua pagina.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
+            <li>Lo stesso gioco su un altro sistema non compare.</li>
+            <li>In <a href="#/desktop-mode">Desktop Mode</a>: il pulsante <b>Simili</b> nella pagina del gioco.</li>
+            <li>Si spegne in <a href="#/impostazioni">Impostazioni</a> → Libreria.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
     <article data-topic="desktop-mode" data-group="giocare" data-icon="tv"
       data-title="Desktop Mode"
       data-desc="L’app a schermo intero, come una console."
@@ -979,8 +1087,9 @@
             <li data-at="4" data-short="I giochi di un sistema"><b>A</b> apre i giochi di un sistema. <b>LT</b> e <b>RT</b> saltano da una lettera all’altra.</li>
             <li data-at="5" data-short="Il gioco">Nella pagina del gioco: <b>Gioca</b>, <b>Preferito</b> e le immagini in grande.</li>
             <li data-at="6" data-short="Gioca">Il gioco parte. Quando lo chiudi, torni alla Desktop Mode.</li>
-            <li data-at="7" data-short="Il menu"><b>Menu</b> apre il menu: suoni, audio dei video, <b>Esci dalla Desktop Mode</b>, <b>Chiudi Retro Play</b>.</li>
-            <li data-at="8" data-short="Di nuovo la libreria">Uscendo ritrovi la libreria come l’avevi lasciata.</li>
+            <li data-at="7" data-short="Il menu"><b>Menu</b> apre il menu: <b>Attract mode</b>, suoni, audio dei video, <b>Esci dalla Desktop Mode</b>, <b>Chiudi Retro Play</b>.</li>
+            <li data-at="8" data-short="Attract mode">Lascia il joypad per qualche minuto: i video dei giochi passano uno dopo l’altro, come in un cabinato. <b>A</b> avvia quello che sta passando, un altro tasto torna indietro.</li>
+            <li data-at="10" data-short="Di nuovo la libreria">Uscendo ritrovi la libreria come l’avevi lasciata.</li>
           </ol>
           <table class="table">
             <tr><th>Joypad</th><th>Tastiera</th><th>Cosa fa</th></tr>
@@ -998,7 +1107,7 @@
           <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
             <li>In basso vedi sempre i tasti del tuo joypad (Xbox, PlayStation, Nintendo) o della tastiera.</li>
             <li>Un gioco non installato si installa da lì, poi <b>Gioca ora</b>.</li>
-            <li>Per un PC da salotto: <a href="#/impostazioni">Impostazioni</a> → Generali → <b>Apri in Desktop Mode</b>.</li>
+            <li>Per un PC da salotto: <a href="#/impostazioni">Impostazioni</a> → Generali → <b>Apri in Desktop Mode</b>. Lì scegli anche dopo quanti minuti parte l’attract mode, o mai.</li>
           </ul></div>
         </div>
       </div>
@@ -1006,7 +1115,7 @@
 
     <article data-topic="telefono" data-group="giocare" data-icon="smartphone"
       data-title="Il telefono come telecomando"
-      data-desc="Sfoglia e avvia i giochi dal divano."
+      data-desc="Sfoglia e avvia i giochi dal divano, poi un secondo schermo mentre giochi."
       data-lead="Il telefono apre una pagina della tua libreria: da lì sfogli, cerchi, avvii e installi i giochi sul computer.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="telefono" data-thumb="06.webp"></div><div class="player-caption"></div></div>
@@ -1018,6 +1127,9 @@
             <li data-at="4" data-short="Sul telefono">Sul telefono, la barra in basso porta a <b>Giochi</b>, <b>Preferiti</b>, <b>Piattaforme</b> e <b>Collezioni</b>.</li>
             <li data-at="5" data-short="Una piattaforma">Tocca una piattaforma o una collezione per vederne i giochi. <b>Solo installati</b> lascia quelli già nel frontend.</li>
             <li data-at="7" data-short="Un gioco">Tocca un gioco: <b>Gioca</b> lo avvia sul computer, <b>Installa</b> lo mette nel frontend, la stella lo fa preferito.</li>
+            <li data-at="9" data-short="In gioco">Mentre giochi, la barra in basso mostra il gioco e da quanto ci stai giocando.</li>
+            <li data-at="10" data-short="Secondo schermo">Toccala: il telefono diventa il secondo schermo del gioco, con il cronometro, i tuoi appunti, il manuale, i trucchi attivi e gli obiettivi di RetroAchievements.</li>
+            <li data-at="11" data-short="Appunti">Scrivi password o dove sei arrivato: gli appunti si salvano da soli e li ritrovi anche nella <a href="#/pagina-gioco">pagina del gioco</a>.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
             <li>Il telefono deve essere sulla stessa rete Wi-Fi del computer, e l’app aperta.</li>
@@ -1134,6 +1246,31 @@
       </div>
     </article>
 
+    <article data-topic="controllo-archivio" data-group="strumenti" data-icon="image-minus"
+      data-title="Controlla archivio"
+      data-desc="Trova ed elimina i media che nessun gioco usa."
+      data-lead="Col tempo le cartelle dei media possono tenere file che nessun gioco usa più: il controllo li trova e li elimina tutti con un clic.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="controllo-archivio" data-thumb="03.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Il menu dell’archivio">Apri il menu dell’archivio, in cima alla barra laterale.</li>
+            <li data-at="1" data-short="Controlla archivio">Scegli <b>Controlla archivio…</b>: il controllo parte subito.</li>
+            <li data-at="2" data-short="Cosa ha trovato">Vedi i media orfani divisi per sistema, e quanto spazio occupano.</li>
+            <li data-at="3" data-short="I loro nomi">Clicca un sistema per vedere i file.</li>
+            <li data-at="4" data-short="Elimina tutti"><b>Elimina tutti</b>, poi conferma.</li>
+            <li data-at="6" data-short="Spazio liberato">Ti dice quanto spazio hai liberato.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
+            <li>Gli orfani restano quando un programma sostituisce una copertina senza togliere la vecchia, o quando un gioco viene tolto a mano.</li>
+            <li>I file scritti negli ultimi minuti non vengono toccati, e un file che un gioco torna a usare prima che confermi resta.</li>
+            <li>Lo trovi anche nella <a href="#/comandi">palette dei comandi</a>.</li>
+          </ul></div>
+          <div class="box warn"><h3 data-icon-svg="info">Attenzione</h3><p>I file eliminati non si possono recuperare.</p></div>
+        </div>
+      </div>
+    </article>
+
     <article data-topic="report" data-group="strumenti" data-icon="chart-column"
       data-title="Report dell’archivio"
       data-desc="Un’immagine che riassume l’archivio."
@@ -1150,6 +1287,29 @@
           <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
             <li>Conta solo i giochi dell’archivio.</li>
             <li>Se hai verificato dei sistemi con un <a href="#/dat">DAT</a>, mostra anche quanto sono completi.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
+    <article data-topic="anno-retro" data-group="strumenti" data-icon="party-popper"
+      data-title="Il tuo anno retro"
+      data-desc="Il tuo anno di gioco, raccontato."
+      data-lead="Ore giocate, giochi e console preferiti, gli orari in cui giochi: il tuo anno retro, pagina dopo pagina, fino a una carta da condividere.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="anno-retro" data-thumb="11.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Aprilo">Apri il menu dell’archivio (la scheda in alto a sinistra) e scegli <b>Il tuo anno retro</b>.</li>
+            <li data-at="2" data-short="Il racconto">Il racconto va avanti da solo. <kbd>←</kbd> <kbd>→</kbd> o un clic lo spostano, la barra spaziatrice lo mette in pausa.</li>
+            <li data-at="3" data-short="I tuoi numeri">Le ore giocate, i giochi, i più giocati, la tua console dell’anno…</li>
+            <li data-at="7" data-short="Quando e cosa">…quando giochi, il tuo decennio, il gioco più vecchio.</li>
+            <li data-at="10" data-short="La carta">Alla fine, la carta del tuo anno e che tipo di giocatore sei stato: <b>Salva immagine</b> o <b>Copia</b> per condividerla.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
+            <li>Conta i giochi che avvii dall’app, dalla Desktop Mode o dal telefono: più giochi da qui, più è ricco.</li>
+            <li>A dicembre e gennaio te lo ricorda una scheda sopra le copertine. Si spegne in <a href="#/impostazioni">Impostazioni</a> → Libreria.</li>
+            <li>In alto a destra scegli un altro anno.</li>
           </ul></div>
         </div>
       </div>
@@ -1191,6 +1351,7 @@
             <li>Cercare giochi e fare statistiche.</li>
             <li>Correggere dettagli e media, fare lo scraping, gestire versioni, formati e collezioni.</li>
             <li>Aggiungere, esportare, installare e avviare giochi; gestire salvataggi e DAT.</li>
+            <li>Dire quanto hai giocato e trovare i media che nessun gioco usa.</li>
           </ul></div>
           <div class="box"><h3 data-icon-svg="info">Sicurezza</h3><ul>
             <li>Il server risponde solo da questo PC e chiede un <b>token</b> segreto.</li>
@@ -1212,8 +1373,8 @@
         <div class="text-col">
           <ol class="steps">
             <li data-at="0" data-short="L’ingranaggio">Clicca l’<b>ingranaggio</b> in alto a destra.</li>
-            <li data-at="1" data-short="Generali"><b>Generali</b>: lingua, riapertura dell’ultimo archivio, avvio in <a href="#/desktop-mode">Desktop Mode</a>, <a href="#/aggiornamenti">aggiornamento all’avvio</a>.</li>
-            <li data-at="2" data-short="Libreria"><b>Libreria</b>: anteprima al passaggio del mouse, <a href="#/accadde-oggi">Accadde oggi</a>, <a href="#/cosa-gioco">Cosa gioco oggi?</a>, miniature.</li>
+            <li data-at="1" data-short="Generali"><b>Generali</b>: lingua, riapertura dell’ultimo archivio, avvio in <a href="#/desktop-mode">Desktop Mode</a> e il suo attract mode, <a href="#/aggiornamenti">aggiornamento all’avvio</a>.</li>
+            <li data-at="2" data-short="Libreria"><b>Libreria</b>: anteprima al passaggio del mouse, <a href="#/accadde-oggi">Accadde oggi</a>, <a href="#/cosa-gioco">Cosa gioco oggi?</a>, <a href="#/simili">Simili a questo</a>, <a href="#/anno-retro">Il tuo anno retro</a>, miniature.</li>
             <li data-at="3" data-short="Aspetto"><b>Aspetto</b>: tema e modalità scura, chiara o come Windows.</li>
             <li data-at="5" data-short="Il tema chiaro">Ecco l’app nel tema chiaro.</li>
           </ol>
@@ -1225,7 +1386,7 @@
             <li><b>Scraping</b>: account ScreenScraper e IGDB, regione e lingua preferite.</li>
             <li><b>Altre impostazioni</b>: un’area per ogni parte dell’app. Per ora <b>Arcade</b>, con l’XML di MAME di ogni ROM Set per i suoi <a href="#/dip-switch">DIP switch</a>.</li>
             <li><b>Frontend</b>: il frontend collegato, il <a href="#/romset">ROM Set</a> arcade e i <a href="#/formati-frontend">formati compatibili</a>.</li>
-            <li><b><a href="#/retroachievements">RetroAchievements</a></b>, <b><a href="#/mcp">Server MCP</a></b> e <b><a href="#/telefono">Telefono</a></b>: hanno una pagina loro.</li>
+            <li><b><a href="#/retroachievements">RetroAchievements</a></b>, <b><a href="#/mcp">Server MCP</a></b>, <b><a href="#/telefono">Telefono</a></b> e <b><a href="#/discord">Discord</a></b>: hanno una pagina loro.</li>
             <li><b>Informazioni</b>: la versione dell’app, i suoi <a href="#/aggiornamenti">aggiornamenti</a> e il pulsante per sostenerla con un caffè su <a href="https://ko-fi.com/gerrykeys" target="_blank" rel="noopener">Ko-fi</a>.</li>
             <li>Password e chiavi restano cifrate su questo PC.</li>
           </ul></div>
@@ -1245,9 +1406,10 @@
             <li data-at="1" data-short="Il download">Se c’è, la scarica e mostra a che punto è.</li>
             <li data-at="2" data-short="Apri senza aspettare"><b>Apri senza aspettare</b> apre subito l’app: l’aggiornamento si installa quando la chiudi.</li>
             <li data-at="3" data-short="L’installazione">Poi la installa, e l’app si riapre aggiornata.</li>
-            <li data-at="4" data-short="La freccia verde">Un aggiornamento pronto da installare appare come una <b>freccia verde</b> in alto: cliccala per riavviare.</li>
-            <li data-at="5" data-short="Informazioni">In <b>Impostazioni → Informazioni</b> vedi la versione e puoi cercare a mano.</li>
-            <li data-at="6" data-short="Aggiorna all’avvio"><b>Impostazioni → Generali → Aggiorna all’avvio</b> attiva o spegne il controllo.</li>
+            <li data-at="4" data-short="Le novità">Le <b>Novità</b> ti mostrano cosa porta la versione, ognuna con la sua animazione. Spunta <b>Non mostrare più all’avvio</b> quando le hai viste.</li>
+            <li data-at="6" data-short="La freccia verde">Un aggiornamento pronto da installare appare come una <b>freccia verde</b> in alto: cliccala per riavviare.</li>
+            <li data-at="7" data-short="Informazioni">In <b>Impostazioni → Informazioni</b> vedi la versione, cerchi a mano e riapri le <b>Novità in questa versione</b>.</li>
+            <li data-at="9" data-short="Aggiorna all’avvio"><b>Impostazioni → Generali → Aggiorna all’avvio</b> attiva o spegne il controllo.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
             <li>Senza internet l’app si apre e basta, come sempre.</li>
@@ -1255,6 +1417,57 @@
           </ul></div>
         </div>
       </div>
+    </article>
+
+    <article data-topic="note-di-rilascio" data-group="riferimento" data-icon="scroll-text"
+      data-title="Note di rilascio"
+      data-desc="Cosa ha portato ogni versione dell’app."
+      data-lead="Tutte le versioni dell’app, dalla più recente. Dopo un aggiornamento, l’app mostra le stesse novità nella sua finestra Novità.">
+      <section class="rel">
+        <header class="rel-head">
+          <h2>0.0.2</h2>
+          <span class="rel-badge">Ultima</span>
+          <span class="rel-date">19 novembre 2026</span>
+          <a class="rel-dl" href="https://github.com/gerrykeys/retro-play-game-manager/releases/tag/v0.0.2" target="_blank" rel="noopener" data-icon-svg="download"><span>Scarica</span></a>
+        </header>
+        <p class="rel-intro">Il tuo anno retro, i trucchi, il telefono come secondo schermo e una palette per fare tutto da tastiera.</p>
+        <ul class="rel-items">
+          <li><span class="ri" data-icon-svg="party-popper"></span><div><a href="#/anno-retro">Il tuo anno retro</a><p>Ore, giochi e console preferiti, gli orari in cui giochi: il tuo anno raccontato come una storia, fino a una card da condividere.</p></div></li>
+          <li><span class="ri" data-icon-svg="timer"></span><div><a href="#/tempo-di-gioco">Tempo di gioco</a><p>L’app misura i giochi che avvii da lei, su ogni frontend.</p></div></li>
+          <li><span class="ri" data-icon-svg="wand-sparkles"></span><div><a href="#/trucchi">Trucchi</a><p>Cerchi i trucchi di un gioco nel database di libretro, accendi quelli che vuoi e partono con il gioco. Per RetroArch.</p></div></li>
+          <li><span class="ri" data-icon-svg="smartphone"></span><div><a href="#/telefono">Il telefono come secondo schermo</a><p>Mentre giochi: l’orologio, i tuoi appunti, il manuale, i trucchi attivi e i RetroAchievements.</p></div></li>
+          <li><span class="ri" data-icon-svg="command"></span><div><a href="#/comandi">Palette dei comandi</a><p><kbd>Ctrl K</kbd> e qualche lettera: giochi, sistemi, viste, impostazioni e azioni in un solo riquadro.</p></div></li>
+          <li><span class="ri" data-icon-svg="shapes"></span><div><a href="#/simili">Simili a questo</a><p>In fondo alla pagina di ogni gioco, i giochi del tuo archivio più simili.</p></div></li>
+          <li><span class="ri" data-icon-svg="discord"></span><div><a href="#/discord">Stato su Discord</a><p>I tuoi amici vedono a cosa giochi. Spento finché non lo accendi.</p></div></li>
+          <li><span class="ri" data-icon-svg="image-minus"></span><div><a href="#/controllo-archivio">Controlla archivio</a><p>Trova i media che nessun gioco usa più e li elimina con un clic.</p></div></li>
+        </ul>
+        <div class="rel-more"><h3>E poi</h3><ul>
+          <li><a href="#/desktop-mode">Desktop Mode</a>: se lasci il joypad, partono i video dei giochi.</li>
+          <li>Se un gioco non parte, l’app <a href="#/giocare">dice perché</a>.</li>
+          <li>Appunti per ogni gioco, nella sua pagina e sul telefono.</li>
+          <li>La finestra <b>Novità</b> dopo ogni <a href="#/aggiornamenti">aggiornamento</a>.</li>
+          <li>Nuovi strumenti <a href="#/mcp">MCP</a>: trucchi, appunti, giochi simili, anno retro, media inutilizzati.</li>
+        </ul></div>
+      </section>
+      <section class="rel">
+        <header class="rel-head">
+          <h2>0.0.1</h2>
+          <span class="rel-date">19 novembre 2026</span>
+          <a class="rel-dl" href="https://github.com/gerrykeys/retro-play-game-manager/releases/tag/v0.0.1" target="_blank" rel="noopener" data-icon-svg="download"><span>Scarica</span></a>
+        </header>
+        <p class="rel-intro">La prima versione pubblica: i tuoi giochi retro, in ordine e pronti da giocare.</p>
+        <ul class="rel-items">
+          <li><span class="ri" data-icon-svg="layout-grid"></span><div><a href="#/libreria">La libreria</a><p>Copertine, elenco e linea del tempo, veloci anche con decine di migliaia di giochi.</p></div></li>
+          <li><span class="ri" data-icon-svg="wand-sparkles"></span><div><a href="#/scraping">Scraping</a><p>Dettagli, copertine e video da ScreenScraper, con IGDB come fonte in più.</p></div></li>
+          <li><span class="ri" data-icon-svg="layers"></span><div><a href="#/unire">Versioni e formati</a><p>Un gioco in più regioni o tipi di file, i doppioni uniti con un clic.</p></div></li>
+          <li><span class="ri" data-icon-svg="plug"></span><div><a href="#/installare">Frontend</a><p>Installi e giochi su ES-DE, MiSTer FPGA, RetroArch, RetroPie e Batocera.</p></div></li>
+          <li><span class="ri" data-icon-svg="gamepad-2"></span><div><a href="#/desktop-mode">Desktop Mode</a><p>L’app a tutto schermo, da usare col joypad.</p></div></li>
+          <li><span class="ri" data-icon-svg="smartphone"></span><div><a href="#/telefono">Il telefono come telecomando</a><p>Sfogli e avvii i giochi dal divano.</p></div></li>
+        </ul>
+        <div class="rel-more"><h3>E poi</h3><ul>
+          <li><a href="#/salvataggi">Salvataggi</a>, <a href="#/dat">DAT</a>, <a href="#/esporta">export</a> e <a href="#/importa">import</a>, <a href="#/dip-switch">DIP switch</a>, <a href="#/retroachievements">RetroAchievements</a> e il <a href="#/mcp">server MCP</a>.</li>
+        </ul></div>
+      </section>
     </article>
 
     <article data-topic="scorciatoie" data-group="riferimento" data-icon="keyboard"
@@ -1275,6 +1488,7 @@
             <tr><th>Tasti</th><th>Cosa fanno</th></tr>
             <tr><td><kbd>Ctrl O</kbd></td><td>Apri un archivio</td></tr>
             <tr><td><kbd>Ctrl F</kbd></td><td>Cerca</td></tr>
+            <tr><td><kbd>Ctrl K</kbd></td><td>La <a href="#/comandi">palette dei comandi</a></td></tr>
             <tr><td><kbd>F5</kbd> · <kbd>Ctrl R</kbd></td><td>Rileggi l’archivio (quando non c’è altro in corso)</td></tr>
             <tr><td><kbd>←</kbd> <kbd>→</kbd> <kbd>↑</kbd> <kbd>↓</kbd></td><td>Muoviti tra i giochi</td></tr>
             <tr><td><kbd>Invio</kbd></td><td>Apri il gioco evidenziato</td></tr>

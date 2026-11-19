@@ -72,6 +72,23 @@
     "y": 59.54
    },
    "action": "none"
+  },
+  {
+   "img": "10.webp",
+   "hold": 2600,
+   "cursor": {
+    "x": 50.05,
+    "y": 51.26
+   },
+   "action": "click"
+  },
+  {
+   "img": "11.webp",
+   "hold": 3000
+  },
+  {
+   "img": "12.webp",
+   "hold": 3400
   }
  ]
 }
