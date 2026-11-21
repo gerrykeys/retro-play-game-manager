@@ -144,6 +144,7 @@ What each version brought: the [**release notes**](https://gerrykeys.github.io/r
 - **DIP switches** for arcade games: lives, coins and difficulty.
 
 **Tools**
+- **Add games** from a folder of ROMs: copied into the archive, or moved, so they don't take twice the space.
 - **Verify with DATs** (No-Intro, Redump, MAME…): check your dumps and see what is missing.
 - **Export** games to a .zip and **import** them into another archive.
 - An **archive report** in one picture, and your **RetroAchievements**.

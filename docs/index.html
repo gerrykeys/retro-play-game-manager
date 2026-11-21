@@ -115,7 +115,7 @@
 
     <article data-topic="aggiungere" data-group="inizia" data-icon="folder-input"
       data-title="Add games"
-      data-desc="Copy the ROMs of a folder into the archive."
+      data-desc="Copy or move the ROMs of a folder into the archive."
       data-lead="Got a folder of ROMs? The app copies them into the archive, and first shows you what it will do.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="aggiungere" data-thumb="05.webp"></div><div class="player-caption"></div></div>
@@ -135,6 +135,7 @@
             <li>Games already in the archive are not touched.</li>
             <li>The arrow next to <b>Add games</b> also imports a <code>.zip</code> export, or the games only the frontend has.</li>
           </ul></div>
+          <div class="box warn"><h3 data-icon-svg="info">Move instead of copy</h3><p>Turn on <b>Move the files instead of copying them</b> and the games’ files leave the folder: they stay only in the archive. The app asks you first, because if the move doesn’t complete you could lose data.</p></div>
           <div class="box"><h3 data-icon-svg="info">Arcade games</h3><p>For <code>arcade</code> and <code>mame</code> you choose which <a href="#/romset">ROM Set</a> the games go into.</p></div>
         </div>
       </div>
@@ -606,7 +607,7 @@
             <li data-at="0" data-short="Right click">Right-click the game (or a selection).</li>
             <li data-at="1" data-short="Delete from the archive">Choose <b>Delete from the archive…</b> (or press <kbd>Del</kbd>).</li>
             <li data-at="2" data-short="The summary">Check the summary and press <b>Delete permanently</b>.</li>
-            <li data-at="3" data-short="Deleted">Done.</li>
+            <li data-at="3" data-short="Deleted">A bar shows how far it is, then it’s done.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
             <li>What is installed in the frontend is not touched.</li>
@@ -664,7 +665,7 @@
           <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
             <li>The game that stays keeps its data and takes from the others what it lacks (in green).</li>
             <li><b>Not the same game</b> removes the suggestion for good.</li>
-            <li><b>Join all</b> joins every group at once. Nothing is joined without your confirmation.</li>
+            <li><b>Join all</b> joins every group at once, with a bar and a count of the groups as it goes. Nothing is joined without your confirmation.</li>
           </ul></div>
         </div>
       </div>
@@ -1538,8 +1539,24 @@
       data-lead="Every version of the app since the first, newest first, with what it changed. In the app, Settings → About → Release notes opens this page.">
       <section class="rel">
         <header class="rel-head">
-          <h2>0.0.5</h2>
+          <h2>0.0.6</h2>
           <span class="rel-badge">Latest</span>
+          <span class="rel-date">22 November 2026</span>
+          <a class="rel-dl" href="https://github.com/gerrykeys/retro-play-game-manager/releases/tag/v0.0.6" target="_blank" rel="noopener" data-icon-svg="download"><span>Download</span></a>
+        </header>
+        <p class="rel-intro">Add games by moving their files instead of copying them, and delete many games much faster.</p>
+        <ul class="rel-items">
+          <li><span class="ri" data-icon-svg="folder-input"></span><div><a href="#/aggiungere">Move instead of copy</a><p>In <i>Add games</i>, <b>Move the files instead of copying them</b> empties the folder into the archive without taking twice the space. On the same disk it is almost instant. Off until you turn it on, and the app asks first.</p></div></li>
+        </ul>
+        <div class="rel-more"><h3>And also</h3><ul>
+          <li>The files leave the folder only at the end, once the games are in the archive.</li>
+          <li><a href="#/eliminare">Deleting</a> many games is much faster, with a bar showing how far it is.</li>
+          <li><a href="#/unire">Join all</a> shows a bar and how many groups it has joined so far.</li>
+        </ul></div>
+      </section>
+      <section class="rel">
+        <header class="rel-head">
+          <h2>0.0.5</h2>
           <span class="rel-date">21 November 2026</span>
           <a class="rel-dl" href="https://github.com/gerrykeys/retro-play-game-manager/releases/tag/v0.0.5" target="_blank" rel="noopener" data-icon-svg="download"><span>Download</span></a>
         </header>
@@ -1733,7 +1750,7 @@
 </div>
 
 <script src="assets/icons.js?v=4adbcba3"></script>
-<script src="assets/anim/en.js?v=a6743cca"></script>
+<script src="assets/anim/en.js?v=3e4e0e86"></script>
 <script src="assets/player.js?v=20005dc7"></script>
 <script src="assets/app.js?v=d4ee240f"></script>
 </body>

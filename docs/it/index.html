@@ -111,7 +111,7 @@
 
     <article data-topic="aggiungere" data-group="inizia" data-icon="folder-input"
       data-title="Aggiungere giochi"
-      data-desc="Copia nell’archivio le ROM di una cartella."
+      data-desc="Copia o sposta nell’archivio le ROM di una cartella."
       data-lead="Hai una cartella di ROM? L’app le copia nell’archivio, e prima ti mostra cosa farà.">
       <div class="topic-grid">
         <div class="player-col"><div class="player" data-anim="aggiungere" data-thumb="05.webp"></div><div class="player-caption"></div></div>
@@ -131,6 +131,7 @@
             <li>I giochi già nell’archivio non vengono toccati.</li>
             <li>La freccia accanto ad <b>Aggiungi giochi</b> importa anche un export <code>.zip</code> o i giochi che ha solo il frontend.</li>
           </ul></div>
+          <div class="box warn"><h3 data-icon-svg="info">Spostare invece di copiare</h3><p>Accendi <b>Sposta i file invece di copiarli</b> e i file dei giochi lasciano la cartella: restano solo nell’archivio. L’app te lo chiede prima, perché se lo spostamento non va a buon fine potresti perdere dei dati.</p></div>
           <div class="box"><h3 data-icon-svg="info">Giochi arcade</h3><p>Per <code>arcade</code> e <code>mame</code> scegli in quale <a href="#/romset">ROM Set</a> mettere i giochi.</p></div>
         </div>
       </div>
@@ -602,7 +603,7 @@
             <li data-at="0" data-short="Clic destro">Clic destro sul gioco (o su una selezione).</li>
             <li data-at="1" data-short="Elimina dall’archivio">Scegli <b>Elimina dall’archivio…</b> (o premi <kbd>Canc</kbd>).</li>
             <li data-at="2" data-short="Il riepilogo">Controlla il riepilogo e premi <b>Elimina definitivamente</b>.</li>
-            <li data-at="3" data-short="Eliminato">Fatto.</li>
+            <li data-at="3" data-short="Eliminato">Una barra mostra a che punto è, poi è fatto.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
             <li>Ciò che è installato nel frontend non viene toccato.</li>
@@ -660,7 +661,7 @@
           <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
             <li>Il gioco che resta tiene i suoi dati e prende dagli altri quelli che gli mancano (in verde).</li>
             <li><b>Non sono lo stesso gioco</b> toglie la proposta per sempre.</li>
-            <li><b>Unisci tutti</b> unisce tutti i gruppi insieme. Senza la tua conferma non si unisce nulla.</li>
+            <li><b>Unisci tutti</b> unisce tutti i gruppi insieme, con una barra e il conteggio dei gruppi mentre procede. Senza la tua conferma non si unisce nulla.</li>
           </ul></div>
         </div>
       </div>
@@ -1534,8 +1535,24 @@
       data-lead="Tutte le versioni dell’app dalla prima, dalla più recente, con cosa hanno cambiato. Nell’app, Impostazioni → Informazioni → Note di rilascio apre questa pagina.">
       <section class="rel">
         <header class="rel-head">
-          <h2>0.0.5</h2>
+          <h2>0.0.6</h2>
           <span class="rel-badge">Ultima</span>
+          <span class="rel-date">22 novembre 2026</span>
+          <a class="rel-dl" href="https://github.com/gerrykeys/retro-play-game-manager/releases/tag/v0.0.6" target="_blank" rel="noopener" data-icon-svg="download"><span>Scarica</span></a>
+        </header>
+        <p class="rel-intro">Aggiungi giochi spostando i file invece di copiarli, ed elimina molti giochi molto più in fretta.</p>
+        <ul class="rel-items">
+          <li><span class="ri" data-icon-svg="folder-input"></span><div><a href="#/aggiungere">Sposta invece di copiare</a><p>In <i>Aggiungi giochi</i>, <b>Sposta i file invece di copiarli</b> svuota la cartella nell’archivio senza occupare il doppio dello spazio. Sullo stesso disco è quasi immediato. Spento finché non lo accendi, e l’app chiede prima conferma.</p></div></li>
+        </ul>
+        <div class="rel-more"><h3>E poi</h3><ul>
+          <li>I file lasciano la cartella solo alla fine, quando i giochi sono nell’archivio.</li>
+          <li><a href="#/eliminare">Eliminare</a> tanti giochi è molto più veloce, con una barra che mostra a che punto è.</li>
+          <li><a href="#/unire">Unisci tutti</a> mostra una barra e quanti gruppi ha già unito.</li>
+        </ul></div>
+      </section>
+      <section class="rel">
+        <header class="rel-head">
+          <h2>0.0.5</h2>
           <span class="rel-date">21 novembre 2026</span>
           <a class="rel-dl" href="https://github.com/gerrykeys/retro-play-game-manager/releases/tag/v0.0.5" target="_blank" rel="noopener" data-icon-svg="download"><span>Scarica</span></a>
         </header>
@@ -1729,7 +1746,7 @@
 </div>
 
 <script src="../assets/icons.js?v=4adbcba3"></script>
-<script src="../assets/anim/it.js?v=f44e5ace"></script>
+<script src="../assets/anim/it.js?v=ff36c5d4"></script>
 <script src="../assets/player.js?v=20005dc7"></script>
 <script src="../assets/app.js?v=d4ee240f"></script>
 </body>
