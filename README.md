@@ -80,7 +80,7 @@ Get the latest version from the [**Releases**](https://github.com/gerrykeys/retr
 | File | |
 |---|---|
 | `Retro-Play-Game-Manager-Setup-<version>.exe` | **Recommended.** Installs the app; it then updates itself. |
-| `Retro-Play-Game-Manager-<version>-portable.exe` | No installation, runs from any folder. It tells you when there is a new version. |
+| `Retro-Play-Game-Manager-<version>-portable.exe` | No installation, runs from any folder. It updates itself too. |
 
 What each version brought: the [**release notes**](https://gerrykeys.github.io/retro-play-game-manager/#/note-di-rilascio).
 
