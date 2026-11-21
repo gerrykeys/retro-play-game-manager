@@ -38,25 +38,40 @@
   {
    "img": "07.webp",
    "hold": 2600,
-   "key": "Esc  M"
+   "key": "Esc  E"
   },
   {
    "img": "08.webp",
+   "hold": 2600,
+   "key": "Enter"
+  },
+  {
+   "img": "09.webp",
+   "hold": 3000,
+   "key": "→"
+  },
+  {
+   "img": "10.webp",
+   "hold": 3200,
+   "key": "M"
+  },
+  {
+   "img": "11.webp",
    "hold": 2400,
    "key": "↓  Enter"
   },
   {
-   "img": "09.webp",
+   "img": "12.webp",
    "hold": 4200,
    "key": "Esc  M"
   },
   {
-   "img": "10.webp",
+   "img": "13.webp",
    "hold": 2400,
    "key": "↓  Enter"
   },
   {
-   "img": "11.webp",
+   "img": "14.webp",
    "hold": 2400
   }
  ]

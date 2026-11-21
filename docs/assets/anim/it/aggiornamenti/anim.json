@@ -49,8 +49,8 @@
    "img": "08.webp",
    "hold": 2800,
    "cursor": {
-    "x": 73.65,
-    "y": 53.41
+    "x": 75.9,
+    "y": 39.07
    },
    "action": "hover"
   },
@@ -58,13 +58,22 @@
    "img": "09.webp",
    "hold": 2400,
    "cursor": {
-    "x": 58.38,
-    "y": 42.61
+    "x": 50.18,
+    "y": 27.7
    },
    "action": "hover"
   },
   {
    "img": "10.webp",
+   "hold": 2400,
+   "cursor": {
+    "x": 66.78,
+    "y": 27.7
+   },
+   "action": "hover"
+  },
+  {
+   "img": "11.webp",
    "hold": 1300,
    "cursor": {
     "x": 22.06,
@@ -73,11 +82,11 @@
    "action": "click"
   },
   {
-   "img": "11.webp",
+   "img": "12.webp",
    "hold": 3000,
    "cursor": {
     "x": 58.38,
-    "y": 70.89
+    "y": 73.04
    },
    "action": "hover"
   }

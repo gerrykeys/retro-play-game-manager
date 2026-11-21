@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="en" data-base="../" data-other="../it/themes/index.html" data-title="Retro Play · How to make a Desktop Mode theme">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retro Play · How to make a Desktop Mode theme</title>
+<meta name="description" content="How to write a theme for the Desktop Mode of Retro Play Game Manager: theme.json, CSS, layouts and scripts.">
+<meta name="theme-color" content="#0a0b10">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="it" href="../it/themes/index.html">
+<link rel="stylesheet" href="../assets/style.css">
+<script>
+  try {
+    if (localStorage.getItem('rp-lang') === 'it') location.replace('../it/themes/index.html' + location.hash)
+    const t = localStorage.getItem('rp-theme')
+    if (t) document.documentElement.dataset.theme = t
+  } catch (e) {}
+  window.RP_GROUPS = {
+    en: [
+      { id: 'start', title: 'Getting started', desc: 'What a theme is, and your first one', color: '#8b7bff', icon: 'rocket' },
+      { id: 'json', title: 'theme.json', desc: 'Colors, fonts, pictures, sounds, words, options', color: '#3ee0c5', icon: 'braces' },
+      { id: 'scenes', title: 'Scenes', desc: 'Every screen made of the elements you place', color: '#ffbf47', icon: 'layout-dashboard' },
+      { id: 'css', title: 'CSS', desc: 'Parts, states, numbers and recipes', color: '#ff6fb5', icon: 'paintbrush' },
+      { id: 'scripts', title: 'Scripts', desc: 'Effects and screens of your own, in JavaScript', color: '#4cc2ff', icon: 'code' },
+      { id: 'help', title: 'Tools and help', desc: 'Inspector, problems, examples', color: '#a5abbd', icon: 'life-buoy' }
+    ]
+  }
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <button class="icon-btn menu-btn" id="menu" aria-label="Menu" data-icon-svg="menu"></button>
+  <a class="brand" href="#/">
+    <img src="../assets/icon.svg" alt="">
+    <span><b>Retro Play</b><small>Themes guide</small></span>
+  </a>
+  <button class="search-btn" id="search" aria-label="Search the guide" data-icon-svg="search"><span>Search the guide…</span><kbd>Ctrl K</kbd></button>
+  <a class="dl-btn" href="../index.html" title="The guide to the app" data-icon-svg="book-open"><span>App guide</span></a>
+  <a class="lang-btn" id="lang" href="../it/themes/index.html" hreflang="it" lang="it"></a>
+  <button class="icon-btn" id="theme" aria-label="Change theme"></button>
+</header>
+
+<div class="layout">
+  <aside class="sidebar"><nav id="nav" aria-label="Topics"></nav></aside>
+
+  <main class="main">
+
+    <!-- ======================= HOME ======================= -->
+    <section class="page" id="home">
+      <div class="hero">
+        <div>
+          <span class="eyebrow"><b>THEMES</b> Desktop Mode, your way</span>
+          <h1>Make Desktop Mode <span class="grad-text">look like nothing else</span></h1>
+          <p class="lead">A theme changes everything you see and hear in Desktop Mode: colors, fonts, pictures, sounds, words, how the screens are laid out, even whole screens written in JavaScript. You start without code, and go as far as you like.</p>
+          <div class="cta">
+            <a class="btn primary" href="#/first-theme" data-icon-svg="rocket">Your first theme</a>
+            <a class="btn" href="#/examples" data-icon-svg="sparkles">The examples</a>
+            <button class="btn" data-open-search data-icon-svg="search">Find a topic</button>
+          </div>
+        </div>
+        <div>
+          <figure class="figure"><img src="../assets/themes/en/neon-home.webp" alt="Desktop Mode in the Neon Arcade theme"></figure>
+        </div>
+      </div>
+      <div class="section-title"><h2>All topics</h2><p>From the first color to screens of your own.</p></div>
+      <div id="groups"></div>
+    </section>
+
+    <!-- ======================= GETTING STARTED ======================= -->
+
+    <article data-topic="intro" data-group="start" data-icon="palette" data-thumb-src="assets/themes/en/atlas-home.webp"
+      data-title="What a theme is"
+      data-desc="From a colour to a Desktop Mode that looks like nothing else."
+      data-lead="A theme is a folder: a theme.json that says what it changes, and if you like CSS, pictures, fonts, sounds and pages with scripts. The app keeps doing the work (the joypad, the games, installing, playing); the theme decides how it all looks and sounds.">
+      <div class="prose">
+        <div class="layers">
+          <div style="--c:#3ee0c5"><span class="n">1</span><b>theme.json</b><p>Colors, fonts, corners, background, a picture per system, sounds, music, the app’s words, options for the user. No code: the editor writes it for you.</p></div>
+          <div style="--c:#ffbf47"><span class="n">2</span><b>Scenes</b><p>Every screen made of the elements you place where you want: lists of games as rows, grids or wheels, pictures, videos, texts, buttons. Layouts the user chooses among, and each system with its own colours and words.</p></div>
+          <div style="--c:#ff6fb5"><span class="n">3</span><b>CSS</b><p>Any CSS, on every element of your scenes and on parts with stable names. Each item of a list knows how far it is from the focus.</p></div>
+          <div style="--c:#4cc2ff"><span class="n">4</span><b>Scripts</b><p>HTML pages with JavaScript: effects drawn under or over the screens, and pages placed in a scene. They run in a sandbox and talk to the app through <code>rp</code>.</p></div>
+        </div>
+        <p>Every layer is optional. A theme that says only <code>"colors": { "accent": "#ff2bd6" }</code> is a theme; everything it doesn’t say stays as the app draws it.</p>
+        <div class="figures">
+          <figure class="figure"><img src="../assets/themes/en/atlas-home.webp" alt="Atlas"><figcaption>Atlas: an editorial Desktop Mode made of scenes alone, each system in its own colour.</figcaption></figure>
+          <figure class="figure"><img src="../assets/themes/en/neon-cabinet.webp" alt="Neon Arcade"><figcaption>Neon Arcade’s cabinet: a wheel of covers beside a screen playing the game.</figcaption></figure>
+        </div>
+        <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+          <li>Your themes live in the app’s data folder, under <code>themes</code>: Settings → Appearance → <b>Themes folder</b> opens it.</li>
+          <li>The examples come with the app and can’t be changed: <b>Duplicate</b> one to make it yours.</li>
+          <li>Save a file and Desktop Mode changes at once, without closing it.</li>
+        </ul></div>
+      </div>
+    </article>
+
+    <article data-topic="first-theme" data-group="start" data-icon="rocket" data-thumb-src="assets/themes/en/editor.webp"
+      data-title="Your first theme in 5 minutes"
+      data-desc="New theme, the editor, then a line of CSS."
+      data-lead="From the settings to a theme of your own, seen live.">
+      <div class="prose">
+        <ol class="steps">
+          <li>Open <b>Settings → Appearance</b> and, under <b>Desktop Mode themes</b>, click <b>New theme</b>.</li>
+          <li>Give it a name and click <b>Create and open</b>: Desktop Mode opens in your theme, with the <b>editor</b> beside it.</li>
+          <li>Change the <b>colors</b>, the <b>fonts</b>, the corners, the background, and under <b>Layout</b> choose a layout for each screen (a coverflow, a wheel, a dashboard…): each change shows at once and is saved in <code>theme.json</code>.</li>
+          <li>Click <b>theme.css</b> at the foot of the editor: it opens in your editor (VS Code, Notepad…). Add a rule and save.</li>
+          <li>Press <kbd>F9</kbd>: the <b>inspector</b> tells the name of what is under the pointer or has the focus, and the selector to copy.</li>
+        </ol>
+        <figure class="figure"><img src="../assets/themes/en/editor.webp" alt="The theme editor beside Desktop Mode"><figcaption>The editor beside Desktop Mode: the games as a wheel, chosen under Layout.</figcaption></figure>
+        <p>A first rule, for <code>theme.css</code>:</p>
+<pre class="code"><span class="c">/* The headings of the rows in capitals, a little apart */</span>
+.rp-list-title {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+<span class="c">/* The card with the focus a little larger */</span>
+.rp-card.is-focused {
+  transform: scale(1.14);
+}</pre>
+        <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+          <li><kbd>F5</kbd> reads the theme again; <kbd>F10</kbd> leaves Desktop Mode.</li>
+          <li>In VS Code, <code>theme.json</code> completes every key and explains it as you type (it names the schema beside your themes).</li>
+          <li>A mistake never breaks the theme: what is wrong is left out, and a notice says where (<a href="#/problems">When something is wrong</a>).</li>
+        </ul></div>
+      </div>
+    </article>
+
+    <article data-topic="folder" data-group="start" data-icon="folder-open"
+      data-title="The theme folder"
+      data-desc="Its files, their paths, packing it as a .zip."
+      data-lead="Everything a theme has is in its folder, found by its path from it.">
+      <div class="prose">
+<pre class="code">themes/
+  theme.schema.json      <span class="c">the schema of theme.json, for your editor (the app writes it)</span>
+  rp.d.ts                <span class="c">the types of rp, for scripts (the app writes it)</span>
+  my-theme/
+    theme.json           <span class="c">what the theme is and what it changes (needed)</span>
+    theme.css            <span class="c">its CSS (optional; more files with "styles")</span>
+    preview.webp         <span class="c">its picture in the list of themes, 16:9</span>
+    systems.json         <span class="c">what each system has of its own (put in by "include")</span>
+    fonts/  images/  sounds/  videos/  systems/
+    effects/stars.html   <span class="c">a page of scripts drawn as a layer</span>
+    pages/home.html      <span class="c">a page of scripts placed in a scene</span></pre>
+        <ul>
+          <li>Paths use <code>/</code> and start from the theme folder: <code>"images/bg.webp"</code>. In CSS, <code>url(images/bg.webp)</code> starts from the CSS file’s folder.</li>
+          <li>Names must match exactly, capitals too: <code>Logo.PNG</code> is not <code>logo.png</code>.</li>
+          <li>A theme uses only its own files: no address of the network, no file elsewhere on the computer. It works offline, and it can’t track anyone.</li>
+          <li>Pictures: png, jpg, webp, avif, gif, svg. Fonts: woff2, woff, ttf, otf. Sounds: ogg, mp3, wav, flac, m4a. Videos: mp4, webm.</li>
+        </ul>
+        <h2>Sharing a theme</h2>
+        <p>Each theme in the list has <b>Export .zip</b>; <b>Import .zip</b> adds one to your themes (its <code>theme.json</code> at the top of the zip, or in one folder). Nothing in a zip is ever written outside the new theme’s folder.</p>
+      </div>
+    </article>
+
+    <article data-topic="ai" data-group="start" data-icon="bot"
+      data-title="Let an AI make it"
+      data-desc="Describe the theme; Claude Code or another assistant writes it."
+      data-lead="With the app’s MCP server on, an AI assistant writes a whole theme from a few words, checks it and switches Desktop Mode to it.">
+      <div class="prose">
+        <ol class="steps">
+          <li>Turn on the <a href="../index.html#/mcp">MCP server</a> and connect your assistant.</li>
+          <li>Describe the theme: <i>“dark blue, neon outlines, the games in a coverflow, a soft beep when I move”</i>.</li>
+          <li>The assistant writes <code>theme.json</code>, the CSS and any effect, fixes what the app finds wrong, and asks before switching Desktop Mode to it.</li>
+          <li>Open Desktop Mode and ask for changes: each one shows at once.</li>
+        </ol>
+        <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+          <li>It can start from an example: <i>“like Neon Arcade, but green”</i>.</li>
+          <li>It writes only into your own themes; a file it removes goes to the recycle bin.</li>
+          <li>The theme is yours like any other: change it by hand, export it, delete it.</li>
+        </ul></div>
+      </div>
+    </article>
+
+    <!-- ======================= THEME.JSON ======================= -->
+
+    <article data-topic="theme-json" data-group="json" data-icon="braces"
+      data-title="theme.json"
+      data-desc="Every key at a glance."
+      data-lead="The only file a theme needs. Every key is optional but api and name.">
+      <div class="prose">
+<pre class="code">{
+  <span class="k">"$schema"</span>: "../theme.schema.json",
+  <span class="k">"api"</span>: 2,
+  <span class="k">"name"</span>: "Midnight",
+  <span class="k">"author"</span>: "Me",
+  <span class="k">"version"</span>: "1.0.0",
+  <span class="k">"description"</span>: { "en": "Deep blue nights.", "it": "Notti blu." },
+  <span class="k">"preview"</span>: "preview.webp",
+  <span class="k">"colors"</span>: { "bg": "#050816", "accent": "#5b8cff", "accent2": "#a46bff" },
+  <span class="k">"fonts"</span>: { "display": "fonts/Orbitron.woff2" },
+  <span class="k">"radius"</span>: 2
+}</pre>
+        <table class="table wrap">
+          <tr><th>Key</th><th>What it is</th></tr>
+          <tr><td><code>api</code>, <code>name</code></td><td>The version of the format (2) and the theme’s name. Needed.</td></tr>
+          <tr><td><code>author</code>, <code>version</code>, <code>description</code>, <code>preview</code></td><td>Who made it, its version, a few words, its 16:9 picture.</td></tr>
+          <tr><td><code>colors</code>, <code>fonts</code>, <code>radius</code></td><td><a href="#/colors-fonts">Colors, fonts, corners</a></td></tr>
+          <tr><td><code>styles</code></td><td>The CSS files, in order (<code>theme.css</code> by default).</td></tr>
+          <tr><td><code>background</code>, <code>art</code>, <code>intro</code></td><td><a href="#/pictures">Background and pictures</a></td></tr>
+          <tr><td><code>sounds</code>, <code>music</code></td><td><a href="#/sounds">Sounds and music</a></td></tr>
+          <tr><td><code>texts</code></td><td><a href="#/texts">The app’s words</a></td></tr>
+          <tr><td><code>options</code></td><td><a href="#/options">Options for the user</a></td></tr>
+          <tr><td><code>tabs</code></td><td>The sections of the bar, in order: home, systems, favorites, search</td></tr>
+          <tr><td><code>scenes</code></td><td><a href="#/scenes">The screens you compose</a></td></tr>
+          <tr><td><code>variants</code>, <code>systems</code>, <code>vars</code>, <code>include</code></td><td><a href="#/variants">Layouts to choose among, each system its own, files put in</a></td></tr>
+          <tr><td><code>effects</code></td><td><a href="#/effects">Effects</a></td></tr>
+        </table>
+        <p>A text can be one for every language, or one per language: <code>"Start"</code> or <code>{ "en": "Start", "it": "Inizio" }</code> (English when the user’s language is missing).</p>
+        <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+          <li>An unknown key is left out, and the notice suggests the one most likely meant: <code>"colours"</code> → <code>colors</code>.</li>
+          <li>A wrong value leaves out only its part: a wrong element of a scene, not the whole scene.</li>
+        </ul></div>
+      </div>
+    </article>
+
+    <article data-topic="colors-fonts" data-group="json" data-icon="palette"
+      data-title="Colors, fonts, corners"
+      data-desc="The colors of every part, the fonts, how round."
+      data-lead="The quickest way to make Desktop Mode yours.">
+      <div class="prose">
+        <table class="table">
+          <tr><th>colors</th><th>CSS variable</th><th>Where</th></tr>
+          <tr><td><code>bg</code></td><td><code>--rp-bg</code></td><td>Behind everything</td></tr>
+          <tr><td><code>ink</code>, <code>ink2</code>, <code>ink3</code></td><td><code>--rp-ink</code>, <code>--rp-ink-2</code>, <code>--rp-ink-3</code></td><td>The text, the text that matters less, the faint text</td></tr>
+          <tr><td><code>accent</code>, <code>accent2</code></td><td><code>--rp-accent</code>, <code>--rp-accent-2</code>, <code>--rp-grad</code></td><td>The focus, the buttons, the bar under the section; the gradient of the two</td></tr>
+          <tr><td><code>onAccent</code></td><td><code>--rp-on-accent</code></td><td>The text over the accent</td></tr>
+          <tr><td><code>ok</code>, <code>warn</code>, <code>danger</code></td><td><code>--rp-ok</code>, <code>--rp-warn</code>, <code>--rp-danger</code></td><td>Installed; favorites and notices; errors</td></tr>
+          <tr><td><code>glass</code>, <code>line</code></td><td><code>--rp-glass</code>, <code>--rp-line</code></td><td>The panels over the pictures and their borders</td></tr>
+          <tr><td><code>card</code>, <code>panel</code></td><td><code>--rp-card</code>, <code>--rp-panel</code></td><td>Cards with no picture; menus and dialogs</td></tr>
+        </table>
+        <p>Any CSS color works: <code>"#ff2bd6"</code>, <code>"rgb(255 43 214 / 0.8)"</code>, <code>"oklch(70% 0.2 330)"</code>. Your CSS can set the same variables (<code>:root { --rp-accent: … }</code>): the CSS wins over theme.json, which makes an option that changes colors easy.</p>
+        <h2>Fonts</h2>
+<pre class="code">"fonts": {
+  "text": "Segoe UI",                       <span class="c">a font of the computer or of the app</span>
+  "display": "fonts/Orbitron.woff2",        <span class="c">a file of the theme</span>
+  "mono": [{ "file": "fonts/Mono-Regular.woff2", "weight": "400" },
+           { "file": "fonts/Mono-Bold.woff2", "weight": "700" }]
+}</pre>
+        <p><code>text</code> is most text, <code>display</code> the titles, the clock and the big names, <code>mono</code> the numbers. In CSS: <code>var(--rp-font-text)</code>, <code>var(--rp-font-display)</code>, <code>var(--rp-font-mono)</code>. The app’s own: <i>Plus Jakarta Sans Variable</i>, <i>Space Grotesk Variable</i>, <i>JetBrains Mono Variable</i>.</p>
+        <h2>Corners</h2>
+        <p><code>"radius": 0</code> for square corners, <code>1.4</code> by default, up to <code>12</code>. In units (see <a href="#/css">The CSS of a theme</a>); in CSS <code>var(--rp-radius)</code>.</p>
+      </div>
+    </article>
+
+    <article data-topic="pictures" data-group="json" data-icon="image"
+      data-title="Background and pictures"
+      data-desc="A background per system, a picture per console, the intro."
+      data-lead="Pictures and videos of the theme, behind everything and in place of the app’s drawings.">
+      <div class="prose">
+<pre class="code">"background": {
+  "image": "systems/{system}.webp",   <span class="c">one per system…</span>
+  "fallback": "images/bg.webp",       <span class="c">…and this for the others</span>
+  "video": "videos/loop.mp4",          <span class="c">looped, without sound</span>
+  "gameArt": false,                    <span class="c">not the game's picture blurred behind</span>
+  "dim": 0.3,                          <span class="c">0 to 1: darker</span>
+  "blur": 2                            <span class="c">how blurred the game's picture is, in units</span>
+},
+"art": {
+  "system": "consoles/{system}.png",  <span class="c">in place of the console drawn</span>
+  "logo": "logos/{system}.svg"        <span class="c">in place of the system's name</span>
+}</pre>
+        <p><code>{system}</code> is the ES-DE name of the system: <code>snes</code>, <code>megadrive</code>, <code>amiga</code>, <code>arcade</code>… A ROM Set (<code>arcade/0.289</code>) takes its platform’s file. A system without its file keeps the default.</p>
+        <h2>The intro</h2>
+<pre class="code">"intro": { "video": "videos/boot.mp4" }                 <span class="c">plays with its sound, then Desktop Mode</span>
+"intro": { "image": "images/logo.png", "duration": 2500, "sound": "sounds/boot.ogg" }
+"intro": false                                            <span class="c">no intro</span></pre>
+        <p><code>"logo": true</code> keeps the app’s logo and name over your picture. The CSS styles it as <code>.rp-intro</code>, which also lets you write an intro with CSS alone.</p>
+      </div>
+    </article>
+
+    <article data-topic="sounds" data-group="json" data-icon="audio-lines"
+      data-title="Sounds and music"
+      data-desc="Each sound a file, notes made on the spot, or none; music behind."
+      data-lead="Every sound of Desktop Mode can be yours, even without files.">
+      <div class="prose">
+<pre class="code">"sounds": {
+  "move": { "synth": { "wave": "square", "freq": 1046, "to": 988, "dur": 0.03, "gain": 0.012 } },
+  "ok": "sounds/ok.ogg",
+  "back": { "file": "sounds/back.wav", "volume": 0.6 },
+  "edge": false,
+  "volume": 0.8
+},
+"music": { "src": ["music/1.ogg", "music/2.ogg"], "volume": 0.35, "shuffle": true }</pre>
+        <table class="table">
+          <tr><th>Sound</th><th>When</th></tr>
+          <tr><td><code>move</code></td><td>The focus moves</td></tr>
+          <tr><td><code>tab</code></td><td>Another section, a jump to a letter</td></tr>
+          <tr><td><code>ok</code>, <code>back</code></td><td>Open, confirm; back</td></tr>
+          <tr><td><code>edge</code></td><td>Nothing further that way</td></tr>
+          <tr><td><code>open</code></td><td>A menu or panel opens</td></tr>
+          <tr><td><code>favorite</code>, <code>unfavorite</code></td><td>Made a favorite, or not any more</td></tr>
+          <tr><td><code>launch</code>, <code>error</code></td><td>A game starts; something went wrong</td></tr>
+          <tr><td><code>tick</code>, <code>win</code></td><td>The wheel of Cosa gioco oggi turning, and stopped</td></tr>
+        </table>
+        <p><code>synth</code> is a note, or a list of up to 16: <code>wave</code> (sine, square, triangle, sawtooth), <code>freq</code> in Hz, <code>to</code> the pitch it slides to, <code>dur</code> and <code>delay</code> in seconds, <code>gain</code> (0.03 is about the app’s). A list plays as a chord or, with delays, as a jingle.</p>
+        <p>The music pauses while a game is being played, while a video speaks (a game’s page, the attract mode, the intro) and with the menu’s <b>Theme music</b> switch.</p>
+      </div>
+    </article>
+
+    <article data-topic="texts" data-group="json" data-icon="type"
+      data-title="The app’s words"
+      data-desc="Say what Desktop Mode says, in your words."
+      data-lead="Each word of Desktop Mode has a key: texts gives it other words, per language.">
+      <div class="prose">
+<pre class="code">"texts": {
+  "desk.tabs.home": { "en": "Start", "it": "Inizio" },
+  "desk.home.played": "Continue",
+  "desk.gamesN": { "en": "{n} carts", "it": "{n} cartucce" }
+}</pre>
+        <p>What is in braces (<code>{n}</code>, <code>{name}</code>…) is what the app puts there. To find a key: <kbd>F9</kbd>, then <b>Text keys</b>: every word of Desktop Mode shows its key in its place.</p>
+        <h2>The keys</h2>
+        <input class="ref-filter" data-ref-filter="texts" placeholder="Filter: tabs, hint, menu…" aria-label="Filter the keys">
+        <div data-ref="texts"></div>
+      </div>
+    </article>
+
+    <article data-topic="options" data-group="json" data-icon="sliders-horizontal"
+      data-title="Options for the user"
+      data-desc="Switches, choices, colors and sliders the user changes."
+      data-lead="Let whoever uses your theme change it: a CRT on or off, an accent color, how bright.">
+      <div class="prose">
+<pre class="code">"options": [
+  { "id": "crt", "type": "toggle", "label": { "en": "CRT lines", "it": "Righe CRT" }, "default": true },
+  { "id": "sky", "type": "select", "label": "Sky", "default": "sunset",
+    "choices": [{ "value": "sunset", "label": "Sunset" }, { "value": "night", "label": "Night" }] },
+  { "id": "accent", "type": "color", "label": "Accent", "default": "#4fb3ff" },
+  { "id": "glow", "type": "range", "label": "Glow", "min": 0, "max": 40, "step": 4, "default": 18, "unit": "px" }
+]</pre>
+        <p>The user changes them in Desktop Mode: <b>Menu → Theme</b>, then <b>Theme options</b> (<kbd>RB</kbd>). Your theme reads them:</p>
+<pre class="code"><span class="c">/* A toggle: the attribute when it is on */</span>
+.rp-desk[data-opt-crt]::after { content: ''; <span class="c">/* … */</span> }
+<span class="c">/* A choice: the attribute with its value */</span>
+.rp-desk[data-opt-sky='night'] .rp-backdrop { filter: brightness(0.6); }
+<span class="c">/* Any of them: a variable (a color, a number with its unit, 1 or 0, a quoted choice) */</span>
+:root { --rp-accent: var(--opt-accent); }
+.rp-hero-title { text-shadow: 0 0 var(--opt-glow) var(--rp-accent); }</pre>
+        <p>In a script: <code>rp.options</code>, and <code>rp.on('options', …)</code> when they change.</p>
+      </div>
+    </article>
+
+    <!-- ======================= SCENES ======================= -->
+
+    <article data-topic="scenes" data-group="scenes" data-icon="layout-dashboard" data-thumb-src="assets/themes/en/atlas-index.webp"
+      data-title="Scenes: screens you compose"
+      data-desc="Every screen made of elements you place, bound to the game with the focus."
+      data-lead="A scene is a screen of Desktop Mode, written in theme.json: what it is made of, and where. The app keeps doing the work (the joypad, the games, playing); the scene decides what is on screen.">
+      <div class="prose">
+<pre class="code">"scenes": {
+  "games": {
+    "elements": [
+      { "type": "text", "text": "{screen.title}", "pos": [6, 11] },
+      { "type": "list", "id": "games", "source": "screen", "layout": "wheel", "pos": [62, 0], "size": [34, 100] },
+      { "type": "image", "of": "games", "media": "marquee", "fit": "contain", "pos": [6, 24], "size": [44, "12u"] },
+      { "type": "image", "of": "games", "media": ["screenshot", "titlescreen"], "video": 1.5,
+        "pos": [6, 40], "size": [44, "auto"], "style": { "aspectRatio": "4 / 3" } }
+    ]
+  }
+}</pre>
+        <table class="table wrap">
+          <tr><th>Scene</th><th>The screen</th></tr>
+          <tr><td><code>home</code>, <code>systems</code>, <code>favorites</code>, <code>journeys</code>, <code>search</code></td><td>The sections of the bar (<code>journeys</code> once the archive has a gaming journey)</td></tr>
+          <tr><td><code>games</code></td><td>A grid opened: a system’s games, all of them, those added last…</td></tr>
+          <tr><td><code>game</code></td><td>A game’s page</td></tr>
+          <tr><td><code>journey</code></td><td>A journey opened: its steps, each played as the game found for it</td></tr>
+          <tr><td><code>frame</code></td><td>What is over every screen: the bar, the time, the hints</td></tr>
+        </table>
+        <p><code>pos</code> and <code>size</code> place an element: a number is a percentage of the box it is in, <code>"12u"</code> is in units, and any CSS length works (<code>"calc(50% - 6u)"</code>). <code>origin</code>, <code>rotate</code>, <code>z</code>, <code>opacity</code> and <code>style</code> (CSS of the element, <code>"fontSize": "4u"</code>) do the rest. Without <code>pos</code> an element flows as CSS lays it out: a <code>group</code> with <code>display: flex</code> stacks what it holds. The later elements are drawn over the earlier.</p>
+        <p>A screen you leave out is the app’s own, which is written the same way. A system can have a scene of its own (its games, the page of its games), and a <a href="#/variants">variant</a> its own scenes.</p>
+        <figure class="figure"><img src="../assets/themes/en/atlas-index.webp" alt="Atlas, a table of contents"><figcaption>Atlas: the games as a table of contents, the one with the focus as the feature.</figcaption></figure>
+        <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+          <li>The editor’s <b>Layout</b> writes a layout ready made for a screen in a click: start from it in theme.json.</li>
+          <li>Every element is <code>.rp-el</code> with <code>data-el</code> (its <code>id</code>) and the <code>class</code> you give it: style it in your CSS.</li>
+          <li><kbd>F9</kbd> shows the id of the element under the pointer.</li>
+        </ul></div>
+      </div>
+    </article>
+
+    <article data-topic="elements" data-group="scenes" data-icon="shapes"
+      data-title="The elements"
+      data-desc="Texts, pictures, videos, lists, buttons: what a scene is made of."
+      data-lead="Each element has a type, and shows the game or system with the focus (or the page’s game, or the item of a list it is drawn in).">
+      <div class="prose">
+        <table class="table wrap">
+          <tr><th>Type</th><th>What it is</th></tr>
+          <tr><td><code>text</code></td><td>Words with values in them: <code>"{focus.name}"</code> (<a href="#/values">values</a>). <code>scroll</code>: the right stick scrolls it; <code>more</code>: View opens it whole</td></tr>
+          <tr><td><code>image</code></td><td>A picture of the game (<code>media</code>: cover, screenshot, titlescreen, marquee, fanart, 3dbox, miximage…, or a list tried in order) or a file of the theme (<code>src</code>); <code>fit</code>, <code>pixelated</code>, <code>fallback</code>, <code>video</code> (its video after a rest), <code>fly</code>. It crossfades as the focus moves</td></tr>
+          <tr><td><code>video</code></td><td>The game’s video, once the focus rests on it</td></tr>
+          <tr><td><code>list</code></td><td>The games, systems or pictures the focus moves among (<a href="#/lists">lists</a>)</td></tr>
+          <tr><td><code>buttons</code></td><td>Play (or install, resume, what the game needs), details, favorite, pictures, similar</td></tr>
+          <tr><td><code>group</code></td><td>Elements together; <code>scroll: "focus"</code> slides them so the one with the focus comes first; <code>rekey</code> plays their animations again at each game</td></tr>
+          <tr><td><code>meta</code>, <code>rating</code>, <code>badges</code></td><td>A line of facts (year, developer, genre…), the stars, the pills (installed, played, favorite…)</td></tr>
+          <tr><td><code>systemArt</code>, <code>logo</code>, <code>icon</code>, <code>clock</code>, <code>box</code></td><td>The console of a system, the app’s logo, an icon, the time, a box for your CSS</td></tr>
+          <tr><td><code>dots</code>, <code>position</code></td><td>A dot per item of a list; “4 / 120”</td></tr>
+          <tr><td><code>keyboard</code>, <code>field</code></td><td>The search: its keyboard, the words typed</td></tr>
+          <tr><td><code>tabs</code>, <code>brand</code>, <code>status</code>, <code>hints</code></td><td>The frame: the sections, the logo, the frontend and the time, the buttons</td></tr>
+          <tr><td><code>page</code></td><td>A page of the theme with its scripts (<a href="#/screens">page elements</a>)</td></tr>
+          <tr><td><code>shelves</code></td><td>The default Home’s rows</td></tr>
+        </table>
+        <p>Every element can have <code>id</code>, <code>class</code>, <code>pos</code>, <code>size</code>, <code>origin</code>, <code>rotate</code>, <code>z</code>, <code>opacity</code>, <code>style</code>, <code>when</code> (<a href="#/values">conditions</a>) and <code>of</code> (the list whose focus it shows).</p>
+      </div>
+    </article>
+
+    <article data-topic="lists" data-group="scenes" data-icon="layout-grid" data-thumb-src="assets/themes/en/neon-cabinet.webp"
+      data-title="Lists"
+      data-desc="Rows, columns, grids, wheels and coverflows, drawn as you want."
+      data-lead="A list draws its items and moves the focus among them: the joypad always knows where to go.">
+      <div class="prose">
+<pre class="code"><span class="c">/* A coverflow */</span>
+{ "type": "list", "source": "screen", "layout": "row", "scroll": "focus", "anchor": 0.5,
+  "width": 24, "ratio": "3:4", "spacing": 14, "tilt": 52, "scale": 1.1, "fade": 0.13 }
+
+<span class="c">/* A wheel turning around a point far on the right */</span>
+{ "type": "list", "layout": "wheel", "wheel": { "angle": -12, "origin": [4.6, 0.5] }, "scale": 1.2 }
+
+<span class="c">/* Lines of your own: the year and the name */</span>
+{ "type": "list", "layout": "column", "height": 6,
+  "item": { "elements": [ { "type": "text", "text": "{item.year}" }, { "type": "text", "text": "{item.name}" } ] } }</pre>
+        <table class="table wrap">
+          <tr><th>Key</th><th>What it does</th></tr>
+          <tr><td><code>source</code></td><td><code>screen</code> (the screen’s own), <code>played</code>, <code>favorites</code>, <code>installed</code>, <code>recent</code>, <code>discover</code>, <code>today</code>, <code>all</code>, <code>systems</code>, <code>media</code> (the page’s pictures), <code>similar</code>, <code>journeys</code>, <code>"system:snes"</code>, <code>"collection:My picks"</code>, <code>"journey:My journey"</code> (its steps); <code>fallback</code>: another when it has nothing</td></tr>
+          <tr><td><code>layout</code></td><td><code>row</code>, <code>column</code>, <code>grid</code> (<code>columns</code>, <code>rowGap</code>), <code>wheel</code>, <code>path</code> (along a winding line lit up to the focus, from a start to a finish; <code>wave</code>: how far it winds)</td></tr>
+          <tr><td><code>item</code></td><td><code>card</code>, <code>line</code>, <code>plate</code> (a console with its covers fanned out), <code>shot</code>, <code>node</code> (a round picture with its number: a step), <code>journey</code> (a journey’s card), or elements of your own; <code>art</code>: the card’s picture</td></tr>
+          <tr><td><code>width</code>, <code>height</code>, <code>ratio</code>, <code>gap</code>, <code>spacing</code></td><td>Sizes in units; <code>spacing</code> less than the width overlaps them</td></tr>
+          <tr><td><code>scroll</code>, <code>anchor</code>, <code>lead</code>, <code>cross</code></td><td><code>focus</code>: the focus stays at <code>anchor</code> (0 to 1) and the items slide; <code>edge</code>: they stay until the focus nears the edge</td></tr>
+          <tr><td><code>scale</code>, <code>fade</code>, <code>tilt</code>, <code>wrap</code></td><td>The item with the focus larger; the others fainter, or turned in 3D; from the last to the first</td></tr>
+          <tr><td><code>title</code>, <code>icon</code>, <code>count</code>, <code>empty</code>, <code>limit</code>, <code>more</code></td><td>A heading, what it says with nothing, the card that opens them all</td></tr>
+        </table>
+        <p>Past the edge of a list, the focus goes to the element found that way on the screen. The item a list has the focus on is <code>focus</code> for the other elements; <code>of</code> names the list.</p>
+        <figure class="figure"><img src="../assets/themes/en/neon-cabinet.webp" alt="A wheel of covers"><figcaption>Neon Arcade’s cabinet: a wheel list, and pictures of the game with the focus.</figcaption></figure>
+        <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+          <li>The list sets each item’s place (<code>left</code>, <code>top</code>): <code>transform</code>, <code>translate</code>, <code>scale</code> and <code>rotate</code> stay yours, with <code>--rel</code> and <code>--dist</code>.</li>
+        </ul></div>
+      </div>
+    </article>
+
+    <article data-topic="values" data-group="scenes" data-icon="braces"
+      data-title="Values and conditions"
+      data-desc="{focus.name}, filters, and when an element shows."
+      data-lead="What an element says comes from the game with the focus, the screen or the theme, in braces; when it shows, from its conditions.">
+      <div class="prose">
+<pre class="code">{ "type": "text", "text": "{focus.systemName|upper} · {focus.year}" }
+{ "type": "text", "text": "{t.desk.gamesN n=screen.count}" }
+{ "type": "text", "text": "{focus.var.tagline}", "when": { "has": "focus.var.tagline" } }
+{ "type": "box", "class": "crt", "when": { "option": { "crt": true }, "not": { "aspect": "narrow" } } }</pre>
+        <table class="table wrap">
+          <tr><th>Value</th><th>What it is</th></tr>
+          <tr><td><code>focus.…</code>, <code>item.…</code>, <code>game.…</code></td><td>The game with the focus, the item drawn, the page’s game: <code>name</code>, <code>systemName</code>, <code>year</code>, <code>release</code>, <code>developer</code>, <code>publisher</code>, <code>genre</code>, <code>players</code>, <code>rating</code>, <code>played</code>, <code>playTime</code>, <code>blurb</code>, <code>desc</code>, <code>var.…</code>; a system: <code>title</code>, <code>count</code>; a journey: <code>title</code>, <code>author</code>, <code>description</code>, <code>steps</code>, <code>available</code>; a step: the game’s values and <code>note</code>, <code>number</code>, <code>total</code>, <code>available</code>, <code>missing</code></td></tr>
+          <tr><td><code>screen.…</code></td><td>The screen: <code>title</code>, <code>count</code>, <code>query</code>, <code>empty</code>; a journey: <code>by</code>, <code>description</code></td></tr>
+          <tr><td><code>var.…</code>, <code>opt.…</code>, <code>t.…</code>, <code>app.…</code></td><td>The theme’s values, its options, the app’s words (<code>t.desk.home.played</code>), the time and date</td></tr>
+        </table>
+        <p>Filters after <code>|</code>: <code>upper</code>, <code>lower</code>, <code>year</code>, <code>date</code>, <code>number</code>, <code>games</code> (12 → “12 games”), <code>ago</code>, <code>duration</code>, <code>default:…</code>, <code>prefix:…</code>, <code>suffix:…</code>, <code>max:…</code>.</p>
+        <p><code>when</code> shows an element only if all it says holds: <code>variant</code>, <code>option</code>, <code>system</code>, <code>focus</code> (game, system, journey, step…), <code>has</code> (a value that is there), <code>aspect</code> (<code>narrow</code> 4:3, <code>normal</code>, <code>wide</code> 21:9), <code>not</code>.</p>
+      </div>
+    </article>
+
+    <article data-topic="variants" data-group="scenes" data-icon="sliders-horizontal" data-thumb-src="assets/themes/en/picker.webp"
+      data-title="Variants, systems, includes"
+      data-desc="Layouts to choose among, each system with its own colours and words."
+      data-lead="A theme can hold whole other layouts, and give each system a look of its own.">
+      <div class="prose">
+<pre class="code">"variants": [
+  { "id": "index", "label": { "en": "Index", "it": "Sommario" } },
+  { "id": "gallery", "label": { "en": "Gallery", "it": "Galleria" }, "scenes": { "games": { … } } }
+],
+"include": ["systems.json"]
+
+<span class="c">/* systems.json */</span>
+{ "systems": {
+  "snes": { "colors": { "accent": "#7b5cd6" }, "vars": { "tagline": { "en": "Sixteen bits…", "it": "Sedici bit…" } } },
+  "megadrive": { "colors": { "accent": "#2f6fde" } }
+} }</pre>
+        <ul>
+          <li><b>Variants</b>: the user chooses among them in Desktop Mode, <b>Menu → Theme</b>, then <b>Layout</b> among the options. A variant changes the scenes and values it says; the first is the default. The CSS sees <code>[data-variant="gallery"]</code>.</li>
+          <li><b>Systems</b>: while the focus is on a system or one of its games, its colours and values win (<code>{focus.var.tagline}</code>, <code>var(--var-tagline)</code>); its scenes are used for its games and their pages.</li>
+          <li><b>vars</b>: values of the theme by name, one per language if you like. <b>include</b>: JSON files put into theme.json first.</li>
+        </ul>
+        <figure class="figure"><img src="../assets/themes/en/picker.webp" alt="Layout among the options"><figcaption>Atlas from Desktop Mode’s menu: its layout among its options.</figcaption></figure>
+      </div>
+    </article>
+
+    <!-- ======================= CSS ======================= -->
+
+    <article data-topic="css" data-group="css" data-icon="paintbrush"
+      data-title="The CSS of a theme"
+      data-desc="Where it applies, how much it weighs, the unit, the files."
+      data-lead="Any CSS: it applies to Desktop Mode only, and wins over the app’s own.">
+      <div class="prose">
+        <ul>
+          <li><b>Only Desktop Mode.</b> Every rule is put under its root: <code>.rp-card</code> means the cards of Desktop Mode, never the library. <code>:root</code>, <code>html</code>, <code>body</code> and <code>.rp-desk</code> all mean Desktop Mode itself.</li>
+          <li><b>It wins.</b> Your rules weigh more than the app’s, whatever its selectors: write the selector you mean, nothing more. Only what the app sets on the element itself (an item’s place, a few sizes) needs your <code>!important</code>.</li>
+          <li><b>Your elements.</b> Every element of a scene is <code>.rp-el.rp-el-&lt;type&gt;</code>, <code>[data-el="its id"]</code>, with the classes you give it.</li>
+          <li><b>The unit.</b> <code>var(--u)</code> is a hundredth of the height of a 16:9 screen as large as the window: <code>calc(var(--u) * 2)</code> looks the same on a TV, a monitor, an ultrawide.</li>
+          <li><b>Files.</b> <code>url(images/bg.webp)</code> starts from the CSS file’s folder. More files: <code>"styles": ["base.css", "screens.css"]</code>.</li>
+          <li><b>Not allowed.</b> <code>@import</code> and addresses of the network are left out, with a notice.</li>
+          <li><b>Animations.</b> Any <code>@keyframes</code>; a keyframe with the name of one of the app’s (<code>dk-fade</code>…) takes its place.</li>
+          <li><b>New CSS.</b> The app runs on a recent Chromium: nesting, <code>:has()</code>, container queries, <code>color-mix()</code>, <code>@property</code>, view transitions.</li>
+        </ul>
+<pre class="code"><span class="c">/* Each section of the bar its own color */</span>
+.rp-tab[data-tab='systems'].is-on { color: #7ce7ff; }
+
+<span class="c">/* Nesting works */</span>
+.rp-detail {
+  .rp-detail-desc { font-size: calc(var(--u) * 2); }
+  &amp;[data-system='snes'] .rp-detail-shade { background: linear-gradient(transparent, #2a1a5e); }
+}</pre>
+        <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+          <li>Keep effects heavy on the GPU (big blurs, <code>backdrop-filter</code> on every card) for one element at a time: Desktop Mode moves many items.</li>
+          <li><kbd>F9</kbd> → <b>DevTools</b> opens Chromium’s developer tools: you can try CSS live there, then copy it into your file.</li>
+        </ul></div>
+      </div>
+    </article>
+
+    <article data-topic="parts" data-group="css" data-icon="square-mouse-pointer"
+      data-title="The parts"
+      data-desc="Every part of Desktop Mode with its stable name."
+      data-lead="The names your CSS styles. They stay as they are from one version of the app to the next.">
+      <div class="prose">
+        <p>Each part also has its states (<code>.is-focused</code>…) and attributes (<code>[data-system]</code>…), listed beside it. <kbd>F9</kbd> shows them on screen.</p>
+        <input class="ref-filter" data-ref-filter="parts" placeholder="Filter: card, hero, menu…" aria-label="Filter the parts">
+        <div data-ref="parts"></div>
+      </div>
+    </article>
+
+    <article data-topic="states" data-group="css" data-icon="eye"
+      data-title="States and numbers"
+      data-desc="What has the focus, where each card is, the variables."
+      data-lead="What the app tells the CSS of each part, to style it by what it is and where it is.">
+      <div class="prose">
+        <h2>States</h2>
+        <table class="table wrap">
+          <tr><th>Class</th><th>When</th></tr>
+          <tr><td><code>.is-focused</code></td><td>It has the focus (a card, a button, a key, a menu entry…)</td></tr>
+          <tr><td><code>.is-current</code></td><td>The item a list is at, with the focus or not</td></tr>
+          <tr><td><code>.has-focus</code></td><td>A list with the focus; an element of a scrolling group with the focus inside</td></tr>
+          <tr><td><code>.is-above</code>, <code>.is-below</code></td><td>The elements of a scrolling group before and after the one shown</td></tr>
+          <tr><td><code>.is-on</code></td><td>The section shown, a switch on</td></tr>
+          <tr><td><code>.is-primary</code></td><td>The main button (Play)</td></tr>
+          <tr><td><code>.is-shown</code>, <code>.is-before</code>, <code>.is-after</code></td><td>The sections: shown, left of it, right of it</td></tr>
+          <tr><td><code>.is-covered</code>, <code>.is-leaving</code></td><td>A screen under another; a screen going</td></tr>
+        </table>
+        <h2>Attributes</h2>
+        <p>On <code>.rp-desk</code>: <code>data-tab</code> (home, systems, favorites, search), <code>data-screen</code> (the screen on top: also games, game), <code>data-device</code> (pad, keys, mouse), <code>data-pad</code> (xbox, playstation, nintendo, none), <code>data-variant</code>, <code>data-focus-system</code> (the system of the focus), <code>data-screen-system</code>, <code>data-theme-id</code>, <code>data-opt-…</code>. On elements: <code>data-el</code>, <code>data-focused</code>; on lists <code>data-layout</code>, <code>data-source</code>. On items and games: <code>data-system</code>, <code>data-installed</code>, <code>data-favorite</code>, <code>data-kind</code>. On buttons: <code>data-action</code>.</p>
+<pre class="code"><span class="c">/* Installed games brighter, with the joypad only */</span>
+.rp-desk[data-device='pad'] .rp-card:not([data-installed]) { opacity: 0.55; }</pre>
+        <h2>Numbers</h2>
+        <table class="table wrap">
+          <tr><th>Variable</th><th>On</th><th>What it is</th></tr>
+          <tr><td><code>--i</code></td><td>the items of lists</td><td>Its place in its list: 0, 1, 2…</td></tr>
+          <tr><td><code>--rel</code></td><td>the same</td><td>Where it is from the focus: …−2, −1, 0, 1, 2…</td></tr>
+          <tr><td><code>--dist</code></td><td>the same</td><td>How far from the focus: 0, 1, 2…</td></tr>
+          <tr><td><code>--focus</code>, <code>--count</code>, <code>--cols</code></td><td>lists</td><td>Where the focus is, how many, the columns of a grid</td></tr>
+          <tr><td><code>--row</code>, <code>--col</code></td><td>the items of a grid</td><td>Its row and column</td></tr>
+          <tr><td><code>--block-rel</code>, <code>--scroll</code></td><td>scrolling groups</td><td>Where an element is from the one shown; how far it slid</td></tr>
+          <tr><td><code>--h</code></td><td>systems</td><td>The hue of the system, 0 to 360</td></tr>
+        </table>
+        <p>They are numbers: use them in <code>calc()</code>, and animate them (<code>transition: --rel 300ms</code>). The list places each item; turn it, lift it or light it with them:</p>
+<pre class="code">.my-row .rp-item {
+  transform: rotateY(calc(clamp(-1, var(--rel), 1) * -50deg));
+  scale: calc(1 - var(--dist) * 0.07);
+}</pre>
+      </div>
+    </article>
+
+    <article data-topic="recipes" data-group="css" data-icon="lightbulb"
+      data-title="Recipes"
+      data-desc="A CRT, a wheel, a color per system, names under the covers…"
+      data-lead="A few things themes often want, ready to copy.">
+      <div class="prose">
+        <h3>A CRT over everything</h3>
+<pre class="code">.rp-desk::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 160;
+  pointer-events: none;
+  background: repeating-linear-gradient(rgb(0 0 0 / 0.25) 0 1px, transparent 1px 3px);
+}</pre>
+        <h3>A list as a drum, turning in 3D</h3>
+<pre class="code">.my-drum .rp-list-track { perspective: calc(var(--u) * 80); }
+.my-drum .rp-item {
+  transform: rotateX(calc(var(--rel) * -14deg)) translateZ(calc(var(--dist) * var(--u) * -4));
+  opacity: calc(1 - var(--dist) * 0.18);
+}</pre>
+        <h3>A color per system</h3>
+<pre class="code"><span class="c">/* In theme.json: "systems": { "megadrive": { "colors": { "accent": "#3a7bff" } } } — or in CSS: */</span>
+.rp-desk[data-focus-system='nes'] { --rp-accent: #e60012; }</pre>
+        <h3>The names under the covers</h3>
+<pre class="code">.rp-card-title {
+  display: block;
+  margin-top: calc(var(--u) * 1);
+  font-size: calc(var(--u) * 1.5);
+  text-align: center;
+}</pre>
+        <h3>Another icon for a section</h3>
+<pre class="code">.rp-tab[data-tab='home'] svg { display: none; }
+.rp-tab[data-tab='home']::before {
+  content: '';
+  width: calc(var(--u) * 2.2);
+  height: calc(var(--u) * 2.2);
+  background: url(icons/home.svg) center / contain no-repeat;
+}</pre>
+        <h3>Hide what you don’t want</h3>
+<pre class="code">.rp-hero-blurb, .rp-card-marks, .rp-brand-name { display: none; }</pre>
+        <h3>Colors by an option</h3>
+<pre class="code">.rp-desk[data-opt-phosphor='amber'] {
+  --rp-ink: #ffcf7a;
+  --rp-accent: #ffb000;
+}</pre>
+      </div>
+    </article>
+
+    <!-- ======================= SCRIPTS ======================= -->
+
+    <article data-topic="effects" data-group="scripts" data-icon="sparkles"
+      data-title="Effects"
+      data-desc="Pages drawn under or over the screens, that hear what happens."
+      data-lead="An effect is an HTML page of the theme, with its scripts, drawn as a layer: particles, shaders, a canvas, anything.">
+      <div class="prose">
+<pre class="code">"effects": [
+  { "id": "stars", "src": "effects/stars.html", "layer": "back" }
+]</pre>
+        <p><code>layer</code>: <code>back</code> over the background and under the screens (the default), <code>front</code> over the screens, <code>top</code> over everything, the menus too. An effect never takes the pointer nor the joypad. It knows what happens:</p>
+<pre class="code">&lt;canvas id="c"&gt;&lt;/canvas&gt;
+&lt;script&gt;
+  <span class="c">// rp is always there: the app puts it in first</span>
+  rp.on('press', ({ action }) =&gt; pulse())             <span class="c">// any button</span>
+  rp.on('focus', (f) =&gt; f?.game &amp;&amp; tint(f.game.hue))   <span class="c">// the game with the focus</span>
+  rp.on('screen', ({ tab, screen }) =&gt; …)              <span class="c">// what is shown</span>
+  rp.on('launch', (l) =&gt; l &amp;&amp; l.state === 'started' &amp;&amp; …)
+  rp.ready.then(() =&gt; draw(rp.options))
+&lt;/script&gt;</pre>
+        <p>Neon Arcade’s neon grid and Horizon’s light in the air are effects: duplicate them to see how.</p>
+      </div>
+    </article>
+
+    <article data-topic="screens" data-group="scripts" data-icon="code" data-thumb-src="assets/themes/en/terminal-home.webp"
+      data-title="Page elements"
+      data-desc="A page of the theme placed in a scene, a whole screen if you like."
+      data-lead="The deepest layer: a page of your own, with your scripts, where you want it in a scene, with the app’s games and buttons.">
+      <div class="prose">
+<pre class="code">"scenes": {
+  "home": { "elements": [
+    { "type": "page", "src": "pages/home.html", "input": true, "pos": [0, 0], "size": [100, 100] }
+  ] }
+}</pre>
+        <p>Without <code>input</code> the page only draws and hears (a visualizer beside a list). With <code>input</code> it takes the joypad while it has the focus, and says which buttons it takes; the others go on to the scene and to Desktop Mode (LB and RB the sections, Menu the menu, B back). <code>rp.params</code>: on games <code>{ query, title }</code>, on a game’s page <code>{ id }</code>.</p>
+<pre class="code">rp.ready.then(async () =&gt; {
+  rp.take(['up', 'down', 'ok', 'x'])
+  const { items } = await rp.games({ only: 'played', limit: 30 })
+  let at = 0
+  draw(items, at)
+  rp.hints([{ action: 'ok', label: await rp.text('desk.hint.details') }, { action: 'x', label: await rp.text('shelf.play') }])
+  rp.on('input', ({ action }) =&gt; {
+    if (action === 'down') draw(items, ++at)
+    else if (action === 'up' &amp;&amp; at === 0) rp.focusTabs()
+    else if (action === 'up') draw(items, --at)
+    else if (action === 'ok') rp.open({ game: items[at].id, list: { only: 'played' } })
+    else if (action === 'x') items[at].installed ? rp.play(items[at].id) : rp.install(items[at].id)
+  })
+})</pre>
+        <figure class="figure"><img src="../assets/themes/en/terminal-home.webp" alt="Terminal's Home"><figcaption>Terminal: its Home is a page element. A game opened from it is the game scene, styled by the theme’s CSS.</figcaption></figure>
+        <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+          <li>The page’s keys and wheel go to Desktop Mode: <kbd>F10</kbd> always leaves it.</li>
+          <li><code>rp.take(['text'])</code> gives the screen the letters typed (a search of your own).</li>
+          <li>Leave room for the bar at the top (about 11% of the height), or leave <code>tabs</code> out of the frame.</li>
+        </ul></div>
+      </div>
+    </article>
+
+    <article data-topic="rp" data-group="scripts" data-icon="book-open"
+      data-title="The rp reference"
+      data-desc="Everything a script can read and do."
+      data-lead="rp is how a theme’s page talks to the app. Its types are in rp.d.ts, beside your themes.">
+      <div class="prose">
+        <h2>What it says</h2>
+        <table class="table wrap">
+          <tr><th>Property</th><th>What it is</th></tr>
+          <tr><td><code>rp.kind</code></td><td><code>'effect'</code>, or <code>'screen'</code> for a page element with input</td></tr>
+          <tr><td><code>rp.screen</code>, <code>rp.params</code></td><td>The screen it is in, and what it was opened with</td></tr>
+          <tr><td><code>rp.active</code></td><td>The page has the joypad</td></tr>
+          <tr><td><code>rp.lang</code>, <code>rp.theme</code>, <code>rp.options</code></td><td>The user’s language, the theme, its options</td></tr>
+          <tr><td><code>rp.focus</code>, <code>rp.now</code></td><td>The game or system with the focus; the section and screen shown</td></tr>
+          <tr><td><code>rp.ready</code></td><td>A promise, once all of these are there</td></tr>
+        </table>
+        <h2>What it does</h2>
+        <table class="table wrap">
+          <tr><th>Call</th><th>What it does</th></tr>
+          <tr><td><code>rp.games(query)</code></td><td>The games: <code>{ total, items }</code>. Query: <code>only</code> (favorites, installed, recent, played), <code>system</code>, <code>query</code> (words), <code>similar</code>, <code>installed</code>, <code>collection</code>, <code>offset</code>, <code>limit</code> (100, up to 500)</td></tr>
+          <tr><td><code>rp.game(id)</code></td><td>A game with its description and every picture and video (<code>media</code>)</td></tr>
+          <tr><td><code>rp.systems()</code>, <code>rp.collections()</code></td><td>The systems with their counts; the collections</td></tr>
+          <tr><td><code>rp.open(target)</code></td><td>The app’s screens: <code>{ game, list }</code>, <code>{ games, title }</code>, a section, <code>'menu'</code>, <code>'spin'</code>, <code>'attract'</code></td></tr>
+          <tr><td><code>rp.back()</code></td><td>The screen on top closed, or back to Home</td></tr>
+          <tr><td><code>rp.play(id, { resume })</code>, <code>rp.install(id)</code></td><td>The game started; the app’s panel that installs it (which asks the user)</td></tr>
+          <tr><td><code>rp.favorite(id, on)</code></td><td>Made a favorite or not; what it is now</td></tr>
+          <tr><td><code>rp.take(actions)</code>, <code>rp.hints(list)</code></td><td>The buttons the screen takes; what they do, at the foot</td></tr>
+          <tr><td><code>rp.focusTabs()</code>, <code>rp.spot(id)</code></td><td>The focus up to the bar; what the background shows</td></tr>
+          <tr><td><code>rp.sound(name)</code>, <code>rp.text(key, vars)</code></td><td>A sound of Desktop Mode (the theme’s first); the app’s words in the user’s language</td></tr>
+          <tr><td><code>rp.systemArt(name)</code></td><td>The console the app draws, as a picture address</td></tr>
+          <tr><td><code>rp.store.get(key)</code>, <code>rp.store.set(key, value)</code></td><td>A little of the theme’s own, kept on this computer (64 KB a key)</td></tr>
+          <tr><td><code>rp.url(file)</code></td><td>A file of the theme, by its path from the theme folder</td></tr>
+        </table>
+        <h2>What it hears</h2>
+        <table class="table wrap">
+          <tr><th>rp.on(…)</th><th>When</th></tr>
+          <tr><td><code>'input'</code></td><td>A button the screen takes, while it has the joypad: <code>{ action, repeat }</code> (with <code>'text'</code> taken, <code>{ action: 'text', text }</code> and <code>'erase'</code>)</td></tr>
+          <tr><td><code>'press'</code></td><td>Any button, whoever takes it</td></tr>
+          <tr><td><code>'active'</code>, <code>'focus'</code>, <code>'screen'</code></td><td>The screen has the joypad or not; the game or system with the focus; what is shown</td></tr>
+          <tr><td><code>'launch'</code></td><td>A game starting, started or failed (<code>{ state, game }</code>), then <code>null</code></td></tr>
+          <tr><td><code>'options'</code>, <code>'lang'</code></td><td>The user changed the options or the language</td></tr>
+        </table>
+        <p>A game has: <code>id</code>, <code>name</code>, <code>system</code>, <code>systemName</code>, <code>year</code>, <code>releasedate</code>, <code>developer</code>, <code>publisher</code>, <code>genre</code>, <code>players</code>, <code>rating</code> (0 to 5), <code>cover</code>, <code>screenshot</code>, <code>favorite</code>, <code>installed</code>, <code>playedAt</code>, <code>playTime</code>, <code>blurb</code>, <code>hue</code>. Buttons: <code>up</code> <code>down</code> <code>left</code> <code>right</code> <code>ok</code> <code>back</code> <code>x</code> <code>y</code> <code>lb</code> <code>rb</code> <code>lt</code> <code>rt</code> <code>menu</code> <code>view</code>.</p>
+      </div>
+    </article>
+
+    <article data-topic="sandbox" data-group="scripts" data-icon="shield"
+      data-title="What scripts can’t do"
+      data-desc="The sandbox, and why."
+      data-lead="A theme can come from anyone: its scripts can make anything of the screen, and nothing of your computer.">
+      <div class="prose">
+        <ul>
+          <li><b>No app.</b> A page has no access to the app but <code>rp</code>: it can’t read your files, change your settings or delete anything. Installing always goes through the app’s panel, which asks you.</li>
+          <li><b>No network.</b> It loads only its theme’s files and the archive’s pictures: no site, no font or library from the web. Put any library you need in the theme folder.</li>
+          <li><b>No storage of its own.</b> No cookies nor <code>localStorage</code>: <code>rp.store</code> keeps what it needs.</li>
+          <li><b>No windows.</b> No popups, no forms, no frames of other sites.</li>
+        </ul>
+        <div class="box tip"><h3 data-icon-svg="lightbulb">Good to know</h3><ul>
+          <li>Draw with <code>requestAnimationFrame</code> and stop when nothing changes: Desktop Mode runs on living-room PCs too.</li>
+          <li>Errors of a page show in <kbd>F9</kbd> → <b>DevTools</b>, in its own frame.</li>
+        </ul></div>
+      </div>
+    </article>
+
+    <!-- ======================= TOOLS AND HELP ======================= -->
+
+    <article data-topic="tools" data-group="help" data-icon="scan-search" data-thumb-src="assets/themes/en/inspector.webp"
+      data-title="The inspector and the tools"
+      data-desc="F9, F5, the text keys, the editor."
+      data-lead="What helps while you write a theme, in Desktop Mode itself.">
+      <div class="prose">
+        <figure class="figure"><img src="../assets/themes/en/inspector.webp" alt="The inspector"><figcaption><kbd>F9</kbd>: the element, its id and numbers, the selector to copy, and what is wrong in the theme.</figcaption></figure>
+        <table class="table wrap">
+          <tr><th>Tool</th><th>What it does</th></tr>
+          <tr><td><kbd>F9</kbd> inspector</td><td>The element or part under the pointer (or with the focus, with the joypad), what it is in, its id, states, attributes and numbers; <b>Copy</b> puts its selector in the clipboard. Below, the theme’s problems with file and line.</td></tr>
+          <tr><td><b>Text keys</b></td><td>Every word of Desktop Mode shows its key in its place: what to write in <code>texts</code>.</td></tr>
+          <tr><td><kbd>F5</kbd></td><td>The theme read again (it is anyway as soon as a file is saved).</td></tr>
+          <tr><td><b>DevTools</b></td><td>Chromium’s developer tools, for CSS tried live and the errors of scripts.</td></tr>
+          <tr><td>Editor</td><td>Settings → Appearance → <b>Edit</b> on one of your themes: Desktop Mode with the editor beside it, its layouts ready made under <b>Layout</b>.</td></tr>
+        </table>
+      </div>
+    </article>
+
+    <article data-topic="problems" data-group="help" data-icon="circle-question-mark"
+      data-title="When something is wrong"
+      data-desc="What the notices say, and the usual mistakes."
+      data-lead="A theme with mistakes shows what it can; a notice says how many, F9 says what and where.">
+      <div class="prose">
+        <table class="table wrap">
+          <tr><th>The notice says</th><th>What to do</th></tr>
+          <tr><td>theme.json is not valid JSON</td><td>A comma too many or missing, quotes around keys: the line is given. JSON has no comments.</td></tr>
+          <tr><td>Unknown key</td><td>A typo, often: the key most likely meant is suggested.</td></tr>
+          <tr><td>The file is not in the theme</td><td>Check the path from the theme folder and the capitals.</td></tr>
+          <tr><td>Not a part of Desktop Mode</td><td>A class <code>.rp-…</code> that doesn’t exist: the closest is suggested, F9 shows the real ones.</td></tr>
+          <tr><td>Not allowed</td><td><code>@import</code> or an address of the network: put the file in the theme.</td></tr>
+          <tr><td>“api” must be 2</td><td>The theme was made for another version of the format.</td></tr>
+        </table>
+        <details class="faq"><summary>My CSS does nothing</summary><p>F9 on the part: is it the name you wrote? A rule on an element hidden by the app (<code>.rp-card-title</code>) needs <code>display: block</code>. What the app sets on the element itself (a card’s place) needs <code>!important</code>, or move it with <code>transform</code>.</p></details>
+        <details class="faq"><summary>A picture or font doesn’t show</summary><p>The path starts from the theme folder in theme.json and from the CSS file’s folder in CSS; capitals count. A font in <code>fonts</code> needs a .woff2, .woff, .ttf or .otf file.</p></details>
+        <details class="faq"><summary>My page doesn’t get the joypad</summary><p>Give the page element <code>"input": true</code>, then call <code>rp.take([...])</code> with the buttons it uses, after <code>rp.ready</code>. The others go to Desktop Mode.</p></details>
+        <details class="faq"><summary>My script can’t load a library</summary><p>Pages of themes have no network: copy the library’s file into the theme folder and load it from there.</p></details>
+      </div>
+    </article>
+
+    <article data-topic="examples" data-group="help" data-icon="sparkles" data-thumb-src="assets/themes/en/atlas-gallery.webp"
+      data-title="The examples"
+      data-desc="Atlas, Neon Arcade, Horizon and Terminal: what each one shows."
+      data-lead="Four themes come with the app, each showing other layers. Duplicate one and read its files.">
+      <div class="prose">
+        <div class="figures">
+          <figure class="figure"><img src="../assets/themes/en/atlas-gallery.webp" alt="Atlas"><figcaption><b>Atlas</b>: made of scenes alone. Each system its own colour and words (systems.json), lists drawn with its own elements, two layouts: a table of contents or a gallery of screens.</figcaption></figure>
+          <figure class="figure"><img src="../assets/themes/en/neon-coverflow.webp" alt="Neon Arcade"><figcaption><b>Neon Arcade</b>: chiptune sounds made of notes, a CRT, a neon grid as an effect, and two layouts: a coverflow or an arcade cabinet.</figcaption></figure>
+          <figure class="figure"><img src="../assets/themes/en/horizon-home.webp" alt="Horizon"><figcaption><b>Horizon</b>: Home as a console dashboard, the game’s artwork as background, an accent color option, light in the air as an effect.</figcaption></figure>
+          <figure class="figure"><img src="../assets/themes/en/terminal-home.webp" alt="Terminal"><figcaption><b>Terminal</b>: Home is a page element in JavaScript, lines everywhere else, a boot intro in CSS, green or amber phosphor by option.</figcaption></figure>
+          <figure class="figure"><img src="../assets/themes/en/picker.webp" alt="The themes from the menu"><figcaption>From Desktop Mode: <b>Menu → Theme</b>, with the joypad, and the options of the theme shown, its layout first.</figcaption></figure>
+        </div>
+      </div>
+    </article>
+
+  </main>
+</div>
+
+<div class="palette" id="palette" role="dialog" aria-label="Search the guide">
+  <div class="box2">
+    <input type="search" placeholder="Search: colors, coverflow, sounds, rp.games…" aria-label="Search">
+    <div class="results"></div>
+  </div>
+</div>
+
+<script src="../assets/icons.js"></script>
+<script src="../assets/theme-ref.js"></script>
+<script src="../assets/theme-ref-tables.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

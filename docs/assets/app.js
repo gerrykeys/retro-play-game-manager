@@ -1,7 +1,9 @@
 // The guide: one page per topic (the <article data-topic> of the HTML), reached by #/<topic>.
 // The sidebar, the cards of the home page, the search and the pager are built from them.
 // A plain script, not a module: the guide works opened as a file too. English in index.html,
-// Italian in it/index.html (<html lang> says which, data-base where the assets are).
+// Italian in it/index.html (<html lang> says which, data-base where the assets are). Another
+// guide (the themes', doc/themes/) uses the same: its groups in window.RP_GROUPS, the page of its
+// other language in data-other, its title in data-title, a card's picture in data-thumb-src.
 ;(function () {
   'use strict'
 
@@ -41,7 +43,7 @@
     }
   }[LANG]
 
-  const GROUPS = {
+  const GROUPS = (window.RP_GROUPS && window.RP_GROUPS[LANG]) || {
     en: [
       { id: 'inizia', title: 'Getting started', desc: 'The archive and how to fill it', color: '#8b7bff', icon: 'rocket' },
       { id: 'libreria', title: 'The library', desc: 'Browse, search and open your games', color: '#3ee0c5', icon: 'layout-grid' },
@@ -63,8 +65,14 @@
       { id: 'riferimento', title: 'Impostazioni e aiuto', desc: 'Impostazioni, tasti, glossario, domande', color: '#a5abbd', icon: 'life-buoy' }
     ]
   }[LANG]
+  if (doc.dataset.title) WORDS.title = doc.dataset.title
   const group = (id) => GROUPS.find((g) => g.id === id) || GROUPS[0]
-  const icon = (n) => ICONS[n] || ICONS.sparkles || ''
+  // A frontend's logo has ids of its own in each copy (__U__ in icons.js)
+  let copies = 0
+  const icon = (n) => {
+    const svg = ICONS[n] || ICONS.sparkles || ''
+    return svg.includes('__U__') ? svg.replace(/__U__/g, `fe${++copies}-`) : svg
+  }
 
   const $ = (s, r) => (r || document).querySelector(s)
   const $$ = (s, r) => Array.from((r || document).querySelectorAll(s))
@@ -101,6 +109,7 @@
   })
 
   // ---------------- sidebar: one folding group per part of the guide ----------------
+  // A topic's data-nav is its shorter name there (a frontend's: only its logo and name).
   // The group of the topic shown opens by itself; the others stay as the reader left them
   // (kept in rp-nav). The button at the top folds them all, or opens them all.
 
@@ -130,7 +139,7 @@
       if (!items.length) return ''
       return `<section class="nav-group" data-group="${g.id}" style="--c:${g.color}">
         <button type="button" class="nav-head" aria-expanded="false" aria-controls="nav-${g.id}"><span class="gi">${icon(g.icon)}</span><span class="t">${g.title}</span><span class="n">${items.length}</span>${icon('chevron-right')}</button>
-        <div class="nav-items" id="nav-${g.id}"><div><div class="nav-list">${items.map((t) => `<a href="#/${t.id}" data-id="${t.id}">${t.title}</a>`).join('')}</div></div></div>
+        <div class="nav-items" id="nav-${g.id}"><div><div class="nav-list">${items.map((t) => `<a href="#/${t.id}" data-id="${t.id}">${t.el.dataset.nav || t.title}</a>`).join('')}</div></div></div>
       </section>`
     }).join('')
 
@@ -177,14 +186,62 @@
       <div class="cards">${items
         .map((t) => {
           const thumb = t.anim ? (t.el.querySelector('.player').dataset.thumb || '01.webp') : null
+          const own = t.el.dataset.thumbSrc
           return `<a class="card" href="#/${t.id}">${
             thumb
               ? `<div class="thumb"><img loading="lazy" decoding="async" alt="" src="${base}assets/anim/${LANG}/${t.anim}/${thumb}"><span class="play">${icon('play')}</span></div>`
-              : `<div class="thumb icon">${icon(t.icon)}</div>`
+              : own
+                ? `<div class="thumb"><img loading="lazy" decoding="async" alt="" src="${base}${own}"></div>`
+                : `<div class="thumb icon">${icon(t.icon)}</div>`
           }<div class="body"><h4>${t.title}</h4><p>${t.desc}</p></div></a>`
         })
         .join('')}</div></section>`
   }).join('')
+
+  // ---------------- the frontends' logos, before their names ----------------
+  // Where the text names a frontend, its logo (the app's own) comes before the name: once in
+  // each list of steps, box, question, paragraph, title or link, never in code, keys or the
+  // animations.
+
+  const FE_NAME = /\b(ES-DE|MiSTer(?: FPGA)?|RetroArch|RetroPie|Batocera)\b/g
+  const FE_KIND = { 'ES-DE': 'esde', MiSTer: 'mister', RetroArch: 'retroarch', RetroPie: 'retropie', Batocera: 'batocera' }
+  const FE_SKIP = 'code, kbd, pre, script, style, svg, textarea, mark, .player, .player-caption, .fe-name'
+  const FE_GROUP = '.steps, .box, details'
+  const FE_BLOCK = 'p, li, summary, h1, h2, h3, h4, h5, dt, dd, td, th, figcaption, .row'
+  function frontendLogos(root) {
+    const found = []
+    const walk = document.createTreeWalker(root, NodeFilter.SHOW_TEXT)
+    while (walk.nextNode()) {
+      const n = walk.currentNode
+      if (n.nodeValue.match(FE_NAME) && !n.parentElement.closest(FE_SKIP)) found.push(n)
+    }
+    for (const n of found) {
+      const el = n.parentElement
+      const block = el.closest(FE_GROUP) || el.closest(FE_BLOCK) || el
+      const had = new Set($$('.fe-name', block).map((s) => s.dataset.fe))
+      const text = n.nodeValue
+      const out = document.createDocumentFragment()
+      let at = 0
+      for (const m of text.matchAll(FE_NAME)) {
+        const kind = FE_KIND[m[1].split(' ')[0]]
+        if (had.has(kind)) continue
+        had.add(kind)
+        out.append(text.slice(at, m.index))
+        const name = document.createElement('span')
+        name.className = 'fe-name'
+        name.dataset.fe = kind
+        name.innerHTML = icon(`fe-${kind}`)
+        name.append(m[1])
+        out.append(name)
+        at = m.index + m[1].length
+      }
+      if (!at) continue
+      out.append(text.slice(at))
+      n.replaceWith(out)
+    }
+  }
+  frontendLogos(nav)
+  frontendLogos($('.main'))
 
   // ---------------- routing ----------------
 
@@ -202,6 +259,7 @@
     current = page
     document.title = t ? `${t.title} · Retro Play Game Manager` : WORDS.title
     $$('#nav a').forEach((a) => a.classList.toggle('on', a.dataset.id === (t ? t.id : 'home')))
+    $$('.rn-btn').forEach((a) => a.classList.toggle('on', !!t && a.getAttribute('href') === `#/${t.id}`))
     navGroups.forEach((s) => s.classList.toggle('here', !!t && s.dataset.group === t.group))
     const opening = !!t && !open.has(t.group)
     if (opening) {
@@ -295,7 +353,7 @@
 
   const langLink = $('#lang')
   function updateLangLink() {
-    const other = LANG === 'en' ? 'it/index.html' : '../index.html'
+    const other = doc.dataset.other || (LANG === 'en' ? 'it/index.html' : '../index.html')
     langLink.href = other + location.hash
     langLink.title = WORDS.otherTitle
     langLink.innerHTML = `${icon('languages')}<span>${WORDS.otherShort}</span>`
@@ -376,6 +434,7 @@
           .map(({ t, snip }, i) => `<a href="#/${t.id}" class="${i === 0 ? 'sel' : ''}" style="--c:${group(t.group).color}"><i></i><span><b>${t.title}</b><small>${snip}</small></span></a>`)
           .join('')
       : `<div class="empty">${WORDS.none}</div>`
+    $$('b', results).forEach(frontendLogos)
   }
   input.addEventListener('input', search)
   input.addEventListener('keydown', (e) => {
@@ -409,6 +468,10 @@
   // ---------------- icons written in the page ----------------
 
   $$('[data-icon-svg]').forEach((el) => el.insertAdjacentHTML('afterbegin', icon(el.dataset.iconSvg)))
+
+  // The latest version, wherever the page names it: the first of the release notes
+  const latest = $('[data-topic="note-di-rilascio"] .rel-head h2')
+  if (latest) $$('[data-latest]').forEach((el) => (el.textContent = latest.textContent.trim()))
 
   route()
 })()

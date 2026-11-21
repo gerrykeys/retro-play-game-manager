@@ -37,7 +37,7 @@
    "img": "05.webp",
    "hold": 2600,
    "cursor": {
-    "x": 53.15,
+    "x": 50.05,
     "y": 58.43
    },
    "action": "click"
@@ -55,17 +55,35 @@
    "img": "07.webp",
    "hold": 2200,
    "cursor": {
-    "x": 41.94,
-    "y": 33.36
+    "x": 59.98,
+    "y": 58.43
    },
    "action": "click"
   },
   {
    "img": "08.webp",
-   "hold": 1600
+   "hold": 2200,
+   "cursor": {
+    "x": 43.97,
+    "y": 30.87
+   },
+   "action": "click"
   },
   {
    "img": "09.webp",
+   "hold": 3000,
+   "cursor": {
+    "x": 50.05,
+    "y": 67.67
+   },
+   "action": "click"
+  },
+  {
+   "img": "10.webp",
+   "hold": 1600
+  },
+  {
+   "img": "11.webp",
    "hold": 3000,
    "cursor": {
     "x": 46.38,
@@ -74,7 +92,7 @@
    "action": "none"
   },
   {
-   "img": "10.webp",
+   "img": "12.webp",
    "hold": 2600,
    "cursor": {
     "x": 50.05,
@@ -83,11 +101,11 @@
    "action": "click"
   },
   {
-   "img": "11.webp",
+   "img": "13.webp",
    "hold": 3000
   },
   {
-   "img": "12.webp",
+   "img": "14.webp",
    "hold": 3400
   }
  ]

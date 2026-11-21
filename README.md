@@ -21,7 +21,7 @@ more systems and frontends, and fewer bugs. ☕
 
 [**Website & guide**](https://gerrykeys.github.io/retro-play-game-manager/) &nbsp;·&nbsp;
 [**Download**](https://github.com/gerrykeys/retro-play-game-manager/releases/latest) &nbsp;·&nbsp;
-[Guida in italiano](https://gerrykeys.github.io/retro-play-game-manager/it/)
+[Guide](https://gerrykeys.github.io/retro-play-game-manager/)
 
 </div>
 
@@ -98,10 +98,20 @@ What each version brought: the [**release notes**](https://gerrykeys.github.io/r
     <td align="center"><sub>The game page</sub></td>
     <td align="center"><sub>Desktop Mode</sub></td>
   </tr>
+  <tr>
+    <td width="50%"><img src="images/journeys.webp" alt="A gaming journey: platformers in a row, each step with a note"></td>
+    <td width="50%"><img src="images/company-map.webp" alt="The company map: developers and publishers on a world map"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Gaming journeys</sub></td>
+    <td align="center"><sub>The company map</sub></td>
+  </tr>
 </table>
 
 **Library**
 - A cover grid, a list or a **timeline** of your systems year by year, fast even with tens of thousands of games.
+- A **company map**: the developers and publishers of your games where they are in the world.
+- **Gaming journeys**: games in a row, a note for each step, shared as a .zip with no game files.
 - Instant search and filters, saved filters, **favorites** and **collections**.
 - Video and screenshots on hover, and games compared side by side.
 - A **command palette** (<kbd>Ctrl K</kbd>): games, systems, views, settings and actions in one box.
@@ -124,6 +134,7 @@ What each version brought: the [**release notes**](https://gerrykeys.github.io/r
 **Playing**
 - **Continue playing**, **On this day** and a wheel that answers *What should I play today?*
 - **Desktop Mode**: the app full screen, played with a joypad, with the games’ videos when you leave it alone.
+- **Desktop Mode themes**: change its colors, fonts, music and even how each screen is laid out, or [make your own](https://gerrykeys.github.io/retro-play-game-manager/themes/index.html).
 - **Play time** for every game, and **your retro year** told as a story, down to a card to share.
 - **Cheats** for RetroArch, from the libretro database, on as the game starts.
 - **Your phone as a remote**: browse and start games from the sofa, then a second screen with your notes, the manual and the cheats while you play.
@@ -138,7 +149,7 @@ What each version brought: the [**release notes**](https://gerrykeys.github.io/r
 - **Check archive**: find and delete the media no game uses any more.
 - An **MCP server**: an AI assistant like Claude Code can search, fix and install games for you.
 
-The app is in **English** and **Italian**, with light and dark themes.
+The app is in **English** and **Italian**, with light and dark themes. If you like, it starts with Windows and waits beside the clock.
 
 ## Getting started
 
