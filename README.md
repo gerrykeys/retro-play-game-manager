@@ -130,6 +130,7 @@ What each version brought: the [**release notes**](https://gerrykeys.github.io/r
 - Connect <img src="images/frontends/es-de.png" width="20" height="20" align="top" alt=""> **ES-DE**, <img src="images/frontends/mister.png" width="20" height="20" align="top" alt=""> **MiSTer FPGA**, <img src="images/frontends/retroarch.png" width="20" height="20" align="top" alt=""> **RetroArch**, <img src="images/frontends/retropie.png" width="20" height="20" align="top" alt=""> **RetroPie** or <img src="images/frontends/batocera.png" width="20" height="20" align="top" alt=""> **Batocera**.
 - Install and uninstall games with one click, and bring into the archive the games only the frontend has.
 - **Play** straight from the app, wherever the game is installed.
+- **Emulators and commands**: choose the emulator and the command line Play starts a system’s games with, or give a single game its own.
 
 **Playing**
 - **Continue playing**, **On this day** and a wheel that answers *What should I play today?*

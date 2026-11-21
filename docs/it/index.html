@@ -942,9 +942,38 @@
             <li data-at="2" data-short="Partito!">Il gioco parte, e l’app ti dice con quale emulatore.</li>
           </ol>
           <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
-            <li>Con ES-DE il gioco parte come lo farebbe partire ES-DE.</li>
+            <li>Con ES-DE il gioco parte come lo farebbe partire ES-DE, se non scegli altro in <a href="#/emulatori">Emulatori e comandi</a>.</li>
             <li>Con MiSTer FPGA parte sul MiSTer, che deve essere collegato in rete.</li>
             <li>Se il gioco non parte, l’app ti dice perché: manca l’emulatore o il core, oppure l’emulatore si è chiuso subito, e allora vedi anche il suo messaggio d’errore.</li>
+          </ul></div>
+        </div>
+      </div>
+    </article>
+
+    <article data-topic="emulatori" data-group="giocare" data-icon="square-terminal"
+      data-title="Emulatori e comandi"
+      data-desc="Con quale emulatore e quale comando parte un gioco."
+      data-lead="Scegli l’emulatore con cui Retro Play avvia i giochi di un sistema, cambia la sua riga di comando e danne uno suo a un singolo gioco. Il frontend resta com’è.">
+      <div class="topic-grid">
+        <div class="player-col"><div class="player" data-anim="emulatori" data-thumb="07.webp"></div><div class="player-caption"></div></div>
+        <div class="text-col">
+          <ol class="steps">
+            <li data-at="0" data-short="Impostazioni del frontend">Apri le impostazioni del frontend: il pulsante accanto al suo nome, oppure <b>Impostazioni → Frontend</b>.</li>
+            <li data-at="1" data-short="Mostra e modifica…">In <b>Emulatori e comandi</b>, clicca <b>Mostra e modifica…</b>.</li>
+            <li data-at="2" data-short="Scegli il sistema">Scegli un sistema a sinistra.</li>
+            <li data-at="3" data-short="Scegli l’emulatore">Scegli l’emulatore per tutti i suoi giochi: per ognuno vedi se è installato.</li>
+            <li data-at="4" data-short="Cambia il comando">Cambia la riga di comando e clicca <b>Salva comando</b>: l’anteprima mostra la riga con cui parte un gioco.</li>
+            <li data-at="7" data-short="Singoli giochi">In <b>Singoli giochi</b>, scegli un gioco per dargli un emulatore o un comando suoi.</li>
+            <li data-at="11" data-short="Chiudi">Chiudi: le modifiche sono già salvate.</li>
+          </ol>
+          <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
+            <li>Li usa solo <a href="#/giocare">Gioca</a> di Retro Play: un gioco avviato dal frontend parte a modo suo.</li>
+            <li><b>Ripristina predefiniti</b> (o <b>Ripristina</b>, per un gioco) torna all’emulatore e al comando del frontend.</li>
+            <li>Dal menu di un gioco, <b>Emulatore e comando…</b> la apre su quel gioco.</li>
+          </ul></div>
+          <div class="box warn"><h3 data-icon-svg="info">Attenzione</h3><ul>
+            <li><b>Batocera</b>: solo emulatore e core, niente riga di comando.</li>
+            <li><b>MiSTer FPGA</b>: non c’è, i suoi core caricano quello che apre il menu del MiSTer.</li>
           </ul></div>
         </div>
       </div>
@@ -1464,7 +1493,7 @@
           <div class="box"><h3 data-icon-svg="info">Le altre pagine</h3><ul>
             <li><b>Scraping</b>: account ScreenScraper e IGDB, regione e lingua preferite.</li>
             <li><b>Altre impostazioni</b>: un’area per ogni parte dell’app. Per ora <b>Arcade</b>, con l’XML di MAME di ogni ROM Set per i suoi <a href="#/dip-switch">DIP switch</a>.</li>
-            <li><b>Frontend</b>: il frontend collegato, il <a href="#/romset">ROM Set</a> arcade e i <a href="#/formati-frontend">formati compatibili</a>.</li>
+            <li><b>Frontend</b>: il frontend collegato, il <a href="#/romset">ROM Set</a> arcade, i <a href="#/formati-frontend">formati compatibili</a> e gli <a href="#/emulatori">emulatori e comandi</a>.</li>
             <li><b><a href="#/retroachievements">RetroAchievements</a></b>, <b><a href="#/mcp">Server MCP</a></b>, <b><a href="#/telefono">Telefono</a></b> e <b><a href="#/discord">Discord</a></b>: hanno una pagina loro.</li>
             <li><b>Informazioni</b>: la versione dell’app, i suoi <a href="#/aggiornamenti">aggiornamenti</a> e il pulsante per sostenerla con un caffè su <a href="https://ko-fi.com/gerrykeys" target="_blank" rel="noopener">Ko-fi</a>.</li>
             <li>Password e chiavi restano cifrate su questo PC.</li>
@@ -1505,8 +1534,24 @@
       data-lead="Tutte le versioni dell’app dalla prima, dalla più recente, con cosa hanno cambiato. Nell’app, Impostazioni → Informazioni → Note di rilascio apre questa pagina.">
       <section class="rel">
         <header class="rel-head">
-          <h2>0.0.4</h2>
+          <h2>0.0.5</h2>
           <span class="rel-badge">Ultima</span>
+          <span class="rel-date">21 novembre 2026</span>
+          <a class="rel-dl" href="https://github.com/gerrykeys/retro-play-game-manager/releases/tag/v0.0.5" target="_blank" rel="noopener" data-icon-svg="download"><span>Scarica</span></a>
+        </header>
+        <p class="rel-intro">Scegli tu con quale emulatore e quale comando Retro Play avvia i tuoi giochi.</p>
+        <ul class="rel-items">
+          <li><span class="ri" data-icon-svg="square-terminal"></span><div><a href="#/emulatori">Emulatori e comandi</a><p>Per ogni sistema, l’emulatore con cui <a href="#/giocare">Gioca</a> avvia i giochi e tutta la sua riga di comando; un singolo gioco può averne uno suo. ES-DE, RetroArch, RetroPie e Batocera. Il frontend resta com’è.</p></div></li>
+        </ul>
+        <div class="rel-more"><h3>E poi</h3><ul>
+          <li>Dal menu di un gioco, <i>Emulatore e comando…</i> li apre su quel gioco.</li>
+          <li>I <a href="#/trucchi">trucchi</a> si attivano anche quando il comando di ES-DE dà già a RetroArch una configurazione sua.</li>
+          <li>RetroPie: l’emulatore scelto per un singolo gioco ora viene letto bene.</li>
+        </ul></div>
+      </section>
+      <section class="rel">
+        <header class="rel-head">
+          <h2>0.0.4</h2>
           <span class="rel-date">21 novembre 2026</span>
           <a class="rel-dl" href="https://github.com/gerrykeys/retro-play-game-manager/releases/tag/v0.0.4" target="_blank" rel="noopener" data-icon-svg="download"><span>Scarica</span></a>
         </header>
@@ -1683,8 +1728,8 @@
   </div>
 </div>
 
-<script src="../assets/icons.js?v=e5370ec2"></script>
-<script src="../assets/anim/it.js?v=0a58201b"></script>
+<script src="../assets/icons.js?v=4adbcba3"></script>
+<script src="../assets/anim/it.js?v=f44e5ace"></script>
 <script src="../assets/player.js?v=20005dc7"></script>
 <script src="../assets/app.js?v=d4ee240f"></script>
 </body>
