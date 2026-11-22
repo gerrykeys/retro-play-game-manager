@@ -143,6 +143,7 @@ a:hover {
 }
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 kbd,
@@ -901,6 +902,12 @@ article[data-topic],
   border-radius: 3px;
   background: var(--c, var(--accent));
 }
+.crumbs a {
+  color: inherit;
+}
+.crumbs a:hover {
+  color: var(--ink);
+}
 .topic-head h1 {
   margin: 0 0 10px;
   font: 700 clamp(30px, 3.6vw, 44px)/1.08 var(--f-display);
@@ -1311,6 +1318,10 @@ article[data-topic],
   padding: 9px 12px;
   background: color-mix(in oklab, var(--card) 92%, #000);
   border-top: 1px solid var(--line);
+}
+/* The first frame, before the animation starts: room for the bar its buttons will fill */
+.player .bar:empty {
+  height: 51px;
 }
 .player .bar button {
   width: 32px;

@@ -19,9 +19,9 @@ more systems and frontends, and fewer bugs. ☕
 
 **Your retro games, tidy and ready to play.**
 
-[**Website & guide**](https://gerrykeys.github.io/retro-play-game-manager/) &nbsp;·&nbsp;
+[**Website & guide**](https://retroplay-gamemanager.com/) &nbsp;·&nbsp;
 [**Download**](https://github.com/gerrykeys/retro-play-game-manager/releases/latest) &nbsp;·&nbsp;
-[Guide](https://gerrykeys.github.io/retro-play-game-manager/)
+[Guida in italiano](https://retroplay-gamemanager.com/it/)
 
 </div>
 
@@ -34,27 +34,27 @@ Retro Play Game Manager keeps your games in order: you add them, fix titles and 
 <table>
   <tr>
     <td align="center" valign="top" width="20%">
-      <a href="https://gerrykeys.github.io/retro-play-game-manager/#/frontend"><img src="images/frontends/es-de.png" width="64" height="64" alt="ES-DE"></a><br>
+      <a href="https://retroplay-gamemanager.com/guide/es-de/"><img src="images/frontends/es-de.png" width="64" height="64" alt="ES-DE"></a><br>
       <b>ES-DE</b><br>
       <sub>On your PC</sub>
     </td>
     <td align="center" valign="top" width="20%">
-      <a href="https://gerrykeys.github.io/retro-play-game-manager/#/mister"><img src="images/frontends/mister.png" width="64" height="64" alt="MiSTer FPGA"></a><br>
+      <a href="https://retroplay-gamemanager.com/guide/mister-fpga/"><img src="images/frontends/mister.png" width="64" height="64" alt="MiSTer FPGA"></a><br>
       <b>MiSTer FPGA</b><br>
       <sub>On your network, or its SD card</sub>
     </td>
     <td align="center" valign="top" width="20%">
-      <a href="https://gerrykeys.github.io/retro-play-game-manager/#/retroarch"><img src="images/frontends/retroarch.png" width="64" height="64" alt="RetroArch"></a><br>
+      <a href="https://retroplay-gamemanager.com/guide/retroarch/"><img src="images/frontends/retroarch.png" width="64" height="64" alt="RetroArch"></a><br>
       <b>RetroArch</b><br>
       <sub>On your PC, with its playlists</sub>
     </td>
     <td align="center" valign="top" width="20%">
-      <a href="https://gerrykeys.github.io/retro-play-game-manager/#/retropie"><img src="images/frontends/retropie.png" width="64" height="64" alt="RetroPie"></a><br>
+      <a href="https://retroplay-gamemanager.com/guide/retropie/"><img src="images/frontends/retropie.png" width="64" height="64" alt="RetroPie"></a><br>
       <b>RetroPie</b><br>
       <sub>A Raspberry Pi on your network</sub>
     </td>
     <td align="center" valign="top" width="20%">
-      <a href="https://gerrykeys.github.io/retro-play-game-manager/#/batocera"><img src="images/frontends/batocera.png" width="64" height="64" alt="Batocera"></a><br>
+      <a href="https://retroplay-gamemanager.com/guide/batocera/"><img src="images/frontends/batocera.png" width="64" height="64" alt="Batocera"></a><br>
       <b>Batocera</b><br>
       <sub>PC, Raspberry Pi or handheld on your network</sub>
     </td>
@@ -82,7 +82,7 @@ Get the latest version from the [**Releases**](https://github.com/gerrykeys/retr
 | `Retro-Play-Game-Manager-Setup-<version>.exe` | **Recommended.** Installs the app; it then updates itself. |
 | `Retro-Play-Game-Manager-<version>-portable.exe` | No installation, runs from any folder. It updates itself too. |
 
-What each version brought: the [**release notes**](https://gerrykeys.github.io/retro-play-game-manager/#/note-di-rilascio).
+What each version brought: the [**release notes**](https://retroplay-gamemanager.com/guide/release-notes/).
 
 > [!NOTE]
 > The app is not code-signed yet, so Windows SmartScreen may warn you the first time: click **More info → Run anyway**.
@@ -135,7 +135,7 @@ What each version brought: the [**release notes**](https://gerrykeys.github.io/r
 **Playing**
 - **Continue playing**, **On this day** and a wheel that answers *What should I play today?*
 - **Desktop Mode**: the app full screen, played with a joypad, with the games’ videos when you leave it alone.
-- **Desktop Mode themes**: change its colors, fonts, music and even how each screen is laid out, or [make your own](https://gerrykeys.github.io/retro-play-game-manager/themes/index.html).
+- **Desktop Mode themes**: change its colors, fonts, music and even how each screen is laid out, or [make your own](https://retroplay-gamemanager.com/themes/).
 - **Play time** for every game, and **your retro year** told as a story, down to a card to share.
 - **Cheats** for RetroArch, from the libretro database, on as the game starts.
 - **Your phone as a remote**: browse and start games from the sofa, then a second screen with your notes, the manual and the cheats while you play.
@@ -149,22 +149,22 @@ What each version brought: the [**release notes**](https://gerrykeys.github.io/r
 - **Export** games to a .zip and **import** them into another archive.
 - An **archive report** in one picture, and your **RetroAchievements**.
 - **Check archive**: find and delete the media no game uses any more.
-- An **MCP server**: an AI assistant like Claude Code can search, fix and install games for you.
+- An **MCP server**: an AI assistant like Claude Code can search, fix and install games for you. The app lists every tool, each with a question to ask.
 
 The app is in **English** and **Italian**, with light and dark themes. If you like, it starts with Windows and waits beside the clock.
 
 ## Getting started
 
-1. **Open or create an archive**: the folder that will hold your games. → [guide](https://gerrykeys.github.io/retro-play-game-manager/#/archivio)
-2. **Add games** from a folder of ROMs. → [guide](https://gerrykeys.github.io/retro-play-game-manager/#/aggiungere)
-3. **Scrape** them to get titles, covers and videos. → [guide](https://gerrykeys.github.io/retro-play-game-manager/#/scraping)
-4. **Connect your frontend** and install the games you want to play. → [guide](https://gerrykeys.github.io/retro-play-game-manager/#/frontend)
+1. **Open or create an archive**: the folder that will hold your games. → [guide](https://retroplay-gamemanager.com/guide/open-archive/)
+2. **Add games** from a folder of ROMs. → [guide](https://retroplay-gamemanager.com/guide/add-games/)
+3. **Scrape** them to get titles, covers and videos. → [guide](https://retroplay-gamemanager.com/guide/scraping/)
+4. **Connect your frontend** and install the games you want to play. → [guide](https://retroplay-gamemanager.com/guide/es-de/)
 
-Every task is explained in the [**guide**](https://gerrykeys.github.io/retro-play-game-manager/), each with a short animation of the real app.
+Every task is explained in the [**guide**](https://retroplay-gamemanager.com/), each with a short animation of the real app.
 
 ## Help and feedback
 
-- Questions? Start from the [common questions](https://gerrykeys.github.io/retro-play-game-manager/#/faq).
+- Questions? Start from the [common questions](https://retroplay-gamemanager.com/guide/faq/).
 - Found a bug or have an idea? Open an [issue](https://github.com/gerrykeys/retro-play-game-manager/issues).
 
 ## Support the project

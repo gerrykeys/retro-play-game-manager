@@ -1,9 +1,9 @@
-// The guide: one page per topic (the <article data-topic> of the HTML), reached by #/<topic>.
-// The sidebar, the cards of the home page, the search and the pager are built from them.
-// A plain script, not a module: the guide works opened as a file too. English in index.html,
-// Italian in it/index.html (<html lang> says which, data-base where the assets are). Another
-// guide (the themes', doc/themes/) uses the same: its groups in window.RP_GROUPS, the page of its
-// other language in data-other, its title in data-title, a card's picture in data-thumb-src.
+// The guide: a page for each topic, written by doc/tools/build-site.mjs from doc/tools/pages/ with
+// the sidebar, the home's cards and the pager already in it. This script adds what moves: the
+// folding sidebar, the animations, the search, the theme, the frontends' logos.
+// A plain script, not a module: the guide works opened as a file too, where a link to a folder
+// goes to its index.html. English or Italian by <html lang>; data-base is the way to the site's
+// root; the palette's data-index the script with the words of every topic (window.RP_SEARCH).
 ;(function () {
   'use strict'
 
@@ -11,62 +11,28 @@
   const LANG = doc.lang === 'it' ? 'it' : 'en'
   const ICONS = window.RP_ICONS || {}
   const Player = window.RPPlayer
+  const BASE = doc.dataset.base || ''
+  const FILE = location.protocol === 'file:'
 
   const WORDS = {
     en: {
-      title: 'Retro Play Game Manager · Guide',
-      prev: '← Previous',
-      next: 'Next →',
       step: 'Step',
       none: 'Nothing found. Try another word.',
       light: 'Light theme',
       dark: 'Dark theme',
-      other: 'Italiano',
-      otherShort: 'IT',
-      otherTitle: 'Leggi la guida in italiano',
       foldAll: 'Collapse all groups',
       openAll: 'Expand all groups'
     },
     it: {
-      title: 'Retro Play Game Manager · Guida',
-      prev: '← Precedente',
-      next: 'Successivo →',
       step: 'Passo',
       none: 'Nessun risultato. Prova con un’altra parola.',
       light: 'Tema chiaro',
       dark: 'Tema scuro',
-      other: 'English',
-      otherShort: 'EN',
-      otherTitle: 'Read the guide in English',
       foldAll: 'Chiudi tutti i gruppi',
       openAll: 'Apri tutti i gruppi'
     }
   }[LANG]
 
-  const GROUPS = (window.RP_GROUPS && window.RP_GROUPS[LANG]) || {
-    en: [
-      { id: 'inizia', title: 'Getting started', desc: 'The archive and how to fill it', color: '#8b7bff', icon: 'rocket' },
-      { id: 'libreria', title: 'The library', desc: 'Browse, search and open your games', color: '#3ee0c5', icon: 'layout-grid' },
-      { id: 'modifica', title: 'Editing games', desc: 'Details, media, scraping, deleting', color: '#ff9f5a', icon: 'pencil' },
-      { id: 'versioni', title: 'Versions and ROM Sets', desc: 'One game in several files or MAME versions', color: '#ff6fb5', icon: 'layers' },
-      { id: 'frontend', title: 'Frontends', desc: 'Connect ES-DE, MiSTer, RetroArch, RetroPie or Batocera, install and archive', color: '#4cc2ff', icon: 'plug' },
-      { id: 'giocare', title: 'Playing', desc: 'Start games, Desktop Mode and saves', color: '#3ddc97', icon: 'gamepad-2' },
-      { id: 'strumenti', title: 'Tools', desc: 'Exports, DATs, reports, achievements, AI', color: '#ffbf47', icon: 'wrench' },
-      { id: 'riferimento', title: 'Settings and help', desc: 'Settings, keys, glossary, questions', color: '#a5abbd', icon: 'life-buoy' }
-    ],
-    it: [
-      { id: 'inizia', title: 'Per iniziare', desc: 'L’archivio e come riempirlo', color: '#8b7bff', icon: 'rocket' },
-      { id: 'libreria', title: 'La libreria', desc: 'Sfogliare, cercare e aprire i giochi', color: '#3ee0c5', icon: 'layout-grid' },
-      { id: 'modifica', title: 'Modificare i giochi', desc: 'Dettagli, media, scraping, eliminazione', color: '#ff9f5a', icon: 'pencil' },
-      { id: 'versioni', title: 'Versioni e ROM Set', desc: 'Lo stesso gioco in più file o versioni di MAME', color: '#ff6fb5', icon: 'layers' },
-      { id: 'frontend', title: 'Frontend', desc: 'Collegare ES-DE, MiSTer, RetroArch, RetroPie o Batocera, installare, archiviare', color: '#4cc2ff', icon: 'plug' },
-      { id: 'giocare', title: 'Giocare', desc: 'Avviare i giochi, Desktop Mode e salvataggi', color: '#3ddc97', icon: 'gamepad-2' },
-      { id: 'strumenti', title: 'Strumenti', desc: 'Export, DAT, report, obiettivi, AI', color: '#ffbf47', icon: 'wrench' },
-      { id: 'riferimento', title: 'Impostazioni e aiuto', desc: 'Impostazioni, tasti, glossario, domande', color: '#a5abbd', icon: 'life-buoy' }
-    ]
-  }[LANG]
-  if (doc.dataset.title) WORDS.title = doc.dataset.title
-  const group = (id) => GROUPS.find((g) => g.id === id) || GROUPS[0]
   // A frontend's logo has ids of its own in each copy (__U__ in icons.js)
   let copies = 0
   const icon = (n) => {
@@ -77,53 +43,37 @@
   const $ = (s, r) => (r || document).querySelector(s)
   const $$ = (s, r) => Array.from((r || document).querySelectorAll(s))
 
-  const topics = $$('article[data-topic]').map((el) => ({
-    id: el.dataset.topic,
-    el,
-    title: el.dataset.title,
-    desc: el.dataset.desc,
-    group: el.dataset.group,
-    icon: el.dataset.icon,
-    anim: (el.querySelector('.player') || {}).dataset ? el.querySelector('.player') && el.querySelector('.player').dataset.anim : null
-  }))
-  const byId = new Map(topics.map((t) => [t.id, t]))
+  // ---------------- opened as a file: a link to a folder goes to its index.html ----------------
 
-  // ---------------- topic pages: head, pager ----------------
+  const fileHref = (h) => {
+    if (!FILE || /^[a-z][a-z0-9+.-]*:/i.test(h) || h.startsWith('#')) return h
+    const at = h.search(/[?#]/)
+    const p = at < 0 ? h : h.slice(0, at)
+    return p.endsWith('/') ? p + 'index.html' + (at < 0 ? '' : h.slice(at)) : h
+  }
+  const fixLinks = (root) => FILE && $$('a[href]', root).forEach((a) => a.setAttribute('href', fileHref(a.getAttribute('href'))))
+  fixLinks(document)
 
-  topics.forEach((t, i) => {
-    const g = group(t.group)
-    t.el.classList.add('page')
-    t.el.style.setProperty('--c', g.color)
-    const head = document.createElement('header')
-    head.className = 'topic-head'
-    head.innerHTML = `<div class="crumbs"><i></i>${g.title}</div><h1>${t.title}</h1>${t.el.dataset.lead ? `<p class="lead">${t.el.dataset.lead}</p>` : ''}`
-    t.el.prepend(head)
-    const prev = topics[i - 1]
-    const next = topics[i + 1]
-    const pager = document.createElement('nav')
-    pager.className = 'pager'
-    pager.innerHTML = `${prev ? `<a href="#/${prev.id}"><small>${WORDS.prev}</small><b>${prev.title}</b></a>` : '<span></span>'}${next ? `<a class="next" href="#/${next.id}"><small>${WORDS.next}</small><b>${next.title}</b></a>` : ''}`
-    t.el.appendChild(pager)
-    const p = t.el.querySelector('.player')
-    if (p) p.dataset.label = t.title
-  })
+  // An old address of a topic (#/<id>) typed or followed on a page already open: the page's first
+  // script takes it to the topic's own page when it runs again
+  addEventListener('hashchange', () => location.hash.startsWith('#/') && location.reload())
+
+  // ---------------- icons written in the page ----------------
+
+  $$('[data-icon-svg]').forEach((el) => el.insertAdjacentHTML('afterbegin', icon(el.dataset.iconSvg)))
 
   // ---------------- sidebar: one folding group per part of the guide ----------------
-  // A topic's data-nav is its shorter name there (a frontend's: only its logo and name).
-  // The group of the topic shown opens by itself; the others stay as the reader left them
-  // (kept in rp-nav). The button at the top folds them all, or opens them all.
+  // The group of the page shown opens by itself; the others stay as the reader left them (kept
+  // in rp-nav, which the page reads before it is drawn, as where the sidebar was scrolled to).
+  // The button at the top folds them all, or opens them all.
 
   const nav = $('#nav')
+  const sidebar = $('.sidebar')
   const NAV_KEY = 'rp-nav'
-  let open = (() => {
-    try {
-      const v = JSON.parse(localStorage.getItem(NAV_KEY))
-      if (Array.isArray(v)) return new Set(v)
-    } catch (e) {
-      /* nothing kept */
-    }
-    return new Set([GROUPS[0].id])
-  })()
+  const navGroups = $$('.nav-group', nav)
+  const foldBtn = $('.nav-fold', nav)
+  navGroups.forEach((s) => s.querySelector('.nav-head').insertAdjacentHTML('beforeend', icon('chevron-right')))
+  let open = new Set(navGroups.filter((s) => s.classList.contains('open')).map((s) => s.dataset.group))
   const keepOpen = () => {
     try {
       localStorage.setItem(NAV_KEY, JSON.stringify(Array.from(open)))
@@ -131,20 +81,6 @@
       /* private window or a file: nothing kept */
     }
   }
-
-  nav.innerHTML =
-    `<div class="nav-top"><a href="#/" data-id="home">${icon('house')}<span>Home</span></a><button type="button" class="icon-btn nav-fold"></button></div>` +
-    GROUPS.map((g) => {
-      const items = topics.filter((t) => t.group === g.id)
-      if (!items.length) return ''
-      return `<section class="nav-group" data-group="${g.id}" style="--c:${g.color}">
-        <button type="button" class="nav-head" aria-expanded="false" aria-controls="nav-${g.id}"><span class="gi">${icon(g.icon)}</span><span class="t">${g.title}</span><span class="n">${items.length}</span>${icon('chevron-right')}</button>
-        <div class="nav-items" id="nav-${g.id}"><div><div class="nav-list">${items.map((t) => `<a href="#/${t.id}" data-id="${t.id}">${t.el.dataset.nav || t.title}</a>`).join('')}</div></div></div>
-      </section>`
-    }).join('')
-
-  const navGroups = $$('.nav-group', nav)
-  const foldBtn = $('.nav-fold', nav)
   function paintNav() {
     navGroups.forEach((s) => {
       const on = open.has(s.dataset.group)
@@ -170,33 +106,23 @@
     keepOpen()
     paintNav()
   })
+  if ($('.nav-group.here', nav)) keepOpen()
   paintNav()
-  // No folding animation while the page is first drawn
-  nav.classList.add('still')
+  // The topic shown in sight, and no folding animation while the page is first drawn
+  const on = $('a.on', nav)
+  if (on && sidebar) {
+    const a = on.getBoundingClientRect()
+    const b = sidebar.getBoundingClientRect()
+    if (a.top < b.top || a.bottom > b.bottom) on.scrollIntoView({ block: 'nearest' })
+  }
   requestAnimationFrame(() => requestAnimationFrame(() => nav.classList.remove('still')))
-
-  // ---------------- home: the cards of every topic ----------------
-
-  const base = doc.dataset.base || ''
-  $('#groups').innerHTML = GROUPS.map((g) => {
-    const items = topics.filter((t) => t.group === g.id)
-    if (!items.length) return ''
-    return `<section class="group-block" style="--c:${g.color}">
-      <div class="group-head"><div class="gi">${icon(g.icon)}</div><div><h3>${g.title}</h3><p>${g.desc}</p></div></div>
-      <div class="cards">${items
-        .map((t) => {
-          const thumb = t.anim ? (t.el.querySelector('.player').dataset.thumb || '01.webp') : null
-          const own = t.el.dataset.thumbSrc
-          return `<a class="card" href="#/${t.id}">${
-            thumb
-              ? `<div class="thumb"><img loading="lazy" decoding="async" alt="" src="${base}assets/anim/${LANG}/${t.anim}/${thumb}"><span class="play">${icon('play')}</span></div>`
-              : own
-                ? `<div class="thumb"><img loading="lazy" decoding="async" alt="" src="${base}${own}"></div>`
-                : `<div class="thumb icon">${icon(t.icon)}</div>`
-          }<div class="body"><h4>${t.title}</h4><p>${t.desc}</p></div></a>`
-        })
-        .join('')}</div></section>`
-  }).join('')
+  addEventListener('pagehide', () => {
+    try {
+      if (sidebar) sessionStorage.setItem('rp-nav-y', String(sidebar.scrollTop))
+    } catch (e) {
+      /* nothing kept */
+    }
+  })
 
   // ---------------- the frontends' logos, before their names ----------------
   // Where the text names a frontend, its logo (the app's own) comes before the name: once in
@@ -243,55 +169,18 @@
   frontendLogos(nav)
   frontendLogos($('.main'))
 
-  // ---------------- routing ----------------
+  // ---------------- the page: its animations, its diagram ----------------
 
-  const home = $('#home')
-  const pages = [home].concat(topics.map((t) => t.el))
-  let current = null
-
-  function route() {
-    const id = decodeURIComponent(location.hash.replace(/^#\/?/, '')) || 'home'
-    const t = byId.get(id)
-    const page = t ? t.el : home
-    if (current === page) return
-    if (current && Player) $$('.player', current).forEach((p) => Player.unmount(p))
-    pages.forEach((p) => p.classList.toggle('on', p === page))
-    current = page
-    document.title = t ? `${t.title} · Retro Play Game Manager` : WORDS.title
-    $$('#nav a').forEach((a) => a.classList.toggle('on', a.dataset.id === (t ? t.id : 'home')))
-    $$('.rn-btn').forEach((a) => a.classList.toggle('on', !!t && a.getAttribute('href') === `#/${t.id}`))
-    navGroups.forEach((s) => s.classList.toggle('here', !!t && s.dataset.group === t.group))
-    const opening = !!t && !open.has(t.group)
-    if (opening) {
-      open.add(t.group)
-      keepOpen()
-      paintNav()
-    }
-    const on = $('#nav a.on')
-    // An opening group is still folding out: scroll to the topic once it is there
-    if (on && on.scrollIntoView) setTimeout(() => on.scrollIntoView({ block: 'nearest' }), opening && !nav.classList.contains('still') ? 280 : 0)
-    if (Player) {
-      $$('.player', page).forEach((p) => {
-        const article = p.closest('article, section')
-        Player.mount(p, { steps: article ? article.querySelector('.steps') : null, caption: p.parentElement.querySelector('.player-caption') })
-      })
-    }
-    stopDiagram()
-    const d = $('.diagram[data-cycle]', page)
-    if (d) startDiagram(d, page.querySelector('.steps'), d.parentElement.querySelector('.player-caption'))
-    window.scrollTo(0, 0)
-    document.body.classList.remove('nav-open')
-    updateLangLink()
+  const page = $('.page.on') || $('.main')
+  if (Player) {
+    $$('.player', page).forEach((p) => {
+      const article = p.closest('article, section')
+      Player.mount(p, { steps: article ? article.querySelector('.steps') : null, caption: p.parentElement.querySelector('.player-caption') })
+    })
   }
-  addEventListener('hashchange', route)
 
-  // ---------------- the animated diagram: its rows lit one part at a time ----------------
-
+  // The animated diagram: its rows lit one part at a time
   let diagramTimer = null
-  function stopDiagram() {
-    clearInterval(diagramTimer)
-    diagramTimer = null
-  }
   function startDiagram(d, steps, caption) {
     const rows = $$('.row', d)
     const last = Math.max.apply(null, rows.map((r) => Number(r.dataset.row)))
@@ -303,28 +192,28 @@
         r.classList.toggle('on', n === i)
         r.classList.toggle('seen', n < i)
       })
-      let on = null
-      for (const li of items) if (Number(li.dataset.at) <= i) on = li
-      items.forEach((li) => li.classList.toggle('on', li === on))
-      if (caption) caption.innerHTML = on ? `<b>${WORDS.step} ${items.indexOf(on) + 1}.</b> ${on.dataset.short || ''}` : ''
+      let lit = null
+      for (const li of items) if (Number(li.dataset.at) <= i) lit = li
+      items.forEach((li) => li.classList.toggle('on', li === lit))
+      if (caption) caption.innerHTML = lit ? `<b>${WORDS.step} ${items.indexOf(lit) + 1}.</b> ${lit.dataset.short || ''}` : ''
     }
     const tick = () => {
       i = i >= last ? 0 : i + 1
       show()
     }
-    items.forEach((li) => {
-      if (li.__diagram) return
-      li.__diagram = true
+    items.forEach((li) =>
       li.addEventListener('click', () => {
         i = Number(li.dataset.at)
         show()
-        stopDiagram()
+        clearInterval(diagramTimer)
         diagramTimer = setInterval(tick, 2600)
       })
-    })
+    )
     show()
     diagramTimer = setInterval(tick, 2600)
   }
+  const diagram = $('.diagram[data-cycle]', page)
+  if (diagram) startDiagram(diagram, page.querySelector('.steps'), diagram.parentElement.querySelector('.player-caption'))
 
   // ---------------- theme ----------------
 
@@ -349,16 +238,9 @@
   matchMedia('(prefers-color-scheme: dark)').addEventListener('change', paintTheme)
   paintTheme()
 
-  // ---------------- the other language, on the same topic ----------------
+  // ---------------- the other language: the reader's choice is kept ----------------
 
-  const langLink = $('#lang')
-  function updateLangLink() {
-    const other = doc.dataset.other || (LANG === 'en' ? 'it/index.html' : '../index.html')
-    langLink.href = other + location.hash
-    langLink.title = WORDS.otherTitle
-    langLink.innerHTML = `${icon('languages')}<span>${WORDS.otherShort}</span>`
-  }
-  langLink.addEventListener('click', () => {
+  $('#lang').addEventListener('click', () => {
     try {
       localStorage.setItem('rp-lang', LANG === 'en' ? 'it' : 'en')
     } catch (e) {
@@ -374,28 +256,37 @@
   })
 
   // ---------------- search ----------------
+  // The words of every topic come with the first search (the palette's data-index)
 
   const palette = $('#palette')
   const input = $('#palette input')
   const results = $('#palette .results')
-  // The words of a topic, with a space between its blocks (textContent runs a heading into
-  // the paragraph after it)
-  const words = (el) => {
-    const c = el.cloneNode(true)
-    c.querySelectorAll('p, li, h2, h3, div, summary, td, th, em').forEach((b) => {
-      b.prepend(' ')
-      b.append(' ')
-    })
-    return c.textContent
-  }
-  // Made at the first search
-  let made = null
-  const index = () => made || (made = topics.map((t) => ({ t, text: `${t.title} ${t.desc} ${words(t.el)}`.replace(/\s+/g, ' ').trim() })))
-  const fold = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+  const fold = (s) => s.toLowerCase().normalize('NFD').replace(/\p{M}/gu, '')
   const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  const escHtml = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+  let index = null
+  let asked = false
+  function loadIndex() {
+    if (index || asked) return
+    asked = true
+    const ready = () => {
+      index = (window.RP_SEARCH || []).map((t) => {
+        const text = `${t.t} ${t.d} ${t.x}`.replace(/\s+/g, ' ').trim()
+        return { t, text, f: fold(text), title: fold(t.t), desc: fold(t.d) }
+      })
+      if (palette.classList.contains('on')) search()
+    }
+    if (window.RP_SEARCH) return ready()
+    const s = document.createElement('script')
+    s.src = palette.dataset.index
+    s.onload = ready
+    s.onerror = () => (asked = false)
+    document.head.appendChild(s)
+  }
   let sel = 0
 
   function openSearch() {
+    loadIndex()
     palette.classList.add('on')
     input.value = ''
     search()
@@ -405,24 +296,27 @@
     palette.classList.remove('on')
   }
   function search() {
+    if (!index) {
+      results.innerHTML = ''
+      return
+    }
     const q = fold(input.value.trim())
     let found
-    if (!q) found = topics.map((t) => ({ t, snip: t.desc }))
+    if (!q) found = index.map((e) => ({ e, snip: escHtml(e.t.d) }))
     else {
       const words = q.split(/\s+/)
-      found = index()
-        .map(({ t, text }) => {
-          const f = fold(text)
+      found = index
+        .map((e) => {
+          const { f, title, text } = e
           if (!words.every((w) => f.includes(w))) return null
-          const title = fold(t.title)
           const stem = (w) => w.slice(0, Math.max(4, w.length - 2))
           const hits = words.reduce((n, w) => n + f.split(w).length - 1, 0)
-          const score = (title.includes(q) ? 0 : words.every((w) => title.includes(stem(w))) ? 3 : 10) + (fold(t.desc).includes(words[0]) ? 0 : 2) - Math.min(hits, 12) * 0.4
+          const score = (title.includes(q) ? 0 : words.every((w) => title.includes(stem(w))) ? 3 : 10) + (e.desc.includes(words[0]) ? 0 : 2) - Math.min(hits, 12) * 0.4
           const at = f.indexOf(words[0])
           const start = Math.max(0, at - 50)
-          let snip = (start ? '…' : '') + text.slice(start, start + 150) + '…'
+          let snip = escHtml((start ? '…' : '') + text.slice(start, start + 150) + '…')
           for (const w of words) snip = snip.replace(new RegExp(`(${escapeRe(w)})`, 'ig'), '<mark>$1</mark>')
-          return { t, snip, score }
+          return { e, snip, score }
         })
         .filter(Boolean)
         .sort((a, b) => a.score - b.score)
@@ -431,7 +325,7 @@
     results.innerHTML = found.length
       ? found
           .slice(0, 40)
-          .map(({ t, snip }, i) => `<a href="#/${t.id}" class="${i === 0 ? 'sel' : ''}" style="--c:${group(t.group).color}"><i></i><span><b>${t.title}</b><small>${snip}</small></span></a>`)
+          .map(({ e, snip }, i) => `<a href="${fileHref(BASE + e.t.p)}" class="${i === 0 ? 'sel' : ''}" style="--c:${e.t.c}"><i></i><span><b>${escHtml(e.t.t)}</b><small>${snip}</small></span></a>`)
           .join('')
       : `<div class="empty">${WORDS.none}</div>`
     $$('b', results).forEach(frontendLogos)
@@ -451,7 +345,12 @@
   results.addEventListener('click', (e) => e.target.closest('a') && closeSearch())
   palette.addEventListener('click', (e) => e.target === palette && closeSearch())
   $('#search').addEventListener('click', openSearch)
-  $$('[data-open-search]').forEach((b) => b.addEventListener('click', openSearch))
+  // Its words on their way as soon as the reader goes for the search
+  $('#search').addEventListener('pointerenter', loadIndex)
+  $$('[data-open-search]').forEach((b) => {
+    b.addEventListener('click', openSearch)
+    b.addEventListener('pointerenter', loadIndex)
+  })
   addEventListener('keydown', (e) => {
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
       e.preventDefault()
@@ -464,14 +363,4 @@
       document.body.classList.remove('nav-open')
     }
   })
-
-  // ---------------- icons written in the page ----------------
-
-  $$('[data-icon-svg]').forEach((el) => el.insertAdjacentHTML('afterbegin', icon(el.dataset.iconSvg)))
-
-  // The latest version, wherever the page names it: the first of the release notes
-  const latest = $('[data-topic="note-di-rilascio"] .rel-head h2')
-  if (latest) $$('[data-latest]').forEach((el) => (el.textContent = latest.textContent.trim()))
-
-  route()
 })()

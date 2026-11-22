@@ -1,0 +1,210 @@
+<!doctype html>
+<!-- Written by doc/tools/build-site.mjs from doc/tools/pages/guide.it.html: change that, not this -->
+<html lang="it" data-base="../../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Note di rilascio · Retro Play Game Manager</title>
+<meta name="description" content="Tutte le versioni dell’app dalla prima, dalla più recente, con cosa hanno cambiato. Nell’app, Impostazioni → Informazioni → Note di rilascio apre questa pagina.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://retroplay-gamemanager.com/it/guida/note-di-rilascio/">
+<link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/release-notes/">
+<link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/note-di-rilascio/">
+<link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/release-notes/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Retro Play Game Manager">
+<meta property="og:title" content="Note di rilascio">
+<meta property="og:description" content="Tutte le versioni dell’app dalla prima, dalla più recente, con cosa hanno cambiato. Nell’app, Impostazioni → Informazioni → Note di rilascio apre questa pagina.">
+<meta property="og:url" content="https://retroplay-gamemanager.com/it/guida/note-di-rilascio/">
+<meta property="og:locale" content="it_IT">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:image" content="https://retroplay-gamemanager.com/assets/anim/it/panoramica/01.webp">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1200">
+<meta property="og:image:alt" content="Note di rilascio">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0b10">
+<link rel="icon" href="../../../assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="../../../favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="../../../assets/apple-touch-icon.png">
+<link rel="preload" href="../../../assets/fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../../assets/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../../assets/style.css?v=926f19c4">
+<script>try{var d=document.documentElement,F=location.protocol==='file:',u=function(h){return F&&h.slice(-1)==='/'?h+'index.html':h},c=localStorage.getItem('rp-theme');if(c)d.dataset.theme=c;}catch(e){}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://retroplay-gamemanager.com/#website","url":"https://retroplay-gamemanager.com/","name":"Retro Play Game Manager","alternateName":"Retro Play","inLanguage":["en","it"]},{"@type":"SoftwareApplication","@id":"https://retroplay-gamemanager.com/#app","name":"Retro Play Game Manager","alternateName":"Retro Play","description":"I tuoi giochi retro in ordine su PC, disco o NAS: titoli, copertine, salvataggi. Installali con un clic su ES-DE, MiSTer FPGA, RetroArch, RetroPie e Batocera. Per Windows.","applicationCategory":"UtilitiesApplication","applicationSubCategory":"Gestore di giochi retro e ROM","operatingSystem":"Windows","softwareVersion":"0.0.7","url":"https://retroplay-gamemanager.com/it/","downloadUrl":"https://github.com/gerrykeys/retro-play-game-manager/releases","releaseNotes":"https://retroplay-gamemanager.com/it/guida/note-di-rilascio/","image":"https://retroplay-gamemanager.com/assets/icon-512.png","screenshot":{"@type":"ImageObject","url":"https://retroplay-gamemanager.com/assets/anim/it/panoramica/01.webp","width":1920,"height":1200},"inLanguage":["en","it"]},{"@type":"TechArticle","@id":"https://retroplay-gamemanager.com/it/guida/note-di-rilascio/","url":"https://retroplay-gamemanager.com/it/guida/note-di-rilascio/","name":"Note di rilascio · Retro Play Game Manager","description":"Tutte le versioni dell’app dalla prima, dalla più recente, con cosa hanno cambiato. Nell’app, Impostazioni → Informazioni → Note di rilascio apre questa pagina.","inLanguage":"it","isPartOf":{"@id":"https://retroplay-gamemanager.com/#website"},"about":{"@id":"https://retroplay-gamemanager.com/#app"},"image":{"@type":"ImageObject","url":"https://retroplay-gamemanager.com/assets/anim/it/panoramica/01.webp","width":1920,"height":1200},"headline":"Note di rilascio","mainEntityOfPage":"https://retroplay-gamemanager.com/it/guida/note-di-rilascio/","author":{"@type":"Organization","name":"Retro Play Game Manager","url":"https://retroplay-gamemanager.com/","logo":"https://retroplay-gamemanager.com/assets/icon-512.png"},"publisher":{"@type":"Organization","name":"Retro Play Game Manager","url":"https://retroplay-gamemanager.com/","logo":"https://retroplay-gamemanager.com/assets/icon-512.png"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Guida","item":"https://retroplay-gamemanager.com/it/"},{"@type":"ListItem","position":2,"name":"Impostazioni e aiuto","item":"https://retroplay-gamemanager.com/it/#g-riferimento"},{"@type":"ListItem","position":3,"name":"Note di rilascio"}]}]}</script>
+</head>
+<body>
+
+<header class="topbar">
+  <button class="icon-btn menu-btn" id="menu" aria-label="Menu" data-icon-svg="menu"></button>
+  <a class="brand" href="../../">
+    <img src="../../../assets/icon.svg" alt="">
+    <span><b>Retro Play</b><small>Guida all’app</small></span>
+  </a>
+  <button class="search-btn" id="search" aria-label="Cerca nella guida" data-icon-svg="search"><span>Cerca nella guida…</span><kbd>Ctrl K</kbd></button>
+  <a aria-current="page" class="rn-btn on" href="./" title="Note di rilascio: cosa ha portato ogni versione" data-icon-svg="scroll-text"><span>Note di rilascio</span></a>
+  <a class="dl-btn" href="https://github.com/gerrykeys/retro-play-game-manager/releases" target="_blank" rel="noopener" title="Scarica l’app (GitHub Releases)" data-icon-svg="download"><span>Scarica</span></a>
+  <a class="lang-btn" id="lang" href="../../../guide/release-notes/" hreflang="en" lang="en" title="Read the guide in English" data-icon-svg="languages"><span>EN</span></a>
+  <button class="icon-btn" id="theme" aria-label="Cambia tema"></button>
+</header>
+
+<div class="layout">
+  <aside class="sidebar"><nav id="nav" class="still" aria-label="Argomenti"><div class="nav-top"><a href="../../" data-id="home" data-icon-svg="house"><span>Home</span></a><button type="button" class="icon-btn nav-fold"></button></div><section class="nav-group open" data-group="inizia" style="--c:#8b7bff"><button type="button" class="nav-head" aria-expanded="true" aria-controls="nav-inizia"><span class="gi" data-icon-svg="rocket"></span><span class="t">Per iniziare</span><span class="n">3</span></button><div class="nav-items" id="nav-inizia"><div><div class="nav-list"><a href="../archivio/" data-id="archivio">Aprire o creare un archivio</a><a href="../aggiungere/" data-id="aggiungere">Aggiungere giochi</a><a href="../com-e-fatto/" data-id="com-e-fatto">Com’è fatto un archivio</a></div></div></div></section><section class="nav-group" data-group="libreria" style="--c:#3ee0c5"><button type="button" class="nav-head" aria-expanded="false" aria-controls="nav-libreria"><span class="gi" data-icon-svg="layout-grid"></span><span class="t">La libreria</span><span class="n">13</span></button><div class="nav-items" id="nav-libreria"><div><div class="nav-list"><a href="../libreria/" data-id="libreria">Sfogliare la libreria</a><a href="../linea-del-tempo/" data-id="linea-del-tempo">Linea del tempo</a><a href="../mappa/" data-id="mappa">Mappa delle aziende</a><a href="../percorsi/" data-id="percorsi">Percorsi videoludici</a><a href="../anteprima/" data-id="anteprima">Anteprima al passaggio del mouse</a><a href="../cercare/" data-id="cercare">Cercare e filtrare</a><a href="../comandi/" data-id="comandi">Palette dei comandi</a><a href="../filtri-salvati/" data-id="filtri-salvati">Filtri salvati</a><a href="../preferiti/" data-id="preferiti">Preferiti</a><a href="../collezioni/" data-id="collezioni">Collezioni</a><a href="../pagina-gioco/" data-id="pagina-gioco">La pagina del gioco</a><a href="../menu-selezione/" data-id="menu-selezione">Menu del gioco e selezione</a><a href="../confronto/" data-id="confronto">Confrontare giochi</a></div></div></div></section><section class="nav-group" data-group="modifica" style="--c:#ff9f5a"><button type="button" class="nav-head" aria-expanded="false" aria-controls="nav-modifica"><span class="gi" data-icon-svg="pencil"></span><span class="t">Modificare i giochi</span><span class="n">6</span></button><div class="nav-items" id="nav-modifica"><div><div class="nav-list"><a href="../modificare/" data-id="modificare">Modificare i dettagli</a><a href="../media/" data-id="media">Copertine, schermate e altri media</a><a href="../web/" data-id="web">Media e dettagli dal web</a><a href="../scraping/" data-id="scraping">Scraping automatico</a><a href="../blocco/" data-id="blocco">Modifica in blocco</a><a href="../eliminare/" data-id="eliminare">Eliminare giochi</a></div></div></div></section><section class="nav-group" data-group="versioni" style="--c:#ff6fb5"><button type="button" class="nav-head" aria-expanded="false" aria-controls="nav-versioni"><span class="gi" data-icon-svg="layers"></span><span class="t">Versioni e ROM Set</span><span class="n">4</span></button><div class="nav-items" id="nav-versioni"><div><div class="nav-list"><a href="../versioni/" data-id="versioni">Versioni e formati</a><a href="../unire/" data-id="unire">Unire i doppioni</a><a href="../formati/" data-id="formati">Eliminare un formato</a><a href="../romset/" data-id="romset">ROM Set arcade</a></div></div></div></section><section class="nav-group" data-group="frontend" style="--c:#4cc2ff"><button type="button" class="nav-head" aria-expanded="false" aria-controls="nav-frontend"><span class="gi" data-icon-svg="plug"></span><span class="t">Frontend</span><span class="n">9</span></button><div class="nav-items" id="nav-frontend"><div><div class="nav-list"><a href="../frontend/" data-id="frontend">ES-DE</a><a href="../mister/" data-id="mister">MiSTer FPGA</a><a href="../retroarch/" data-id="retroarch">RetroArch</a><a href="../retropie/" data-id="retropie">RetroPie</a><a href="../batocera/" data-id="batocera">Batocera</a><a href="../installare/" data-id="installare">Installare giochi</a><a href="../disinstallare/" data-id="disinstallare">Disinstallare giochi</a><a href="../archiviare/" data-id="archiviare">Archiviare i giochi del frontend</a><a href="../formati-frontend/" data-id="formati-frontend">Formati compatibili</a></div></div></div></section><section class="nav-group" data-group="giocare" style="--c:#3ddc97"><button type="button" class="nav-head" aria-expanded="false" aria-controls="nav-giocare"><span class="gi" data-icon-svg="gamepad-2"></span><span class="t">Giocare</span><span class="n">14</span></button><div class="nav-items" id="nav-giocare"><div><div class="nav-list"><a href="../giocare/" data-id="giocare">Giocare</a><a href="../emulatori/" data-id="emulatori">Emulatori e comandi</a><a href="../dip-switch/" data-id="dip-switch">DIP switch</a><a href="../trucchi/" data-id="trucchi">Trucchi</a><a href="../continua/" data-id="continua">Continua a giocare</a><a href="../tempo-di-gioco/" data-id="tempo-di-gioco">Tempo di gioco</a><a href="../discord/" data-id="discord">Stato su Discord</a><a href="../accadde-oggi/" data-id="accadde-oggi">Accadde oggi</a><a href="../cosa-gioco/" data-id="cosa-gioco">Cosa gioco oggi?</a><a href="../simili/" data-id="simili">Simili a questo</a><a href="../desktop-mode/" data-id="desktop-mode">Desktop Mode</a><a href="../temi/" data-id="temi">Temi della Desktop Mode</a><a href="../telefono/" data-id="telefono">Il telefono come telecomando</a><a href="../salvataggi/" data-id="salvataggi">Salvataggi</a></div></div></div></section><section class="nav-group" data-group="strumenti" style="--c:#ffbf47"><button type="button" class="nav-head" aria-expanded="false" aria-controls="nav-strumenti"><span class="gi" data-icon-svg="wrench"></span><span class="t">Strumenti</span><span class="n">8</span></button><div class="nav-items" id="nav-strumenti"><div><div class="nav-list"><a href="../esporta/" data-id="esporta">Esportare giochi</a><a href="../importa/" data-id="importa">Importare un export</a><a href="../dat/" data-id="dat">Verifica con i DAT</a><a href="../controllo-archivio/" data-id="controllo-archivio">Controlla archivio</a><a href="../report/" data-id="report">Report dell’archivio</a><a href="../anno-retro/" data-id="anno-retro">Il tuo anno retro</a><a href="../retroachievements/" data-id="retroachievements">RetroAchievements</a><a href="../mcp/" data-id="mcp">Server MCP per l’AI</a></div></div></div></section><section class="nav-group here open" data-group="riferimento" style="--c:#a5abbd"><button type="button" class="nav-head" aria-expanded="true" aria-controls="nav-riferimento"><span class="gi" data-icon-svg="life-buoy"></span><span class="t">Impostazioni e aiuto</span><span class="n">6</span></button><div class="nav-items" id="nav-riferimento"><div><div class="nav-list"><a href="../impostazioni/" data-id="impostazioni">Impostazioni e temi</a><a href="../aggiornamenti/" data-id="aggiornamenti">Aggiornamenti</a><a href="./" data-id="note-di-rilascio" class="on" aria-current="page">Note di rilascio</a><a href="../scorciatoie/" data-id="scorciatoie">Scorciatoie da tastiera</a><a href="../glossario/" data-id="glossario">Glossario</a><a href="../faq/" data-id="faq">Domande frequenti</a></div></div></div></section></nav></aside>
+  <script>try{var o=JSON.parse(localStorage.getItem('rp-nav'));if(Array.isArray(o))document.querySelectorAll('#nav .nav-group').forEach(function(s){var on=o.indexOf(s.dataset.group)>=0||s.classList.contains('here');s.classList.toggle('open',on);s.querySelector('.nav-head').setAttribute('aria-expanded',on?'true':'false')});var y=sessionStorage.getItem('rp-nav-y');if(y)document.querySelector('.sidebar').scrollTop=+y}catch(e){}</script>
+
+  <main class="main">
+<article class="page on" data-topic="note-di-rilascio" data-group="riferimento" style="--c:#a5abbd">
+<header class="topic-head"><div class="crumbs"><i></i><a href="../../#g-riferimento">Impostazioni e aiuto</a></div><h1>Note di rilascio</h1><p class="lead">Tutte le versioni dell’app dalla prima, dalla più recente, con cosa hanno cambiato. Nell’app, Impostazioni → Informazioni → Note di rilascio apre questa pagina.</p></header>
+      <section class="rel">
+        <header class="rel-head">
+          <h2>0.0.7</h2>
+          <span class="rel-badge">Ultima</span>
+          <span class="rel-date">22 novembre 2026</span>
+          <a class="rel-dl" href="https://github.com/gerrykeys/retro-play-game-manager/releases/tag/v0.0.7" target="_blank" rel="noopener" data-icon-svg="download"><span>Scarica</span></a>
+        </header>
+        <p class="rel-intro">Scopri cosa può fare l’AI col tuo archivio, e trova le impostazioni del frontend tutte insieme.</p>
+        <ul class="rel-items">
+          <li><span class="ri" data-icon-svg="bot"></span><div><a href="../mcp/">Cosa può fare l’AI</a><p>In <i>Impostazioni → Server MCP</i>, <b>Mostra i tool</b> elenca ogni tool con cosa fa e una domanda da fare all’AI: un clic la copia. Puoi cercare, e vedi quali tool fanno modifiche.</p></div></li>
+          <li><span class="ri" data-icon-svg="plug"></span><div><a href="../formati-frontend/">Impostazioni del frontend in un riquadro</a><p>In <i>Impostazioni → Frontend</i>, quello che vale per il frontend collegato sta in un riquadro col suo nome: <b>Cosa si installa</b> (formati e ROM Set), <a href="../emulatori/">Emulatori e comandi</a>, <b>Dove sono i giochi</b>. Gli altri frontend restano fuori.</p></div></li>
+        </ul>
+        <div class="rel-more"><h3>E poi</h3><ul>
+          <li>Il riquadro ricorda che le sue impostazioni restano salvate anche se scolleghi il frontend.</li>
+          <li>La guida ha un sito tutto suo, <a href="https://retroplay-gamemanager.com/it/">retroplay-gamemanager.com</a>, con una pagina per argomento.</li>
+        </ul></div>
+      </section>
+      <section class="rel">
+        <header class="rel-head">
+          <h2>0.0.6</h2>
+          <span class="rel-date">22 novembre 2026</span>
+          <a class="rel-dl" href="https://github.com/gerrykeys/retro-play-game-manager/releases/tag/v0.0.6" target="_blank" rel="noopener" data-icon-svg="download"><span>Scarica</span></a>
+        </header>
+        <p class="rel-intro">Aggiungi giochi spostando i file invece di copiarli, ed elimina molti giochi molto più in fretta.</p>
+        <ul class="rel-items">
+          <li><span class="ri" data-icon-svg="folder-input"></span><div><a href="../aggiungere/">Sposta invece di copiare</a><p>In <i>Aggiungi giochi</i>, <b>Sposta i file invece di copiarli</b> svuota la cartella nell’archivio senza occupare il doppio dello spazio. Sullo stesso disco è quasi immediato. Spento finché non lo accendi, e l’app chiede prima conferma.</p></div></li>
+        </ul>
+        <div class="rel-more"><h3>E poi</h3><ul>
+          <li>I file lasciano la cartella solo alla fine, quando i giochi sono nell’archivio.</li>
+          <li><a href="../eliminare/">Eliminare</a> tanti giochi è molto più veloce, con una barra che mostra a che punto è.</li>
+          <li><a href="../unire/">Unisci tutti</a> mostra una barra e quanti gruppi ha già unito.</li>
+        </ul></div>
+      </section>
+      <section class="rel">
+        <header class="rel-head">
+          <h2>0.0.5</h2>
+          <span class="rel-date">21 novembre 2026</span>
+          <a class="rel-dl" href="https://github.com/gerrykeys/retro-play-game-manager/releases/tag/v0.0.5" target="_blank" rel="noopener" data-icon-svg="download"><span>Scarica</span></a>
+        </header>
+        <p class="rel-intro">Scegli tu con quale emulatore e quale comando Retro Play avvia i tuoi giochi.</p>
+        <ul class="rel-items">
+          <li><span class="ri" data-icon-svg="square-terminal"></span><div><a href="../emulatori/">Emulatori e comandi</a><p>Per ogni sistema, l’emulatore con cui <a href="../giocare/">Gioca</a> avvia i giochi e tutta la sua riga di comando; un singolo gioco può averne uno suo. ES-DE, RetroArch, RetroPie e Batocera. Il frontend resta com’è.</p></div></li>
+        </ul>
+        <div class="rel-more"><h3>E poi</h3><ul>
+          <li>Dal menu di un gioco, <i>Emulatore e comando…</i> li apre su quel gioco.</li>
+          <li>I <a href="../trucchi/">trucchi</a> si attivano anche quando il comando di ES-DE dà già a RetroArch una configurazione sua.</li>
+          <li>RetroPie: l’emulatore scelto per un singolo gioco ora viene letto bene.</li>
+        </ul></div>
+      </section>
+      <section class="rel">
+        <header class="rel-head">
+          <h2>0.0.4</h2>
+          <span class="rel-date">21 novembre 2026</span>
+          <a class="rel-dl" href="https://github.com/gerrykeys/retro-play-game-manager/releases/tag/v0.0.4" target="_blank" rel="noopener" data-icon-svg="download"><span>Scarica</span></a>
+        </header>
+        <p class="rel-intro">Anche la versione portatile ora si aggiorna da sola.</p>
+        <ul class="rel-items">
+          <li><span class="ri" data-icon-svg="circle-arrow-down"></span><div><a href="../aggiornamenti/">La portatile si aggiorna da sola</a><p>Come l’app installata: all’avvio scarica la nuova versione e la mette al posto del vecchio .exe, stessa cartella, stesso nome. Collegamenti e avvio con Windows continuano a funzionare.</p></div></li>
+        </ul>
+        <div class="rel-more"><h3>E poi</h3><ul>
+          <li>Hai la portatile 0.0.3 o precedente? Scarica questa versione a mano una volta: da qui in poi si aggiorna da sola.</li>
+          <li>Se la sua cartella non si può modificare, <i>Impostazioni → Informazioni</i> lo dice e porta alla pagina di download.</li>
+        </ul></div>
+      </section>
+      <section class="rel">
+        <header class="rel-head">
+          <h2>0.0.3</h2>
+          <span class="rel-date">21 novembre 2026</span>
+          <a class="rel-dl" href="https://github.com/gerrykeys/retro-play-game-manager/releases/tag/v0.0.3" target="_blank" rel="noopener" data-icon-svg="download"><span>Scarica</span></a>
+        </header>
+        <p class="rel-intro">Temi per la Desktop Mode, una mappa del mondo delle aziende, i percorsi videoludici da condividere e l’app che parte con Windows.</p>
+        <ul class="rel-items">
+          <li><span class="ri" data-icon-svg="palette"></span><div><a href="../temi/">Temi per la Desktop Mode</a><p>Colori, caratteri, musica, perfino come è fatta ogni schermata. Quattro temi inclusi, un editor per fare il tuo e <a href="../../themes/">una guida per andare oltre</a>.</p></div></li>
+          <li><span class="ri" data-icon-svg="earth"></span><div><a href="../mappa/">Mappa delle aziende</a><p>Sviluppatori ed editori dei tuoi giochi sul mondo, nei colori dell’app. Le sedi che mancano le metti tu con un clic.</p></div></li>
+          <li><span class="ri" data-icon-svg="route"></span><div><a href="../percorsi/">Percorsi videoludici</a><p>Giochi in fila, una nota per ogni tappa. Si condividono in un .zip senza file di gioco: chi lo importa gioca le tappe che ha.</p></div></li>
+          <li><span class="ri" data-icon-svg="power"></span><div><a href="../impostazioni/">Avvia con Windows</a><p>L’app si apre quando accedi e, chiusa, resta accanto all’orologio.</p></div></li>
+        </ul>
+        <div class="rel-more"><h3>E poi</h3><ul>
+          <li>I percorsi anche in <a href="../desktop-mode/">Desktop Mode</a> e sul <a href="../telefono/">telefono</a>.</li>
+          <li>L’app è in inglese di base: l’italiano si sceglie in <a href="../impostazioni/">Impostazioni → Generale</a>.</li>
+          <li>Pulsanti delle viste in due gruppi; la dimensione delle copertine è in basso a destra sulla griglia.</li>
+          <li><a href="../impostazioni/">Altre impostazioni</a> più chiare, ogni area in un riquadro suo, e le note di rilascio in <i>Impostazioni → Informazioni</i>.</li>
+          <li>Nuovi strumenti <a href="../mcp/">MCP</a>: temi, mappa delle aziende, percorsi.</li>
+        </ul></div>
+      </section>
+      <section class="rel">
+        <header class="rel-head">
+          <h2>0.0.2</h2>
+          <span class="rel-date">19 novembre 2026</span>
+          <a class="rel-dl" href="https://github.com/gerrykeys/retro-play-game-manager/releases/tag/v0.0.2" target="_blank" rel="noopener" data-icon-svg="download"><span>Scarica</span></a>
+        </header>
+        <p class="rel-intro">Il tuo anno retro, i trucchi, il telefono come secondo schermo e una palette per fare tutto da tastiera.</p>
+        <ul class="rel-items">
+          <li><span class="ri" data-icon-svg="party-popper"></span><div><a href="../anno-retro/">Il tuo anno retro</a><p>Ore, giochi e console preferiti, gli orari in cui giochi: il tuo anno raccontato come una storia, fino a una card da condividere.</p></div></li>
+          <li><span class="ri" data-icon-svg="timer"></span><div><a href="../tempo-di-gioco/">Tempo di gioco</a><p>L’app misura i giochi che avvii da lei, su ogni frontend.</p></div></li>
+          <li><span class="ri" data-icon-svg="wand-sparkles"></span><div><a href="../trucchi/">Trucchi</a><p>Cerchi i trucchi di un gioco nel database di libretro, accendi quelli che vuoi e partono con il gioco. Per RetroArch.</p></div></li>
+          <li><span class="ri" data-icon-svg="smartphone"></span><div><a href="../telefono/">Il telefono come secondo schermo</a><p>Mentre giochi: l’orologio, i tuoi appunti, il manuale, i trucchi attivi e i RetroAchievements.</p></div></li>
+          <li><span class="ri" data-icon-svg="command"></span><div><a href="../comandi/">Palette dei comandi</a><p><kbd>Ctrl K</kbd> e qualche lettera: giochi, sistemi, viste, impostazioni e azioni in un solo riquadro.</p></div></li>
+          <li><span class="ri" data-icon-svg="shapes"></span><div><a href="../simili/">Simili a questo</a><p>In fondo alla pagina di ogni gioco, i giochi del tuo archivio più simili.</p></div></li>
+          <li><span class="ri" data-icon-svg="discord"></span><div><a href="../discord/">Stato su Discord</a><p>I tuoi amici vedono a cosa giochi. Spento finché non lo accendi.</p></div></li>
+          <li><span class="ri" data-icon-svg="image-minus"></span><div><a href="../controllo-archivio/">Controlla archivio</a><p>Trova i media che nessun gioco usa più e li elimina con un clic.</p></div></li>
+        </ul>
+        <div class="rel-more"><h3>E poi</h3><ul>
+          <li><a href="../desktop-mode/">Desktop Mode</a>: se lasci il joypad, partono i video dei giochi.</li>
+          <li>Se un gioco non parte, l’app <a href="../giocare/">dice perché</a>.</li>
+          <li>Appunti per ogni gioco, nella sua pagina e sul telefono.</li>
+          <li>La finestra <b>Novità</b> dopo ogni <a href="../aggiornamenti/">aggiornamento</a>.</li>
+          <li>Nuovi strumenti <a href="../mcp/">MCP</a>: trucchi, appunti, giochi simili, anno retro, media inutilizzati.</li>
+        </ul></div>
+      </section>
+      <section class="rel">
+        <header class="rel-head">
+          <h2>0.0.1</h2>
+          <span class="rel-date">19 novembre 2026</span>
+          <a class="rel-dl" href="https://github.com/gerrykeys/retro-play-game-manager/releases/tag/v0.0.1" target="_blank" rel="noopener" data-icon-svg="download"><span>Scarica</span></a>
+        </header>
+        <p class="rel-intro">La prima versione pubblica: i tuoi giochi retro, in ordine e pronti da giocare.</p>
+        <ul class="rel-items">
+          <li><span class="ri" data-icon-svg="layout-grid"></span><div><a href="../libreria/">La libreria</a><p>Copertine, elenco e linea del tempo, veloci anche con decine di migliaia di giochi.</p></div></li>
+          <li><span class="ri" data-icon-svg="search"></span><div><a href="../cercare/">Cercare e filtrare</a><p>Ricerca istantanea, <a href="../filtri-salvati/">filtri salvati</a>, <a href="../preferiti/">preferiti</a> e <a href="../collezioni/">collezioni</a>.</p></div></li>
+          <li><span class="ri" data-icon-svg="pencil"></span><div><a href="../modificare/">Dettagli e media</a><p>Modifichi un gioco o tanti insieme. Copertine, video e manuali trascinandoli, incollandoli o dal web.</p></div></li>
+          <li><span class="ri" data-icon-svg="wand-sparkles"></span><div><a href="../scraping/">Scraping</a><p>Dettagli, copertine e video da ScreenScraper, con IGDB come fonte in più.</p></div></li>
+          <li><span class="ri" data-icon-svg="layers"></span><div><a href="../unire/">Versioni e formati</a><p>Un gioco in più regioni o tipi di file, i doppioni uniti con un clic. I giochi arcade per <a href="../romset/">ROM Set</a>.</p></div></li>
+          <li><span class="ri" data-icon-svg="plug"></span><div><a href="../installare/">Frontend</a><p>Installi, disinstalli e giochi su ES-DE, MiSTer FPGA, RetroArch, RetroPie e Batocera.</p></div></li>
+          <li><span class="ri" data-icon-svg="gamepad-2"></span><div><a href="../desktop-mode/">Desktop Mode</a><p>L’app a tutto schermo, da usare col joypad.</p></div></li>
+          <li><span class="ri" data-icon-svg="smartphone"></span><div><a href="../telefono/">Il telefono come telecomando</a><p>Sfogli e avvii i giochi dal divano.</p></div></li>
+          <li><span class="ri" data-icon-svg="save"></span><div><a href="../salvataggi/">Salvataggi</a><p>Al sicuro nell’archivio, e rimessi a posto quando ti servono.</p></div></li>
+        </ul>
+        <div class="rel-more"><h3>E poi</h3><ul>
+          <li><a href="../continua/">Continua a giocare</a>, <a href="../accadde-oggi/">Accadde oggi</a> e la ruota <a href="../cosa-gioco/">Cosa gioco oggi?</a></li>
+          <li>Video e schermate <a href="../anteprima/">al passaggio del mouse</a>, e fino a 6 giochi <a href="../confronto/">fianco a fianco</a>.</li>
+          <li><a href="../archiviare/">Archivi i giochi che ha solo il frontend</a> e scegli i <a href="../formati-frontend/">formati che prende ogni piattaforma</a>.</li>
+          <li><a href="../dat/">Verifica con i DAT</a>, con completezza e una versione per gioco.</li>
+          <li><a href="../esporta/">Export</a> e <a href="../importa/">import</a>, il <a href="../report/">report dell’archivio</a>, <a href="../dip-switch/">DIP switch</a>, <a href="../retroachievements/">RetroAchievements</a> e il <a href="../mcp/">server MCP</a>.</li>
+          <li>L’app installata <a href="../aggiornamenti/">si aggiorna da sola</a>. Italiano e inglese, tema chiaro e scuro.</li>
+        </ul></div>
+      </section>
+<nav class="pager" aria-label="Argomento precedente e successivo"><a href="../aggiornamenti/" rel="prev"><small>← Precedente</small><b>Aggiornamenti</b></a><a class="next" href="../scorciatoie/" rel="next"><small>Successivo →</small><b>Scorciatoie da tastiera</b></a></nav>
+</article>
+  </main>
+</div>
+
+<div class="palette" id="palette" data-index="../../../assets/search/guide.it.js?v=d26749d3" role="dialog" aria-label="Cerca nella guida">
+  <div class="box2">
+    <input type="search" placeholder="Cerca: copertina, installare, salvataggi, DAT…" aria-label="Cerca">
+    <div class="results"></div>
+  </div>
+</div>
+
+<script src="../../../assets/icons.js?v=4adbcba3"></script>
+<script src="../../../assets/app.js?v=32a3876f"></script>
+</body>
+</html>

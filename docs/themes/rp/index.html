@@ -1,0 +1,111 @@
+<!doctype html>
+<!-- Written by doc/tools/build-site.mjs from doc/tools/pages/themes.en.html: change that, not this -->
+<html lang="en" data-base="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The rp reference · Desktop Mode themes · Retro Play Game Manager</title>
+<meta name="description" content="rp is how a theme’s page talks to the app. Its types are in rp.d.ts, beside your themes.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://retroplay-gamemanager.com/themes/rp/">
+<link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/rp/">
+<link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/rp/">
+<link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/rp/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Retro Play Game Manager">
+<meta property="og:title" content="The rp reference">
+<meta property="og:description" content="rp is how a theme’s page talks to the app. Its types are in rp.d.ts, beside your themes.">
+<meta property="og:url" content="https://retroplay-gamemanager.com/themes/rp/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:image" content="https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="720">
+<meta property="og:image:alt" content="The rp reference">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0b10">
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="../../favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="preload" href="../../assets/fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/style.css?v=926f19c4">
+<script>try{var d=document.documentElement,F=location.protocol==='file:',u=function(h){return F&&h.slice(-1)==='/'?h+'index.html':h},c=localStorage.getItem('rp-theme');if(c)d.dataset.theme=c;if(localStorage.getItem('rp-lang')==='it')location.replace(u("../../it/themes/rp/"))}catch(e){}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://retroplay-gamemanager.com/#website","url":"https://retroplay-gamemanager.com/","name":"Retro Play Game Manager","alternateName":"Retro Play","inLanguage":["en","it"]},{"@type":"SoftwareApplication","@id":"https://retroplay-gamemanager.com/#app","name":"Retro Play Game Manager","alternateName":"Retro Play","description":"Your retro games tidy on a PC, drive or NAS: titles, covers, saves. One-click install on ES-DE, MiSTer FPGA, RetroArch, RetroPie and Batocera. For Windows.","applicationCategory":"UtilitiesApplication","applicationSubCategory":"Retro game and ROM manager","operatingSystem":"Windows","softwareVersion":"0.0.7","url":"https://retroplay-gamemanager.com/","downloadUrl":"https://github.com/gerrykeys/retro-play-game-manager/releases","releaseNotes":"https://retroplay-gamemanager.com/guide/release-notes/","image":"https://retroplay-gamemanager.com/assets/icon-512.png","screenshot":{"@type":"ImageObject","url":"https://retroplay-gamemanager.com/assets/anim/en/panoramica/01.webp","width":1920,"height":1200},"inLanguage":["en","it"]},{"@type":"TechArticle","@id":"https://retroplay-gamemanager.com/themes/rp/","url":"https://retroplay-gamemanager.com/themes/rp/","name":"The rp reference · Desktop Mode themes · Retro Play Game Manager","description":"rp is how a theme’s page talks to the app. Its types are in rp.d.ts, beside your themes.","inLanguage":"en","isPartOf":{"@id":"https://retroplay-gamemanager.com/#website"},"about":{"@id":"https://retroplay-gamemanager.com/#app"},"image":{"@type":"ImageObject","url":"https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp","width":1280,"height":720},"headline":"The rp reference","mainEntityOfPage":"https://retroplay-gamemanager.com/themes/rp/","author":{"@type":"Organization","name":"Retro Play Game Manager","url":"https://retroplay-gamemanager.com/","logo":"https://retroplay-gamemanager.com/assets/icon-512.png"},"publisher":{"@type":"Organization","name":"Retro Play Game Manager","url":"https://retroplay-gamemanager.com/","logo":"https://retroplay-gamemanager.com/assets/icon-512.png"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Themes guide","item":"https://retroplay-gamemanager.com/themes/"},{"@type":"ListItem","position":2,"name":"Scripts","item":"https://retroplay-gamemanager.com/themes/#g-scripts"},{"@type":"ListItem","position":3,"name":"The rp reference"}]}]}</script>
+</head>
+<body>
+
+<header class="topbar">
+  <button class="icon-btn menu-btn" id="menu" aria-label="Menu" data-icon-svg="menu"></button>
+  <a class="brand" href="../">
+    <img src="../../assets/icon.svg" alt="">
+    <span><b>Retro Play</b><small>Themes guide</small></span>
+  </a>
+  <button class="search-btn" id="search" aria-label="Search the guide" data-icon-svg="search"><span>Search the guide…</span><kbd>Ctrl K</kbd></button>
+  <a class="dl-btn" href="../../" title="The guide to the app" data-icon-svg="book-open"><span>App guide</span></a>
+  <a class="lang-btn" id="lang" href="../../it/themes/rp/" hreflang="it" lang="it" title="Leggi la guida in italiano" data-icon-svg="languages"><span>IT</span></a>
+  <button class="icon-btn" id="theme" aria-label="Change theme"></button>
+</header>
+
+<div class="layout">
+  <aside class="sidebar"><nav id="nav" class="still" aria-label="Topics"><div class="nav-top"><a href="../" data-id="home" data-icon-svg="house"><span>Home</span></a><button type="button" class="icon-btn nav-fold"></button></div><section class="nav-group open" data-group="start" style="--c:#8b7bff"><button type="button" class="nav-head" aria-expanded="true" aria-controls="nav-start"><span class="gi" data-icon-svg="rocket"></span><span class="t">Getting started</span><span class="n">4</span></button><div class="nav-items" id="nav-start"><div><div class="nav-list"><a href="../intro/" data-id="intro">What a theme is</a><a href="../first-theme/" data-id="first-theme">Your first theme in 5 minutes</a><a href="../folder/" data-id="folder">The theme folder</a><a href="../ai/" data-id="ai">Let an AI make it</a></div></div></div></section><section class="nav-group" data-group="json" style="--c:#3ee0c5"><button type="button" class="nav-head" aria-expanded="false" aria-controls="nav-json"><span class="gi" data-icon-svg="braces"></span><span class="t">theme.json</span><span class="n">6</span></button><div class="nav-items" id="nav-json"><div><div class="nav-list"><a href="../theme-json/" data-id="theme-json">theme.json</a><a href="../colors-fonts/" data-id="colors-fonts">Colors, fonts, corners</a><a href="../pictures/" data-id="pictures">Background and pictures</a><a href="../sounds/" data-id="sounds">Sounds and music</a><a href="../texts/" data-id="texts">The app’s words</a><a href="../options/" data-id="options">Options for the user</a></div></div></div></section><section class="nav-group" data-group="scenes" style="--c:#ffbf47"><button type="button" class="nav-head" aria-expanded="false" aria-controls="nav-scenes"><span class="gi" data-icon-svg="layout-dashboard"></span><span class="t">Scenes</span><span class="n">5</span></button><div class="nav-items" id="nav-scenes"><div><div class="nav-list"><a href="../scenes/" data-id="scenes">Scenes: screens you compose</a><a href="../elements/" data-id="elements">The elements</a><a href="../lists/" data-id="lists">Lists</a><a href="../values/" data-id="values">Values and conditions</a><a href="../variants/" data-id="variants">Variants, systems, includes</a></div></div></div></section><section class="nav-group" data-group="css" style="--c:#ff6fb5"><button type="button" class="nav-head" aria-expanded="false" aria-controls="nav-css"><span class="gi" data-icon-svg="paintbrush"></span><span class="t">CSS</span><span class="n">4</span></button><div class="nav-items" id="nav-css"><div><div class="nav-list"><a href="../css/" data-id="css">The CSS of a theme</a><a href="../parts/" data-id="parts">The parts</a><a href="../states/" data-id="states">States and numbers</a><a href="../recipes/" data-id="recipes">Recipes</a></div></div></div></section><section class="nav-group here open" data-group="scripts" style="--c:#4cc2ff"><button type="button" class="nav-head" aria-expanded="true" aria-controls="nav-scripts"><span class="gi" data-icon-svg="code"></span><span class="t">Scripts</span><span class="n">4</span></button><div class="nav-items" id="nav-scripts"><div><div class="nav-list"><a href="../effects/" data-id="effects">Effects</a><a href="../screens/" data-id="screens">Page elements</a><a href="./" data-id="rp" class="on" aria-current="page">The rp reference</a><a href="../sandbox/" data-id="sandbox">What scripts can’t do</a></div></div></div></section><section class="nav-group" data-group="help" style="--c:#a5abbd"><button type="button" class="nav-head" aria-expanded="false" aria-controls="nav-help"><span class="gi" data-icon-svg="life-buoy"></span><span class="t">Tools and help</span><span class="n">3</span></button><div class="nav-items" id="nav-help"><div><div class="nav-list"><a href="../tools/" data-id="tools">The inspector and the tools</a><a href="../problems/" data-id="problems">When something is wrong</a><a href="../examples/" data-id="examples">The examples</a></div></div></div></section></nav></aside>
+  <script>try{var o=JSON.parse(localStorage.getItem('rp-nav'));if(Array.isArray(o))document.querySelectorAll('#nav .nav-group').forEach(function(s){var on=o.indexOf(s.dataset.group)>=0||s.classList.contains('here');s.classList.toggle('open',on);s.querySelector('.nav-head').setAttribute('aria-expanded',on?'true':'false')});var y=sessionStorage.getItem('rp-nav-y');if(y)document.querySelector('.sidebar').scrollTop=+y}catch(e){}</script>
+
+  <main class="main">
+<article class="page on" data-topic="rp" data-group="scripts" style="--c:#4cc2ff">
+<header class="topic-head"><div class="crumbs"><i></i><a href="../#g-scripts">Scripts</a></div><h1>The rp reference</h1><p class="lead">rp is how a theme’s page talks to the app. Its types are in rp.d.ts, beside your themes.</p></header>
+      <div class="prose">
+        <h2>What it says</h2>
+        <table class="table wrap">
+          <tr><th>Property</th><th>What it is</th></tr>
+          <tr><td><code>rp.kind</code></td><td><code>'effect'</code>, or <code>'screen'</code> for a page element with input</td></tr>
+          <tr><td><code>rp.screen</code>, <code>rp.params</code></td><td>The screen it is in, and what it was opened with</td></tr>
+          <tr><td><code>rp.active</code></td><td>The page has the joypad</td></tr>
+          <tr><td><code>rp.lang</code>, <code>rp.theme</code>, <code>rp.options</code></td><td>The user’s language, the theme, its options</td></tr>
+          <tr><td><code>rp.focus</code>, <code>rp.now</code></td><td>The game or system with the focus; the section and screen shown</td></tr>
+          <tr><td><code>rp.ready</code></td><td>A promise, once all of these are there</td></tr>
+        </table>
+        <h2>What it does</h2>
+        <table class="table wrap">
+          <tr><th>Call</th><th>What it does</th></tr>
+          <tr><td><code>rp.games(query)</code></td><td>The games: <code>{ total, items }</code>. Query: <code>only</code> (favorites, installed, recent, played), <code>system</code>, <code>query</code> (words), <code>similar</code>, <code>installed</code>, <code>collection</code>, <code>offset</code>, <code>limit</code> (100, up to 500)</td></tr>
+          <tr><td><code>rp.game(id)</code></td><td>A game with its description and every picture and video (<code>media</code>)</td></tr>
+          <tr><td><code>rp.systems()</code>, <code>rp.collections()</code></td><td>The systems with their counts; the collections</td></tr>
+          <tr><td><code>rp.open(target)</code></td><td>The app’s screens: <code>{ game, list }</code>, <code>{ games, title }</code>, a section, <code>'menu'</code>, <code>'spin'</code>, <code>'attract'</code></td></tr>
+          <tr><td><code>rp.back()</code></td><td>The screen on top closed, or back to Home</td></tr>
+          <tr><td><code>rp.play(id, { resume })</code>, <code>rp.install(id)</code></td><td>The game started; the app’s panel that installs it (which asks the user)</td></tr>
+          <tr><td><code>rp.favorite(id, on)</code></td><td>Made a favorite or not; what it is now</td></tr>
+          <tr><td><code>rp.take(actions)</code>, <code>rp.hints(list)</code></td><td>The buttons the screen takes; what they do, at the foot</td></tr>
+          <tr><td><code>rp.focusTabs()</code>, <code>rp.spot(id)</code></td><td>The focus up to the bar; what the background shows</td></tr>
+          <tr><td><code>rp.sound(name)</code>, <code>rp.text(key, vars)</code></td><td>A sound of Desktop Mode (the theme’s first); the app’s words in the user’s language</td></tr>
+          <tr><td><code>rp.systemArt(name)</code></td><td>The console the app draws, as a picture address</td></tr>
+          <tr><td><code>rp.store.get(key)</code>, <code>rp.store.set(key, value)</code></td><td>A little of the theme’s own, kept on this computer (64 KB a key)</td></tr>
+          <tr><td><code>rp.url(file)</code></td><td>A file of the theme, by its path from the theme folder</td></tr>
+        </table>
+        <h2>What it hears</h2>
+        <table class="table wrap">
+          <tr><th>rp.on(…)</th><th>When</th></tr>
+          <tr><td><code>'input'</code></td><td>A button the screen takes, while it has the joypad: <code>{ action, repeat }</code> (with <code>'text'</code> taken, <code>{ action: 'text', text }</code> and <code>'erase'</code>)</td></tr>
+          <tr><td><code>'press'</code></td><td>Any button, whoever takes it</td></tr>
+          <tr><td><code>'active'</code>, <code>'focus'</code>, <code>'screen'</code></td><td>The screen has the joypad or not; the game or system with the focus; what is shown</td></tr>
+          <tr><td><code>'launch'</code></td><td>A game starting, started or failed (<code>{ state, game }</code>), then <code>null</code></td></tr>
+          <tr><td><code>'options'</code>, <code>'lang'</code></td><td>The user changed the options or the language</td></tr>
+        </table>
+        <p>A game has: <code>id</code>, <code>name</code>, <code>system</code>, <code>systemName</code>, <code>year</code>, <code>releasedate</code>, <code>developer</code>, <code>publisher</code>, <code>genre</code>, <code>players</code>, <code>rating</code> (0 to 5), <code>cover</code>, <code>screenshot</code>, <code>favorite</code>, <code>installed</code>, <code>playedAt</code>, <code>playTime</code>, <code>blurb</code>, <code>hue</code>. Buttons: <code>up</code> <code>down</code> <code>left</code> <code>right</code> <code>ok</code> <code>back</code> <code>x</code> <code>y</code> <code>lb</code> <code>rb</code> <code>lt</code> <code>rt</code> <code>menu</code> <code>view</code>.</p>
+      </div>
+<nav class="pager" aria-label="Previous and next topic"><a href="../screens/" rel="prev"><small>← Previous</small><b>Page elements</b></a><a class="next" href="../sandbox/" rel="next"><small>Next →</small><b>What scripts can’t do</b></a></nav>
+</article>
+  </main>
+</div>
+
+<div class="palette" id="palette" data-index="../../assets/search/themes.en.js?v=c4076544" role="dialog" aria-label="Search the guide">
+  <div class="box2">
+    <input type="search" placeholder="Search: colors, coverflow, sounds, rp.games…" aria-label="Search">
+    <div class="results"></div>
+  </div>
+</div>
+
+<script src="../../assets/icons.js?v=4adbcba3"></script>
+<script src="../../assets/app.js?v=32a3876f"></script>
+</body>
+</html>

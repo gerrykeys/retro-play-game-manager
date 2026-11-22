@@ -1,0 +1,1460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Written by doc/tools/build-site.mjs -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://retroplay-gamemanager.com/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/panoramica/01.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/open-archive/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/open-archive/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/archivio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/open-archive/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/archivio/01.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/add-games/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/add-games/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/aggiungere/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/add-games/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/aggiungere/05.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/archive-structure/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/archive-structure/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/com-e-fatto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/archive-structure/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/panoramica/01.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/library/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/library/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/libreria/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/library/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/libreria/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/timeline/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/timeline/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/linea-del-tempo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/timeline/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/linea-del-tempo/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/company-map/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/company-map/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/mappa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/company-map/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/mappa/05.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/gaming-journeys/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/gaming-journeys/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/percorsi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/gaming-journeys/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/percorsi/07.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/hover-preview/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/hover-preview/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/anteprima/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/hover-preview/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/anteprima/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/search-and-filter/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/search-and-filter/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/cercare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/search-and-filter/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/cercare/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/command-palette/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/command-palette/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/comandi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/command-palette/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/comandi/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/saved-filters/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/saved-filters/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/filtri-salvati/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/saved-filters/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/filtri-salvati/05.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/favorites/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/favorites/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/preferiti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/favorites/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/preferiti/06.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/collections/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/collections/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/collezioni/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/collections/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/collezioni/08.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/game-page/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/game-page/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/pagina-gioco/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/game-page/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/pagina-gioco/05.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/game-menu/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/game-menu/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/menu-selezione/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/game-menu/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/menu-selezione/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/compare-games/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/compare-games/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/confronto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/compare-games/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/confronto/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/edit-details/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/edit-details/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/modificare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/edit-details/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/modificare/06.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/covers-and-media/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/covers-and-media/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/media/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/covers-and-media/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/media/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/media-from-the-web/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/media-from-the-web/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/web/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/media-from-the-web/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/web/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/scraping/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/scraping/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/scraping/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/scraping/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/scraping/04.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/bulk-edit/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/bulk-edit/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/blocco/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/bulk-edit/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/blocco/06.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/delete-games/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/delete-games/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/eliminare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/delete-games/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/eliminare/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/versions-and-formats/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/versions-and-formats/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/versioni/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/versions-and-formats/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/versioni/06.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/join-duplicates/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/join-duplicates/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/unire/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/join-duplicates/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/unire/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/delete-a-format/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/delete-a-format/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/formati/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/delete-a-format/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/formati/04.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/arcade-rom-sets/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/arcade-rom-sets/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/romset/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/arcade-rom-sets/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/romset/05.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/es-de/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/es-de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/frontend/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/es-de/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/frontend/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/mister-fpga/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/mister-fpga/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/mister/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/mister-fpga/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/mister/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/retroarch/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/retroarch/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/retroarch/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/retroarch/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/retroarch/05.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/retropie/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/retropie/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/retropie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/retropie/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/retropie/09.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/batocera/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/batocera/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/batocera/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/batocera/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/batocera/09.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/install-games/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/install-games/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/installare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/install-games/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/installare/06.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/uninstall-games/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/uninstall-games/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/disinstallare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/uninstall-games/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/disinstallare/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/archive-frontend-games/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/archive-frontend-games/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/archiviare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/archive-frontend-games/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/archiviare/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/compatible-formats/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/compatible-formats/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/formati-frontend/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/compatible-formats/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/formati-frontend/05.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/play/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/play/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/giocare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/play/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/giocare/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/emulators-and-commands/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/emulators-and-commands/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/emulatori/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/emulators-and-commands/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/emulatori/07.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/dip-switches/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/dip-switches/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/dip-switch/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/dip-switches/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/dip-switch/09.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/cheats/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/cheats/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/trucchi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/cheats/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/trucchi/07.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/continue-playing/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/continue-playing/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/continua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/continue-playing/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/continua/01.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/play-time/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/play-time/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/tempo-di-gioco/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/play-time/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/panoramica/01.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/discord-status/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/discord-status/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/discord/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/discord-status/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/discord/05.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/on-this-day/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/on-this-day/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/accadde-oggi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/on-this-day/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/accadde-oggi/01.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/what-to-play-today/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/what-to-play-today/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/cosa-gioco/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/what-to-play-today/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/cosa-gioco/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/more-like-this/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/more-like-this/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/simili/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/more-like-this/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/simili/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/desktop-mode/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/desktop-mode/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/desktop-mode/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/desktop-mode/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/desktop-mode/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/desktop-mode-themes/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/desktop-mode-themes/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/temi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/desktop-mode-themes/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/temi/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/phone-remote/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/phone-remote/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/telefono/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/phone-remote/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/telefono/06.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/saves/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/saves/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/salvataggi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/saves/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/salvataggi/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/export-games/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/export-games/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/esporta/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/export-games/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/esporta/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/import-an-export/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/import-an-export/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/importa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/import-an-export/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/importa/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/dat-verification/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/dat-verification/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/dat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/dat-verification/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/dat/04.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/check-archive/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/check-archive/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/controllo-archivio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/check-archive/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/controllo-archivio/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/archive-report/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/archive-report/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/report/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/archive-report/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/report/04.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/retro-year/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/retro-year/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/anno-retro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/retro-year/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/anno-retro/11.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/retroachievements/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/retroachievements/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/retroachievements/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/retroachievements/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/retroachievements/12.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/mcp-server/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/mcp-server/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/mcp/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/mcp-server/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/mcp/04.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/settings/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/settings/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/impostazioni/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/settings/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/impostazioni/04.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/updates/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/updates/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/aggiornamenti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/updates/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/aggiornamenti/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/release-notes/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/release-notes/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/note-di-rilascio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/release-notes/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/panoramica/01.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/keyboard-shortcuts/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/keyboard-shortcuts/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/scorciatoie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/keyboard-shortcuts/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/scorciatoie/05.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/glossary/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/glossary/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/glossario/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/glossary/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/panoramica/01.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/faq/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/faq/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/faq/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/panoramica/01.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/panoramica/01.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/archivio/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/open-archive/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/archivio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/open-archive/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/archivio/01.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/aggiungere/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/add-games/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/aggiungere/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/add-games/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/aggiungere/05.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/com-e-fatto/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/archive-structure/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/com-e-fatto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/archive-structure/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/panoramica/01.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/libreria/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/library/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/libreria/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/library/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/libreria/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/linea-del-tempo/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/timeline/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/linea-del-tempo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/timeline/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/linea-del-tempo/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/mappa/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/company-map/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/mappa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/company-map/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/mappa/05.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/percorsi/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/gaming-journeys/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/percorsi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/gaming-journeys/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/percorsi/07.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/anteprima/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/hover-preview/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/anteprima/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/hover-preview/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/anteprima/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/cercare/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/search-and-filter/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/cercare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/search-and-filter/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/cercare/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/comandi/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/command-palette/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/comandi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/command-palette/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/comandi/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/filtri-salvati/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/saved-filters/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/filtri-salvati/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/saved-filters/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/filtri-salvati/05.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/preferiti/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/favorites/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/preferiti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/favorites/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/preferiti/06.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/collezioni/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/collections/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/collezioni/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/collections/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/collezioni/08.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/pagina-gioco/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/game-page/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/pagina-gioco/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/game-page/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/pagina-gioco/05.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/menu-selezione/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/game-menu/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/menu-selezione/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/game-menu/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/menu-selezione/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/confronto/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/compare-games/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/confronto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/compare-games/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/confronto/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/modificare/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/edit-details/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/modificare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/edit-details/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/modificare/06.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/media/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/covers-and-media/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/media/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/covers-and-media/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/media/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/web/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/media-from-the-web/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/web/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/media-from-the-web/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/web/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/scraping/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/scraping/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/scraping/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/scraping/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/scraping/04.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/blocco/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/bulk-edit/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/blocco/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/bulk-edit/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/blocco/06.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/eliminare/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/delete-games/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/eliminare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/delete-games/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/eliminare/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/versioni/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/versions-and-formats/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/versioni/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/versions-and-formats/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/versioni/06.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/unire/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/join-duplicates/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/unire/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/join-duplicates/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/unire/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/formati/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/delete-a-format/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/formati/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/delete-a-format/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/formati/04.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/romset/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/arcade-rom-sets/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/romset/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/arcade-rom-sets/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/romset/05.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/frontend/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/es-de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/frontend/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/es-de/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/frontend/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/mister/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/mister-fpga/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/mister/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/mister-fpga/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/mister/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/retroarch/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/retroarch/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/retroarch/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/retroarch/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/retroarch/05.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/retropie/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/retropie/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/retropie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/retropie/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/retropie/09.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/batocera/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/batocera/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/batocera/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/batocera/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/batocera/09.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/installare/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/install-games/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/installare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/install-games/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/installare/06.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/disinstallare/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/uninstall-games/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/disinstallare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/uninstall-games/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/disinstallare/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/archiviare/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/archive-frontend-games/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/archiviare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/archive-frontend-games/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/archiviare/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/formati-frontend/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/compatible-formats/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/formati-frontend/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/compatible-formats/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/formati-frontend/05.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/giocare/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/play/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/giocare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/play/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/giocare/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/emulatori/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/emulators-and-commands/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/emulatori/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/emulators-and-commands/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/emulatori/07.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/dip-switch/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/dip-switches/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/dip-switch/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/dip-switches/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/dip-switch/09.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/trucchi/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/cheats/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/trucchi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/cheats/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/trucchi/07.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/continua/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/continue-playing/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/continua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/continue-playing/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/continua/01.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/tempo-di-gioco/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/play-time/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/tempo-di-gioco/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/play-time/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/panoramica/01.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/discord/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/discord-status/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/discord/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/discord-status/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/discord/05.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/accadde-oggi/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/on-this-day/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/accadde-oggi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/on-this-day/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/accadde-oggi/01.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/cosa-gioco/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/what-to-play-today/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/cosa-gioco/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/what-to-play-today/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/cosa-gioco/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/simili/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/more-like-this/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/simili/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/more-like-this/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/simili/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/desktop-mode/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/desktop-mode/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/desktop-mode/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/desktop-mode/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/desktop-mode/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/temi/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/desktop-mode-themes/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/temi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/desktop-mode-themes/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/temi/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/telefono/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/phone-remote/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/telefono/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/phone-remote/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/telefono/06.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/salvataggi/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/saves/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/salvataggi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/saves/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/salvataggi/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/esporta/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/export-games/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/esporta/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/export-games/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/esporta/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/importa/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/import-an-export/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/importa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/import-an-export/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/importa/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/dat/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/dat-verification/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/dat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/dat-verification/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/dat/04.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/controllo-archivio/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/check-archive/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/controllo-archivio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/check-archive/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/controllo-archivio/03.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/report/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/archive-report/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/report/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/archive-report/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/report/04.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/anno-retro/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/retro-year/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/anno-retro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/retro-year/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/anno-retro/11.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/retroachievements/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/retroachievements/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/retroachievements/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/retroachievements/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/retroachievements/12.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/mcp/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/mcp-server/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/mcp/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/mcp-server/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/mcp/04.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/impostazioni/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/settings/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/impostazioni/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/settings/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/impostazioni/04.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/aggiornamenti/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/updates/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/aggiornamenti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/updates/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/aggiornamenti/02.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/note-di-rilascio/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/release-notes/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/note-di-rilascio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/release-notes/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/panoramica/01.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/scorciatoie/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/keyboard-shortcuts/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/scorciatoie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/keyboard-shortcuts/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/scorciatoie/05.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/glossario/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/glossary/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/glossario/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/glossary/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/panoramica/01.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/faq/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/faq/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/faq/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/panoramica/01.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/intro/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/intro/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/intro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/intro/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/atlas-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/first-theme/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/first-theme/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/first-theme/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/first-theme/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/editor.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/folder/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/folder/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/folder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/folder/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/ai/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/ai/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/ai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/ai/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/theme-json/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/theme-json/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/theme-json/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/theme-json/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/colors-fonts/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/colors-fonts/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/colors-fonts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/colors-fonts/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/pictures/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/pictures/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/pictures/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/pictures/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/sounds/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/sounds/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/sounds/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/sounds/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/texts/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/texts/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/texts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/texts/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/options/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/options/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/options/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/options/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/scenes/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/scenes/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/scenes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/scenes/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/atlas-index.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/elements/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/elements/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/elements/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/elements/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/lists/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/lists/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-cabinet.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/values/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/values/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/values/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/values/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/variants/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/variants/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/variants/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/variants/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/picker.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/css/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/css/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/css/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/css/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/parts/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/parts/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/parts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/parts/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/states/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/states/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/states/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/states/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/recipes/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/recipes/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/recipes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/recipes/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/effects/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/effects/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/effects/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/effects/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/screens/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/screens/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/screens/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/screens/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/terminal-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/rp/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/rp/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/rp/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/rp/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/sandbox/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/sandbox/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/sandbox/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/sandbox/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/tools/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/tools/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/tools/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/inspector.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/problems/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/problems/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/problems/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/problems/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/themes/examples/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/examples/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/examples/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/examples/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/en/atlas-gallery.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/intro/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/intro/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/intro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/intro/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/atlas-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/first-theme/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/first-theme/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/first-theme/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/first-theme/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/editor.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/folder/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/folder/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/folder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/folder/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/ai/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/ai/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/ai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/ai/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/theme-json/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/theme-json/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/theme-json/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/theme-json/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/colors-fonts/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/colors-fonts/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/colors-fonts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/colors-fonts/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/pictures/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/pictures/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/pictures/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/pictures/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/sounds/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/sounds/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/sounds/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/sounds/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/texts/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/texts/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/texts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/texts/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/options/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/options/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/options/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/options/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/scenes/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/scenes/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/scenes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/scenes/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/atlas-index.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/elements/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/elements/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/elements/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/elements/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/lists/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/lists/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-cabinet.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/values/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/values/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/values/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/values/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/variants/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/variants/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/variants/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/variants/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/picker.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/css/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/css/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/css/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/css/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/parts/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/parts/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/parts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/parts/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/states/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/states/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/states/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/states/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/recipes/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/recipes/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/recipes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/recipes/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/effects/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/effects/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/effects/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/effects/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/screens/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/screens/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/screens/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/screens/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/terminal-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/rp/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/rp/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/rp/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/rp/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/sandbox/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/sandbox/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/sandbox/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/sandbox/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/tools/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/tools/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/tools/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/inspector.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/problems/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/problems/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/problems/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/problems/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/themes/examples/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/examples/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/examples/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/examples/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/themes/it/atlas-gallery.webp</image:loc></image:image>
+  </url>
+</urlset>

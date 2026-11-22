@@ -1,0 +1,6 @@
+# Written by doc/tools/build-site.mjs
+User-agent: *
+Allow: /
+Disallow: /tools/
+
+Sitemap: https://retroplay-gamemanager.com/sitemap.xml

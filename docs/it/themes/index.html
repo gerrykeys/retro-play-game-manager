@@ -1,790 +1,80 @@
 <!doctype html>
-<html lang="it" data-base="../../" data-other="../../themes/index.html" data-title="Retro Play · Come si crea un tema della Desktop Mode">
+<!-- Written by doc/tools/build-site.mjs from doc/tools/pages/themes.it.html: change that, not this -->
+<html lang="it" data-base="../../">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Retro Play · Come si crea un tema della Desktop Mode</title>
+<title>Come si crea un tema della Desktop Mode · Retro Play Game Manager</title>
 <meta name="description" content="Come scrivere un tema per la Desktop Mode di Retro Play Game Manager: theme.json, CSS, layout e script.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://retroplay-gamemanager.com/it/themes/">
+<link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/">
+<link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/">
+<link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Retro Play Game Manager">
+<meta property="og:title" content="Come si crea un tema della Desktop Mode · Retro Play Game Manager">
+<meta property="og:description" content="Come scrivere un tema per la Desktop Mode di Retro Play Game Manager: theme.json, CSS, layout e script.">
+<meta property="og:url" content="https://retroplay-gamemanager.com/it/themes/">
+<meta property="og:locale" content="it_IT">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:image" content="https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="720">
+<meta property="og:image:alt" content="Retro Play Game Manager">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0a0b10">
 <link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
-<link rel="alternate" hreflang="en" href="../../themes/index.html">
-<link rel="stylesheet" href="../../assets/style.css?v=48f9172a">
-<script>
-  try { const t = localStorage.getItem('rp-theme'); if (t) document.documentElement.dataset.theme = t } catch {}
-  window.RP_GROUPS = {
-    it: [
-      { id: 'start', title: 'Per iniziare', desc: 'Cos’è un tema, e il tuo primo', color: '#8b7bff', icon: 'rocket' },
-      { id: 'json', title: 'theme.json', desc: 'Colori, caratteri, immagini, suoni, testi, opzioni', color: '#3ee0c5', icon: 'braces' },
-      { id: 'scenes', title: 'Scene', desc: 'Ogni schermata fatta degli elementi che metti tu', color: '#ffbf47', icon: 'layout-dashboard' },
-      { id: 'css', title: 'CSS', desc: 'Parti, stati, numeri e ricette', color: '#ff6fb5', icon: 'paintbrush' },
-      { id: 'scripts', title: 'Script', desc: 'Effetti e pagine tue, in JavaScript', color: '#4cc2ff', icon: 'code' },
-      { id: 'help', title: 'Strumenti e aiuto', desc: 'Ispettore, problemi, esempi', color: '#a5abbd', icon: 'life-buoy' }
-    ]
-  }
-</script>
+<link rel="icon" href="../../favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="preload" href="../../assets/fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/style.css?v=926f19c4">
+<script>try{var d=document.documentElement,F=location.protocol==='file:',u=function(h){return F&&h.slice(-1)==='/'?h+'index.html':h},c=localStorage.getItem('rp-theme');if(c)d.dataset.theme=c;var T={"intro":"intro/","first-theme":"first-theme/","folder":"folder/","ai":"ai/","theme-json":"theme-json/","colors-fonts":"colors-fonts/","pictures":"pictures/","sounds":"sounds/","texts":"texts/","options":"options/","scenes":"scenes/","elements":"elements/","lists":"lists/","values":"values/","variants":"variants/","css":"css/","parts":"parts/","states":"states/","recipes":"recipes/","effects":"effects/","screens":"screens/","rp":"rp/","sandbox":"sandbox/","tools":"tools/","problems":"problems/","examples":"examples/"},h=location.hash.indexOf('#/')===0?decodeURIComponent(location.hash.slice(2)):'';if(T[h])location.replace(u(T[h]))}catch(e){}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://retroplay-gamemanager.com/#website","url":"https://retroplay-gamemanager.com/","name":"Retro Play Game Manager","alternateName":"Retro Play","inLanguage":["en","it"]},{"@type":"SoftwareApplication","@id":"https://retroplay-gamemanager.com/#app","name":"Retro Play Game Manager","alternateName":"Retro Play","description":"I tuoi giochi retro in ordine su PC, disco o NAS: titoli, copertine, salvataggi. Installali con un clic su ES-DE, MiSTer FPGA, RetroArch, RetroPie e Batocera. Per Windows.","applicationCategory":"UtilitiesApplication","applicationSubCategory":"Gestore di giochi retro e ROM","operatingSystem":"Windows","softwareVersion":"0.0.7","url":"https://retroplay-gamemanager.com/it/","downloadUrl":"https://github.com/gerrykeys/retro-play-game-manager/releases","releaseNotes":"https://retroplay-gamemanager.com/it/guida/note-di-rilascio/","image":"https://retroplay-gamemanager.com/assets/icon-512.png","screenshot":{"@type":"ImageObject","url":"https://retroplay-gamemanager.com/assets/anim/it/panoramica/01.webp","width":1920,"height":1200},"inLanguage":["en","it"]},{"@type":"WebPage","@id":"https://retroplay-gamemanager.com/it/themes/","url":"https://retroplay-gamemanager.com/it/themes/","name":"Come si crea un tema della Desktop Mode · Retro Play Game Manager","description":"Come scrivere un tema per la Desktop Mode di Retro Play Game Manager: theme.json, CSS, layout e script.","inLanguage":"it","isPartOf":{"@id":"https://retroplay-gamemanager.com/#website"},"about":{"@id":"https://retroplay-gamemanager.com/#app"},"image":{"@type":"ImageObject","url":"https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp","width":1280,"height":720},"primaryImageOfPage":{"@type":"ImageObject","url":"https://retroplay-gamemanager.com/assets/themes/it/neon-home.webp","width":1280,"height":720}}]}</script>
 </head>
 <body>
 
 <header class="topbar">
   <button class="icon-btn menu-btn" id="menu" aria-label="Menu" data-icon-svg="menu"></button>
-  <a class="brand" href="#/">
+  <a aria-current="page" class="brand on" href="./">
     <img src="../../assets/icon.svg" alt="">
     <span><b>Retro Play</b><small>Guida ai temi</small></span>
   </a>
   <button class="search-btn" id="search" aria-label="Cerca nella guida" data-icon-svg="search"><span>Cerca nella guida…</span><kbd>Ctrl K</kbd></button>
-  <a class="dl-btn" href="../index.html" title="La guida all’app" data-icon-svg="book-open"><span>Guida all’app</span></a>
-  <a class="lang-btn" id="lang" href="../../themes/index.html" hreflang="en" lang="en"></a>
+  <a class="dl-btn" href="../" title="La guida all’app" data-icon-svg="book-open"><span>Guida all’app</span></a>
+  <a class="lang-btn" id="lang" href="../../themes/" hreflang="en" lang="en" title="Read the guide in English" data-icon-svg="languages"><span>EN</span></a>
   <button class="icon-btn" id="theme" aria-label="Cambia tema"></button>
 </header>
 
 <div class="layout">
-  <aside class="sidebar"><nav id="nav" aria-label="Argomenti"></nav></aside>
+  <aside class="sidebar"><nav id="nav" class="still" aria-label="Argomenti"><div class="nav-top"><a href="./" data-id="home" data-icon-svg="house" class="on" aria-current="page"><span>Home</span></a><button type="button" class="icon-btn nav-fold"></button></div><section class="nav-group open" data-group="start" style="--c:#8b7bff"><button type="button" class="nav-head" aria-expanded="true" aria-controls="nav-start"><span class="gi" data-icon-svg="rocket"></span><span class="t">Per iniziare</span><span class="n">4</span></button><div class="nav-items" id="nav-start"><div><div class="nav-list"><a href="intro/" data-id="intro">Cos’è un tema</a><a href="first-theme/" data-id="first-theme">Il tuo primo tema in 5 minuti</a><a href="folder/" data-id="folder">La cartella del tema</a><a href="ai/" data-id="ai">Fallo creare a un’AI</a></div></div></div></section><section class="nav-group" data-group="json" style="--c:#3ee0c5"><button type="button" class="nav-head" aria-expanded="false" aria-controls="nav-json"><span class="gi" data-icon-svg="braces"></span><span class="t">theme.json</span><span class="n">6</span></button><div class="nav-items" id="nav-json"><div><div class="nav-list"><a href="theme-json/" data-id="theme-json">theme.json</a><a href="colors-fonts/" data-id="colors-fonts">Colori, caratteri, angoli</a><a href="pictures/" data-id="pictures">Sfondo e immagini</a><a href="sounds/" data-id="sounds">Suoni e musica</a><a href="texts/" data-id="texts">Le parole dell’app</a><a href="options/" data-id="options">Opzioni per l’utente</a></div></div></div></section><section class="nav-group" data-group="scenes" style="--c:#ffbf47"><button type="button" class="nav-head" aria-expanded="false" aria-controls="nav-scenes"><span class="gi" data-icon-svg="layout-dashboard"></span><span class="t">Scene</span><span class="n">5</span></button><div class="nav-items" id="nav-scenes"><div><div class="nav-list"><a href="scenes/" data-id="scenes">Scene: schermate che componi</a><a href="elements/" data-id="elements">Gli elementi</a><a href="lists/" data-id="lists">Liste</a><a href="values/" data-id="values">Valori e condizioni</a><a href="variants/" data-id="variants">Varianti, sistemi, include</a></div></div></div></section><section class="nav-group" data-group="css" style="--c:#ff6fb5"><button type="button" class="nav-head" aria-expanded="false" aria-controls="nav-css"><span class="gi" data-icon-svg="paintbrush"></span><span class="t">CSS</span><span class="n">4</span></button><div class="nav-items" id="nav-css"><div><div class="nav-list"><a href="css/" data-id="css">Il CSS di un tema</a><a href="parts/" data-id="parts">Le parti</a><a href="states/" data-id="states">Stati e numeri</a><a href="recipes/" data-id="recipes">Ricette</a></div></div></div></section><section class="nav-group" data-group="scripts" style="--c:#4cc2ff"><button type="button" class="nav-head" aria-expanded="false" aria-controls="nav-scripts"><span class="gi" data-icon-svg="code"></span><span class="t">Script</span><span class="n">4</span></button><div class="nav-items" id="nav-scripts"><div><div class="nav-list"><a href="effects/" data-id="effects">Effetti</a><a href="screens/" data-id="screens">Elementi pagina</a><a href="rp/" data-id="rp">Il riferimento di rp</a><a href="sandbox/" data-id="sandbox">Cosa gli script non possono fare</a></div></div></div></section><section class="nav-group" data-group="help" style="--c:#a5abbd"><button type="button" class="nav-head" aria-expanded="false" aria-controls="nav-help"><span class="gi" data-icon-svg="life-buoy"></span><span class="t">Strumenti e aiuto</span><span class="n">3</span></button><div class="nav-items" id="nav-help"><div><div class="nav-list"><a href="tools/" data-id="tools">L’ispettore e gli strumenti</a><a href="problems/" data-id="problems">Quando qualcosa non va</a><a href="examples/" data-id="examples">Gli esempi</a></div></div></div></section></nav></aside>
+  <script>try{var o=JSON.parse(localStorage.getItem('rp-nav'));if(Array.isArray(o))document.querySelectorAll('#nav .nav-group').forEach(function(s){var on=o.indexOf(s.dataset.group)>=0||s.classList.contains('here');s.classList.toggle('open',on);s.querySelector('.nav-head').setAttribute('aria-expanded',on?'true':'false')});var y=sessionStorage.getItem('rp-nav-y');if(y)document.querySelector('.sidebar').scrollTop=+y}catch(e){}</script>
 
   <main class="main">
-
-    <!-- ======================= HOME ======================= -->
-    <section class="page" id="home">
+<section class="page on" id="home">
       <div class="hero">
         <div>
           <span class="eyebrow"><b>TEMI</b> La Desktop Mode a modo tuo</span>
           <h1>Una Desktop Mode <span class="grad-text">come nessun’altra</span></h1>
           <p class="lead">Un tema cambia tutto ciò che vedi e senti nella Desktop Mode: colori, caratteri, immagini, suoni, parole, come sono disposte le schermate, perfino schermate intere scritte in JavaScript. Si comincia senza codice, e si arriva dove vuoi.</p>
           <div class="cta">
-            <a class="btn primary" href="#/first-theme" data-icon-svg="rocket">Il tuo primo tema</a>
-            <a class="btn" href="#/examples" data-icon-svg="sparkles">Gli esempi</a>
+            <a class="btn primary" href="first-theme/" data-icon-svg="rocket">Il tuo primo tema</a>
+            <a class="btn" href="examples/" data-icon-svg="sparkles">Gli esempi</a>
             <button class="btn" data-open-search data-icon-svg="search">Cerca un argomento</button>
           </div>
         </div>
         <div>
-          <figure class="figure"><img src="../../assets/themes/it/neon-home.webp" alt="La Desktop Mode col tema Neon Arcade"></figure>
+          <figure class="figure"><img width="1280" height="720" src="../../assets/themes/it/neon-home.webp" alt="La Desktop Mode col tema Neon Arcade"></figure>
         </div>
       </div>
       <div class="section-title"><h2>Tutti gli argomenti</h2><p>Dal primo colore alle schermate tue.</p></div>
-      <div id="groups"></div>
+      <div id="groups"><section class="group-block" id="g-start" style="--c:#8b7bff"><div class="group-head"><div class="gi" data-icon-svg="rocket"></div><div><h3>Per iniziare</h3><p>Cos’è un tema, e il tuo primo</p></div></div><div class="cards"><a class="card" href="intro/"><div class="thumb"><img loading="lazy" decoding="async" alt="" src="../../assets/themes/it/atlas-home.webp" width="1280" height="720"></div><div class="body"><h4>Cos’è un tema</h4><p>Da un colore a una Desktop Mode che non somiglia a nient’altro.</p></div></a><a class="card" href="first-theme/"><div class="thumb"><img loading="lazy" decoding="async" alt="" src="../../assets/themes/it/editor.webp" width="1280" height="720"></div><div class="body"><h4>Il tuo primo tema in 5 minuti</h4><p>Nuovo tema, l’editor, poi una riga di CSS.</p></div></a><a class="card" href="folder/"><div class="thumb icon" data-icon-svg="folder-open"></div><div class="body"><h4>La cartella del tema</h4><p>I suoi file, i loro percorsi, impacchettarla in un .zip.</p></div></a><a class="card" href="ai/"><div class="thumb icon" data-icon-svg="bot"></div><div class="body"><h4>Fallo creare a un’AI</h4><p>Descrivi il tema; lo scrive Claude Code o un altro assistente.</p></div></a></div></section><section class="group-block" id="g-json" style="--c:#3ee0c5"><div class="group-head"><div class="gi" data-icon-svg="braces"></div><div><h3>theme.json</h3><p>Colori, caratteri, immagini, suoni, testi, opzioni</p></div></div><div class="cards"><a class="card" href="theme-json/"><div class="thumb icon" data-icon-svg="braces"></div><div class="body"><h4>theme.json</h4><p>Tutte le chiavi a colpo d’occhio.</p></div></a><a class="card" href="colors-fonts/"><div class="thumb icon" data-icon-svg="palette"></div><div class="body"><h4>Colori, caratteri, angoli</h4><p>I colori di ogni parte, i caratteri, quanto arrotondare.</p></div></a><a class="card" href="pictures/"><div class="thumb icon" data-icon-svg="image"></div><div class="body"><h4>Sfondo e immagini</h4><p>Uno sfondo per sistema, un’immagine per console, l’intro.</p></div></a><a class="card" href="sounds/"><div class="thumb icon" data-icon-svg="audio-lines"></div><div class="body"><h4>Suoni e musica</h4><p>Ogni suono un file, note create sul momento, o nessuno; musica dietro.</p></div></a><a class="card" href="texts/"><div class="thumb icon" data-icon-svg="type"></div><div class="body"><h4>Le parole dell’app</h4><p>Di’ ciò che dice la Desktop Mode, con parole tue.</p></div></a><a class="card" href="options/"><div class="thumb icon" data-icon-svg="sliders-horizontal"></div><div class="body"><h4>Opzioni per l’utente</h4><p>Interruttori, scelte, colori e cursori che l’utente cambia.</p></div></a></div></section><section class="group-block" id="g-scenes" style="--c:#ffbf47"><div class="group-head"><div class="gi" data-icon-svg="layout-dashboard"></div><div><h3>Scene</h3><p>Ogni schermata fatta degli elementi che metti tu</p></div></div><div class="cards"><a class="card" href="scenes/"><div class="thumb"><img loading="lazy" decoding="async" alt="" src="../../assets/themes/it/atlas-index.webp" width="1280" height="720"></div><div class="body"><h4>Scene: schermate che componi</h4><p>Ogni schermata fatta di elementi che metti tu, legati al gioco col focus.</p></div></a><a class="card" href="elements/"><div class="thumb icon" data-icon-svg="shapes"></div><div class="body"><h4>Gli elementi</h4><p>Testi, immagini, video, liste, pulsanti: di cosa è fatta una scena.</p></div></a><a class="card" href="lists/"><div class="thumb"><img loading="lazy" decoding="async" alt="" src="../../assets/themes/it/neon-cabinet.webp" width="1280" height="720"></div><div class="body"><h4>Liste</h4><p>File, colonne, griglie, ruote e coverflow, disegnati come vuoi.</p></div></a><a class="card" href="values/"><div class="thumb icon" data-icon-svg="braces"></div><div class="body"><h4>Valori e condizioni</h4><p>{focus.name}, i filtri, e quando un elemento si vede.</p></div></a><a class="card" href="variants/"><div class="thumb"><img loading="lazy" decoding="async" alt="" src="../../assets/themes/it/picker.webp" width="1280" height="720"></div><div class="body"><h4>Varianti, sistemi, include</h4><p>Layout tra cui scegliere, ogni sistema coi suoi colori e le sue parole.</p></div></a></div></section><section class="group-block" id="g-css" style="--c:#ff6fb5"><div class="group-head"><div class="gi" data-icon-svg="paintbrush"></div><div><h3>CSS</h3><p>Parti, stati, numeri e ricette</p></div></div><div class="cards"><a class="card" href="css/"><div class="thumb icon" data-icon-svg="paintbrush"></div><div class="body"><h4>Il CSS di un tema</h4><p>Dove vale, quanto pesa, l’unità, i file.</p></div></a><a class="card" href="parts/"><div class="thumb icon" data-icon-svg="square-mouse-pointer"></div><div class="body"><h4>Le parti</h4><p>Ogni parte della Desktop Mode col suo nome stabile.</p></div></a><a class="card" href="states/"><div class="thumb icon" data-icon-svg="eye"></div><div class="body"><h4>Stati e numeri</h4><p>Cosa ha il focus, dove sta ogni card, le variabili.</p></div></a><a class="card" href="recipes/"><div class="thumb icon" data-icon-svg="lightbulb"></div><div class="body"><h4>Ricette</h4><p>Un CRT, una ruota, un colore per sistema, i nomi sotto le copertine…</p></div></a></div></section><section class="group-block" id="g-scripts" style="--c:#4cc2ff"><div class="group-head"><div class="gi" data-icon-svg="code"></div><div><h3>Script</h3><p>Effetti e pagine tue, in JavaScript</p></div></div><div class="cards"><a class="card" href="effects/"><div class="thumb icon" data-icon-svg="sparkles"></div><div class="body"><h4>Effetti</h4><p>Pagine disegnate sotto o sopra le schermate, che sentono ciò che succede.</p></div></a><a class="card" href="screens/"><div class="thumb"><img loading="lazy" decoding="async" alt="" src="../../assets/themes/it/terminal-home.webp" width="1280" height="720"></div><div class="body"><h4>Elementi pagina</h4><p>Una pagina del tema messa in una scena, anche a tutto schermo.</p></div></a><a class="card" href="rp/"><div class="thumb icon" data-icon-svg="book-open"></div><div class="body"><h4>Il riferimento di rp</h4><p>Tutto ciò che uno script può leggere e fare.</p></div></a><a class="card" href="sandbox/"><div class="thumb icon" data-icon-svg="shield"></div><div class="body"><h4>Cosa gli script non possono fare</h4><p>La sandbox, e perché.</p></div></a></div></section><section class="group-block" id="g-help" style="--c:#a5abbd"><div class="group-head"><div class="gi" data-icon-svg="life-buoy"></div><div><h3>Strumenti e aiuto</h3><p>Ispettore, problemi, esempi</p></div></div><div class="cards"><a class="card" href="tools/"><div class="thumb"><img loading="lazy" decoding="async" alt="" src="../../assets/themes/it/inspector.webp" width="1280" height="720"></div><div class="body"><h4>L’ispettore e gli strumenti</h4><p>F9, F5, le chiavi dei testi, l’editor.</p></div></a><a class="card" href="problems/"><div class="thumb icon" data-icon-svg="circle-question-mark"></div><div class="body"><h4>Quando qualcosa non va</h4><p>Cosa dicono gli avvisi, e gli errori più comuni.</p></div></a><a class="card" href="examples/"><div class="thumb"><img loading="lazy" decoding="async" alt="" src="../../assets/themes/it/atlas-gallery.webp" width="1280" height="720"></div><div class="body"><h4>Gli esempi</h4><p>Atlas, Neon Arcade, Horizon e Terminal: cosa mostra ognuno.</p></div></a></div></section></div>
     </section>
-
-    <!-- ======================= PER INIZIARE ======================= -->
-
-    <article data-topic="intro" data-group="start" data-icon="palette" data-thumb-src="assets/themes/it/atlas-home.webp"
-      data-title="Cos’è un tema"
-      data-desc="Da un colore a una Desktop Mode che non somiglia a nient’altro."
-      data-lead="Un tema è una cartella: un theme.json che dice cosa cambia e, se vuoi, CSS, immagini, caratteri, suoni e pagine con script. L’app continua a fare il lavoro (il joypad, i giochi, installare, giocare); il tema decide come appare e come suona.">
-      <div class="prose">
-        <div class="layers">
-          <div style="--c:#3ee0c5"><span class="n">1</span><b>theme.json</b><p>Colori, caratteri, angoli, sfondo, un’immagine per sistema, suoni, musica, le parole dell’app, opzioni per l’utente. Niente codice: lo scrive l’editor per te.</p></div>
-          <div style="--c:#ffbf47"><span class="n">2</span><b>Scene</b><p>Ogni schermata fatta degli elementi che metti dove vuoi: liste di giochi come file, griglie o ruote, immagini, video, testi, pulsanti. Layout tra cui l’utente sceglie, e ogni sistema coi suoi colori e le sue parole.</p></div>
-          <div style="--c:#ff6fb5"><span class="n">3</span><b>CSS</b><p>Qualsiasi CSS, su ogni elemento delle tue scene e su parti dai nomi stabili. Ogni voce di una lista sa quanto dista dal focus.</p></div>
-          <div style="--c:#4cc2ff"><span class="n">4</span><b>Script</b><p>Pagine HTML con JavaScript: effetti disegnati sotto o sopra le schermate, e pagine messe in una scena. Girano in una sandbox e parlano con l’app tramite <code>rp</code>.</p></div>
-        </div>
-        <p>Ogni livello è facoltativo. Un tema che dice solo <code>"colors": { "accent": "#ff2bd6" }</code> è un tema; tutto ciò che non dice resta come lo disegna l’app.</p>
-        <div class="figures">
-          <figure class="figure"><img src="../../assets/themes/it/atlas-home.webp" alt="Atlas"><figcaption>Atlas: una Desktop Mode da rivista fatta solo di scene, ogni sistema col suo colore.</figcaption></figure>
-          <figure class="figure"><img src="../../assets/themes/it/neon-cabinet.webp" alt="Neon Arcade"><figcaption>Il cabinato di Neon Arcade: una ruota di copertine accanto a uno schermo che mostra il gioco.</figcaption></figure>
-        </div>
-        <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
-          <li>I tuoi temi stanno nella cartella dati dell’app, in <code>themes</code>: Impostazioni → Aspetto → <b>Cartella dei temi</b> la apre.</li>
-          <li>Gli esempi vengono con l’app e non si modificano: <b>Duplica</b> quello che vuoi per farlo tuo.</li>
-          <li>Salvi un file e la Desktop Mode cambia subito, senza chiuderla.</li>
-        </ul></div>
-      </div>
-    </article>
-
-    <article data-topic="first-theme" data-group="start" data-icon="rocket" data-thumb-src="assets/themes/it/editor.webp"
-      data-title="Il tuo primo tema in 5 minuti"
-      data-desc="Nuovo tema, l’editor, poi una riga di CSS."
-      data-lead="Dalle impostazioni a un tema tutto tuo, visto dal vivo.">
-      <div class="prose">
-        <ol class="steps">
-          <li>Apri <b>Impostazioni → Aspetto</b> e, in <b>Temi della Desktop Mode</b>, fai clic su <b>Nuovo tema</b>.</li>
-          <li>Dagli un nome e fai clic su <b>Crea e apri</b>: la Desktop Mode si apre col tuo tema, con l’<b>editor</b> accanto.</li>
-          <li>Cambia i <b>colori</b>, i <b>caratteri</b>, gli angoli, lo sfondo, e in <b>Disposizione</b> scegli un layout per ogni schermata (un coverflow, una ruota, una dashboard…): ogni modifica si vede subito ed è salvata in <code>theme.json</code>.</li>
-          <li>Fai clic su <b>theme.css</b> in fondo all’editor: si apre nel tuo editor (VS Code, Blocco note…). Aggiungi una regola e salva.</li>
-          <li>Premi <kbd>F9</kbd>: l’<b>ispettore</b> dice il nome di ciò che sta sotto il puntatore o ha il focus, e il selettore da copiare.</li>
-        </ol>
-        <figure class="figure"><img src="../../assets/themes/it/editor.webp" alt="L’editor del tema accanto alla Desktop Mode"><figcaption>L’editor accanto alla Desktop Mode: i giochi come una ruota, scelta in Disposizione.</figcaption></figure>
-        <p>Una prima regola, per <code>theme.css</code>:</p>
-<pre class="code"><span class="c">/* I titoli delle file in maiuscolo, un po’ distanziati */</span>
-.rp-list-title {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-<span class="c">/* La card col focus un po’ più grande */</span>
-.rp-card.is-focused {
-  transform: scale(1.14);
-}</pre>
-        <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
-          <li><kbd>F5</kbd> rilegge il tema; <kbd>F10</kbd> esce dalla Desktop Mode.</li>
-          <li>In VS Code, <code>theme.json</code> completa e spiega ogni chiave mentre scrivi (nomina lo schema accanto ai tuoi temi).</li>
-          <li>Un errore non rompe mai il tema: ciò che è sbagliato viene lasciato fuori, e un avviso dice dove (<a href="#/problems">Quando qualcosa non va</a>).</li>
-        </ul></div>
-      </div>
-    </article>
-
-    <article data-topic="folder" data-group="start" data-icon="folder-open"
-      data-title="La cartella del tema"
-      data-desc="I suoi file, i loro percorsi, impacchettarla in un .zip."
-      data-lead="Tutto ciò che un tema ha sta nella sua cartella, trovato col percorso da lì.">
-      <div class="prose">
-<pre class="code">themes/
-  theme.schema.json      <span class="c">lo schema di theme.json, per il tuo editor (lo scrive l'app)</span>
-  rp.d.ts                <span class="c">i tipi di rp, per gli script (lo scrive l'app)</span>
-  il-mio-tema/
-    theme.json           <span class="c">cos'è il tema e cosa cambia (necessario)</span>
-    theme.css            <span class="c">il suo CSS (facoltativo; più file con "styles")</span>
-    preview.webp         <span class="c">la sua immagine nella lista dei temi, 16:9</span>
-    systems.json         <span class="c">ciò che ogni sistema ha di suo (messo dentro da "include")</span>
-    fonts/  images/  sounds/  videos/  systems/
-    effects/stelle.html  <span class="c">una pagina di script disegnata come livello</span>
-    pages/home.html      <span class="c">una pagina di script messa in una scena</span></pre>
-        <ul>
-          <li>I percorsi usano <code>/</code> e partono dalla cartella del tema: <code>"images/sfondo.webp"</code>. Nel CSS, <code>url(images/sfondo.webp)</code> parte dalla cartella del file CSS.</li>
-          <li>I nomi devono coincidere esattamente, maiuscole comprese: <code>Logo.PNG</code> non è <code>logo.png</code>.</li>
-          <li>Un tema usa solo i suoi file: nessun indirizzo della rete, nessun file altrove sul computer. Funziona offline, e non può tracciare nessuno.</li>
-          <li>Immagini: png, jpg, webp, avif, gif, svg. Caratteri: woff2, woff, ttf, otf. Suoni: ogg, mp3, wav, flac, m4a. Video: mp4, webm.</li>
-        </ul>
-        <h2>Condividere un tema</h2>
-        <p>Ogni tema della lista ha <b>Esporta .zip</b>; <b>Importa .zip</b> ne aggiunge uno ai tuoi (il suo <code>theme.json</code> in cima allo zip, o in una cartella). Niente di uno zip viene mai scritto fuori dalla cartella del nuovo tema.</p>
-      </div>
-    </article>
-
-    <article data-topic="ai" data-group="start" data-icon="bot"
-      data-title="Fallo creare a un’AI"
-      data-desc="Descrivi il tema; lo scrive Claude Code o un altro assistente."
-      data-lead="Con il server MCP dell’app acceso, un assistente AI scrive un tema intero da poche parole, lo controlla e ci porta la Desktop Mode.">
-      <div class="prose">
-        <ol class="steps">
-          <li>Accendi il <a href="../index.html#/mcp">server MCP</a> e collega il tuo assistente.</li>
-          <li>Descrivi il tema: <i>“blu scuro, contorni al neon, i giochi in un coverflow, un bip leggero quando mi muovo”</i>.</li>
-          <li>L’assistente scrive <code>theme.json</code>, il CSS e gli eventuali effetti, corregge ciò che l’app trova sbagliato e chiede prima di passare la Desktop Mode al nuovo tema.</li>
-          <li>Apri la Desktop Mode e chiedi modifiche: ognuna si vede subito.</li>
-        </ol>
-        <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
-          <li>Può partire da un esempio: <i>“come Neon Arcade, ma verde”</i>.</li>
-          <li>Scrive solo nei tuoi temi; un file che toglie finisce nel cestino.</li>
-          <li>Il tema è tuo come gli altri: lo cambi a mano, lo esporti, lo elimini.</li>
-        </ul></div>
-      </div>
-    </article>
-
-    <!-- ======================= THEME.JSON ======================= -->
-
-    <article data-topic="theme-json" data-group="json" data-icon="braces"
-      data-title="theme.json"
-      data-desc="Tutte le chiavi a colpo d’occhio."
-      data-lead="L’unico file di cui un tema ha bisogno. Ogni chiave è facoltativa, tranne api e name.">
-      <div class="prose">
-<pre class="code">{
-  <span class="k">"$schema"</span>: "../theme.schema.json",
-  <span class="k">"api"</span>: 2,
-  <span class="k">"name"</span>: "Mezzanotte",
-  <span class="k">"author"</span>: "Io",
-  <span class="k">"version"</span>: "1.0.0",
-  <span class="k">"description"</span>: { "en": "Deep blue nights.", "it": "Notti blu." },
-  <span class="k">"preview"</span>: "preview.webp",
-  <span class="k">"colors"</span>: { "bg": "#050816", "accent": "#5b8cff", "accent2": "#a46bff" },
-  <span class="k">"fonts"</span>: { "display": "fonts/Orbitron.woff2" },
-  <span class="k">"radius"</span>: 2
-}</pre>
-        <table class="table wrap">
-          <tr><th>Chiave</th><th>Cos’è</th></tr>
-          <tr><td><code>api</code>, <code>name</code></td><td>La versione del formato (2) e il nome del tema. Necessari.</td></tr>
-          <tr><td><code>author</code>, <code>version</code>, <code>description</code>, <code>preview</code></td><td>Chi l’ha fatto, la sua versione, due parole, la sua immagine 16:9.</td></tr>
-          <tr><td><code>colors</code>, <code>fonts</code>, <code>radius</code></td><td><a href="#/colors-fonts">Colori, caratteri, angoli</a></td></tr>
-          <tr><td><code>styles</code></td><td>I file CSS, in ordine (<code>theme.css</code> di default).</td></tr>
-          <tr><td><code>background</code>, <code>art</code>, <code>intro</code></td><td><a href="#/pictures">Sfondo e immagini</a></td></tr>
-          <tr><td><code>sounds</code>, <code>music</code></td><td><a href="#/sounds">Suoni e musica</a></td></tr>
-          <tr><td><code>texts</code></td><td><a href="#/texts">Le parole dell’app</a></td></tr>
-          <tr><td><code>options</code></td><td><a href="#/options">Opzioni per l’utente</a></td></tr>
-          <tr><td><code>tabs</code></td><td>Le sezioni della barra, in ordine: home, systems, favorites, search</td></tr>
-          <tr><td><code>scenes</code></td><td><a href="#/scenes">Le schermate che componi</a></td></tr>
-          <tr><td><code>variants</code>, <code>systems</code>, <code>vars</code>, <code>include</code></td><td><a href="#/variants">Layout tra cui scegliere, ogni sistema il suo, file messi dentro</a></td></tr>
-          <tr><td><code>effects</code></td><td><a href="#/effects">Effetti</a></td></tr>
-        </table>
-        <p>Un testo può essere uno per tutte le lingue, o uno per lingua: <code>"Start"</code> oppure <code>{ "en": "Start", "it": "Inizio" }</code> (l’inglese quando manca la lingua dell’utente).</p>
-        <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
-          <li>Una chiave sconosciuta viene lasciata fuori, e l’avviso suggerisce quella più probabile: <code>"colours"</code> → <code>colors</code>.</li>
-          <li>Un valore sbagliato lascia fuori solo la sua parte: un elemento sbagliato di una scena, non tutta la scena.</li>
-        </ul></div>
-      </div>
-    </article>
-
-    <article data-topic="colors-fonts" data-group="json" data-icon="palette"
-      data-title="Colori, caratteri, angoli"
-      data-desc="I colori di ogni parte, i caratteri, quanto arrotondare."
-      data-lead="Il modo più rapido per fare tua la Desktop Mode.">
-      <div class="prose">
-        <table class="table">
-          <tr><th>colors</th><th>Variabile CSS</th><th>Dove</th></tr>
-          <tr><td><code>bg</code></td><td><code>--rp-bg</code></td><td>Dietro a tutto</td></tr>
-          <tr><td><code>ink</code>, <code>ink2</code>, <code>ink3</code></td><td><code>--rp-ink</code>, <code>--rp-ink-2</code>, <code>--rp-ink-3</code></td><td>Il testo, il testo meno importante, il testo tenue</td></tr>
-          <tr><td><code>accent</code>, <code>accent2</code></td><td><code>--rp-accent</code>, <code>--rp-accent-2</code>, <code>--rp-grad</code></td><td>Il focus, i pulsanti, la barra sotto la sezione; il gradiente dei due</td></tr>
-          <tr><td><code>onAccent</code></td><td><code>--rp-on-accent</code></td><td>Il testo sopra l’accento</td></tr>
-          <tr><td><code>ok</code>, <code>warn</code>, <code>danger</code></td><td><code>--rp-ok</code>, <code>--rp-warn</code>, <code>--rp-danger</code></td><td>Installato; preferiti e avvisi; errori</td></tr>
-          <tr><td><code>glass</code>, <code>line</code></td><td><code>--rp-glass</code>, <code>--rp-line</code></td><td>I pannelli sopra le immagini e i loro bordi</td></tr>
-          <tr><td><code>card</code>, <code>panel</code></td><td><code>--rp-card</code>, <code>--rp-panel</code></td><td>Card senza immagine; menu e finestre</td></tr>
-        </table>
-        <p>Va bene qualsiasi colore CSS: <code>"#ff2bd6"</code>, <code>"rgb(255 43 214 / 0.8)"</code>, <code>"oklch(70% 0.2 330)"</code>. Il tuo CSS può impostare le stesse variabili (<code>:root { --rp-accent: … }</code>): il CSS vince su theme.json, e così un’opzione che cambia i colori è facile.</p>
-        <h2>Caratteri</h2>
-<pre class="code">"fonts": {
-  "text": "Segoe UI",                       <span class="c">un carattere del computer o dell'app</span>
-  "display": "fonts/Orbitron.woff2",        <span class="c">un file del tema</span>
-  "mono": [{ "file": "fonts/Mono-Regular.woff2", "weight": "400" },
-           { "file": "fonts/Mono-Bold.woff2", "weight": "700" }]
-}</pre>
-        <p><code>text</code> è quasi tutto il testo, <code>display</code> i titoli, l’ora e i nomi grandi, <code>mono</code> i numeri. Nel CSS: <code>var(--rp-font-text)</code>, <code>var(--rp-font-display)</code>, <code>var(--rp-font-mono)</code>. Quelli dell’app: <i>Plus Jakarta Sans Variable</i>, <i>Space Grotesk Variable</i>, <i>JetBrains Mono Variable</i>.</p>
-        <h2>Angoli</h2>
-        <p><code>"radius": 0</code> per angoli vivi, <code>1.4</code> di default, fino a <code>12</code>. In unità (vedi <a href="#/css">Il CSS di un tema</a>); nel CSS <code>var(--rp-radius)</code>.</p>
-      </div>
-    </article>
-
-    <article data-topic="pictures" data-group="json" data-icon="image"
-      data-title="Sfondo e immagini"
-      data-desc="Uno sfondo per sistema, un’immagine per console, l’intro."
-      data-lead="Immagini e video del tema, dietro a tutto e al posto dei disegni dell’app.">
-      <div class="prose">
-<pre class="code">"background": {
-  "image": "systems/{system}.webp",   <span class="c">uno per sistema…</span>
-  "fallback": "images/sfondo.webp",   <span class="c">…e questo per gli altri</span>
-  "video": "videos/loop.mp4",          <span class="c">a ciclo, senza audio</span>
-  "gameArt": false,                    <span class="c">non l'immagine del gioco sfocata dietro</span>
-  "dim": 0.3,                          <span class="c">da 0 a 1: più scuro</span>
-  "blur": 2                            <span class="c">quanto è sfocata l'immagine del gioco, in unità</span>
-},
-"art": {
-  "system": "console/{system}.png",   <span class="c">al posto della console disegnata</span>
-  "logo": "loghi/{system}.svg"        <span class="c">al posto del nome del sistema</span>
-}</pre>
-        <p><code>{system}</code> è il nome ES-DE del sistema: <code>snes</code>, <code>megadrive</code>, <code>amiga</code>, <code>arcade</code>… Un ROM Set (<code>arcade/0.289</code>) prende il file della sua piattaforma. Un sistema senza il suo file tiene quello di default.</p>
-        <h2>L’intro</h2>
-<pre class="code">"intro": { "video": "videos/avvio.mp4" }                <span class="c">suona col suo audio, poi la Desktop Mode</span>
-"intro": { "image": "images/logo.png", "duration": 2500, "sound": "sounds/avvio.ogg" }
-"intro": false                                            <span class="c">niente intro</span></pre>
-        <p><code>"logo": true</code> tiene il logo e il nome dell’app sopra la tua immagine. Il CSS lo stila come <code>.rp-intro</code>, e così puoi scrivere un’intro anche solo col CSS.</p>
-      </div>
-    </article>
-
-    <article data-topic="sounds" data-group="json" data-icon="audio-lines"
-      data-title="Suoni e musica"
-      data-desc="Ogni suono un file, note create sul momento, o nessuno; musica dietro."
-      data-lead="Ogni suono della Desktop Mode può essere tuo, anche senza file.">
-      <div class="prose">
-<pre class="code">"sounds": {
-  "move": { "synth": { "wave": "square", "freq": 1046, "to": 988, "dur": 0.03, "gain": 0.012 } },
-  "ok": "sounds/ok.ogg",
-  "back": { "file": "sounds/indietro.wav", "volume": 0.6 },
-  "edge": false,
-  "volume": 0.8
-},
-"music": { "src": ["music/1.ogg", "music/2.ogg"], "volume": 0.35, "shuffle": true }</pre>
-        <table class="table">
-          <tr><th>Suono</th><th>Quando</th></tr>
-          <tr><td><code>move</code></td><td>Il focus si sposta</td></tr>
-          <tr><td><code>tab</code></td><td>Un’altra sezione, un salto a una lettera</td></tr>
-          <tr><td><code>ok</code>, <code>back</code></td><td>Apri, conferma; indietro</td></tr>
-          <tr><td><code>edge</code></td><td>Più in là non si va</td></tr>
-          <tr><td><code>open</code></td><td>Si apre un menu o un pannello</td></tr>
-          <tr><td><code>favorite</code>, <code>unfavorite</code></td><td>Messo nei preferiti, o tolto</td></tr>
-          <tr><td><code>launch</code>, <code>error</code></td><td>Un gioco si avvia; qualcosa è andato storto</td></tr>
-          <tr><td><code>tick</code>, <code>win</code></td><td>La ruota di Cosa gioco oggi che gira, e ferma</td></tr>
-        </table>
-        <p><code>synth</code> è una nota, o una lista fino a 16: <code>wave</code> (sine, square, triangle, sawtooth), <code>freq</code> in Hz, <code>to</code> l’altezza a cui scivola, <code>dur</code> e <code>delay</code> in secondi, <code>gain</code> (0.03 è circa quello dell’app). Una lista suona come un accordo o, coi ritardi, come un jingle.</p>
-        <p>La musica si ferma mentre si gioca, mentre un video parla (la pagina di un gioco, l’attract mode, l’intro) e con l’interruttore <b>Musica del tema</b> del menu.</p>
-      </div>
-    </article>
-
-    <article data-topic="texts" data-group="json" data-icon="type"
-      data-title="Le parole dell’app"
-      data-desc="Di’ ciò che dice la Desktop Mode, con parole tue."
-      data-lead="Ogni parola della Desktop Mode ha una chiave: texts le dà altre parole, per lingua.">
-      <div class="prose">
-<pre class="code">"texts": {
-  "desk.tabs.home": { "en": "Start", "it": "Inizio" },
-  "desk.home.played": "Continua",
-  "desk.gamesN": { "en": "{n} carts", "it": "{n} cartucce" }
-}</pre>
-        <p>Ciò che sta tra graffe (<code>{n}</code>, <code>{name}</code>…) è ciò che l’app mette lì. Per trovare una chiave: <kbd>F9</kbd>, poi <b>Chiavi dei testi</b>: ogni parola della Desktop Mode mostra la sua chiave al suo posto.</p>
-        <h2>Le chiavi</h2>
-        <input class="ref-filter" data-ref-filter="texts" placeholder="Filtra: tabs, hint, menu…" aria-label="Filtra le chiavi">
-        <div data-ref="texts"></div>
-      </div>
-    </article>
-
-    <article data-topic="options" data-group="json" data-icon="sliders-horizontal"
-      data-title="Opzioni per l’utente"
-      data-desc="Interruttori, scelte, colori e cursori che l’utente cambia."
-      data-lead="Lascia che chi usa il tuo tema lo cambi: un CRT acceso o spento, un colore d’accento, quanto bagliore.">
-      <div class="prose">
-<pre class="code">"options": [
-  { "id": "crt", "type": "toggle", "label": { "en": "CRT lines", "it": "Righe CRT" }, "default": true },
-  { "id": "sky", "type": "select", "label": "Cielo", "default": "sunset",
-    "choices": [{ "value": "sunset", "label": "Tramonto" }, { "value": "night", "label": "Notte" }] },
-  { "id": "accent", "type": "color", "label": "Accento", "default": "#4fb3ff" },
-  { "id": "glow", "type": "range", "label": "Bagliore", "min": 0, "max": 40, "step": 4, "default": 18, "unit": "px" }
-]</pre>
-        <p>L’utente le cambia nella Desktop Mode: <b>Menu → Tema</b>, poi <b>Opzioni del tema</b> (<kbd>RB</kbd>). Il tuo tema le legge:</p>
-<pre class="code"><span class="c">/* Un interruttore: l'attributo quando è acceso */</span>
-.rp-desk[data-opt-crt]::after { content: ''; <span class="c">/* … */</span> }
-<span class="c">/* Una scelta: l'attributo col suo valore */</span>
-.rp-desk[data-opt-sky='night'] .rp-backdrop { filter: brightness(0.6); }
-<span class="c">/* Tutte: una variabile (un colore, un numero con la sua unità, 1 o 0, una scelta tra virgolette) */</span>
-:root { --rp-accent: var(--opt-accent); }
-.rp-hero-title { text-shadow: 0 0 var(--opt-glow) var(--rp-accent); }</pre>
-        <p>In uno script: <code>rp.options</code>, e <code>rp.on('options', …)</code> quando cambiano.</p>
-      </div>
-    </article>
-
-    <!-- ======================= SCENE ======================= -->
-
-    <article data-topic="scenes" data-group="scenes" data-icon="layout-dashboard" data-thumb-src="assets/themes/it/atlas-index.webp"
-      data-title="Scene: schermate che componi"
-      data-desc="Ogni schermata fatta di elementi che metti tu, legati al gioco col focus."
-      data-lead="Una scena è una schermata della Desktop Mode, scritta in theme.json: di cosa è fatta, e dove. L’app continua a fare il lavoro (il joypad, i giochi, giocare); la scena decide cosa c’è sullo schermo.">
-      <div class="prose">
-<pre class="code">"scenes": {
-  "games": {
-    "elements": [
-      { "type": "text", "text": "{screen.title}", "pos": [6, 11] },
-      { "type": "list", "id": "games", "source": "screen", "layout": "wheel", "pos": [62, 0], "size": [34, 100] },
-      { "type": "image", "of": "games", "media": "marquee", "fit": "contain", "pos": [6, 24], "size": [44, "12u"] },
-      { "type": "image", "of": "games", "media": ["screenshot", "titlescreen"], "video": 1.5,
-        "pos": [6, 40], "size": [44, "auto"], "style": { "aspectRatio": "4 / 3" } }
-    ]
-  }
-}</pre>
-        <table class="table wrap">
-          <tr><th>Scena</th><th>La schermata</th></tr>
-          <tr><td><code>home</code>, <code>systems</code>, <code>favorites</code>, <code>journeys</code>, <code>search</code></td><td>Le sezioni della barra (<code>journeys</code> quando l’archivio ha un percorso videoludico)</td></tr>
-          <tr><td><code>games</code></td><td>Una griglia aperta: i giochi di un sistema, tutti, quelli aggiunti per ultimi…</td></tr>
-          <tr><td><code>game</code></td><td>La pagina di un gioco</td></tr>
-          <tr><td><code>journey</code></td><td>Un percorso aperto: le sue tappe, ognuna giocata col gioco trovato per lei</td></tr>
-          <tr><td><code>frame</code></td><td>Ciò che sta sopra ogni schermata: la barra, l’ora, i suggerimenti</td></tr>
-        </table>
-        <p><code>pos</code> e <code>size</code> posizionano un elemento: un numero è una percentuale del riquadro in cui sta, <code>"12u"</code> è in unità, e va bene qualsiasi misura CSS (<code>"calc(50% - 6u)"</code>). <code>origin</code>, <code>rotate</code>, <code>z</code>, <code>opacity</code> e <code>style</code> (il CSS dell’elemento, <code>"fontSize": "4u"</code>) fanno il resto. Senza <code>pos</code> un elemento scorre come lo dispone il CSS: un <code>group</code> con <code>display: flex</code> impila ciò che contiene. Gli elementi dopo sono disegnati sopra quelli prima.</p>
-        <p>Una schermata che lasci fuori è quella dell’app, scritta allo stesso modo. Un sistema può avere una scena sua (i suoi giochi, la pagina dei suoi giochi), e una <a href="#/variants">variante</a> le sue scene.</p>
-        <figure class="figure"><img src="../../assets/themes/it/atlas-index.webp" alt="Atlas, un sommario"><figcaption>Atlas: i giochi come un sommario, quello col focus come articolo.</figcaption></figure>
-        <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
-          <li>La <b>Disposizione</b> dell’editor scrive un layout pronto per una schermata in un clic: parti da lì in theme.json.</li>
-          <li>Ogni elemento è <code>.rp-el</code> con <code>data-el</code> (il suo <code>id</code>) e la <code>class</code> che gli dai: stilalo nel tuo CSS.</li>
-          <li><kbd>F9</kbd> mostra l’id dell’elemento sotto il puntatore.</li>
-        </ul></div>
-      </div>
-    </article>
-
-    <article data-topic="elements" data-group="scenes" data-icon="shapes"
-      data-title="Gli elementi"
-      data-desc="Testi, immagini, video, liste, pulsanti: di cosa è fatta una scena."
-      data-lead="Ogni elemento ha un tipo, e mostra il gioco o sistema col focus (o il gioco della pagina, o la voce della lista in cui è disegnato).">
-      <div class="prose">
-        <table class="table wrap">
-          <tr><th>Tipo</th><th>Cos’è</th></tr>
-          <tr><td><code>text</code></td><td>Parole con valori dentro: <code>"{focus.name}"</code> (<a href="#/values">valori</a>). <code>scroll</code>: lo stick destro lo scorre; <code>more</code>: Visualizza lo apre intero</td></tr>
-          <tr><td><code>image</code></td><td>Un’immagine del gioco (<code>media</code>: cover, screenshot, titlescreen, marquee, fanart, 3dbox, miximage…, o una lista provata in ordine) o un file del tema (<code>src</code>); <code>fit</code>, <code>pixelated</code>, <code>fallback</code>, <code>video</code> (il suo video dopo una pausa), <code>fly</code>. Sfuma quando il focus si muove</td></tr>
-          <tr><td><code>video</code></td><td>Il video del gioco, quando il focus si ferma su di lui</td></tr>
-          <tr><td><code>list</code></td><td>I giochi, sistemi o immagini tra cui si muove il focus (<a href="#/lists">liste</a>)</td></tr>
-          <tr><td><code>buttons</code></td><td>Gioca (o installa, riprendi, ciò che serve al gioco), dettagli, preferito, immagini, simili</td></tr>
-          <tr><td><code>group</code></td><td>Elementi insieme; <code>scroll: "focus"</code> li fa scorrere perché quello col focus venga per primo; <code>rekey</code> ripete le loro animazioni a ogni gioco</td></tr>
-          <tr><td><code>meta</code>, <code>rating</code>, <code>badges</code></td><td>Una riga di dati (anno, sviluppatore, genere…), le stelle, le etichette (installato, giocato, preferito…)</td></tr>
-          <tr><td><code>systemArt</code>, <code>logo</code>, <code>icon</code>, <code>clock</code>, <code>box</code></td><td>La console di un sistema, il logo dell’app, un’icona, l’ora, un riquadro per il tuo CSS</td></tr>
-          <tr><td><code>dots</code>, <code>position</code></td><td>Un punto per voce di una lista; “4 / 120”</td></tr>
-          <tr><td><code>keyboard</code>, <code>field</code></td><td>La ricerca: la sua tastiera, le parole scritte</td></tr>
-          <tr><td><code>tabs</code>, <code>brand</code>, <code>status</code>, <code>hints</code></td><td>La cornice: le sezioni, il logo, il frontend e l’ora, i tasti</td></tr>
-          <tr><td><code>page</code></td><td>Una pagina del tema coi suoi script (<a href="#/screens">elementi pagina</a>)</td></tr>
-          <tr><td><code>shelves</code></td><td>Le file della Home di default</td></tr>
-        </table>
-        <p>Ogni elemento può avere <code>id</code>, <code>class</code>, <code>pos</code>, <code>size</code>, <code>origin</code>, <code>rotate</code>, <code>z</code>, <code>opacity</code>, <code>style</code>, <code>when</code> (<a href="#/values">condizioni</a>) e <code>of</code> (la lista di cui mostra il focus).</p>
-      </div>
-    </article>
-
-    <article data-topic="lists" data-group="scenes" data-icon="layout-grid" data-thumb-src="assets/themes/it/neon-cabinet.webp"
-      data-title="Liste"
-      data-desc="File, colonne, griglie, ruote e coverflow, disegnati come vuoi."
-      data-lead="Una lista disegna le sue voci e ci muove il focus: il joypad sa sempre dove andare.">
-      <div class="prose">
-<pre class="code"><span class="c">/* Un coverflow */</span>
-{ "type": "list", "source": "screen", "layout": "row", "scroll": "focus", "anchor": 0.5,
-  "width": 24, "ratio": "3:4", "spacing": 14, "tilt": 52, "scale": 1.1, "fade": 0.13 }
-
-<span class="c">/* Una ruota che gira attorno a un punto lontano a destra */</span>
-{ "type": "list", "layout": "wheel", "wheel": { "angle": -12, "origin": [4.6, 0.5] }, "scale": 1.2 }
-
-<span class="c">/* Righe tue: l'anno e il nome */</span>
-{ "type": "list", "layout": "column", "height": 6,
-  "item": { "elements": [ { "type": "text", "text": "{item.year}" }, { "type": "text", "text": "{item.name}" } ] } }</pre>
-        <table class="table wrap">
-          <tr><th>Chiave</th><th>Cosa fa</th></tr>
-          <tr><td><code>source</code></td><td><code>screen</code> (quelli della schermata), <code>played</code>, <code>favorites</code>, <code>installed</code>, <code>recent</code>, <code>discover</code>, <code>today</code>, <code>all</code>, <code>systems</code>, <code>media</code> (le immagini della pagina), <code>similar</code>, <code>journeys</code>, <code>"system:snes"</code>, <code>"collection:I miei preferiti"</code>, <code>"journey:Il mio percorso"</code> (le sue tappe); <code>fallback</code>: un’altra quando non ha niente</td></tr>
-          <tr><td><code>layout</code></td><td><code>row</code>, <code>column</code>, <code>grid</code> (<code>columns</code>, <code>rowGap</code>), <code>wheel</code>, <code>path</code> (lungo una linea che serpeggia, accesa fino al focus, dalla partenza al traguardo; <code>wave</code>: quanto serpeggia)</td></tr>
-          <tr><td><code>item</code></td><td><code>card</code>, <code>line</code>, <code>plate</code> (una console con le sue copertine a ventaglio), <code>shot</code>, <code>node</code> (un’immagine rotonda col suo numero: una tappa), <code>journey</code> (la card di un percorso), o elementi tuoi; <code>art</code>: l’immagine della card</td></tr>
-          <tr><td><code>width</code>, <code>height</code>, <code>ratio</code>, <code>gap</code>, <code>spacing</code></td><td>Misure in unità; uno <code>spacing</code> minore della larghezza le sovrappone</td></tr>
-          <tr><td><code>scroll</code>, <code>anchor</code>, <code>lead</code>, <code>cross</code></td><td><code>focus</code>: il focus resta ad <code>anchor</code> (da 0 a 1) e le voci scorrono; <code>edge</code>: restano finché il focus non arriva al bordo</td></tr>
-          <tr><td><code>scale</code>, <code>fade</code>, <code>tilt</code>, <code>wrap</code></td><td>La voce col focus più grande; le altre più tenui, o girate in 3D; dall’ultima alla prima</td></tr>
-          <tr><td><code>title</code>, <code>icon</code>, <code>count</code>, <code>empty</code>, <code>limit</code>, <code>more</code></td><td>Un titolo, cosa dice quando è vuota, la card che le apre tutte</td></tr>
-        </table>
-        <p>Oltre il bordo di una lista, il focus va all’elemento che trova in quella direzione sullo schermo. La voce su cui una lista ha il focus è <code>focus</code> per gli altri elementi; <code>of</code> nomina la lista.</p>
-        <figure class="figure"><img src="../../assets/themes/it/neon-cabinet.webp" alt="Una ruota di copertine"><figcaption>Il cabinato di Neon Arcade: una lista a ruota, e le immagini del gioco col focus.</figcaption></figure>
-        <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
-          <li>La lista decide il posto di ogni voce (<code>left</code>, <code>top</code>): <code>transform</code>, <code>translate</code>, <code>scale</code> e <code>rotate</code> restano tuoi, con <code>--rel</code> e <code>--dist</code>.</li>
-        </ul></div>
-      </div>
-    </article>
-
-    <article data-topic="values" data-group="scenes" data-icon="braces"
-      data-title="Valori e condizioni"
-      data-desc="{focus.name}, i filtri, e quando un elemento si vede."
-      data-lead="Ciò che un elemento dice viene dal gioco col focus, dalla schermata o dal tema, tra graffe; quando si vede, dalle sue condizioni.">
-      <div class="prose">
-<pre class="code">{ "type": "text", "text": "{focus.systemName|upper} · {focus.year}" }
-{ "type": "text", "text": "{t.desk.gamesN n=screen.count}" }
-{ "type": "text", "text": "{focus.var.tagline}", "when": { "has": "focus.var.tagline" } }
-{ "type": "box", "class": "crt", "when": { "option": { "crt": true }, "not": { "aspect": "narrow" } } }</pre>
-        <table class="table wrap">
-          <tr><th>Valore</th><th>Cos’è</th></tr>
-          <tr><td><code>focus.…</code>, <code>item.…</code>, <code>game.…</code></td><td>Il gioco col focus, la voce disegnata, il gioco della pagina: <code>name</code>, <code>systemName</code>, <code>year</code>, <code>release</code>, <code>developer</code>, <code>publisher</code>, <code>genre</code>, <code>players</code>, <code>rating</code>, <code>played</code>, <code>playTime</code>, <code>blurb</code>, <code>desc</code>, <code>var.…</code>; un sistema: <code>title</code>, <code>count</code>; un percorso: <code>title</code>, <code>author</code>, <code>description</code>, <code>steps</code>, <code>available</code>; una tappa: i valori del gioco e <code>note</code>, <code>number</code>, <code>total</code>, <code>available</code>, <code>missing</code></td></tr>
-          <tr><td><code>screen.…</code></td><td>La schermata: <code>title</code>, <code>count</code>, <code>query</code>, <code>empty</code>; un percorso: <code>by</code>, <code>description</code></td></tr>
-          <tr><td><code>var.…</code>, <code>opt.…</code>, <code>t.…</code>, <code>app.…</code></td><td>I valori del tema, le sue opzioni, le parole dell’app (<code>t.desk.home.played</code>), l’ora e la data</td></tr>
-        </table>
-        <p>Filtri dopo <code>|</code>: <code>upper</code>, <code>lower</code>, <code>year</code>, <code>date</code>, <code>number</code>, <code>games</code> (12 → “12 giochi”), <code>ago</code>, <code>duration</code>, <code>default:…</code>, <code>prefix:…</code>, <code>suffix:…</code>, <code>max:…</code>.</p>
-        <p><code>when</code> mostra un elemento solo se vale tutto ciò che dice: <code>variant</code>, <code>option</code>, <code>system</code>, <code>focus</code> (game, system, journey, step…), <code>has</code> (un valore che c’è), <code>aspect</code> (<code>narrow</code> 4:3, <code>normal</code>, <code>wide</code> 21:9), <code>not</code>.</p>
-      </div>
-    </article>
-
-    <article data-topic="variants" data-group="scenes" data-icon="sliders-horizontal" data-thumb-src="assets/themes/it/picker.webp"
-      data-title="Varianti, sistemi, include"
-      data-desc="Layout tra cui scegliere, ogni sistema coi suoi colori e le sue parole."
-      data-lead="Un tema può contenere interi altri layout, e dare a ogni sistema un aspetto tutto suo.">
-      <div class="prose">
-<pre class="code">"variants": [
-  { "id": "index", "label": { "en": "Index", "it": "Sommario" } },
-  { "id": "gallery", "label": { "en": "Gallery", "it": "Galleria" }, "scenes": { "games": { … } } }
-],
-"include": ["systems.json"]
-
-<span class="c">/* systems.json */</span>
-{ "systems": {
-  "snes": { "colors": { "accent": "#7b5cd6" }, "vars": { "tagline": { "en": "Sixteen bits…", "it": "Sedici bit…" } } },
-  "megadrive": { "colors": { "accent": "#2f6fde" } }
-} }</pre>
-        <ul>
-          <li><b>Varianti</b>: l’utente sceglie tra loro dalla Desktop Mode, <b>Menu → Tema</b>, poi <b>Disposizione</b> tra le opzioni. Una variante cambia le scene e i valori che dice; la prima è quella di default. Il CSS vede <code>[data-variant="gallery"]</code>.</li>
-          <li><b>Sistemi</b>: mentre il focus è su un sistema o su un suo gioco, vincono i suoi colori e valori (<code>{focus.var.tagline}</code>, <code>var(--var-tagline)</code>); le sue scene valgono per i suoi giochi e le loro pagine.</li>
-          <li><b>vars</b>: valori del tema per nome, uno per lingua se vuoi. <b>include</b>: file JSON messi in theme.json per primi.</li>
-        </ul>
-        <figure class="figure"><img src="../../assets/themes/it/picker.webp" alt="La disposizione tra le opzioni"><figcaption>Atlas dal menu della Desktop Mode: la sua disposizione tra le sue opzioni.</figcaption></figure>
-      </div>
-    </article>
-
-    <!-- ======================= CSS ======================= -->
-
-    <article data-topic="css" data-group="css" data-icon="paintbrush"
-      data-title="Il CSS di un tema"
-      data-desc="Dove vale, quanto pesa, l’unità, i file."
-      data-lead="Qualsiasi CSS: vale solo per la Desktop Mode, e vince su quello dell’app.">
-      <div class="prose">
-        <ul>
-          <li><b>Solo la Desktop Mode.</b> Ogni regola viene messa sotto la sua radice: <code>.rp-card</code> sono le card della Desktop Mode, mai la libreria. <code>:root</code>, <code>html</code>, <code>body</code> e <code>.rp-desk</code> sono tutti la Desktop Mode stessa.</li>
-          <li><b>Vince.</b> Le tue regole pesano più di quelle dell’app, qualunque siano i suoi selettori: scrivi il selettore che intendi, nient’altro. Solo ciò che l’app imposta sull’elemento stesso (il posto di una voce, qualche misura) richiede il tuo <code>!important</code>.</li>
-          <li><b>I tuoi elementi.</b> Ogni elemento di una scena è <code>.rp-el.rp-el-&lt;tipo&gt;</code>, <code>[data-el="il suo id"]</code>, con le classi che gli dai.</li>
-          <li><b>L’unità.</b> <code>var(--u)</code> è un centesimo dell’altezza di uno schermo 16:9 grande quanto la finestra: <code>calc(var(--u) * 2)</code> appare uguale su un televisore, un monitor, un ultrawide.</li>
-          <li><b>File.</b> <code>url(images/sfondo.webp)</code> parte dalla cartella del file CSS. Più file: <code>"styles": ["base.css", "schermate.css"]</code>.</li>
-          <li><b>Non permesso.</b> <code>@import</code> e gli indirizzi della rete vengono lasciati fuori, con un avviso.</li>
-          <li><b>Animazioni.</b> Qualsiasi <code>@keyframes</code>; un keyframe col nome di uno dell’app (<code>dk-fade</code>…) prende il suo posto.</li>
-          <li><b>CSS moderno.</b> L’app gira su un Chromium recente: nesting, <code>:has()</code>, container query, <code>color-mix()</code>, <code>@property</code>, view transition.</li>
-        </ul>
-<pre class="code"><span class="c">/* Ogni sezione della barra col suo colore */</span>
-.rp-tab[data-tab='systems'].is-on { color: #7ce7ff; }
-
-<span class="c">/* Il nesting funziona */</span>
-.rp-detail {
-  .rp-detail-desc { font-size: calc(var(--u) * 2); }
-  &amp;[data-system='snes'] .rp-detail-shade { background: linear-gradient(transparent, #2a1a5e); }
-}</pre>
-        <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
-          <li>Gli effetti pesanti per la GPU (grandi sfocature, <code>backdrop-filter</code> su ogni card) tienili per un elemento alla volta: la Desktop Mode muove molte voci.</li>
-          <li><kbd>F9</kbd> → <b>DevTools</b> apre gli strumenti per sviluppatori di Chromium: lì provi il CSS dal vivo, poi lo copi nel tuo file.</li>
-        </ul></div>
-      </div>
-    </article>
-
-    <article data-topic="parts" data-group="css" data-icon="square-mouse-pointer"
-      data-title="Le parti"
-      data-desc="Ogni parte della Desktop Mode col suo nome stabile."
-      data-lead="I nomi che il tuo CSS stila. Restano gli stessi da una versione dell’app all’altra.">
-      <div class="prose">
-        <p>Ogni parte ha anche i suoi stati (<code>.is-focused</code>…) e attributi (<code>[data-system]</code>…), elencati accanto. <kbd>F9</kbd> li mostra sullo schermo.</p>
-        <input class="ref-filter" data-ref-filter="parts" placeholder="Filtra: card, hero, menu…" aria-label="Filtra le parti">
-        <div data-ref="parts"></div>
-      </div>
-    </article>
-
-    <article data-topic="states" data-group="css" data-icon="eye"
-      data-title="Stati e numeri"
-      data-desc="Cosa ha il focus, dove sta ogni card, le variabili."
-      data-lead="Ciò che l’app dice al CSS di ogni parte, per stilarla per ciò che è e per dove sta.">
-      <div class="prose">
-        <h2>Stati</h2>
-        <table class="table wrap">
-          <tr><th>Classe</th><th>Quando</th></tr>
-          <tr><td><code>.is-focused</code></td><td>Ha il focus (una card, un pulsante, un tasto, una voce del menu…)</td></tr>
-          <tr><td><code>.is-current</code></td><td>La voce su cui sta una lista, col focus o no</td></tr>
-          <tr><td><code>.has-focus</code></td><td>Una lista col focus; un elemento di un gruppo che scorre col focus dentro</td></tr>
-          <tr><td><code>.is-above</code>, <code>.is-below</code></td><td>Gli elementi di un gruppo che scorre prima e dopo quello mostrato</td></tr>
-          <tr><td><code>.is-on</code></td><td>La sezione mostrata, un interruttore acceso</td></tr>
-          <tr><td><code>.is-primary</code></td><td>Il pulsante principale (Gioca)</td></tr>
-          <tr><td><code>.is-shown</code>, <code>.is-before</code>, <code>.is-after</code></td><td>Le sezioni: mostrata, a sinistra, a destra</td></tr>
-          <tr><td><code>.is-covered</code>, <code>.is-leaving</code></td><td>Una schermata sotto un’altra; una schermata che se ne va</td></tr>
-        </table>
-        <h2>Attributi</h2>
-        <p>Su <code>.rp-desk</code>: <code>data-tab</code> (home, systems, favorites, search), <code>data-screen</code> (la schermata in cima: anche games, game), <code>data-device</code> (pad, keys, mouse), <code>data-pad</code> (xbox, playstation, nintendo, none), <code>data-variant</code>, <code>data-focus-system</code> (il sistema del focus), <code>data-screen-system</code>, <code>data-theme-id</code>, <code>data-opt-…</code>. Sugli elementi: <code>data-el</code>, <code>data-focused</code>; sulle liste <code>data-layout</code>, <code>data-source</code>. Su voci e giochi: <code>data-system</code>, <code>data-installed</code>, <code>data-favorite</code>, <code>data-kind</code>. Sui pulsanti: <code>data-action</code>.</p>
-<pre class="code"><span class="c">/* I giochi installati più luminosi, solo col joypad */</span>
-.rp-desk[data-device='pad'] .rp-card:not([data-installed]) { opacity: 0.55; }</pre>
-        <h2>Numeri</h2>
-        <table class="table wrap">
-          <tr><th>Variabile</th><th>Su</th><th>Cos’è</th></tr>
-          <tr><td><code>--i</code></td><td>le voci delle liste</td><td>Il suo posto nella lista: 0, 1, 2…</td></tr>
-          <tr><td><code>--rel</code></td><td>le stesse</td><td>Dove sta rispetto al focus: …−2, −1, 0, 1, 2…</td></tr>
-          <tr><td><code>--dist</code></td><td>le stesse</td><td>Quanto dista dal focus: 0, 1, 2…</td></tr>
-          <tr><td><code>--focus</code>, <code>--count</code>, <code>--cols</code></td><td>liste</td><td>Dove sta il focus, quante sono, le colonne di una griglia</td></tr>
-          <tr><td><code>--row</code>, <code>--col</code></td><td>le voci di una griglia</td><td>La sua riga e colonna</td></tr>
-          <tr><td><code>--block-rel</code>, <code>--scroll</code></td><td>gruppi che scorrono</td><td>Dove sta un elemento rispetto a quello mostrato; quanto è scorso</td></tr>
-          <tr><td><code>--h</code></td><td>sistemi</td><td>La tinta del sistema, da 0 a 360</td></tr>
-        </table>
-        <p>Sono numeri: usali in <code>calc()</code>, e animali (<code>transition: --rel 300ms</code>). La lista mette ogni voce al suo posto; girala, sollevala o illuminala con loro:</p>
-<pre class="code">.mia-fila .rp-item {
-  transform: rotateY(calc(clamp(-1, var(--rel), 1) * -50deg));
-  scale: calc(1 - var(--dist) * 0.07);
-}</pre>
-      </div>
-    </article>
-
-    <article data-topic="recipes" data-group="css" data-icon="lightbulb"
-      data-title="Ricette"
-      data-desc="Un CRT, una ruota, un colore per sistema, i nomi sotto le copertine…"
-      data-lead="Qualche cosa che i temi vogliono spesso, pronta da copiare.">
-      <div class="prose">
-        <h3>Un CRT sopra a tutto</h3>
-<pre class="code">.rp-desk::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 160;
-  pointer-events: none;
-  background: repeating-linear-gradient(rgb(0 0 0 / 0.25) 0 1px, transparent 1px 3px);
-}</pre>
-        <h3>Una lista come un tamburo, che gira in 3D</h3>
-<pre class="code">.mio-tamburo .rp-list-track { perspective: calc(var(--u) * 80); }
-.mio-tamburo .rp-item {
-  transform: rotateX(calc(var(--rel) * -14deg)) translateZ(calc(var(--dist) * var(--u) * -4));
-  opacity: calc(1 - var(--dist) * 0.18);
-}</pre>
-        <h3>Un colore per sistema</h3>
-<pre class="code"><span class="c">/* In theme.json: "systems": { "megadrive": { "colors": { "accent": "#3a7bff" } } } — oppure nel CSS: */</span>
-.rp-desk[data-focus-system='nes'] { --rp-accent: #e60012; }</pre>
-        <h3>I nomi sotto le copertine</h3>
-<pre class="code">.rp-card-title {
-  display: block;
-  margin-top: calc(var(--u) * 1);
-  font-size: calc(var(--u) * 1.5);
-  text-align: center;
-}</pre>
-        <h3>Un’altra icona per una sezione</h3>
-<pre class="code">.rp-tab[data-tab='home'] svg { display: none; }
-.rp-tab[data-tab='home']::before {
-  content: '';
-  width: calc(var(--u) * 2.2);
-  height: calc(var(--u) * 2.2);
-  background: url(icone/home.svg) center / contain no-repeat;
-}</pre>
-        <h3>Nascondi ciò che non vuoi</h3>
-<pre class="code">.rp-hero-blurb, .rp-card-marks, .rp-brand-name { display: none; }</pre>
-        <h3>Colori da un’opzione</h3>
-<pre class="code">.rp-desk[data-opt-phosphor='amber'] {
-  --rp-ink: #ffcf7a;
-  --rp-accent: #ffb000;
-}</pre>
-      </div>
-    </article>
-
-    <!-- ======================= SCRIPT ======================= -->
-
-    <article data-topic="effects" data-group="scripts" data-icon="sparkles"
-      data-title="Effetti"
-      data-desc="Pagine disegnate sotto o sopra le schermate, che sentono ciò che succede."
-      data-lead="Un effetto è una pagina HTML del tema, coi suoi script, disegnata come livello: particelle, shader, un canvas, qualsiasi cosa.">
-      <div class="prose">
-<pre class="code">"effects": [
-  { "id": "stars", "src": "effects/stelle.html", "layer": "back" }
-]</pre>
-        <p><code>layer</code>: <code>back</code> sopra lo sfondo e sotto le schermate (di default), <code>front</code> sopra le schermate, <code>top</code> sopra a tutto, anche i menu. Un effetto non prende mai il puntatore né il joypad. Sa ciò che succede:</p>
-<pre class="code">&lt;canvas id="c"&gt;&lt;/canvas&gt;
-&lt;script&gt;
-  <span class="c">// rp c'è sempre: l'app lo mette per primo</span>
-  rp.on('press', ({ action }) =&gt; pulsa())             <span class="c">// qualsiasi tasto</span>
-  rp.on('focus', (f) =&gt; f?.game &amp;&amp; tinta(f.game.hue))  <span class="c">// il gioco col focus</span>
-  rp.on('screen', ({ tab, screen }) =&gt; …)              <span class="c">// cosa è mostrato</span>
-  rp.on('launch', (l) =&gt; l &amp;&amp; l.state === 'started' &amp;&amp; …)
-  rp.ready.then(() =&gt; disegna(rp.options))
-&lt;/script&gt;</pre>
-        <p>La griglia al neon di Neon Arcade e la luce nell’aria di Horizon sono effetti: duplicali per vedere come sono fatti.</p>
-      </div>
-    </article>
-
-    <article data-topic="screens" data-group="scripts" data-icon="code" data-thumb-src="assets/themes/it/terminal-home.webp"
-      data-title="Elementi pagina"
-      data-desc="Una pagina del tema messa in una scena, anche a tutto schermo."
-      data-lead="Il livello più profondo: una pagina tua, coi tuoi script, dove vuoi in una scena, coi giochi e i pulsanti dell’app.">
-      <div class="prose">
-<pre class="code">"scenes": {
-  "home": { "elements": [
-    { "type": "page", "src": "pages/home.html", "input": true, "pos": [0, 0], "size": [100, 100] }
-  ] }
-}</pre>
-        <p>Senza <code>input</code> la pagina disegna e ascolta soltanto (un visualizzatore accanto a una lista). Con <code>input</code> prende il joypad mentre ha il focus, e dice quali tasti prende; gli altri vanno alla scena e alla Desktop Mode (LB e RB le sezioni, Menu il menu, B indietro). <code>rp.params</code>: sui giochi <code>{ query, title }</code>, sulla pagina di un gioco <code>{ id }</code>.</p>
-<pre class="code">rp.ready.then(async () =&gt; {
-  rp.take(['up', 'down', 'ok', 'x'])
-  const { items } = await rp.games({ only: 'played', limit: 30 })
-  let at = 0
-  disegna(items, at)
-  rp.hints([{ action: 'ok', label: await rp.text('desk.hint.details') }, { action: 'x', label: await rp.text('shelf.play') }])
-  rp.on('input', ({ action }) =&gt; {
-    if (action === 'down') disegna(items, ++at)
-    else if (action === 'up' &amp;&amp; at === 0) rp.focusTabs()
-    else if (action === 'up') disegna(items, --at)
-    else if (action === 'ok') rp.open({ game: items[at].id, list: { only: 'played' } })
-    else if (action === 'x') items[at].installed ? rp.play(items[at].id) : rp.install(items[at].id)
-  })
-})</pre>
-        <figure class="figure"><img src="../../assets/themes/it/terminal-home.webp" alt="La Home di Terminal"><figcaption>Terminal: la sua Home è un elemento pagina. Un gioco aperto da lì è la scena del gioco, stilata dal CSS del tema.</figcaption></figure>
-        <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
-          <li>I tasti e la rotellina della pagina vanno alla Desktop Mode: <kbd>F10</kbd> esce sempre.</li>
-          <li><code>rp.take(['text'])</code> dà alla pagina le lettere scritte (una ricerca tua).</li>
-          <li>Lascia spazio alla barra in alto (circa l’11% dell’altezza), o lascia <code>tabs</code> fuori dalla cornice.</li>
-        </ul></div>
-      </div>
-    </article>
-
-    <article data-topic="rp" data-group="scripts" data-icon="book-open"
-      data-title="Il riferimento di rp"
-      data-desc="Tutto ciò che uno script può leggere e fare."
-      data-lead="rp è il modo in cui la pagina di un tema parla con l’app. I suoi tipi sono in rp.d.ts, accanto ai tuoi temi.">
-      <div class="prose">
-        <h2>Cosa dice</h2>
-        <table class="table wrap">
-          <tr><th>Proprietà</th><th>Cos’è</th></tr>
-          <tr><td><code>rp.kind</code></td><td><code>'effect'</code>, o <code>'screen'</code> per un elemento pagina con input</td></tr>
-          <tr><td><code>rp.screen</code>, <code>rp.params</code></td><td>La schermata in cui sta, e con cosa è stata aperta</td></tr>
-          <tr><td><code>rp.active</code></td><td>La pagina ha il joypad</td></tr>
-          <tr><td><code>rp.lang</code>, <code>rp.theme</code>, <code>rp.options</code></td><td>La lingua dell’utente, il tema, le sue opzioni</td></tr>
-          <tr><td><code>rp.focus</code>, <code>rp.now</code></td><td>Il gioco o sistema col focus; la sezione e la schermata mostrate</td></tr>
-          <tr><td><code>rp.ready</code></td><td>Una promessa, quando tutto questo è pronto</td></tr>
-        </table>
-        <h2>Cosa fa</h2>
-        <table class="table wrap">
-          <tr><th>Chiamata</th><th>Cosa fa</th></tr>
-          <tr><td><code>rp.games(query)</code></td><td>I giochi: <code>{ total, items }</code>. Query: <code>only</code> (favorites, installed, recent, played), <code>system</code>, <code>query</code> (parole), <code>similar</code>, <code>installed</code>, <code>collection</code>, <code>offset</code>, <code>limit</code> (100, fino a 500)</td></tr>
-          <tr><td><code>rp.game(id)</code></td><td>Un gioco con la descrizione e tutte le immagini e i video (<code>media</code>)</td></tr>
-          <tr><td><code>rp.systems()</code>, <code>rp.collections()</code></td><td>I sistemi coi loro numeri; le collezioni</td></tr>
-          <tr><td><code>rp.open(target)</code></td><td>Le schermate dell’app: <code>{ game, list }</code>, <code>{ games, title }</code>, una sezione, <code>'menu'</code>, <code>'spin'</code>, <code>'attract'</code></td></tr>
-          <tr><td><code>rp.back()</code></td><td>Chiude la schermata in cima, o torna alla Home</td></tr>
-          <tr><td><code>rp.play(id, { resume })</code>, <code>rp.install(id)</code></td><td>Avvia il gioco; il pannello dell’app che lo installa (che chiede all’utente)</td></tr>
-          <tr><td><code>rp.favorite(id, on)</code></td><td>Lo mette nei preferiti o lo toglie; com’è adesso</td></tr>
-          <tr><td><code>rp.take(actions)</code>, <code>rp.hints(list)</code></td><td>I tasti che la schermata prende; cosa fanno, in fondo</td></tr>
-          <tr><td><code>rp.focusTabs()</code>, <code>rp.spot(id)</code></td><td>Il focus su alla barra; cosa mostra lo sfondo</td></tr>
-          <tr><td><code>rp.sound(name)</code>, <code>rp.text(key, vars)</code></td><td>Un suono della Desktop Mode (prima quello del tema); le parole dell’app nella lingua dell’utente</td></tr>
-          <tr><td><code>rp.systemArt(name)</code></td><td>La console disegnata dall’app, come indirizzo di un’immagine</td></tr>
-          <tr><td><code>rp.store.get(key)</code>, <code>rp.store.set(key, value)</code></td><td>Un po’ di dati del tema, tenuti su questo computer (64 KB per chiave)</td></tr>
-          <tr><td><code>rp.url(file)</code></td><td>Un file del tema, dal suo percorso nella cartella del tema</td></tr>
-        </table>
-        <h2>Cosa sente</h2>
-        <table class="table wrap">
-          <tr><th>rp.on(…)</th><th>Quando</th></tr>
-          <tr><td><code>'input'</code></td><td>Un tasto che la schermata prende, mentre ha il joypad: <code>{ action, repeat }</code> (con <code>'text'</code> preso, <code>{ action: 'text', text }</code> ed <code>'erase'</code>)</td></tr>
-          <tr><td><code>'press'</code></td><td>Qualsiasi tasto, chiunque lo prenda</td></tr>
-          <tr><td><code>'active'</code>, <code>'focus'</code>, <code>'screen'</code></td><td>La schermata ha il joypad o no; il gioco o sistema col focus; cosa è mostrato</td></tr>
-          <tr><td><code>'launch'</code></td><td>Un gioco che si avvia, avviato o fallito (<code>{ state, game }</code>), poi <code>null</code></td></tr>
-          <tr><td><code>'options'</code>, <code>'lang'</code></td><td>L’utente ha cambiato le opzioni o la lingua</td></tr>
-        </table>
-        <p>Un gioco ha: <code>id</code>, <code>name</code>, <code>system</code>, <code>systemName</code>, <code>year</code>, <code>releasedate</code>, <code>developer</code>, <code>publisher</code>, <code>genre</code>, <code>players</code>, <code>rating</code> (da 0 a 5), <code>cover</code>, <code>screenshot</code>, <code>favorite</code>, <code>installed</code>, <code>playedAt</code>, <code>playTime</code>, <code>blurb</code>, <code>hue</code>. Tasti: <code>up</code> <code>down</code> <code>left</code> <code>right</code> <code>ok</code> <code>back</code> <code>x</code> <code>y</code> <code>lb</code> <code>rb</code> <code>lt</code> <code>rt</code> <code>menu</code> <code>view</code>.</p>
-      </div>
-    </article>
-
-    <article data-topic="sandbox" data-group="scripts" data-icon="shield"
-      data-title="Cosa gli script non possono fare"
-      data-desc="La sandbox, e perché."
-      data-lead="Un tema può arrivare da chiunque: i suoi script possono fare qualsiasi cosa dello schermo, e niente del tuo computer.">
-      <div class="prose">
-        <ul>
-          <li><b>Niente app.</b> Una pagina non ha accesso all’app se non tramite <code>rp</code>: non può leggere i tuoi file, cambiare le impostazioni o eliminare niente. Installare passa sempre dal pannello dell’app, che ti chiede.</li>
-          <li><b>Niente rete.</b> Carica solo i file del suo tema e le immagini dell’archivio: nessun sito, nessun carattere o libreria dal web. Metti nella cartella del tema ogni libreria che ti serve.</li>
-          <li><b>Niente archivio proprio.</b> Niente cookie né <code>localStorage</code>: <code>rp.store</code> tiene ciò che serve.</li>
-          <li><b>Niente finestre.</b> Niente popup, niente moduli, niente frame di altri siti.</li>
-        </ul>
-        <div class="box tip"><h3 data-icon-svg="lightbulb">Da sapere</h3><ul>
-          <li>Disegna con <code>requestAnimationFrame</code> e fermati quando niente cambia: la Desktop Mode gira anche su PC da salotto.</li>
-          <li>Gli errori di una pagina compaiono in <kbd>F9</kbd> → <b>DevTools</b>, nel suo frame.</li>
-        </ul></div>
-      </div>
-    </article>
-
-    <!-- ======================= STRUMENTI E AIUTO ======================= -->
-
-    <article data-topic="tools" data-group="help" data-icon="scan-search" data-thumb-src="assets/themes/it/inspector.webp"
-      data-title="L’ispettore e gli strumenti"
-      data-desc="F9, F5, le chiavi dei testi, l’editor."
-      data-lead="Ciò che aiuta mentre scrivi un tema, dentro la Desktop Mode stessa.">
-      <div class="prose">
-        <figure class="figure"><img src="../../assets/themes/it/inspector.webp" alt="L’ispettore"><figcaption><kbd>F9</kbd>: l’elemento, il suo id e i numeri, il selettore da copiare, e cosa non va nel tema.</figcaption></figure>
-        <table class="table wrap">
-          <tr><th>Strumento</th><th>Cosa fa</th></tr>
-          <tr><td><kbd>F9</kbd> ispettore</td><td>L’elemento o la parte sotto il puntatore (o col focus, col joypad), ciò in cui sta, il suo id, stati, attributi e numeri; <b>Copia</b> mette il suo selettore negli appunti. Sotto, i problemi del tema con file e riga.</td></tr>
-          <tr><td><b>Chiavi dei testi</b></td><td>Ogni parola della Desktop Mode mostra la sua chiave al suo posto: cosa scrivere in <code>texts</code>.</td></tr>
-          <tr><td><kbd>F5</kbd></td><td>Rilegge il tema (lo fa comunque appena salvi un file).</td></tr>
-          <tr><td><b>DevTools</b></td><td>Gli strumenti per sviluppatori di Chromium, per provare il CSS dal vivo e vedere gli errori degli script.</td></tr>
-          <tr><td>Editor</td><td>Impostazioni → Aspetto → <b>Modifica</b> su uno dei tuoi temi: la Desktop Mode con l’editor accanto, i suoi layout pronti in <b>Disposizione</b>.</td></tr>
-        </table>
-      </div>
-    </article>
-
-    <article data-topic="problems" data-group="help" data-icon="circle-question-mark"
-      data-title="Quando qualcosa non va"
-      data-desc="Cosa dicono gli avvisi, e gli errori più comuni."
-      data-lead="Un tema con errori mostra ciò che può; un avviso dice quanti sono, F9 dice cosa e dove.">
-      <div class="prose">
-        <table class="table wrap">
-          <tr><th>L’avviso dice</th><th>Cosa fare</th></tr>
-          <tr><td>theme.json non è JSON valido</td><td>Una virgola di troppo o mancante, chiavi senza virgolette: la riga è indicata. Il JSON non ha commenti.</td></tr>
-          <tr><td>Chiave sconosciuta</td><td>Spesso un refuso: viene suggerita la chiave più probabile.</td></tr>
-          <tr><td>Il file non è nel tema</td><td>Controlla il percorso dalla cartella del tema e le maiuscole.</td></tr>
-          <tr><td>Non è una parte della Desktop Mode</td><td>Una classe <code>.rp-…</code> che non esiste: viene suggerita la più vicina, F9 mostra quelle vere.</td></tr>
-          <tr><td>Non è permesso</td><td><code>@import</code> o un indirizzo della rete: metti il file nel tema.</td></tr>
-          <tr><td>«api» deve essere 2</td><td>Il tema è stato fatto per un’altra versione del formato.</td></tr>
-        </table>
-        <details class="faq"><summary>Il mio CSS non fa niente</summary><p>F9 sulla parte: è il nome che hai scritto? Una regola su un elemento nascosto dall’app (<code>.rp-card-title</code>) richiede <code>display: block</code>. Ciò che l’app imposta sull’elemento stesso (il posto di una card) richiede <code>!important</code>, oppure spostalo con <code>transform</code>.</p></details>
-        <details class="faq"><summary>Un’immagine o un carattere non si vede</summary><p>Il percorso parte dalla cartella del tema in theme.json e dalla cartella del file CSS nel CSS; le maiuscole contano. Un carattere in <code>fonts</code> vuole un file .woff2, .woff, .ttf o .otf.</p></details>
-        <details class="faq"><summary>La mia pagina non riceve il joypad</summary><p>Dai all’elemento pagina <code>"input": true</code>, poi chiama <code>rp.take([...])</code> coi tasti che usa, dopo <code>rp.ready</code>. Gli altri vanno alla Desktop Mode.</p></details>
-        <details class="faq"><summary>Il mio script non carica una libreria</summary><p>Le pagine dei temi non hanno rete: copia il file della libreria nella cartella del tema e caricalo da lì.</p></details>
-      </div>
-    </article>
-
-    <article data-topic="examples" data-group="help" data-icon="sparkles" data-thumb-src="assets/themes/it/atlas-gallery.webp"
-      data-title="Gli esempi"
-      data-desc="Atlas, Neon Arcade, Horizon e Terminal: cosa mostra ognuno."
-      data-lead="Quattro temi vengono con l’app, e ognuno mostra livelli diversi. Duplicane uno e leggi i suoi file.">
-      <div class="prose">
-        <div class="figures">
-          <figure class="figure"><img src="../../assets/themes/it/atlas-gallery.webp" alt="Atlas"><figcaption><b>Atlas</b>: fatto solo di scene. Ogni sistema col suo colore e le sue parole (systems.json), liste disegnate coi suoi elementi, due layout: un sommario o una galleria di schermate.</figcaption></figure>
-          <figure class="figure"><img src="../../assets/themes/it/neon-coverflow.webp" alt="Neon Arcade"><figcaption><b>Neon Arcade</b>: suoni chiptune fatti di note, un CRT, una griglia al neon come effetto, e due layout: un coverflow o un cabinato arcade.</figcaption></figure>
-          <figure class="figure"><img src="../../assets/themes/it/horizon-home.webp" alt="Horizon"><figcaption><b>Horizon</b>: la Home come una dashboard da console, l’immagine del gioco come sfondo, un’opzione per il colore d’accento, la luce nell’aria come effetto.</figcaption></figure>
-          <figure class="figure"><img src="../../assets/themes/it/terminal-home.webp" alt="Terminal"><figcaption><b>Terminal</b>: la Home è un elemento pagina in JavaScript, righe ovunque, un’intro d’avvio in CSS, fosfori verdi o ambra da un’opzione.</figcaption></figure>
-          <figure class="figure"><img src="../../assets/themes/it/picker.webp" alt="I temi dal menu"><figcaption>Dalla Desktop Mode: <b>Menu → Tema</b>, col joypad, e le opzioni del tema mostrato, prima il suo layout.</figcaption></figure>
-        </div>
-      </div>
-    </article>
-
   </main>
 </div>
 
-<div class="palette" id="palette" role="dialog" aria-label="Cerca nella guida">
+<div class="palette" id="palette" data-index="../../assets/search/themes.it.js?v=9434d41e" role="dialog" aria-label="Cerca nella guida">
   <div class="box2">
     <input type="search" placeholder="Cerca: colori, coverflow, suoni, rp.games…" aria-label="Cerca">
     <div class="results"></div>
@@ -792,8 +82,6 @@
 </div>
 
 <script src="../../assets/icons.js?v=4adbcba3"></script>
-<script src="../../assets/theme-ref.js?v=13927d1e"></script>
-<script src="../../assets/theme-ref-tables.js?v=9b6cbf05"></script>
-<script src="../../assets/app.js?v=d4ee240f"></script>
+<script src="../../assets/app.js?v=32a3876f"></script>
 </body>
 </html>

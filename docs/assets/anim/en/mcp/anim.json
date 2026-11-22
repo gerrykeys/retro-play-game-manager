@@ -31,7 +31,20 @@
   },
   {
    "img": "04.webp",
-   "hold": 3400
+   "hold": 2600
+  },
+  {
+   "img": "05.webp",
+   "hold": 1500,
+   "cursor": {
+    "x": 76.61,
+    "y": 72.64
+   },
+   "action": "click"
+  },
+  {
+   "img": "06.webp",
+   "hold": 4200
   }
  ]
 }
