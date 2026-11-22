@@ -21,7 +21,7 @@ more systems and frontends, and fewer bugs. ☕
 
 [**Website & guide**](https://retroplay-gamemanager.com/) &nbsp;·&nbsp;
 [**Download**](https://github.com/gerrykeys/retro-play-game-manager/releases/latest) &nbsp;·&nbsp;
-[Guida in italiano](https://retroplay-gamemanager.com/it/)
+[Guide](https://retroplay-gamemanager.com)
 
 </div>
 
