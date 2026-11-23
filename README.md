@@ -106,11 +106,21 @@ What each version brought: the [**release notes**](https://retroplay-gamemanager
     <td align="center"><sub>Gaming journeys</sub></td>
     <td align="center"><sub>The company map</sub></td>
   </tr>
+  <tr>
+    <td width="50%"><img src="images/retro-tv.webp" alt="Retro TV: a game's video on a cathode-ray television in a living room"></td>
+    <td width="50%"><img src="images/people.webp" alt="The people behind the games: a composer's career as an animated score"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Retro TV</sub></td>
+    <td align="center"><sub>The people behind the games</sub></td>
+  </tr>
 </table>
 
 **Library**
 - A cover grid, a list or a **timeline** of your systems year by year, fast even with tens of thousands of games.
-- A **company map**: the developers and publishers of your games where they are in the world.
+- A **company map**: the developers and publishers of your games where they are in the world, and the people who make games on their own.
+- **The people behind the games**: composers and designers, each career an animated score or blueprint, with the soundtrack a click away.
+- **Retro TV**: your games' videos on a cathode-ray television, with channels, zapping, 6 TVs and 6 rooms.
 - **Gaming journeys**: games in a row, a note for each step, shared as a .zip with no game files.
 - Instant search and filters, saved filters, **favorites** and **collections**.
 - Video and screenshots on hover, and games compared side by side.
@@ -133,6 +143,7 @@ What each version brought: the [**release notes**](https://retroplay-gamemanager
 - **Emulators and commands**: choose the emulator and the command line Play starts a system’s games with, or give a single game its own.
 
 **Playing**
+- A **power-on ritual**: press Play and the console takes the game and turns on.
 - **Continue playing**, **On this day** and a wheel that answers *What should I play today?*
 - **Desktop Mode**: the app full screen, played with a joypad, with the games’ videos when you leave it alone.
 - **Desktop Mode themes**: change its colors, fonts, music and even how each screen is laid out, or [make your own](https://retroplay-gamemanager.com/themes/).

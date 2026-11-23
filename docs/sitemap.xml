@@ -3,7 +3,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://retroplay-gamemanager.com/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/"/>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/guide/archive-structure/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/archive-structure/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/com-e-fatto/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/archive-structure/"/>
@@ -51,19 +51,35 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/guide/company-map/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/company-map/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/mappa/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/company-map/"/>
     <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/mappa/05.webp</image:loc></image:image>
   </url>
   <url>
+    <loc>https://retroplay-gamemanager.com/guide/people-behind-the-games/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/people-behind-the-games/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/persone/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/people-behind-the-games/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/persone/04.webp</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://retroplay-gamemanager.com/guide/gaming-journeys/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/gaming-journeys/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/percorsi/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/gaming-journeys/"/>
     <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/percorsi/07.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/retro-tv/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/retro-tv/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/retro-tv/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/retro-tv/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/retro-tv/18.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/guide/hover-preview/</loc>
@@ -291,7 +307,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/guide/play/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/play/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/giocare/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/play/"/>
@@ -467,7 +483,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/guide/settings/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/settings/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/impostazioni/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/settings/"/>
@@ -483,7 +499,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/guide/release-notes/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/release-notes/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/note-di-rilascio/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/release-notes/"/>
@@ -499,7 +515,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/guide/glossary/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/glossary/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/glossario/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/glossary/"/>
@@ -515,7 +531,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/it/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/"/>
@@ -539,7 +555,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/it/guida/com-e-fatto/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/archive-structure/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/com-e-fatto/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/archive-structure/"/>
@@ -563,19 +579,35 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/it/guida/mappa/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/company-map/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/mappa/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/company-map/"/>
     <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/mappa/05.webp</image:loc></image:image>
   </url>
   <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/persone/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/people-behind-the-games/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/persone/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/people-behind-the-games/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/persone/04.webp</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://retroplay-gamemanager.com/it/guida/percorsi/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/gaming-journeys/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/percorsi/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/gaming-journeys/"/>
     <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/percorsi/07.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/retro-tv/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/retro-tv/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/retro-tv/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/retro-tv/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/retro-tv/18.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/it/guida/anteprima/</loc>
@@ -803,7 +835,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/it/guida/giocare/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/play/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/giocare/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/play/"/>
@@ -979,7 +1011,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/it/guida/impostazioni/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/settings/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/impostazioni/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/settings/"/>
@@ -995,7 +1027,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/it/guida/note-di-rilascio/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/release-notes/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/note-di-rilascio/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/release-notes/"/>
@@ -1011,7 +1043,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/it/guida/glossario/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/glossary/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/glossario/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/glossary/"/>
