@@ -1,0 +1,173 @@
+{
+ "w": 1280,
+ "h": 800,
+ "steps": [
+  {
+   "img": "01.webp",
+   "hold": 1200,
+   "cursor": {
+    "x": 80.63,
+    "y": 3.2
+   },
+   "action": "click"
+  },
+  {
+   "img": "02.webp",
+   "hold": 3000
+  },
+  {
+   "img": "03.webp",
+   "hold": 900,
+   "key": "↑"
+  },
+  {
+   "img": "04.webp",
+   "hold": 2400
+  },
+  {
+   "img": "05.webp",
+   "hold": 1100,
+   "cursor": {
+    "x": 43.71,
+    "y": 10.45
+   },
+   "action": "click"
+  },
+  {
+   "img": "06.webp",
+   "hold": 1500,
+   "cursor": {
+    "x": 80.94,
+    "y": 42.13
+   },
+   "action": "click"
+  },
+  {
+   "img": "07.webp",
+   "hold": 900,
+   "cursor": {
+    "x": 80.94,
+    "y": 35.88
+   },
+   "action": "click"
+  },
+  {
+   "img": "08.webp",
+   "hold": 900
+  },
+  {
+   "img": "09.webp",
+   "hold": 2600
+  },
+  {
+   "img": "10.webp",
+   "hold": 1400,
+   "cursor": {
+    "x": 82.39,
+    "y": 19.63
+   },
+   "action": "click"
+  },
+  {
+   "img": "11.webp",
+   "hold": 1300,
+   "cursor": {
+    "x": 80.56,
+    "y": 53.61
+   },
+   "action": "click"
+  },
+  {
+   "img": "12.webp",
+   "hold": 1300,
+   "cursor": {
+    "x": 91.87,
+    "y": 53.61
+   },
+   "action": "click"
+  },
+  {
+   "img": "13.webp",
+   "hold": 1300,
+   "cursor": {
+    "x": 69.25,
+    "y": 70.47
+   },
+   "action": "click"
+  },
+  {
+   "img": "14.webp",
+   "hold": 1500,
+   "cursor": {
+    "x": 80.56,
+    "y": 90.31
+   },
+   "action": "click"
+  },
+  {
+   "img": "15.webp",
+   "hold": 1500,
+   "cursor": {
+    "x": 91.87,
+    "y": 90.31
+   },
+   "action": "click"
+  },
+  {
+   "img": "16.webp",
+   "hold": 1500,
+   "cursor": {
+    "x": 80.56,
+    "y": 90.27
+   },
+   "action": "click"
+  },
+  {
+   "img": "17.webp",
+   "hold": 1800
+  },
+  {
+   "img": "18.webp",
+   "hold": 1600,
+   "cursor": {
+    "x": 90.73,
+    "y": 19.63
+   },
+   "action": "click"
+  },
+  {
+   "img": "19.webp",
+   "hold": 1800,
+   "cursor": {
+    "x": 89.61,
+    "y": 26.79
+   },
+   "action": "click"
+  },
+  {
+   "img": "20.webp",
+   "hold": 2000
+  },
+  {
+   "img": "21.webp",
+   "hold": 1700,
+   "cursor": {
+    "x": 63.47,
+    "y": 95.13
+   },
+   "action": "click"
+  },
+  {
+   "img": "22.webp",
+   "hold": 1000
+  },
+  {
+   "img": "23.webp",
+   "hold": 3200
+  },
+  {
+   "img": "24.webp",
+   "hold": 2200
+  }
+ ]
+}

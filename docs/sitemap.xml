@@ -3,7 +3,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://retroplay-gamemanager.com/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/"/>
@@ -19,7 +19,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/guide/add-games/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/add-games/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/aggiungere/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/add-games/"/>
@@ -75,11 +75,19 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/guide/retro-tv/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/retro-tv/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/retro-tv/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/retro-tv/"/>
-    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/retro-tv/18.webp</image:loc></image:image>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/retro-tv/24.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/guide/arcade-room/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/arcade-room/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/arcade-room/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/arcade-room/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/en/arcade-room/02.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/guide/hover-preview/</loc>
@@ -179,7 +187,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/guide/scraping/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/scraping/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/scraping/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/scraping/"/>
@@ -387,7 +395,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/guide/desktop-mode/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/desktop-mode/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/desktop-mode/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/desktop-mode/"/>
@@ -499,7 +507,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/guide/release-notes/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/release-notes/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/note-di-rilascio/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/release-notes/"/>
@@ -531,7 +539,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/it/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/"/>
@@ -547,7 +555,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/it/guida/aggiungere/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/add-games/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/aggiungere/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/add-games/"/>
@@ -603,11 +611,19 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/it/guida/retro-tv/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/retro-tv/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/retro-tv/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/retro-tv/"/>
-    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/retro-tv/18.webp</image:loc></image:image>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/retro-tv/24.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://retroplay-gamemanager.com/it/guida/arcade-room/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/arcade-room/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/arcade-room/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/arcade-room/"/>
+    <image:image><image:loc>https://retroplay-gamemanager.com/assets/anim/it/arcade-room/02.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/it/guida/anteprima/</loc>
@@ -707,7 +723,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/it/guida/scraping/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/scraping/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/scraping/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/scraping/"/>
@@ -915,7 +931,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/it/guida/desktop-mode/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/desktop-mode/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/desktop-mode/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/desktop-mode/"/>
@@ -1027,7 +1043,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/it/guida/note-di-rilascio/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/guide/release-notes/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/guida/note-di-rilascio/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/guide/release-notes/"/>
@@ -1099,7 +1115,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/themes/theme-json/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/theme-json/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/theme-json/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/theme-json/"/>
@@ -1315,7 +1331,7 @@
   </url>
   <url>
     <loc>https://retroplay-gamemanager.com/it/themes/theme-json/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://retroplay-gamemanager.com/themes/theme-json/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://retroplay-gamemanager.com/it/themes/theme-json/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://retroplay-gamemanager.com/themes/theme-json/"/>

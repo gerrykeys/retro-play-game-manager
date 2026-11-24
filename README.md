@@ -20,8 +20,7 @@ more systems and frontends, and fewer bugs. ☕
 **Your retro games, tidy and ready to play.**
 
 [**Website & guide**](https://retroplay-gamemanager.com/) &nbsp;·&nbsp;
-[**Download**](https://github.com/gerrykeys/retro-play-game-manager/releases/latest) &nbsp;·&nbsp;
-[Guide](https://retroplay-gamemanager.com)
+[**Download**](https://github.com/gerrykeys/retro-play-game-manager/releases/latest)
 
 </div>
 
@@ -73,6 +72,9 @@ Retro Play Game Manager keeps your games in order: you add them, fix titles and 
 | 🖥️ **The app** | Shows the archive like a game store. Here you search, fix and complete: every change goes into the archive. |
 | 🎮 **The frontend** | Where you play: <img src="images/frontends/es-de.png" width="20" height="20" align="top" alt=""> **ES-DE** or <img src="images/frontends/retroarch.png" width="20" height="20" align="top" alt=""> **RetroArch** on your PC, a <img src="images/frontends/mister.png" width="20" height="20" align="top" alt=""> **MiSTer FPGA**, a <img src="images/frontends/retropie.png" width="20" height="20" align="top" alt=""> **RetroPie** or a <img src="images/frontends/batocera.png" width="20" height="20" align="top" alt=""> **Batocera**. The app installs games there and starts them. |
 
+> [!TIP]
+> **Scrape your games with ScreenScraper.** Much of the app comes alive only when your games have their details and media: the timeline and *On this day* need the release dates, the company map the developers, Retro TV and Arcade Room the videos. Right after adding games, get them from [ScreenScraper](https://www.screenscraper.fr/): a free account is enough. → [How to scrape](https://retroplay-gamemanager.com/guide/scraping/)
+
 ## Download
 
 Get the latest version from the [**Releases**](https://github.com/gerrykeys/retro-play-game-manager/releases/latest) page. It runs on **Windows 10 and 11 (64-bit)**.
@@ -99,6 +101,22 @@ What each version brought: the [**release notes**](https://retroplay-gamemanager
     <td align="center"><sub>Desktop Mode</sub></td>
   </tr>
   <tr>
+    <td width="50%"><img src="images/retro-tv.webp" alt="Retro TV: a game's video on a cathode-ray television in a living room at sunset"></td>
+    <td width="50%"><img src="images/tv-play.webp" alt="Playing on the Retro TV: the game on the television, its console beside it"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Retro TV</sub></td>
+    <td align="center"><sub>Playing on the TV, the console beside it</sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="images/arcade-room.webp" alt="Arcade Room: an arcade game on a candy cabinet in an '80s arcade"></td>
+    <td width="50%"><img src="images/people.webp" alt="The people behind the games: a composer's career as an animated score"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Arcade Room</sub></td>
+    <td align="center"><sub>The people behind the games</sub></td>
+  </tr>
+  <tr>
     <td width="50%"><img src="images/journeys.webp" alt="A gaming journey: platformers in a row, each step with a note"></td>
     <td width="50%"><img src="images/company-map.webp" alt="The company map: developers and publishers on a world map"></td>
   </tr>
@@ -106,21 +124,14 @@ What each version brought: the [**release notes**](https://retroplay-gamemanager
     <td align="center"><sub>Gaming journeys</sub></td>
     <td align="center"><sub>The company map</sub></td>
   </tr>
-  <tr>
-    <td width="50%"><img src="images/retro-tv.webp" alt="Retro TV: a game's video on a cathode-ray television in a living room"></td>
-    <td width="50%"><img src="images/people.webp" alt="The people behind the games: a composer's career as an animated score"></td>
-  </tr>
-  <tr>
-    <td align="center"><sub>Retro TV</sub></td>
-    <td align="center"><sub>The people behind the games</sub></td>
-  </tr>
 </table>
 
 **Library**
 - A cover grid, a list or a **timeline** of your systems year by year, fast even with tens of thousands of games.
 - A **company map**: the developers and publishers of your games where they are in the world, and the people who make games on their own.
 - **The people behind the games**: composers and designers, each career an animated score or blueprint, with the soundtrack a click away.
-- **Retro TV**: your games' videos on a cathode-ray television, with channels, zapping, 6 TVs and 6 rooms.
+- **Retro TV**: your games' videos on a cathode-ray television, with channels and zapping, 12 TVs (famous ones too) and 5 illustrated rooms. Press Play and the game runs right there, on the TV, its console beside it.
+- **Arcade Room**: your arcade games on a 3D candy cabinet in the arcades of the ’80s, and you play them on it. For vertical games the monitor turns.
 - **Gaming journeys**: games in a row, a note for each step, shared as a .zip with no game files.
 - Instant search and filters, saved filters, **favorites** and **collections**.
 - Video and screenshots on hover, and games compared side by side.
@@ -168,7 +179,7 @@ The app is in **English** and **Italian**, with light and dark themes. If you li
 
 1. **Open or create an archive**: the folder that will hold your games. → [guide](https://retroplay-gamemanager.com/guide/open-archive/)
 2. **Add games** from a folder of ROMs. → [guide](https://retroplay-gamemanager.com/guide/add-games/)
-3. **Scrape** them to get titles, covers and videos. → [guide](https://retroplay-gamemanager.com/guide/scraping/)
+3. **Scrape** them with ScreenScraper to get titles, dates, covers and videos: many features need them. → [guide](https://retroplay-gamemanager.com/guide/scraping/)
 4. **Connect your frontend** and install the games you want to play. → [guide](https://retroplay-gamemanager.com/guide/es-de/)
 
 Every task is explained in the [**guide**](https://retroplay-gamemanager.com/), each with a short animation of the real app.
