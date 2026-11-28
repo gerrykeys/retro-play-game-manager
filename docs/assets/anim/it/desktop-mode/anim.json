@@ -6,64 +6,72 @@
    "img": "01.webp",
    "hold": 1000,
    "cursor": {
-    "x": 80.63,
-    "y": 3.2
+    "x": 10.12,
+    "y": 96
    },
    "action": "click"
   },
   {
    "img": "02.webp",
-   "hold": 1100
+   "hold": 1000,
+   "cursor": {
+    "x": 10.12,
+    "y": 76.9
+   },
+   "action": "click"
   },
   {
    "img": "03.webp",
+   "hold": 1000,
+   "cursor": {
+    "x": 13.81,
+    "y": 44.79
+   },
+   "action": "click"
+  },
+  {
+   "img": "04.webp",
+   "hold": 1100
+  },
+  {
+   "img": "05.webp",
    "hold": 3200,
    "key": "E  →"
   },
   {
-   "img": "04.webp",
-   "hold": 2600,
-   "key": "Enter"
-  },
-  {
-   "img": "05.webp",
-   "hold": 2200,
-   "key": "Enter"
-  },
-  {
    "img": "06.webp",
-   "hold": 3000,
+   "hold": 2600,
    "key": "Enter"
   },
   {
    "img": "07.webp",
-   "hold": 2600,
-   "key": "Esc  E"
+   "hold": 2200,
+   "key": "Enter"
   },
   {
    "img": "08.webp",
-   "hold": 2600,
+   "hold": 3000,
    "key": "Enter"
   },
   {
    "img": "09.webp",
+   "hold": 2600,
+   "key": "Esc  E"
+  },
+  {
+   "img": "10.webp",
+   "hold": 2600,
+   "key": "Enter"
+  },
+  {
+   "img": "11.webp",
    "hold": 3000,
    "key": "→"
   },
   {
-   "img": "10.webp",
+   "img": "12.webp",
    "hold": 3200,
    "key": "M"
-  },
-  {
-   "img": "11.webp",
-   "hold": 2400,
-   "key": "↓  Enter"
-  },
-  {
-   "img": "12.webp",
-   "hold": 4200,
-   "key": "Esc  M"
   },
   {
    "img": "13.webp",
@@ -72,6 +80,16 @@
   },
   {
    "img": "14.webp",
+   "hold": 4200,
+   "key": "Esc  M"
+  },
+  {
+   "img": "15.webp",
+   "hold": 2400,
+   "key": "↓  Enter"
+  },
+  {
+   "img": "16.webp",
    "hold": 2400
   }
  ]

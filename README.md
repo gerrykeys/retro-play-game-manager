@@ -73,7 +73,7 @@ Retro Play Game Manager keeps your games in order: you add them, fix titles and 
 | 🎮 **The frontend** | Where you play: <img src="images/frontends/es-de.png" width="20" height="20" align="top" alt=""> **ES-DE** or <img src="images/frontends/retroarch.png" width="20" height="20" align="top" alt=""> **RetroArch** on your PC, a <img src="images/frontends/mister.png" width="20" height="20" align="top" alt=""> **MiSTer FPGA**, a <img src="images/frontends/retropie.png" width="20" height="20" align="top" alt=""> **RetroPie** or a <img src="images/frontends/batocera.png" width="20" height="20" align="top" alt=""> **Batocera**. The app installs games there and starts them. |
 
 > [!TIP]
-> **Scrape your games with ScreenScraper.** Much of the app comes alive only when your games have their details and media: the timeline and *On this day* need the release dates, the company map the developers, Retro TV and Arcade Room the videos. Right after adding games, get them from [ScreenScraper](https://www.screenscraper.fr/): a free account is enough. → [How to scrape](https://retroplay-gamemanager.com/guide/scraping/)
+> **Scrape your games with ScreenScraper.** Much of the app comes alive only when your games have their details and media: the timeline and *On this day* need the release dates, the company map the developers, Retro TV, Arcade Room and Under the Covers the videos, the Game Shelf the covers. Right after adding games, get them from [ScreenScraper](https://www.screenscraper.fr/): a free account is enough. → [How to scrape](https://retroplay-gamemanager.com/guide/scraping/)
 
 ## Download
 
@@ -93,6 +93,38 @@ What each version brought: the [**release notes**](https://retroplay-gamemanager
 
 <table>
   <tr>
+    <td width="50%"><img src="images/under-the-covers.webp" alt="Under the Covers: Tetris on a Game Boy under the covers, lit by a torch"></td>
+    <td width="50%"><img src="images/card-binder.webp" alt="Card Binder: Super Mario Bros. 3 as a gold collector's card, held up out of the binder"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Under the Covers</sub></td>
+    <td align="center"><sub>Card Binder</sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="images/retro-music.webp" alt="Retro Music: a cassette in a hi-fi deck, the game's video on the TV behind it"></td>
+    <td width="50%"><img src="images/game-shelf.webp" alt="Game Shelf: the Super Mario World box taken from the bookcase"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Retro Music</sub></td>
+    <td align="center"><sub>Game Shelf</sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="images/museum.webp" alt="Museum: the hall of the ’90s, each system in a glass case under a spotlight"></td>
+    <td width="50%"><img src="images/pixel-diorama.webp" alt="Pixel diorama: Super Mario World's screenshot made of little 3D cubes"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Museum</sub></td>
+    <td align="center"><sub>Pixel diorama</sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="images/retro-tv.webp" alt="Retro TV: a game's video on a cathode-ray television in a living room"></td>
+    <td width="50%"><img src="images/arcade-room.webp" alt="Arcade Room: an arcade game on a candy cabinet in an '80s arcade"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Retro TV</sub></td>
+    <td align="center"><sub>Arcade Room</sub></td>
+  </tr>
+  <tr>
     <td width="50%"><img src="images/game-page.webp" alt="A game's page: artwork, Play button, details and media"></td>
     <td width="50%"><img src="images/desktop-mode.webp" alt="Desktop Mode: the app full screen, like a console"></td>
   </tr>
@@ -101,19 +133,11 @@ What each version brought: the [**release notes**](https://retroplay-gamemanager
     <td align="center"><sub>Desktop Mode</sub></td>
   </tr>
   <tr>
-    <td width="50%"><img src="images/retro-tv.webp" alt="Retro TV: a game's video on a cathode-ray television in a living room at sunset"></td>
-    <td width="50%"><img src="images/tv-play.webp" alt="Playing on the Retro TV: the game on the television, its console beside it"></td>
-  </tr>
-  <tr>
-    <td align="center"><sub>Retro TV</sub></td>
-    <td align="center"><sub>Playing on the TV, the console beside it</sub></td>
-  </tr>
-  <tr>
-    <td width="50%"><img src="images/arcade-room.webp" alt="Arcade Room: an arcade game on a candy cabinet in an '80s arcade"></td>
+    <td width="50%"><img src="images/game-controls.webp" alt="Controls at a glance: the Super Nintendo pad with what each button does in Super Mario World"></td>
     <td width="50%"><img src="images/people.webp" alt="The people behind the games: a composer's career as an animated score"></td>
   </tr>
   <tr>
-    <td align="center"><sub>Arcade Room</sub></td>
+    <td align="center"><sub>Controls at a glance</sub></td>
     <td align="center"><sub>The people behind the games</sub></td>
   </tr>
   <tr>
@@ -130,13 +154,21 @@ What each version brought: the [**release notes**](https://retroplay-gamemanager
 - A cover grid, a list or a **timeline** of your systems year by year, fast even with tens of thousands of games.
 - A **company map**: the developers and publishers of your games where they are in the world, and the people who make games on their own.
 - **The people behind the games**: composers and designers, each career an animated score or blueprint, with the soundtrack a click away.
-- **Retro TV**: your games' videos on a cathode-ray television, with channels and zapping, 12 TVs (famous ones too) and 5 illustrated rooms. Press Play and the game runs right there, on the TV, its console beside it.
-- **Arcade Room**: your arcade games on a 3D candy cabinet in the arcades of the ’80s, and you play them on it. For vertical games the monitor turns.
 - **Gaming journeys**: games in a row, a note for each step, shared as a .zip with no game files.
 - Instant search and filters, saved filters, **favorites** and **collections**.
 - Video and screenshots on hover, and games compared side by side.
 - A **command palette** (<kbd>Ctrl K</kbd>): games, systems, views, settings and actions in one box.
 - **More like this** on every game’s page: the same series, developer or genre.
+
+**Scenes**, a showcase at the foot of the sidebar
+- **Retro TV**: your games' videos on a cathode-ray television, with channels and zapping, 12 TVs (famous ones too) and 5 illustrated rooms. Press Play and the game runs right there, on the TV, its console beside it.
+- **Arcade Room**: your arcade games on a 3D candy cabinet in the arcades of the ’80s, and you play them on it. For vertical games the monitor turns.
+- **Under the Covers**: your handheld games inside their own console, under the covers with a torch, in the car at night or under the umbrella, and you play them right there.
+- **Card Binder**: your favorites as 3D collector's cards, bronze, silver or gold by your RetroAchievements.
+- **Retro Music**: your games' soundtracks on cassette, in a 3D tape player, with the game's video on the TV behind it.
+- **Museum**: a hall for each decade, a glass case for each system, the spotlight as bright as the hours you played.
+- **Game Shelf**: a 3D bookcase of real boxes for each system and region. Open one, hold the cartridge or disc, read the manual.
+- **Pixel diorama**: every screenshot made of little 3D cubes, one per pixel, with real shadows.
 
 **Details and media**
 - Edit titles, descriptions, dates, genres and ratings, one game or many at once.
@@ -155,6 +187,8 @@ What each version brought: the [**release notes**](https://retroplay-gamemanager
 
 **Playing**
 - A **power-on ritual**: press Play and the console takes the game and turns on.
+- **Controls at a glance**: what each button of the original pad does in a game, shown before you play.
+- **Speedrun**: try a run against the clock, with splits on the keypad and a video of the game, your webcam and the splits.
 - **Continue playing**, **On this day** and a wheel that answers *What should I play today?*
 - **Desktop Mode**: the app full screen, played with a joypad, with the games’ videos when you leave it alone.
 - **Desktop Mode themes**: change its colors, fonts, music and even how each screen is laid out, or [make your own](https://retroplay-gamemanager.com/themes/).

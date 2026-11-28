@@ -21,7 +21,8 @@
       light: 'Light theme',
       dark: 'Dark theme',
       foldAll: 'Collapse all groups',
-      openAll: 'Expand all groups'
+      openAll: 'Expand all groups',
+      copied: 'Copied'
     },
     it: {
       step: 'Passo',
@@ -29,7 +30,8 @@
       light: 'Tema chiaro',
       dark: 'Tema scuro',
       foldAll: 'Chiudi tutti i gruppi',
-      openAll: 'Apri tutti i gruppi'
+      openAll: 'Apri tutti i gruppi',
+      copied: 'Copiata'
     }
   }[LANG]
 
@@ -70,10 +72,13 @@
   const nav = $('#nav')
   const sidebar = $('.sidebar')
   const NAV_KEY = 'rp-nav'
-  const navGroups = $$('.nav-group', nav)
+  // The groups, and the subgroups folding inside them (kept as sub:<id>)
+  const navGroups = $$('.nav-group, .nav-sub', nav)
+  const keyOf = (s) => s.dataset.group || 'sub:' + s.dataset.sub
+  const headOf = (s) => s.querySelector('.nav-head, .nav-subhead')
   const foldBtn = $('.nav-fold', nav)
-  navGroups.forEach((s) => s.querySelector('.nav-head').insertAdjacentHTML('beforeend', icon('chevron-right')))
-  let open = new Set(navGroups.filter((s) => s.classList.contains('open')).map((s) => s.dataset.group))
+  navGroups.forEach((s) => headOf(s).insertAdjacentHTML('beforeend', icon('chevron-right')))
+  let open = new Set(navGroups.filter((s) => s.classList.contains('open')).map(keyOf))
   const keepOpen = () => {
     try {
       localStorage.setItem(NAV_KEY, JSON.stringify(Array.from(open)))
@@ -83,18 +88,18 @@
   }
   function paintNav() {
     navGroups.forEach((s) => {
-      const on = open.has(s.dataset.group)
+      const on = open.has(keyOf(s))
       s.classList.toggle('open', on)
-      s.querySelector('.nav-head').setAttribute('aria-expanded', String(on))
+      headOf(s).setAttribute('aria-expanded', String(on))
     })
-    const any = navGroups.some((s) => open.has(s.dataset.group))
+    const any = navGroups.some((s) => open.has(keyOf(s)))
     foldBtn.innerHTML = icon(any ? 'list-chevrons-down-up' : 'list-chevrons-up-down')
     foldBtn.title = any ? WORDS.foldAll : WORDS.openAll
     foldBtn.setAttribute('aria-label', foldBtn.title)
   }
   navGroups.forEach((s) =>
-    s.querySelector('.nav-head').addEventListener('click', () => {
-      const id = s.dataset.group
+    headOf(s).addEventListener('click', () => {
+      const id = keyOf(s)
       if (open.has(id)) open.delete(id)
       else open.add(id)
       keepOpen()
@@ -102,11 +107,11 @@
     })
   )
   foldBtn.addEventListener('click', () => {
-    open = navGroups.some((s) => open.has(s.dataset.group)) ? new Set() : new Set(navGroups.map((s) => s.dataset.group))
+    open = navGroups.some((s) => open.has(keyOf(s))) ? new Set() : new Set(navGroups.map(keyOf))
     keepOpen()
     paintNav()
   })
-  if ($('.nav-group.here', nav)) keepOpen()
+  if ($('.nav-group.here, .nav-sub.here', nav)) keepOpen()
   paintNav()
   // The topic shown in sight, and no folding animation while the page is first drawn
   const on = $('a.on', nav)
@@ -122,6 +127,36 @@
     } catch (e) {
       /* nothing kept */
     }
+  })
+
+  // ---------------- the MCP tools' questions: a click copies one ----------------
+
+  const copied = (b) => {
+    b.dataset.done = WORDS.copied
+    b.classList.add('is-copied')
+    clearTimeout(b.copiedTimer)
+    b.copiedTimer = setTimeout(() => b.classList.remove('is-copied'), 1800)
+  }
+  document.addEventListener('click', (e) => {
+    const b = e.target.closest && e.target.closest('[data-copy]')
+    if (!b) return
+    const text = b.dataset.copy
+    // Without the clipboard of the page (an old browser, some file:// pages), a hidden field
+    const field = () => {
+      const t = document.createElement('textarea')
+      t.value = text
+      t.style.cssText = 'position:fixed;opacity:0;pointer-events:none'
+      document.body.appendChild(t)
+      t.select()
+      try {
+        if (document.execCommand('copy')) copied(b)
+      } catch (x) {
+        /* nothing copied */
+      }
+      t.remove()
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(() => copied(b), field)
+    else field()
   })
 
   // ---------------- the frontends' logos, before their names ----------------

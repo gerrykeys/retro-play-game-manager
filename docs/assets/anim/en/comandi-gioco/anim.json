@@ -1,0 +1,157 @@
+{
+ "w": 1280,
+ "h": 800,
+ "steps": [
+  {
+   "img": "01.webp",
+   "hold": 1200,
+   "cursor": {
+    "x": 9.75,
+    "y": 88.69
+   },
+   "action": "click"
+  },
+  {
+   "img": "02.webp",
+   "hold": 1400,
+   "cursor": {
+    "x": 90.29,
+    "y": 60.06
+   },
+   "action": "click"
+  },
+  {
+   "img": "03.webp",
+   "hold": 1800,
+   "cursor": {
+    "x": 63.29,
+    "y": 24.4
+   },
+   "action": "click"
+  },
+  {
+   "img": "04.webp",
+   "hold": 1400,
+   "cursor": {
+    "x": 77.14,
+    "y": 66.66
+   },
+   "action": "click"
+  },
+  {
+   "img": "05.webp",
+   "hold": 1800
+  },
+  {
+   "img": "06.webp",
+   "hold": 2600
+  },
+  {
+   "img": "07.webp",
+   "hold": 1100,
+   "cursor": {
+    "x": 49.73,
+    "y": 51.45
+   },
+   "action": "click"
+  },
+  {
+   "img": "08.webp",
+   "hold": 900,
+   "cursor": {
+    "x": 16.72,
+    "y": 64.15
+   },
+   "action": "click"
+  },
+  {
+   "img": "09.webp",
+   "hold": 900,
+   "cursor": {
+    "x": 37.49,
+    "y": 60.23
+   },
+   "action": "click"
+  },
+  {
+   "img": "10.webp",
+   "hold": 900,
+   "cursor": {
+    "x": 21.76,
+    "y": 65.58
+   },
+   "action": "click"
+  },
+  {
+   "img": "11.webp",
+   "hold": 900,
+   "cursor": {
+    "x": 21.58,
+    "y": 54.22
+   },
+   "action": "click"
+  },
+  {
+   "img": "12.webp",
+   "hold": 900,
+   "cursor": {
+    "x": 43.37,
+    "y": 60.23
+   },
+   "action": "click"
+  },
+  {
+   "img": "13.webp",
+   "hold": 1400,
+   "cursor": {
+    "x": 48.44,
+    "y": 79.88
+   },
+   "action": "click"
+  },
+  {
+   "img": "14.webp",
+   "hold": 1200,
+   "cursor": {
+    "x": 89.35,
+    "y": 88.02
+   },
+   "action": "click"
+  },
+  {
+   "img": "15.webp",
+   "hold": 3400
+  },
+  {
+   "img": "16.webp",
+   "hold": 1100,
+   "cursor": {
+    "x": 62.92,
+    "y": 16.62
+   },
+   "action": "click"
+  },
+  {
+   "img": "17.webp",
+   "hold": 3200
+  },
+  {
+   "img": "18.webp",
+   "hold": 1300,
+   "cursor": {
+    "x": 30,
+    "y": 55
+   },
+   "action": "click"
+  },
+  {
+   "img": "19.webp",
+   "hold": 3200,
+   "key": "Esc"
+  },
+  {
+   "img": "20.webp",
+   "hold": 2000
+  }
+ ]
+}

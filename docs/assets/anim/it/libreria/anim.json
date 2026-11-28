@@ -7,7 +7,7 @@
    "hold": 1500,
    "cursor": {
     "x": 9.75,
-    "y": 67.74
+    "y": 88.64
    },
    "action": "click"
   },
@@ -15,7 +15,7 @@
    "img": "02.webp",
    "hold": 1500,
    "cursor": {
-    "x": 75.75,
+    "x": 72.63,
     "y": 10.45
    },
    "action": "click"
@@ -24,7 +24,7 @@
    "img": "03.webp",
    "hold": 1800,
    "cursor": {
-    "x": 78.88,
+    "x": 75.75,
     "y": 10.45
    },
    "action": "click"
@@ -33,7 +33,7 @@
    "img": "04.webp",
    "hold": 1800,
    "cursor": {
-    "x": 67.58,
+    "x": 64.45,
     "y": 10.45
    },
    "action": "click"
@@ -42,7 +42,7 @@
    "img": "05.webp",
    "hold": 1200,
    "cursor": {
-    "x": 58.83,
+    "x": 55.7,
     "y": 36.32
    },
    "action": "click"
@@ -51,7 +51,7 @@
    "img": "06.webp",
    "hold": 1500,
    "cursor": {
-    "x": 72.63,
+    "x": 69.5,
     "y": 10.45
    },
    "action": "click"
